@@ -160,7 +160,7 @@
     onlyAffectsMobs: false
     injectOnly: true
     preventCombatInjection: true # Frontier
-    doAfterTime: 2 # Frontier
+    injectTime: 2 # Coyote
   - type: Appearance
   - type: SolutionContainerVisuals
     maxFillLevels: 1
