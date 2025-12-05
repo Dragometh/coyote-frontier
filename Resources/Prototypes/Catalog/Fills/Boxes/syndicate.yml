@@ -20,17 +20,19 @@
   - type: Storage
     grid:
     - 0,0,3,2
-  - type: StorageFill
-    contents:
-      - id: Beaker
-        amount: 2
-      - id: Dropper
-      # It would be cool to have special "syndicate" chemical analysis goggles
-      - id: ClothingEyesGlassesChemical
-      - id: VestineChemistryVial
-        amount: 2
-      - id: BaseChemistryEmptyVial
-      - id: SyringeStimulants
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:AllSelector
+        children:
+        - id: Beaker
+          amount: 2
+        - id: Dropper
+        # It would be cool to have special "syndicate" chemical analysis goggles
+        - id: ClothingEyesGlassesChemical
+        - id: SyringeStimulants
+        - id: VestineChemistryVial
+          amount: 2
+        - id: BaseChemistryEmptyVial
 
 - type: entity
   parent: [BoxCardboard, NotContraband] # Frontier: BaseSyndicateContraband<BaseC4Contraband

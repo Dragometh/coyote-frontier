@@ -4,14 +4,12 @@
   - quantity: 2 # Coyote: tier 5 powerful or annoying reagents that should remain rare and hard to get from plants. 5->2 to make it labor intensive to hoard.
     weight: 0.1 # Coyote: .5 -> .1 until vestine reaction requirement is implemented, this should make them rarer
     reagents:
-    - Nocturine
-    - Lexorin
+    - Impedrezene
+    - Fresium
+    - HeartbreakerToxin
     - Honk
     - BuzzochloricBees
-    - Stimulants
-    - MuteToxin # Coyote move
     - Pax # coyote move, this should not be common at all
-    - Licoxide # Coyote move
     - Napalm  # Coyote move
     - ChlorineTrifluoride # Coyote move
   - quantity: 5 # Coyote: tier 4 uncommon toxins, completed good chems, a few complete complex drinks ig
@@ -30,6 +28,11 @@
     - CogChamp # Coyote move
     - Desoxyephedrine # Coyote move
     - ChloralHydrate # Coyote move
+    - TearGas
+    - Lipolicide
+    - Benzene
+    - Bleach # Coyote move
+    - Mannitol # Coyote move
   - quantity: 5 # Coyote: tier 3 is completed basic chems and complex reagents
     weight: 2
     reagents:
@@ -69,6 +72,7 @@
     - Ash
     - SodiumCarbonate
     - SpaceDrugs
+    - SpaceGlue
     - JuiceBerryPoison
     - Pilk
     - Posca
@@ -132,3 +136,6 @@
     - Copper # Coyote add
     # - Mercury # Coyote remove, clutter chem also why are you here TWICE
     - Fat
+    - Wine # Coyote move
+    - Coffee # Coyote move
+    - Beer # Coyote move
