@@ -38,3 +38,9 @@
   id: BorgGear
   equipment:
     id: ContractorPDA
+
+- type: chameleonOutfit
+  id: BorgChameleonOutfit
+  job: Borg
+  equipment:
+    id: ContractorPDA
