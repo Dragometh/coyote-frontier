@@ -90,12 +90,14 @@
           max: 4
           canBeAirSealed: true
         entries:
+        # coyote changes start
         - id: GasDepositOxygen
           orGroup: deposit
         - id: GasDepositOxygenLarge
           orGroup: deposit
         - id: GasDepositOxygenVeryLarge
           orGroup: deposit
+           # coyote changes end
         - id: GasDepositNitrogen
           orGroup: deposit
         - id: GasDepositNitrogenLarge
@@ -196,6 +198,7 @@
           max: 6
           canBeAirSealed: true
         entries:
+         # coyote changes start
         - id: GasDepositPlasmaVerySmall
           orGroup: deposit
         - id: GasDepositPlasmaSmall
@@ -206,6 +209,7 @@
           orGroup: deposit
         - id: GasDepositMuddlePlasmaVerySmall
           orGroup: deposit
+           # coyote changes end
         - id: GasDepositMuddleEvenVerySmall
           orGroup: deposit
         - id: GasDepositHelium
