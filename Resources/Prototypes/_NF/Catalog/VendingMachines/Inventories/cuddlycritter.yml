@@ -1,7 +1,7 @@
 - type: vendingMachineInventory
   id: CuddlyCritterVendInventory
   startingInventory:
-    Clicker: 3 #Coyote Sector
+    Clicker: 3 # Coyote Sector
     PlushieBee: 3
     PlushieHampter: 3
     PlushieLizard: 3
