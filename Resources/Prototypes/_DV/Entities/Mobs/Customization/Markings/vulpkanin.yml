@@ -300,6 +300,7 @@
   markingCategory: Tail
   speciesRestriction: [Vulpkanin, Felinid]
   kindAllowance: [BasicHumanlike, BasicFurry]
+  waggingId: VulpTailWag
   sprites:
     - sprite: _DV/Mobs/Customization/Vulpkanin/tail_markings.rsi
       state: vulp
@@ -312,6 +313,7 @@
   markingCategory: Tail
   speciesRestriction: [Vulpkanin, Felinid]
   kindAllowance: [BasicHumanlike, BasicFurry]
+  waggingId: VulpTailWagTip
   sprites:
     - sprite: _DV/Mobs/Customization/Vulpkanin/tail_markings.rsi
       state: vulp
@@ -324,6 +326,7 @@
   markingCategory: Tail
   speciesRestriction: [Vulpkanin, Felinid]
   kindAllowance: [BasicHumanlike, BasicFurry]
+  staticId: VulpTail
   sprites:
     - sprite: _DV/Mobs/Customization/Vulpkanin/tail_markings.rsi
       state: vulp_wag
@@ -336,6 +339,7 @@
   markingCategory: Tail
   speciesRestriction: [Vulpkanin, Felinid]
   kindAllowance: [BasicHumanlike, BasicFurry]
+  staticId: VulpTailTip
   sprites:
     - sprite: _DV/Mobs/Customization/Vulpkanin/tail_markings.rsi
       state: vulp_wag
@@ -384,6 +388,7 @@
   markingCategory: Tail
   speciesRestriction: [Vulpkanin, Felinid]
   kindAllowance: [BasicHumanlike, BasicFurry]
+  waggingId: VulpTailFoxWag
   sprites:
     - sprite: _DV/Mobs/Customization/Vulpkanin/tail_markings.rsi
       state: fox
@@ -396,6 +401,7 @@
   markingCategory: Tail
   speciesRestriction: [Vulpkanin, Felinid]
   kindAllowance: [BasicHumanlike, BasicFurry]
+  waggingId: VulpTailFoxWagTip
   sprites:
     - sprite: _DV/Mobs/Customization/Vulpkanin/tail_markings.rsi
       state: fox
@@ -408,6 +414,7 @@
   markingCategory: Tail
   speciesRestriction: [Vulpkanin, Felinid]
   kindAllowance: [BasicHumanlike, BasicFurry]
+  staticId: VulpTailFox
   sprites:
     - sprite: _DV/Mobs/Customization/Vulpkanin/tail_markings.rsi
       state: fox_wag
@@ -420,6 +427,7 @@
   markingCategory: Tail
   speciesRestriction: [Vulpkanin, Felinid]
   kindAllowance: [BasicHumanlike, BasicFurry]
+  staticId: VulpTailFoxTip
   sprites:
     - sprite: _DV/Mobs/Customization/Vulpkanin/tail_markings.rsi
       state: fox_wag
@@ -432,6 +440,7 @@
   markingCategory: Tail
   speciesRestriction: [Vulpkanin, Felinid]
   kindAllowance: [BasicHumanlike, BasicFurry]
+  waggingId: VulpTailBushyWag
   sprites:
     - sprite: _DV/Mobs/Customization/Vulpkanin/tail_markings.rsi
       state: bushfluff
@@ -442,6 +451,7 @@
   markingCategory: Tail
   speciesRestriction: [Vulpkanin, Felinid]
   kindAllowance: [BasicHumanlike, BasicFurry]
+  staticId: VulpTailBushy
   sprites:
     - sprite: _DV/Mobs/Customization/Vulpkanin/tail_markings.rsi
       state: bushfluff_wag
@@ -452,6 +462,7 @@
   markingCategory: Tail
   speciesRestriction: [Vulpkanin, Felinid]
   kindAllowance: [BasicHumanlike, BasicFurry]
+  waggingId: VulpTailCoyoteWag
   sprites:
     - sprite: _DV/Mobs/Customization/Vulpkanin/tail_markings.rsi
       state: coyote
@@ -462,6 +473,7 @@
   markingCategory: Tail
   speciesRestriction: [Vulpkanin, Felinid]
   kindAllowance: [BasicHumanlike, BasicFurry]
+  staticId: VulpTailCoyote
   sprites:
     - sprite: _DV/Mobs/Customization/Vulpkanin/tail_markings.rsi
       state: coyote_wag

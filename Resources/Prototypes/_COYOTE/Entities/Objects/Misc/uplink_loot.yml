@@ -136,7 +136,6 @@
     - WeaponCaseLongLaserCarbineExpedition
     - WeaponCaseLongXrayCannonExpedition
     - WeaponCaseLongTemperatureGunExpedition
-    - WeaponCaseLongPrototypePulseRifleExpedition
     - WeaponCaseShortEnergySwordExpedition
     - WeaponCaseShortDocumentsFilled
     - Katana
@@ -172,6 +171,7 @@
     - WeaponCaseHeavyLightMachineGunL6
     - WeaponCaseLongEnergyGunExpedition
     - WeaponCaseLongLaserCannonExpedition
+    - WeaponCaseLongPrototypePulseRifleExpedition
     - WeaponCaseHeavyAsmgtExpeditions
     - WeaponCaseShortEnergySwordDoubleExpedition
     - WeaponCaseShortEnergyShieldExpedition

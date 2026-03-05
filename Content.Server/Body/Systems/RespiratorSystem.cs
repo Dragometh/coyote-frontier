@@ -20,6 +20,8 @@ using JetBrains.Annotations;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Timing;
 
+using Content.Shared.SSDIndicator; //Coyote, needed to check if something has the component.
+
 namespace Content.Server.Body.Systems;
 
 [UsedImplicitly]
@@ -75,6 +77,11 @@ public sealed class RespiratorSystem : EntitySystem
 
             if (_mobState.IsDead(uid))
                 continue;
+
+            //Coyote Start
+            if (TryComp<SSDIndicatorComponent>(uid, out var ssd) && ssd.IsSSD)
+                continue;
+            //Coyote End
 
             UpdateSaturation(uid, -(float) respirator.UpdateInterval.TotalSeconds, respirator);
 

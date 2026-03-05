@@ -42,11 +42,9 @@ using Robust.Shared.Physics.Components;
 using Robust.Shared.Player;
 using Robust.Shared.Random;
 using Robust.Shared.Spawners;
-using Robust.Shared.Maths;
 using Content.Shared.DeviceLinking;
 using Robust.Shared.Timing;
 using System.ComponentModel;
-using Vector4 = Robust.Shared.Maths.Vector4; //Coyote: Use robust vectors, not numerics
 
 namespace Content.Server._EE.Supermatter.Systems;
 
