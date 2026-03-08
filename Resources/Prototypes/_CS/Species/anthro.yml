@@ -1,0 +1,191 @@
+- type: species
+  id: Anthromorph
+  name: species-name-anthromorph
+  roundStart: true
+  prototype: MobAnthromorph
+  sprites: MobAnthromorphSprites
+  defaultSkinTone: "#747474"
+  markingLimits: MobAnthromorphMarkingLimits
+  dollPrototype: MobAnthromorphDummy
+  skinColoration: Hues
+  kind:
+  - BasicHumanlike
+  - BasicFurry
+
+- type: speciesBaseSprites
+  id: MobAnthromorphSprites
+  sprites:
+    Head: MobAnthromorphHead
+    HeadTop: MobHumanoidAnyMarking
+    HeadSide: MobHumanoidAnyMarking
+    Hair: MobHumanoidAnyMarking
+    FacialHair: MobHumanoidAnyMarking
+    Snout: MobHumanoidAnyMarking
+    Chest: MobAnthromorphTorso
+    Eyes: MobHumanoidEyes
+    LArm: MobAnthromorphLArm
+    RArm: MobAnthromorphRArm
+    LHand: MobAnthromorphLHand
+    RHand: MobAnthromorphRHand
+    Tail: MobHumanoidAnyMarking
+    LLeg: MobAnthromorphLLeg
+    RLeg: MobAnthromorphRLeg
+    LFoot: MobAnthromorphLFoot
+    RFoot: MobAnthromorphRFoot
+    LLegBehind: MobHumanoidAnyMarking
+    RLegBehind: MobHumanoidAnyMarking
+    LFootBehind: MobHumanoidAnyMarking
+    RFootBehind: MobHumanoidAnyMarking
+    TailBehind: MobHumanoidAnyMarking
+    TailOversuit: MobHumanoidAnyMarking
+    UndershirtUnderclothes: MobHumanoidAnyMarking
+    UndershirtOverclothes: MobHumanoidAnyMarking
+    UndergarmentTop: MobHumanoidAnyMarking
+    UndergarmentBottom: MobHumanoidAnyMarking
+    Genital: MobHumanoidAnyMarking
+    NeckFluff: MobHumanoidAnyMarking
+
+- type: markingPoints
+  id: MobAnthromorphMarkingLimits
+  points:
+    Hair:
+      points: 1
+      required: false
+    FacialHair:
+      points: 1
+      required: false
+    Tail:
+      points: 35
+      required: true
+    HeadTop:
+      points: 35
+      required: true
+    BaseHead:
+      points: 35
+      required: false
+    BaseLArm:
+      points: 35
+      required: false
+    BaseLFoot:
+      points: 35
+      required: false
+    BaseLHand:
+      points: 35
+      required: false
+    BaseLLeg:
+      points: 35
+      required: false
+    BaseRArm:
+      points: 35
+      required: false
+    BaseRFoot:
+      points: 35
+      required: false
+    BaseRHand:
+      points: 35
+      required: false
+    BaseRLeg:
+      points: 35
+      required: false
+    Chest:
+      points: 35
+      required: false
+    Overlay:
+      points: 35
+      required: false
+    Special:
+      points: 35
+      required: false
+    UndergarmentTop:
+      points: 35
+      required: false
+    UndergarmentBottom:
+      points: 35
+      required: false
+    NeckFluff:
+      points: 35
+      required: false
+
+- type: humanoidBaseSprite
+  id: MobAnthromorphHead
+  baseSprite:
+    sprite: _CS/Mobs/Species/Anthromorph/parts.rsi
+    state: head_m
+
+- type: humanoidBaseSprite
+  id: MobAnthromorphHeadMale
+  baseSprite:
+    sprite: _CS/Mobs/Species/Anthromorph/parts.rsi
+    state: head_m
+
+- type: humanoidBaseSprite
+  id: MobAnthromorphHeadFemale
+  baseSprite:
+    sprite: _CS/Mobs/Species/Anthromorph/parts.rsi
+    state: head_f
+
+- type: humanoidBaseSprite
+  id: MobAnthromorphTorso
+  baseSprite:
+    sprite: _CS/Mobs/Species/Anthromorph/parts.rsi
+    state: torso_m
+
+- type: humanoidBaseSprite
+  id: MobAnthromorphTorsoMale
+  baseSprite:
+    sprite: _CS/Mobs/Species/Anthromorph/parts.rsi
+    state: torso_m
+
+- type: humanoidBaseSprite
+  id: MobAnthromorphTorsoFemale
+  baseSprite:
+    sprite: _CS/Mobs/Species/Anthromorph/parts.rsi
+    state: torso_f
+
+- type: humanoidBaseSprite
+  id: MobAnthromorphLLeg
+  baseSprite:
+    sprite: _CS/Mobs/Species/Anthromorph/parts.rsi
+    state: l_leg
+
+- type: humanoidBaseSprite
+  id: MobAnthromorphLHand
+  baseSprite:
+    sprite: _CS/Mobs/Species/Anthromorph/parts.rsi
+    state: l_hand
+
+- type: humanoidBaseSprite
+  id: MobAnthromorphLArm
+  baseSprite:
+    sprite: _CS/Mobs/Species/Anthromorph/parts.rsi
+    state: l_arm
+
+- type: humanoidBaseSprite
+  id: MobAnthromorphLFoot
+  baseSprite:
+    sprite: _CS/Mobs/Species/Anthromorph/parts.rsi
+    state: l_foot
+
+- type: humanoidBaseSprite
+  id: MobAnthromorphRLeg
+  baseSprite:
+    sprite: _CS/Mobs/Species/Anthromorph/parts.rsi
+    state: r_leg
+
+- type: humanoidBaseSprite
+  id: MobAnthromorphRHand
+  baseSprite:
+    sprite: _CS/Mobs/Species/Anthromorph/parts.rsi
+    state: r_hand
+
+- type: humanoidBaseSprite
+  id: MobAnthromorphRArm
+  baseSprite:
+    sprite: _CS/Mobs/Species/Anthromorph/parts.rsi
+    state: r_arm
+
+- type: humanoidBaseSprite
+  id: MobAnthromorphRFoot
+  baseSprite:
+    sprite: _CS/Mobs/Species/Anthromorph/parts.rsi
+    state: r_foot

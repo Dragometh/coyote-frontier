@@ -41,4 +41,8 @@
   <GuideEntityEmbed Entity="MobOvinia" Caption="Ovinia"/>
   <GuideEntityEmbed Entity="MobChitinid" Caption="Chitinid"/>
   </Box>
+  # Coyote Sector specific species
+  <Box>
+  <GuideEntityEmbed Entity="MobAnthromorph" Caption="Anthromorph"/>
+  </Box>
 </Document>

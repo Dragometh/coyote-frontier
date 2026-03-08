@@ -25,6 +25,7 @@
     - Ovinia
     - Chitinid # DeltaV # DeltaV
     - Tajaran # EE
+    - Anthromorph # CS
 
 - type: guideEntry
   id: Arachnid
@@ -86,3 +87,8 @@
   id: Tajaran
   name: species-name-tajaran
   text: "/ServerInfo/Guidebook/Mobs/Tajaran.xml"
+
+- type: guideEntry
+  id: Anthromorph
+  name: species-name-anthromorph
+  text: "/ServerInfo/Guidebook/Mobs/_CS/Anthromorph.xml"
