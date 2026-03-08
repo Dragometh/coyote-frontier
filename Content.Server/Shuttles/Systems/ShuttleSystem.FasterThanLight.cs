@@ -738,9 +738,10 @@ public sealed partial class ShuttleSystem
         ShuttleComponent component,
         EntityUid targetUid,
         string? priorityTag = null,
-        DockType dockType = DockType.Airlock) // Frontier
+        DockType dockType = DockType.Airlock, // Frontier
+        int? maxShuttleDocks = null) // Coyote
     {
-        return TryFTLDock(shuttleUid, component, targetUid, out _, priorityTag, dockType); // Frontier: add dockType
+        return TryFTLDock(shuttleUid, component, targetUid, out _, priorityTag, dockType, maxShuttleDocks); // Frontier: add dockType // Coyote: add maxShuttleDocks
     }
 
     /// <summary>
@@ -753,7 +754,8 @@ public sealed partial class ShuttleSystem
         EntityUid targetUid,
         [NotNullWhen(true)] out DockingConfig? config,
         string? priorityTag = null,
-        DockType dockType = DockType.Airlock) // Frontier
+        DockType dockType = DockType.Airlock, // Frontier
+        int? maxShuttleDocks = null) // Coyote
     {
         config = null;
 
@@ -765,7 +767,7 @@ public sealed partial class ShuttleSystem
             return false;
         }
 
-        config = _dockSystem.GetDockingConfig(shuttleUid, targetUid, priorityTag, dockType); // Frontier: add dockType
+        config = _dockSystem.GetDockingConfig(shuttleUid, targetUid, priorityTag, dockType, maxShuttleDocks); // Frontier: add dockType // Coyote: add maxShuttleDocks
 
         if (config != null)
         {

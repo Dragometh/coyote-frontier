@@ -73,6 +73,10 @@
   - type: Reflect
   - type: IgnitionSource
     temperature: 700
+  - type: Tag # Coyote [
+    tags:
+    - Knife
+    - KitchenKnife # Coyote ]
 
 - type: entity
   name: energy sword
@@ -224,6 +228,8 @@
   - type: Tag
     tags:
     - Write
+    - Knife # Coyote
+    - KitchenKnife  # Coyote
   - type: Contraband # Frontier
     hideValues: true # Frontier
 
