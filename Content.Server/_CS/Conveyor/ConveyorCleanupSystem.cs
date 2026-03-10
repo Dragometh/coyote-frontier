@@ -25,9 +25,9 @@ namespace Content.Server.Conveyor.EntitySystems
         [Dependency] private readonly SharedAudioSystem _audio = default!;
         [Dependency] private readonly SharedPopupSystem _popup = default!;
         private TimeSpan _nextCleanup = TimeSpan.Zero;
-        private TimeSpan _cleanupInterval = TimeSpan.FromSeconds(45); // Time before next cleanup. Can be tuned in cvars.
+        private TimeSpan _cleanupInterval = TimeSpan.FromSeconds(51); // Time before next cleanup. Can be tuned in cvars.
         private readonly SoundPathSpecifier _breaksound = new("/Audio/Effects/metal_crunch.ogg");
-        private int _maxItemCount = 300; // Max allowed number of items on a belt before it collapses. Can be tuned in cvars.
+        private int _maxItemCount = 200; // Max allowed number of items on a belt before it collapses. Can be tuned in cvars.
 
         public override void Initialize()
         {
