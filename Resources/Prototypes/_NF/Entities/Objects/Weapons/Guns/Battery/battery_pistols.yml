@@ -13,7 +13,7 @@
 
 - type: entity
   id: NFWeaponEnergyPistolLaserMakeshift
-  parent: [ BaseC1Contraband, NFBaseWeaponEnergyPistolHitScan, NFBaseWeaponFrameEnergyPistolFrontierGunsmith ] # Coyote: Add BaseC1Contraband
+  parent: [ BaseC1ContrabandUnredeemable, NFBaseWeaponEnergyPistolHitScan, NFBaseWeaponFrameEnergyPistolFrontierGunsmith ] # Coyote: Add BaseC1ContrabandUnredeemable
   name: makeshift laser pistol
   description: Better pray it won't burn your hands off. At least it's legal.
   components:
