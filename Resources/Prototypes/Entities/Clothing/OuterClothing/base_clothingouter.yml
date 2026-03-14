@@ -134,9 +134,11 @@
     slot: head
   - type: ContainerContainer
     containers:
+    # Mono: Apparently changed these 3 lines to fit the armor plates.
       toggleable-clothing: !type:Container {}
       storagebase: !type:Container
         ents: []
+    # End Mono
   - type: GroupExamine
   - type: Tag
     tags:
