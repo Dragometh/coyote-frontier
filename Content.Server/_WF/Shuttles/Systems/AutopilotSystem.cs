@@ -120,7 +120,7 @@ public sealed class AutopilotSystem : EntitySystem
             }
 
             // Calculate steering force using Reynolds steering behaviors
-            var maxSpeed = CalculateMaxSpeed(shuttle, physics.LinearVelocity) * autopilot.SpeedMultiplier;
+            var maxSpeed = 50;
             var currentVelocity = physics.LinearVelocity;
 
             // Obstacle avoidance: check for obstacles first (highest priority)
@@ -550,7 +550,7 @@ public sealed class AutopilotSystem : EntitySystem
         }
 
         // Dead zone - don't rotate if we're close enough
-        if (MathF.Abs(angleDiff) < 0.15f)
+        if (MathF.Abs(angleDiff) < 0.05f)
         {
             _thruster.SetAngularThrust(shuttle, false);
             return;
