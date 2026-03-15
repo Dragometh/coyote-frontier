@@ -93,24 +93,24 @@
     whitelist:
     - Smuggler
 
-- type: listing #Coyote
-  id: UplinkContraCrate
-  name:  uplink-contracrate
-  description: uplink-contracrate-desc
-  productEntity: SpawnUplinkContrabandCrate
-  icon: { sprite: Structures/Storage/Crates/generic.rsi, state: icon }
-  cost:
-    Doubloon: 3
-  categories:
-  - UplinkPirateUtility
-  conditions:
-  - !type:StoreWhitelistCondition
-    whitelist:
-      tags:
-      - PirateUplink
-  - !type:BuyerJobCondition
-    whitelist:
-    - Smuggler
+#- type: listing #Coyote
+#  id: UplinkContraCrate
+#  name:  uplink-contracrate
+#  description: uplink-contracrate-desc
+#  productEntity: SpawnUplinkContrabandCrate
+#  icon: { sprite: Structures/Storage/Crates/generic.rsi, state: icon }
+#  cost:
+#    Doubloon: 3
+#  categories:
+#  - UplinkPirateUtility
+#  conditions:
+#  - !type:StoreWhitelistCondition
+#    whitelist:
+#      tags:
+#      - PirateUplink
+#  - !type:BuyerJobCondition
+#    whitelist:
+#    - Smuggler
 
 - type: listing #Coyote
   id: UplinkPirateRCD
