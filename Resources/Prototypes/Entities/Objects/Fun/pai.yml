@@ -26,6 +26,9 @@
       enum.StationMapUiKey.Key:
         type: StationMapBoundUserInterface
         requireInputValidation: false
+      enum.CrewMonitoringUIKey.Key:
+        type: CrewMonitoringBoundUserInterface
+        requireInputValidation: false
   - type: Sprite
     sprite: Objects/Fun/pai.rsi
     layers:
@@ -225,3 +228,16 @@
   - type: InstantAction
     event: !type:OpenUiActionEvent
       key: enum.StationMapUiKey.Key
+
+- type: entity
+  parent: BaseMentalAction
+  id: ActionPAICrewMonitor
+  name: Crew Monitor
+  description: Monitor the health status of crew.
+  components:
+  - type: Action
+    icon: { sprite: Interface/Actions/actions_ai.rsi, state: crew_monitor }
+    itemIconStyle: NoItem
+  - type: InstantAction
+    event: !type:ToggleIntrinsicUIEvent
+      key: enum.CrewMonitoringUIKey.Key
