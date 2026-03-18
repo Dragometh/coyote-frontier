@@ -150,7 +150,7 @@
   id: TableDungeonLootWeaponsMeleeUnique
   table: !type:GroupSelector
     children:
-    - id: ClothingHandsKnuckleBoneCrushers
+    #- id: ClothingHandsKnuckleBoneCrushers # Coyote: This is an admeme weapon, it should not be spawnable.
     - id: ArmBlade
     - id: Kanabou
 

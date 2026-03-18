@@ -105,10 +105,10 @@
     wideAnimationRotation: -135
     damage:
       types:
-        Blunt: 54
+        Blunt: 33 # Coyote: 20 < 33
     soundHit:
       collection: MetalThud
-    bluntStaminaDamageFactor: 1.5
+    bluntStaminaDamageFactor: 1.0 # Coyote: 1.5 to 1.0
   - type: Item
     size: Normal
   - type: Tag
