@@ -408,6 +408,11 @@
     - !type:GroupSelector
       children:
       - id: WeaponCaseShortAmmoBoxLethal35
+    # Coyote Start: .40 ammo
+    - !type:GroupSelector
+      children:
+      - id: WeaponCaseShortAmmoBoxLethal40
+    # Coyote End
     - !type:GroupSelector
       children:
       - id: WeaponCaseShortAmmoBoxLethalShotgun
@@ -420,6 +425,7 @@
     children:
     - id: WeaponCaseShortAmmoBoxRubber30
     - id: WeaponCaseShortAmmoBoxRubber35
+    - id: WeaponCaseShortAmmoBoxRubber40 # Coyote
     - id: WeaponCaseShortAmmoBoxRubber45
     - id: WeaponCaseShortAmmoBoxRubberShotgun
     - !type:GroupSelector
@@ -440,6 +446,7 @@
     - id: WeaponCaseShortAmmoBoxIncendiary30
     - id: WeaponCaseShortAmmoBoxIncendiary35
     - id: WeaponCaseShortAmmoBoxIncendiaryShotgun
+    - id: WeaponCaseShortAmmoBoxIncendiary40 # Coyote
     - id: WeaponCaseShortAmmoBoxIncendiary45
 
 # region ammo uranium
@@ -451,6 +458,7 @@
     - id: WeaponCaseShortAmmoBoxUranium30
     - id: WeaponCaseShortAmmoBoxUranium35
     - id: WeaponCaseShortAmmoBoxUraniumShotgun
+    - id: WeaponCaseShortAmmoBoxUranium40 # Coyote
     - id: WeaponCaseShortAmmoBoxUranium45
 
 # region ammo practice
@@ -463,6 +471,7 @@
     - id: WeaponCaseShortAmmoBoxPractice35
     - id: WeaponCaseShortAmmoBoxPractice25
     - id: WeaponCaseShortAmmoBoxPracticeShotgun
+    - id: WeaponCaseShortAmmoBoxPractice40 # Coyote
     - id: WeaponCaseShortAmmoBoxPractice45
 
 # region combined
