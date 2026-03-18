@@ -360,13 +360,13 @@
       weight: 0.15
       children:
       - id: CrateAmmoBoxRubber20
-      - id: CrateAmmoBoxRubber25
+      #- id: CrateAmmoBoxRubber25 # Coyote: Remove .25 from tables
       - id: CrateAmmoBoxRubber30
       - id: CrateAmmoBoxRubber35
       - id: CrateAmmoBoxRubber45
       - id: CrateAmmoBoxRubberShotgun
       - id: CrateAmmoBoxLethal20
-      - id: CrateAmmoBoxLethal25
+      #- id: CrateAmmoBoxLethal25 # Coyote: Remove .25 from tables
       - id: CrateAmmoBoxLethal30
       - id: CrateAmmoBoxLethal35
       - id: CrateAmmoBoxLethal40 # Coyote
@@ -399,7 +399,7 @@
       weight: 0.15
       children:
       - id: CrateAmmoBoxBigLethal20
-      - id: CrateAmmoBoxBigLethal25
+      #- id: CrateAmmoBoxBigLethal25 # Coyote: Remove .25 from tables
       - id: CrateAmmoBoxBigLethal30
       - id: CrateAmmoBoxBigRubber20
       - id: CrateAmmoBoxBigRubber25
@@ -409,7 +409,7 @@
       weight: 0.05
       children:
       - id: CrateAmmoBoxPractice20
-      - id: CrateAmmoBoxPractice25
+      #- id: CrateAmmoBoxPractice25 # Coyote: Remove .25 from tables
       - id: CrateAmmoBoxPractice30
       - id: CrateAmmoBoxPractice35
       - id: CrateAmmoBoxPractice40 # Coyote

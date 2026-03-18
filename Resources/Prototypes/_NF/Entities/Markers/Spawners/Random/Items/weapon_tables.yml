@@ -397,10 +397,11 @@
       children:
       - id: WeaponCaseShortAmmoBoxLethal20
       - id: WeaponCaseShortAmmoBoxBigLethal20
-    - !type:GroupSelector
-      children:
-      - id: WeaponCaseShortAmmoBoxLethal25
-      - id: WeaponCaseShortAmmoBoxBigLethal25
+    # Coyote: Remove .25 from tables
+    #- !type:GroupSelector
+    #  children:
+    #  - id: WeaponCaseShortAmmoBoxLethal25
+    #  - id: WeaponCaseShortAmmoBoxBigLethal25
     - !type:GroupSelector
       children:
       - id: WeaponCaseShortAmmoBoxLethal30
@@ -432,10 +433,11 @@
       children:
       - id: WeaponCaseShortAmmoBoxRubber20
       - id: WeaponCaseShortAmmoBoxBigRubber20
-    - !type:GroupSelector
-      children:
-      - id: WeaponCaseShortAmmoBoxRubber25
-      - id: WeaponCaseShortAmmoBoxBigRubber25
+    # Coyote: Remove .25 from tables
+    #- !type:GroupSelector
+    #  children:
+    #  - id: WeaponCaseShortAmmoBoxRubber25
+    #  - id: WeaponCaseShortAmmoBoxBigRubber25
 
 # region ammo incendiary
 - type: entityTable
@@ -469,7 +471,7 @@
     - id: WeaponCaseShortAmmoBoxPractice20
     - id: WeaponCaseShortAmmoBoxPractice30
     - id: WeaponCaseShortAmmoBoxPractice35
-    - id: WeaponCaseShortAmmoBoxPractice25
+    #- id: WeaponCaseShortAmmoBoxPractice25 # Coyote: Remove .25 from tables
     - id: WeaponCaseShortAmmoBoxPracticeShotgun
     - id: WeaponCaseShortAmmoBoxPractice40 # Coyote
     - id: WeaponCaseShortAmmoBoxPractice45
