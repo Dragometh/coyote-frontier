@@ -1,83 +1,74 @@
 - type: weightedRandomFillSolution
   id: RandomPickBotanyReagent
   fills:
-  - quantity: 5
-    weight: 0.5
+  - quantity: 2 # Coyote: tier 5 powerful or annoying reagents that should remain rare and hard to get from plants. 5->2 to make it labor intensive to hoard.
+    weight: 0.1 # Coyote: .5 -> .1 until vestine reaction requirement is implemented, this should make them rarer
     reagents:
     - Nocturine
     - Lexorin
     - Honk
     - BuzzochloricBees
     - Stimulants
-  - quantity: 5
+    - MuteToxin # Coyote move
+    - Pax # coyote move, this should not be common at all
+    - Licoxide # Coyote move
+    - Napalm  # Coyote move
+    - ChlorineTrifluoride # Coyote move
+  - quantity: 5 # Coyote: tier 4 uncommon toxins, completed good chems, a few complete complex drinks ig
     weight: 1
     reagents:
     - Cognizine
     - Toxin
     - Leporazine
-    - Epinephrine
     - CarpoToxin
-    - SulfuricAcid
-    - Licoxide
-    - Napalm
-    - ChlorineTrifluoride
-    - Radium
-    - Gold
-    - Uranium
-    - Phosphorus
-    - AtomicBomb
-    - Neurotoxin
-    - ChangelingSting
-    - CogChamp
     - JuiceThatMakesYouWeh
-  - quantity: 5
+    - JuiceThatMakesYouHew
+    - DoctorsDelight # Coyote move but also golden apples exist why is this here?
+    - AtomicBomb # Coyote move
+    - Neurotoxin # Coyote move
+    - ChangelingSting # Coyote move
+    - CogChamp # Coyote move
+    - Desoxyephedrine # Coyote move
+    - ChloralHydrate # Coyote move
+  - quantity: 5 # Coyote: tier 3 is completed basic chems and complex reagents
     weight: 2
     reagents:
-    - Desoxyephedrine
-    - ChloralHydrate
     - Ipecac
     - Hyronalin
-    - Pax
     - Cryoxadone
     - Ethylredoxrazine
-    - Dylovene
     - Histamine
     - Blood
     - WeldingFuel
-    - Mercury
-    - Silver
+    # - Mercury # Coyote: rarely used, clutter chem
     - Phenol
     - Ultravasculine
-    - Carbon
-    - THC
-    - Nicotine
-    - DoctorsDelight
-    - IceCream
-    - Cola
+    # - THC # Coyote remove: just grow cannabis, very little interacts with this chem without cannabis plants
+    # - Nicotine # Coyote remove, just grow tobacco, same thing as thc
     - Diphenhydramine
-    - Iron
-  - quantity: 10
-    weight: 3
+    - NorepinephricAcid # Coyote move
+    - Bicaridine # Coyote move
+    - Dermaline # Coyote move
+    - Epinephrine # Coyote move
+  - quantity: 10 # Coyote: tier 2 is non-base chemistry reagents and some more advanced chef/bartender reagents
+    weight: 4 # Coyote: 3 -> 4 to try and make these decently common
     reagents:
-    - Bicaridine
-    - Dermaline
+    - Kelotane # Coyote move
+    - Inaprovaline # Coyote move
     - Ephedrine
-    - NorepinephricAcid
-    - Tricordrazine
     - Saline
-    - PulpedBananaPeel
+    # - PulpedBananaPeel # Coyote remove, clutter chem
     - Cryptobiolin
     - EZNutrient
     - Ammonia
     - RobustHarvest
     - SpaceLube
-    - Theobromine
+    # - Theobromine # Coyote remove, why would you ever want this?
     - Allicin
     - Acetone
     - Ash
     - SodiumCarbonate
     - SpaceDrugs
-    - MuteToxin
     - JuiceBerryPoison
     - Pilk
     - Posca
@@ -85,30 +76,59 @@
     - FourteenLoko
     - LemonLime
     - LemonLimeCranberry
+    - IceCream # Coyote move
+    - Cola # Coyote move
     - Enzyme
     - Vinegar
+    - Mayonnaise # Coyote Add
+    - SulfuricAcid # Coyote move
     - Potassium
     - Fluorine
     - Aluminium
-  - quantity: 10
-    weight: 3.5
+    - Silver # coyote move
+    - Chlorine # Coyote move
+    - Radium # Coyote move
+    - Gold # Coyote move
+    - Uranium # Coyote move
+    - Phosphorus # Coyote move
+    - Iodine # Coyote add
+  - quantity: 10 # Coyote: tier 1 is Chef/bartender reagents and some basic chemistry reagents
+    weight: 5 # Coyote: 3.5 -> 5 to try and make these mega common
     reagents:
     - Vitamin
-    - Kelotane
-    - Inaprovaline
+    - Tricordrazine # Coyote move
     - Oil
-    - Slime
+    # - Slime # Coyote remove, grind some mothroaches or drain a slime person
     - Fiber
     - Water
     - Sugar
+    - Honey # Coyote add, because juicing and barrels being the only source of this is THE WORST ACTUALLY
     - Cream
     - SodaWater
     - Ice
     - JuiceCarrot
     - JuicePotato
+    - JuiceApple # Coyote add
+    - JuiceBanana # Coyote add
+    - JuiceBerry # Coyote add
+    - JuiceBluePumpkin # Coyote add
+    - JuiceBungo # Coyote add
+    - JuiceGrape # Coyote add
+    - JuiceLemon # Coyote add
+    - JuiceLime # Coyote add
+    - JuiceOrange # Coyote add
+    - JuicePineapple # Coyote add
+    - JuiceTomato # Coyote add
+    - JuiceWatermelon # Coyote add
+    - JuiceCherry # Coyote add
     - Protein
     - Flour
     - Soysauce
     - TableSalt
-    - Chlorine
-    - Mercury
+    - Carbon # coyote move
+    - Nitrogen # Coyote add
+    - Iron # Coyote move
+    - Silicon # Coyote add
+    - Copper # Coyote add
+    # - Mercury # Coyote remove, clutter chem also why are you here TWICE
+    - Fat
