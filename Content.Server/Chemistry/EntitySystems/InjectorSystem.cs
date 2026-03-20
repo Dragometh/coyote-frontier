@@ -1,5 +1,6 @@
 using Content.Server.Body.Components;
 using Content.Server.Body.Systems;
+using Content.Server.Coyote.AphrodisiacLacedContainerVisibility; // Coyote
 using Content.Shared._DV.Chemistry.Components; // DeltaV
 using Content.Shared.Chemistry;
 using Content.Shared.Chemistry.Components;
@@ -15,6 +16,8 @@ using Content.Shared.Interaction;
 using Content.Shared.Mobs.Components;
 using Content.Shared.Stacks;
 using Content.Shared.Nutrition.EntitySystems;
+using Content.Shared.Coyote.Helpers; // Coyote
+using Robust.Shared.Prototypes; // Coyote
 using System.Linq; // Frontier
 
 namespace Content.Server.Chemistry.EntitySystems;
@@ -24,6 +27,9 @@ public sealed class InjectorSystem : SharedInjectorSystem
     [Dependency] private readonly BloodstreamSystem _blood = default!;
     [Dependency] private readonly ReactiveSystem _reactiveSystem = default!;
     [Dependency] private readonly OpenableSystem _openable = default!;
+    [Dependency] private readonly IPrototypeManager _prototypeManager = default!; // Coyote
+
+    private AphrodisiacChecker _helper = new(); // Coyote
 
     public override void Initialize()
     {
@@ -294,6 +300,13 @@ public sealed class InjectorSystem : SharedInjectorSystem
             SolutionContainers.Inject(targetEntity, targetSolution, removedSolution);
         else
             SolutionContainers.Refill(targetEntity, targetSolution, removedSolution);
+
+        if (_helper.CheckForAphrodisiacs(_prototypeManager, targetSolution.Comp.Solution))
+        {
+            var targetComp = EnsureComp<AphrodisiacLacedContainerVisibilityComponent>(targetEntity);
+            targetComp.Laced = true;
+            targetComp.Solution = targetSolution.Comp.Solution.Name ?? "";
+        }
 
         Popup.PopupEntity(Loc.GetString("injector-component-transfer-success-message",
             ("amount", removedSolution.Volume),

@@ -1,5 +1,6 @@
 using System.Numerics;
 using System.Text;
+using Content.Server.Coyote.AphrodisiacLacedContainerVisibility;
 using Content.Server.Nutrition.Components;
 using Content.Shared.Chemistry.EntitySystems;
 using Content.Shared.Interaction;
@@ -270,5 +271,13 @@ public sealed class FoodSequenceSystem : SharedFoodSequenceSystem
         if (HasComp<MothFoodComponent>(element))
             EnsureComp<MothFoodComponent>(start);
         // End Frontier
+
+        // Coyote: Ensure the aphro visibility component if it exists, and pass over laced value
+        if (TryComp<AphrodisiacLacedContainerVisibilityComponent>(element, out var elementComp))
+        {
+            var startComp = EnsureComp<AphrodisiacLacedContainerVisibilityComponent>(start);
+            startComp.Laced = elementComp.Laced;
+        }
+        // Coyote
     }
 }

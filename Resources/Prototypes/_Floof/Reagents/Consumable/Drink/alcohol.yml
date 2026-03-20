@@ -1,7 +1,13 @@
 - type: reagent
+  id: BaseAphrodisiacAlcohol
+  parent: BaseAlcohol
+  group: AphrodisiacDrink
+  abstract: true
+
+- type: reagent
   id: 7DeadlySins
   name: reagent-name-7deadlysins
-  parent: BaseAlcohol
+  parent: BaseAphrodisiacAlcohol
   desc: reagent-desc-7deadlysins
   physicalDesc: reagent-physical-desc-sickly
   flavor: 7deadlysins
@@ -27,7 +33,7 @@
 - type: reagent
   id: ABLustine # Coyote: Illegal character removal
   name: reagent-name-ablustine
-  parent: BaseAlcohol
+  parent: BaseAphrodisiacAlcohol
   desc: reagent-desc-ablustine
   physicalDesc: reagent-physical-desc-syrupy
   flavor: ablustine
@@ -113,7 +119,7 @@
 - type: reagent
   id: BethanysCumLust
   name: reagent-name-bethanyscumlust
-  parent: BaseAlcohol
+  parent: BaseAphrodisiacAlcohol
   desc: reagent-desc-bethanyscumlust
   physicalDesc: reagent-physical-desc-gloopy
   flavor: bethanyscumlust
@@ -139,7 +145,7 @@
 - type: reagent
   id: BethanysSluttyCumLust
   name: reagent-name-bethanyssluttycumlust
-  parent: BaseAlcohol
+  parent: BaseAphrodisiacAlcohol
   desc: reagent-desc-bethanyssluttycumlust
   physicalDesc: reagent-physical-desc-gloopy
   flavor: bethanyssluttycumlust
@@ -168,7 +174,7 @@
 - type: reagent
   id: BlueBaller
   name: reagent-name-blueballer
-  parent: BaseAlcohol
+  parent: BaseAphrodisiacAlcohol
   desc: reagent-desc-blueballer
   physicalDesc: reagent-physical-desc-tropical
   flavor: blueballer
@@ -306,7 +312,7 @@
 - type: reagent
   id: DemonSeed
   name: reagent-name-demonseed
-  parent: BaseAlcohol
+  parent: BaseAphrodisiacAlcohol
   desc: reagent-desc-demonseed
   physicalDesc: reagent-physical-desc-gloopy
   flavor: demonseed
@@ -528,7 +534,7 @@
 - type: reagent
   id: HeartbreakMountain
   name: reagent-name-heartbreakmountain
-  parent: BaseAlcohol
+  parent: BaseAphrodisiacAlcohol
   desc: reagent-desc-heartbreakmountain
   physicalDesc: reagent-physical-desc-fizzy-sharp-citrussy
   flavor: heartbreakmountain
@@ -577,7 +583,7 @@
 - type: reagent
   id: HornyStallion
   name: reagent-name-hornystallion
-  parent: BaseAlcohol
+  parent: BaseAphrodisiacAlcohol
   desc: reagent-desc-hornystallion
   physicalDesc: reagent-physical-desc-strong-smelling
   flavor: hornystallion
@@ -646,7 +652,7 @@
 - type: reagent
   id: Lamplight
   name: reagent-name-lamplight
-  parent: BaseAlcohol
+  parent: BaseAphrodisiacAlcohol
   desc: reagent-desc-lamplight
   physicalDesc: reagent-physical-desc-vibrant
   flavor: lamplight
@@ -704,7 +710,7 @@
 - type: reagent
   id: LoversKiss
   name: reagent-name-loverskiss
-  parent: BaseAlcohol
+  parent: BaseAphrodisiacAlcohol
   desc: reagent-desc-loverskiss
   physicalDesc: reagent-physical-desc-smooth
   flavor: loverskiss
@@ -927,7 +933,7 @@
 - type: reagent
   id: PomTwist
   name: reagent-name-pomtwist
-  parent: BaseAlcohol
+  parent: BaseAphrodisiacAlcohol
   desc: reagent-desc-pomtwist
   physicalDesc: reagent-physical-desc-tart
   flavor: pomtwist
@@ -1016,7 +1022,7 @@
 - type: reagent
   id: RandyStallion
   name: reagent-name-randystallion
-  parent: BaseAlcohol
+  parent: BaseAphrodisiacAlcohol
   desc: reagent-desc-randystallion
   physicalDesc: reagent-physical-desc-fizzy
   flavor: randystallion
@@ -1229,7 +1235,7 @@
 - type: reagent
   id: SpecialSundae
   name: reagent-name-specialsundae
-  parent: BaseAlcohol
+  parent: BaseAphrodisiacAlcohol
   desc: reagent-desc-specialsundae
   physicalDesc: reagent-physical-desc-creamy
   flavor: specialsundae
@@ -1419,7 +1425,7 @@
 - type: reagent
   id: TheCuteCaptain
   name: reagent-name-the-cute-captain
-  parent: BaseAlcohol
+  parent: BaseAphrodisiacAlcohol
   desc: reagent-desc-the-cute-captain
   physicalDesc: reagent-physical-desc-starry
   flavor: thecutecaptain
@@ -1442,7 +1448,7 @@
 - type: reagent
   id: AxelsAle
   name: reagent-name-axels-ale
-  parent: BaseAlcohol
+  parent: BaseAphrodisiacAlcohol
   desc: reagent-desc-axels-ale
   physicalDesc: reagent-physical-desc-strong-smelling
   flavor: axelsale

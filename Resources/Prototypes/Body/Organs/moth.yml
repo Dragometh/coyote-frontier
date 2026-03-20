@@ -35,3 +35,5 @@
       - id: Poison
       - id: Narcotic
       - id: Alcohol
+      - id: Aphrodisiac # Coyote edit; Necessary to detect aphrodisiac injected solutions.
+      - id: AphrodisiacDrink # Coyote edit; Necessary to detect aphrodisiac injected solutions.
