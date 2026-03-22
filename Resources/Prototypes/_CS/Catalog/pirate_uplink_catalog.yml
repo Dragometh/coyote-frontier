@@ -1,5 +1,5 @@
 - type: listing
-  id: UplinkChameleonProjector
+  id: PirateUplinkChameleonProjector
   name:  uplink-pirate-chameleon-name
   description: uplink-pirate-chameleon-desc
   productEntity: ChameleonProjector
