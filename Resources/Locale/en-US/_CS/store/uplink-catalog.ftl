@@ -33,8 +33,3 @@ uplink-pistol-magazine-40-desc = Pistol magazine with 16 cartridges. Compatible 
 
 uplink-pistol-magazine-c20r-40-name = SMG magazine (.40 auto)
 uplink-pistol-magazine-c20r-40-desc = SMG magazine with 30 cartridges. Compatible with C-20r.
-
-# utility
-
-uplink-pirate-chameleon-name = Chameleon Projector
-uplink-pirate-chameleon-desc = Disappear in plain sight by creating a hologram of an item around you.
