@@ -1,16 +1,19 @@
 using Content.Server.Body.Components;
 using Content.Server.Body.Systems;
+using Content.Server.Consent;
 using Content.Shared._CS.Traits.Abilities;
 using Content.Shared.Actions;
 using Content.Shared.Chemistry.Components;
-using Robust.Shared.Audio;
+using Content.Shared.Popups;
 using Robust.Shared.Audio.Systems;
 
 namespace Content.Server._CS.Traits.Abilities;
 
 public sealed class AphrodesiacBiteSystem : EntitySystem
 {
+    [Dependency] private readonly ConsentSystem _consent = default!;
     [Dependency] private readonly SharedAudioSystem _audio = default!;
+    [Dependency] private readonly SharedPopupSystem _popup = default!;
     [Dependency] private readonly SharedActionsSystem _actions = default!;
     [Dependency] private readonly BloodstreamSystem _bloodstream = default!;
 
@@ -42,6 +45,12 @@ public sealed class AphrodesiacBiteSystem : EntitySystem
 
         if (!TryComp<AphrodesiacBiteComponent>(user, out var bite))
             return;
+
+        if (bite.RequiresConsent && !_consent.HasConsent(target, bite.ConsentToggleId))
+        {
+            _popup.PopupEntity(Loc.GetString("aphrodesiac-no-consent", ("target", target)), user, PopupType.LargeCaution);
+            return;
+        }
 
         var solution = new Solution(bite.Reagent, bite.Amount);
         if (_bloodstream.TryAddToChemicals(target, solution, bloodstream))

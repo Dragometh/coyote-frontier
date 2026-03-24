@@ -1,9 +1,8 @@
 using Content.Shared.Actions;
-using Content.Shared.DoAfter;
+using Content.Shared.Consent;
 using Robust.Shared.Audio;
 using Robust.Shared.GameStates;
 using Robust.Shared.Prototypes;
-using Robust.Shared.Serialization;
 
 namespace Content.Shared._CS.Traits.Abilities;
 
@@ -24,6 +23,12 @@ public sealed partial class AphrodesiacBiteComponent : Component
 
     [DataField("sound")]
     public SoundSpecifier Sound = new SoundPathSpecifier("/Audio/Effects/bite.ogg");
+
+    [DataField("consentRequired")]
+    public bool RequiresConsent = true;
+
+    [DataField("consentPrototype")]
+    public ProtoId<ConsentTogglePrototype> ConsentToggleId = "Aphrodisiacs";
 }
 
 public sealed partial class AphrodesiacBiteEvent : EntityTargetActionEvent

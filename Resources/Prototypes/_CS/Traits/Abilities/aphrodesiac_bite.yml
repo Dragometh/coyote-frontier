@@ -11,9 +11,6 @@
     useDelay: 2
   - type: TargetAction
   - type: EntityTargetAction
-    whitelist:
-      components:
-      - Bloodstream
     event: !type:AphrodesiacBiteEvent
 
 - type: trait
