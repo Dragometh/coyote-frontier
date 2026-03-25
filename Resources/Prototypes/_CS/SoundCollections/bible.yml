@@ -1,0 +1,6 @@
+- type: soundCollection
+  id: HonkmotherBible
+  files:
+  - /Audio/Items/bikehorn.ogg
+  - /Audio/Items/brokenbikehorn.ogg
+  - /Audio/Items/airhorn.ogg

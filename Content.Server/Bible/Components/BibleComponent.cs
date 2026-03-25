@@ -15,7 +15,7 @@ namespace Content.Server.Bible.Components
         /// <summary>
         /// Sound to play when bible hits somebody.
         /// </summary>
-        [DataField]
+        [DataField("hitSound")] // Coyote: Expose hit sound
         public SoundSpecifier BibleHitSound = new SoundCollectionSpecifier(DefaultBibleHit, AudioParams.Default.WithVolume(-4f));
 
         /// <summary>

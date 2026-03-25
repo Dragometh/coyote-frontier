@@ -105,6 +105,13 @@
     sprite: Objects/Specific/Chapel/mysteryofthedruids.rsi
   - type: Item
     sprite: Objects/Specific/Chapel/mysteryofthedruids.rsi
+  # Coyote start: Change SFXs for the different bibles
+  - type: Bible
+    healSound:
+      collection: DionaLaugh
+    sizzleSound: "/Audio/Voice/Diona/diona_scream.ogg"
+    hitSound: "/Audio/Voice/Diona/diona_scream.ogg"
+  # Coyote end
 
 - type: entity
   id: BibleCommunistManifesto
@@ -116,6 +123,11 @@
     sprite: Objects/Specific/Chapel/communistmanifesto.rsi
   - type: Item
     sprite: Objects/Specific/Chapel/communistmanifesto.rsi
+  # Coyote start: Change SFXs for the different bibles
+  - type: Bible
+    healSound: "/Audio/_COYOTE/Bible/headrev_start_cut.ogg"
+  # Coyote end
+
 
 - type: entity
   id: BibleNarsie
@@ -149,6 +161,15 @@
     sprite: Objects/Specific/Chapel/honk.rsi
   - type: Item
     sprite: Objects/Specific/Chapel/honk.rsi
+  # Coyote start: Change SFXs for the different bibles
+  - type: Bible
+    healSound:
+      collection: HonkmotherBible
+    sizzleSound:
+      collection: ClownRecorder
+    hitSound:
+      collection: ClownRecorder
+  # Coyote end
 
 - type: entity
   id: BibleRatvar
@@ -160,3 +181,7 @@
     sprite: Objects/Specific/Chapel/ratvartablet.rsi
   - type: Item
     sprite: Objects/Specific/Chapel/ratvartablet.rsi
+  # Coyote start: Change SFXs for the different bibles
+  - type: Bible
+    healSound: "/Audio/Misc/ratvar_reveal.ogg"
+  # Coyote end
