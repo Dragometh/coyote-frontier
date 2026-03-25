@@ -2,7 +2,7 @@
   id: RandomPickBotanyReagent
   fills:
   - quantity: 2 # Coyote: tier 5 powerful or annoying reagents that should remain rare and hard to get from plants. 5->2 to make it labor intensive to hoard.
-    weight: 0.5 # Coyote: .5 -> .1 until vestine reaction requirement is implemented, this should make them rarer
+    weight: 0.5
     reagents:
     - Impedrezene
     - Fresium
