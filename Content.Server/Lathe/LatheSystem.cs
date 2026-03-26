@@ -38,12 +38,11 @@ using Content.Shared.Cargo.Components; // Frontier
 using Content.Server._NF.Contraband.Systems; // Frontier
 using Robust.Shared.Containers;
 using Content.Shared._NF.Lathe; // Frontier
-using Content.Server._CS.Lathe.Components; // Coyote
 
 namespace Content.Server.Lathe
 {
     [UsedImplicitly]
-    public sealed class LatheSystem : SharedLatheSystem
+    public sealed partial class LatheSystem : SharedLatheSystem // Coyote: add partial
     {
         [Dependency] private readonly IGameTiming _timing = default!;
         [Dependency] private readonly IPrototypeManager _proto = default!;
@@ -207,71 +206,35 @@ namespace Content.Server.Lathe
             if (quantity <= 0)
                 return false;
             quantity = int.Min(quantity, MaxItemsPerRequest);
-            // Frontier: argument check
 
-            // Coyote: Availability check for the biomass buffer.
-            bool canProduce = true;
-
-            // Check biomass separately (uses buffer + stored)
-            if (recipe.Materials.TryGetValue("Biomass", out var biomassAmount))
+            // Availability check using events
+            foreach (var (mat, amount) in recipe.Materials)
             {
-                var requiredBiomass = AdjustMaterial(biomassAmount, recipe.ApplyMaterialDiscount, component.FinalMaterialUseMultiplier) * quantity;
-                var totalBiomass = GetTotalBiomass(uid, component);
-                if (totalBiomass < requiredBiomass)
-                    canProduce = false;
-            }
-            // Check other materials (if still possible)
-            if (canProduce)
-            {
-                foreach (var (mat, amount) in recipe.Materials)
-                {
-                    if (mat == "Biomass") continue; // already checked
+                var required = AdjustMaterial(amount, recipe.ApplyMaterialDiscount, component.FinalMaterialUseMultiplier) * quantity;
 
-                    var required = AdjustMaterial(amount, recipe.ApplyMaterialDiscount, component.FinalMaterialUseMultiplier) * quantity;
-                    if (_materialStorage.GetMaterialAmount(uid, mat) < required)
-                    {
-                        canProduce = false;
-                        break;
-                    }
-                }
+                int available = _materialStorage.GetMaterialAmount(uid, mat);
+                OnGetMaterialAmount?.Invoke(uid, component, mat, ref available);
+
+                if (available < required)
+                    return false;
             }
 
-            if (!canProduce)
-                return false;
-            // Coyote: End custom availability check.
-
+            // Deduct materials
             foreach (var (mat, amount) in recipe.Materials)
             {
                 var adjustedAmount = recipe.ApplyMaterialDiscount
-                    ? (int)(-amount * component.FinalMaterialUseMultiplier) // Frontier: MaterialUseMultiplier<FinalMaterialUseMultiplier
+                    ? (int)(-amount * component.FinalMaterialUseMultiplier)
                     : -amount;
-                adjustedAmount *= quantity; // Frontier
+                adjustedAmount *= quantity;
 
-                //Coyote: Start custom material deduction, taking the buffer into account.
-                if (mat == "Biomass" && TryComp<BiogeneratorBufferComponent>(uid, out var buffer))
+                int toDeduct = -adjustedAmount; // positive amount
+                OnDeductMaterial?.Invoke(uid, component, mat, ref toDeduct); // ref allowed
+
+                if (toDeduct > 0)
                 {
-                    var needed = -adjustedAmount; // positive number required
-                    var fromBuffer = Math.Min(buffer.CurrentBuffer, needed);
-                    buffer.CurrentBuffer -= fromBuffer;
-                    needed -= fromBuffer;
-                    if (needed > 0)
-                    {
-                        // Remaining needed from storage
-                        if (!_materialStorage.TryChangeMaterialAmount(uid, mat, -needed))
-                        {
-                            // Should not happen because we already checked availability, but roll back if it does
-                            buffer.CurrentBuffer += fromBuffer;
-                            return false;
-                        }
-                    }
-                }
-                else
-                {
-                    // Other materials or no buffer component
-                    if (!_materialStorage.TryChangeMaterialAmount(uid, mat, adjustedAmount))
+                    if (!_materialStorage.TryChangeMaterialAmount(uid, mat, -toDeduct))
                         return false;
                 }
-                //Coyote: End custom material deduction.
             }
 
             // Frontier: queue up a batch
@@ -279,8 +242,6 @@ namespace Content.Server.Lathe
                 component.Queue[^1].ItemsRequested += quantity;
             else
                 component.Queue.Add(new LatheRecipeBatch(recipe, 0, quantity));
-            // End Frontier
-            // component.Queue.Add(recipe); // Frontier
 
             return true;
         }
@@ -382,11 +343,10 @@ namespace Content.Server.Lathe
                 return;
 
             var producing = component.CurrentRecipe ?? component.Queue.FirstOrDefault()?.Recipe; // Frontier: add ?.Recipe
-            // Coyote: Biomass buffer
-            int? bufferAmount = null;
-            if (TryComp<BiogeneratorBufferComponent>(uid, out var buffer))
-                bufferAmount = buffer.CurrentBuffer;
-            // Coyote End
+
+            int? bufferAmount = null; // Coyote: Biomass buffer
+            OnGetBufferAmount?.Invoke(uid, component, ref bufferAmount);  // Coyote: event to get buffer
+
             var state = new LatheUpdateState(GetAvailableRecipes(uid, component), component.Queue, producing, bufferAmount); // Coyote: add bufferAmount
             _uiSys.SetUiState(uid, LatheUiKey.Key, state);
         }
@@ -684,19 +644,5 @@ namespace Content.Server.Lathe
         }
         #endregion
         // End Frontier
-        // Coyote Start
-        #region Coyote
-        /// <summary>
-        /// Gets the total amount of stored + buffer biomass
-        /// </summary>
-        private int GetTotalBiomass(EntityUid uid, LatheComponent component)
-        {
-            var stored = _materialStorage.GetMaterialAmount(uid, "Biomass");
-            if (TryComp<BiogeneratorBufferComponent>(uid, out var buffer))
-                return stored + buffer.CurrentBuffer;
-            return stored;
-        }
-        #endregion
-        // End Coyote
     }
 }

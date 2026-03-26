@@ -40,8 +40,6 @@ public sealed partial class LatheMenu : DefaultWindow
 
     public EntityUid Entity;
 
-    private int? _bufferAmount; // Coyote: store the current buffer amount
-
     public LatheMenu()
     {
         RobustXamlLoader.Load(this);
@@ -328,47 +326,4 @@ public sealed partial class LatheMenu : DefaultWindow
         }
         PopulateRecipes();
     }
-    //Start Coyote
-    #region Coyote
-    /// <summary>
-    /// Updates the biomass buffer and refreshes the recipe list
-    /// </summary>
-    public void UpdateBuffer(int? buffer)
-    {
-        BufferContainer.Visible = buffer.HasValue;
-        _bufferAmount = buffer; // store for later use
-        if (buffer.HasValue)
-            BufferLabel.Text = buffer.Value.ToString();
-        PopulateRecipes(); // re‑evaluate recipe availability
-    }
-    /// <summary>
-    /// Checks availability including the buffer
-    /// </summary>
-    private bool CanProduceWithBuffer(LatheRecipePrototype recipe, int quantity)
-    {
-        if (!_entityManager.TryGetComponent(Entity, out LatheComponent? lathe))
-            return false;
-
-        foreach (var (material, amount) in recipe.Materials)
-        {
-            var required = SharedLatheSystem.AdjustMaterial(amount, recipe.ApplyMaterialDiscount, lathe.FinalMaterialUseMultiplier) * quantity;
-
-            if (material == "Biomass")
-            {
-                var stored = _materialStorage.GetMaterialAmount(Entity, material);
-                var total = stored + (_bufferAmount ?? 0);
-                if (total < required)
-                    return false;
-            }
-            else
-            {
-                var available = _materialStorage.GetMaterialAmount(Entity, material);
-                if (available < required)
-                    return false;
-            }
-        }
-        return true;
-    }
-    #endregion
-    //End Coyote
 }
