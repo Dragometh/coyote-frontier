@@ -231,11 +231,10 @@ namespace Content.Server.Lathe
                     : -amount;
                 adjustedAmount *= quantity; // Frontier
 
-                int toDeduct = -adjustedAmount; // Coyote: positive amount
-                OnDeductMaterial?.Invoke(uid, component, mat, ref toDeduct); // Coyote: Invoke Material Deduction Event
-
                 //_materialStorage.TryChangeMaterialAmount(uid, mat, adjustedAmount); // Coyote: Commented for the sake of the check below.
                 //Coyote Start
+                int toDeduct = -adjustedAmount; // Coyote: positive amount
+                OnDeductMaterial?.Invoke(uid, component, mat, ref toDeduct); // Coyote: Invoke Material Deduction Event
                 if (toDeduct > 0)
                 {
                     if (!_materialStorage.TryChangeMaterialAmount(uid, mat, -toDeduct))
