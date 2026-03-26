@@ -162,7 +162,6 @@ public sealed partial class LatheMenu : DefaultWindow
 
             //var availableAmount = _materialStorage.GetMaterialAmount(Entity, id);
             int availableAmount = GetTotalMaterialAmount(id, bufferAmount); // Coyote: Get total available amount (including buffer for biomass)
-
             var missingAmount = Math.Max(0, adjustedAmount - availableAmount);
             var missingSheets = missingAmount / (float) sheetVolume;
 

@@ -213,6 +213,7 @@ namespace Content.Server.Lathe
             // Coyote Start
             if (!CheckMaterialAvailability(uid, component, recipe, quantity)) // Coyote: Check material availability (including buffer)
                 return false;
+
             /*
             foreach (var (mat, amount) in recipe.Materials)
             {
@@ -224,7 +225,6 @@ namespace Content.Server.Lathe
                 _materialStorage.TryChangeMaterialAmount(uid, mat, adjustedAmount);
             }
             */
-
             if (!DeductMaterials(uid, component, recipe, quantity)) // Coyote: deduct materials (buffer first, then storage)
                 return false;
             // Coyote End
@@ -340,7 +340,6 @@ namespace Content.Server.Lathe
 
             int? bufferAmount = null; // Coyote: Biomass buffer
             OnGetBufferAmount?.Invoke(uid, component, ref bufferAmount);  // Coyote: event to get buffer
-
             var state = new LatheUpdateState(GetAvailableRecipes(uid, component), component.Queue, producing, bufferAmount); // Coyote: add bufferAmount
             _uiSys.SetUiState(uid, LatheUiKey.Key, state);
         }
