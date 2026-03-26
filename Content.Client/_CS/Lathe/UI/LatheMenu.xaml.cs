@@ -48,4 +48,14 @@ public sealed partial class LatheMenu
         }
         return true;
     }
+    /// <summary>
+    /// Gets the total available amount of a material, including buffer contributions for biomass.
+    /// </summary>
+    private int GetTotalMaterialAmount(string materialId, int? bufferAmount)
+    {
+        var stored = _materialStorage.GetMaterialAmount(Entity, materialId);
+        if (materialId == "Biomass" && bufferAmount.HasValue)
+            return stored + bufferAmount.Value;
+        return stored;
+    }
 }

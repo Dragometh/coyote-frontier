@@ -159,19 +159,10 @@ public sealed partial class LatheMenu : DefaultWindow
 
             var unit = Loc.GetString(proto.Unit);
             var sheets = adjustedAmount / (float) sheetVolume;
-            //Coyote changes
-            int availableAmount;
-            if (id == "Biomass" && bufferAmount.HasValue)
-            {
-                // Total = stored + buffer
-                var stored = _materialStorage.GetMaterialAmount(Entity, id);
-                availableAmount = stored + bufferAmount.Value;
-            }
-            else
-            {
-                availableAmount = _materialStorage.GetMaterialAmount(Entity, id);
-            }
-            //End coyote changes
+
+            //var availableAmount = _materialStorage.GetMaterialAmount(Entity, id);
+            int availableAmount = GetTotalMaterialAmount(id, bufferAmount); // Coyote: Get total available amount (including buffer for biomass)
+
             var missingAmount = Math.Max(0, adjustedAmount - availableAmount);
             var missingSheets = missingAmount / (float) sheetVolume;
 

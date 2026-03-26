@@ -210,18 +210,10 @@ namespace Content.Server.Lathe
             //if (!CanProduce(uid, recipe, quantity, component)) // Frontier: 1<quantity
             //    return false;
 
-            // Start Coyote: Availability check using events
-            foreach (var (mat, amount) in recipe.Materials)
-            {
-                var required = AdjustMaterial(amount, recipe.ApplyMaterialDiscount, component.FinalMaterialUseMultiplier) * quantity;
-
-                int available = _materialStorage.GetMaterialAmount(uid, mat);
-                OnGetMaterialAmount?.Invoke(uid, component, mat, ref available);
-
-                if (available < required)
-                    return false;
-            }
-            // End Coyote
+            // Coyote Start
+            if (!CheckMaterialAvailability(uid, component, recipe, quantity)) // Coyote: Check material availability (including buffer)
+                return false;
+            /*
             foreach (var (mat, amount) in recipe.Materials)
             {
                 var adjustedAmount = recipe.ApplyMaterialDiscount
@@ -229,17 +221,13 @@ namespace Content.Server.Lathe
                     : -amount;
                 adjustedAmount *= quantity; // Frontier
 
-                //_materialStorage.TryChangeMaterialAmount(uid, mat, adjustedAmount); // Coyote: Commented for the sake of the check below.
-                //Coyote Start
-                int toDeduct = -adjustedAmount; // Coyote: positive amount
-                OnDeductMaterial?.Invoke(uid, component, mat, ref toDeduct); // Coyote: Invoke Material Deduction Event
-                if (toDeduct > 0)
-                {
-                    if (!_materialStorage.TryChangeMaterialAmount(uid, mat, -toDeduct))
-                        return false;
-                }
-                //Coyote End
+                _materialStorage.TryChangeMaterialAmount(uid, mat, adjustedAmount);
             }
+            */
+
+            if (!DeductMaterials(uid, component, recipe, quantity)) // Coyote: deduct materials (buffer first, then storage)
+                return false;
+            // Coyote End
 
             // Frontier: queue up a batch
             if (component.Queue.Count > 0 && component.Queue[^1].Recipe.ID == recipe.ID)
