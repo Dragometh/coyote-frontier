@@ -127,12 +127,13 @@ public sealed partial class LatheMenu : DefaultWindow
 
         foreach (var prototype in sortedRecipesToShow)
         {
+            //var canProduce = _lathe.CanProduce(Entity, prototype, quantity, component: lathe);
             // Coyote: Use custom availability check that includes the buffer
             var canProduce = CanProduceWithBuffer(prototype, quantity);
 
+            //var control = new RecipeControl(_lathe, prototype, () => GenerateTooltipText(prototype, _bufferAmount), canProduce, GetRecipeDisplayControl(prototype));
             // Coyote: Pass the current buffer amount to the tooltip generator
-            var tooltip = () => GenerateTooltipText(prototype, _bufferAmount);
-            var control = new RecipeControl(_lathe, prototype, tooltip, canProduce, GetRecipeDisplayControl(prototype)); // Coyote: better readability
+            var control = new RecipeControl(_lathe, prototype, () => GenerateTooltipText(prototype, _bufferAmount), canProduce, GetRecipeDisplayControl(prototype));
             control.OnButtonPressed += s =>
             {
                 if (!int.TryParse(AmountLineEdit.Text, out var amount) || amount <= 0)
