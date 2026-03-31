@@ -6,6 +6,7 @@ using Content.Server._Coyote.Helpers;
 using Content.Shared.SSDIndicator;
 using Content.Shared.StatusIcon.Components;
 using Content.Shared._Coyote.AphrodisiacLacedContainerVisibility;
+using Content.Shared.Chemistry.Components;
 
 namespace Content.Server._Coyote.AphrodisiacLacedContainerVisibility;
 
@@ -28,12 +29,16 @@ public sealed class AphrodisiacLacedContainerVisibilitySystem : EntitySystem
 
     public void OnMapInit(Entity<AphrodisiacLacedContainerVisibilityComponent> entity, ref MapInitEvent args)
     {
+        EnsureComp<StatusIconComponent>(entity);
         CheckForAphrodisiacs(entity);
     }
 
     public void OnSolutionChange(Entity<AphrodisiacLacedContainerVisibilityComponent> entity, ref SolutionContainerChangedEvent args)
     {
-        CheckForAphrodisiacs(entity);
+        if (args.Solution != null)
+            CheckForAphrodisiacs(entity, args.Solution);
+        else
+            CheckForAphrodisiacs(entity);
     }
 
     public void CheckForAphrodisiacs(Entity<AphrodisiacLacedContainerVisibilityComponent> entity)
@@ -43,17 +48,14 @@ public sealed class AphrodisiacLacedContainerVisibilitySystem : EntitySystem
 
         if (_solutionContainerSystem.TryGetSolution(entity.Owner, entity.Comp.Solution, out _, out var solution))
         {
-            var laced = _helper.CheckForAphrodisiacs(_prototypeManager, solution);
-            entity.Comp.Laced = laced;
-
-            if (laced)
-            {
-                EnsureComp<StatusIconComponent>(entity);
-            }
-            else if (!laced && HasComp<StatusIconComponent>(entity))
-            {
-                RemComp<StatusIconComponent>(entity);
-            }
+            CheckForAphrodisiacs(entity, solution);
         }
+    }
+
+    // Override to skip solution TryGet.
+    private void CheckForAphrodisiacs(Entity<AphrodisiacLacedContainerVisibilityComponent> entity, Solution solution)
+    {
+        var laced = _helper.CheckForAphrodisiacs(_prototypeManager, solution);
+        entity.Comp.Laced = laced;
     }
 }

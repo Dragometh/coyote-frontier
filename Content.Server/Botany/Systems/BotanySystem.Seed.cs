@@ -203,6 +203,7 @@ public sealed partial class BotanySystem : EntitySystem
             {
                 var aphroVisibility = EnsureComp<AphrodisiacLacedContainerVisibilityComponent>(entity);
                 aphroVisibility.Laced = true;
+                aphroVisibility.Solution = produce.SolutionName;
             }
             // Coyote end
         }
