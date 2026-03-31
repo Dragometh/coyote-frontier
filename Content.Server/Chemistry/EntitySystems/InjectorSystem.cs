@@ -16,7 +16,7 @@ using Content.Shared.Interaction;
 using Content.Shared.Mobs.Components;
 using Content.Shared.Stacks;
 using Content.Shared.Nutrition.EntitySystems;
-using Content.Shared.Coyote.Helpers; // Coyote
+using Content.Server._Coyote.Helpers; // Coyote
 using Robust.Shared.Prototypes; // Coyote
 using System.Linq; // Frontier
 
