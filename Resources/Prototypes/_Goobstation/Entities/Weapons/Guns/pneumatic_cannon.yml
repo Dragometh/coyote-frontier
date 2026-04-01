@@ -92,7 +92,7 @@
       path: /Audio/Items/hiss.ogg
     clumsyProof: true
   - type: RechargeBasicEntityAmmo
-    rechargeCooldown: 40 # 30->40 Coyote start
+    rechargeCooldown: 40 # 30->40 Coyote end
     rechargeSound:
       path: /Audio/Items/pen_click.ogg
   - type: BasicEntityAmmoProvider

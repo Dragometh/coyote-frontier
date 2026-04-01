@@ -3,6 +3,7 @@
   name: lollypop recipe
   result: FoodSnackLollypop
   time: 5
+  group: Medicinal
   solids:
     Paper: 1
   reagents:
