@@ -1,9 +1,9 @@
-using System.Linq;
 using Content.Client.Guidebook;
 using Content.Client.Guidebook.Richtext;
-using Content.Shared.Guidebook;
 using Robust.Shared.ContentPack;
 using Robust.Shared.Prototypes;
+using System.Linq;
+using Content.Shared.Guidebook;
 
 namespace Content.IntegrationTests.Tests.Guidebook;
 
@@ -23,10 +23,10 @@ public sealed class GuideEntryPrototypeTests
         var protoMan = client.ResolveDependency<IPrototypeManager>();
         var resMan = client.ResolveDependency<IResourceManager>();
         var parser = client.ResolveDependency<DocumentParsingManager>();
-        var allProtos = protoMan.EnumeratePrototypes<GuideEntryPrototype>().ToList();
-        Assert.That(allProtos, Is.Not.Empty, "No guidebook entries found.");
+        var prototypes = protoMan.EnumeratePrototypes<GuideEntryPrototype>().ToList();
+        Assert.That(prototypes, Is.Not.Empty, "No guidebook entries found.");
 
-        foreach (var proto in allProtos)
+        foreach (var proto in prototypes)
         {
             await client.WaitAssertion(() =>
             {
@@ -35,6 +35,7 @@ public sealed class GuideEntryPrototypeTests
                 Assert.That(parser.TryAddMarkup(new Document(), text),
                     $"Failed to parse guide entry: {proto.Id}");
             });
+
         }
 
         await pair.CleanReturnAsync();
