@@ -14,6 +14,9 @@ namespace Content.IntegrationTests.Tests.Guidebook;
 [TestOf(typeof(DocumentParsingManager))]
 public sealed class GuideEntryPrototypeTests
 {
+    // Coyote: Hey you, stop it. Are you going to modify this file?
+    // Only overwrite it with upstream's if we have a version of RT with https://github.com/space-wizards/RobustToolbox/pull/6443
+    // Otherwise, do not touch this.
     [Test]
     [Description("Ensures all guidebook entries are valid, checking the document/etc.")]
     public async Task ValidateAllGuideEntries()
