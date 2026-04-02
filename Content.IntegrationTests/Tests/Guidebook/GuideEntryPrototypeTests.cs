@@ -32,11 +32,11 @@ public sealed class GuideEntryPrototypeTests
             {
                 using var reader = resMan.ContentFileReadText(proto.Text);
                 var text = reader.ReadToEnd();
-                Assert.That(parser.TryAddMarkup(new Document(), text), $"Failed to parse guide entry: {proto.Id}");
+                Assert.That(parser.TryAddMarkup(new Document(), text), $"Failed to parse guidebook entry: {proto.Id}");
             });
 
             // Avoid styleguide update limit
-            await client.WaitRunTicks(2);
+            await client.WaitRunTicks(3);
         }
 
         await pair.CleanReturnAsync();
