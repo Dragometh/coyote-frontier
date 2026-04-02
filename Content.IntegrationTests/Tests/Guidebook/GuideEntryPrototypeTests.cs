@@ -1,6 +1,7 @@
 using Content.Client.Guidebook;
 using Content.Client.Guidebook.Richtext;
 using Robust.Shared.ContentPack;
+using Robust.Shared.Log;
 using Robust.Shared.Prototypes;
 using System.Linq;
 using Content.Shared.Guidebook;
@@ -14,31 +15,47 @@ namespace Content.IntegrationTests.Tests.Guidebook;
 public sealed class GuideEntryPrototypeTests
 {
     [Test]
-    [Description("Ensures a given guidebook entry is valid, checking the document/etc.")]
+    [Description("Ensures all guidebook entries are valid, checking the document/etc.")]
     public async Task ValidateAllGuideEntries()
     {
         await using var pair = await PoolManager.GetServerClient(new PoolSettings { Connected = true });
         var client = pair.Client;
         await client.WaitIdleAsync();
-        var protoMan = client.ResolveDependency<IPrototypeManager>();
-        var resMan = client.ResolveDependency<IResourceManager>();
-        var parser = client.ResolveDependency<DocumentParsingManager>();
-        var prototypes = protoMan.EnumeratePrototypes<GuideEntryPrototype>().ToList();
-        Assert.That(prototypes, Is.Not.Empty, "No guidebook entries found.");
 
-        foreach (var proto in prototypes)
+        // Suppress UI style update limit warnings. I hate this solution, but it is what it is, champ. We're overriding the log level and putting it back where it was once we're done.
+        var logMan = client.ResolveDependency<ILogManager>();
+        var uiLog = logMan.GetSawmill("ui");
+        var oldLevel = uiLog.Level;
+        uiLog.Level = LogLevel.Error;
+
+        try
         {
-            await client.WaitAssertion(() =>
+            var protoMan = client.ResolveDependency<IPrototypeManager>();
+            var resMan = client.ResolveDependency<IResourceManager>();
+            var parser = client.ResolveDependency<DocumentParsingManager>();
+
+            var prototypes = protoMan.EnumeratePrototypes<GuideEntryPrototype>().ToList();
+            Assert.That(prototypes, Is.Not.Empty, "No guidebook entries found.");
+
+            foreach (var proto in prototypes)
             {
-                using var reader = resMan.ContentFileReadText(proto.Text);
-                var text = reader.ReadToEnd();
-                Assert.That(parser.TryAddMarkup(new Document(), text), $"Failed to parse guidebook entry: {proto.Id}");
-            });
+                await client.WaitAssertion(() =>
+                {
+                    using var reader = resMan.ContentFileReadText(proto.Text);
+                    var text = reader.ReadToEnd();
+                    Assert.That(parser.TryAddMarkup(new Document(), text),
+                        $"Failed to parse guidebook entry: {proto.Id}");
+                });
 
-            // Avoid styleguide update limit
-            await client.WaitRunTicks(3);
+                // Give the UI a tick to process any pending updates
+                await client.WaitRunTicks(1);
+            }
         }
-
-        await pair.CleanReturnAsync();
+        finally
+        {
+            // Restore original log level
+            uiLog.Level = oldLevel;
+            await pair.CleanReturnAsync();
+        }
     }
 }
