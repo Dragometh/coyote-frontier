@@ -36,6 +36,8 @@ public sealed class GuideEntryPrototypeTests
                     $"Failed to parse guide entry: {proto.Id}");
             });
 
+            // Avoid styleguide update limit
+            await client.WaitRunTicks(2);
         }
 
         await pair.CleanReturnAsync();
