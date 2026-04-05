@@ -1,17 +1,9 @@
 - type: entity
-  parent: [ BaseItem, BaseC2Contraband ]
+  parent: CSBaseWeaponFrameHeavyPistolCybersun
   id: WeaponPistolAnaconda
   name: Anaconda
   description: A heavy pistol capable of supplying itself with the ammo on the way using a built-in fabricator.
   components:
-  - type: Item
-    size: Small
-    shape:
-    - 0,0,1,0
-    - 0,1,0,1
-  - type: Tag
-    tags:
-    - Sidearm
   - type: Sprite
     sprite: _Goobstation/Objects/Weapons/Guns/Pistols/anaconda.rsi
     layers:
@@ -20,25 +12,20 @@
   - type: Clothing
     sprite: _Goobstation/Objects/Weapons/Guns/Pistols/anaconda.rsi
     quickEquip: false
-    slots:
-    - suitStorage
-    - Belt
   - type: Gun
-    fireRate: 3
-    availableModes:
-      - SemiAuto
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/hpistol.ogg
-  - type: BasicEntityAmmoProvider
+  - type: ProjectileBatteryAmmoProvider
     proto: BulletAnaconda
-    capacity: 20 #7->16 Coyote start
-    count: 20 #7->16
-  - type: RechargeBasicEntityAmmo
-    rechargeCooldown: 3 #4->3 # Coyote end
-    rechargeSound:
-      path: /Audio/Weapons/Guns/Cock/shotgun_close.ogg
-  - type: AmmoCounter
-  - type: ContainerContainer
-    containers:
-      ballistic-ammo: !type:Container
+    fireCost: 90
+  - type: Battery # 18 starting shots
+    maxCharge: 1620
+    startingCharge: 1620
+  - type: BatterySelfRecharger
+    autoRecharge: true
+    autoRechargeRate: 30 # recharges 1 shot per 3 seconds
+  #  rechargeSound: no work with BatterySelfRecharger
+  #    path: /Audio/Weapons/Guns/Cock/shotgun_close.ogg
   #- type: Multishot # Requires cherrypicking 107142b
+
+
