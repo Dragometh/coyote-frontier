@@ -1,6 +1,6 @@
 - type: entity
   id: BulletAnaconda
-  name: bullet (.40 caseless)
+  name: bullet (.45 caseless)
   parent: NFBaseCartridgePistol45
   categories: [ HideSpawnMenu ]
   components:
