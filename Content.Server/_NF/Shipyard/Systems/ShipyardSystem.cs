@@ -248,6 +248,7 @@ public sealed partial class ShipyardSystem : SharedShipyardSystem
         {
             CleanGrid(shuttleUid, consoleUid);
         }
+
         bill = (int)_pricing.AppraiseGrid(shuttleUid, LacksPreserveOnSaleComp);
         QueueDel(shuttleUid);
         _sawmill.Info($"Sold shuttle {shuttleUid} for {bill}");
