@@ -1,17 +1,16 @@
 using Content.Server.Administration;
 using Content.Shared.Administration;
 using Robust.Shared.Console;
+using Robust.Shared.Map;
 using Robust.Shared.Map.Components;
 using System.Linq;
-using Content.Shared._NF.Shipyard.Components;
-using Content.Shared._NF.Shipyard.Prototypes;
 
 namespace Content.Server.Cargo.Systems;
 
 public sealed partial class PricingSystem
 {
     [Dependency] private readonly SharedMapSystem _map = default!;
-
+    [Dependency] private readonly IMapManager _mapManager = default!;
     /// <summary>
     /// Minimum price added to a ship for being exped capable.
     /// </summary>
@@ -22,62 +21,12 @@ public sealed partial class PricingSystem
     /// </summary>
     private int _donkCapableMinPrice = 30000;
 
-    /// <summary>
-    /// How much should we return of the price per tile on resale? 0.75 means 75%.
-    /// </summary>
-    private float _tileCostPercentReturn = 0.75f;
-
     private void CSInitialize()
     {
         _consoleHost.RegisterCommand("coyoteappraisegrid",
             "Calculates the total value of a grid including tile count, markup, price per tile, and expedition/donk bonuses.",
             "coyoteappraisegrid <gridId> [markup=value] [pricePerTile=value] [expedCapable=bool] [donkCapable=bool]",
-            CoyoteAppraiseGridCommand);
-    }
-    public double CoyoteAppraiseGrid(EntityUid shuttleUid, Func<EntityUid, bool>? lacksPreserveOnSaleComp = null, ShuttleDeedComponent? deed = null, bool isSale = true)
-    {
-        // 1. Raw appraisal (excluding items that shouldn't be sold)
-        var appraisal = AppraiseGrid(shuttleUid, lacksPreserveOnSaleComp);
-
-        // 2. If no vessel prototype is stored, return raw value
-        if (string.IsNullOrEmpty(deed?.VesselID))
-            return appraisal;
-
-        // 3. Found an id, try the prototype manager index. If that doesn't work, return raw appraisal.
-        if (!_prototypeManager.TryIndex<VesselPrototype>(deed.VesselID, out var vessel))
-            return appraisal;
-
-        // 4. Count tiles on the grid
-        if (!TryComp<MapGridComponent>(shuttleUid, out var gridComp))
-            return appraisal;
-
-        var tileCount = _map.GetAllTiles(shuttleUid, gridComp).Count();
-
-        // 5. Apply modifiers
-        var modified = appraisal; // We can't consider multiplying vessel.markup, as that would also make everything in the ship count for more than it should. Default appraisal it is.
-
-        if (!isSale) // Costs that are not taken into account when reselling the vessel. isSale will always be true unless you're implementing a dynamic ship purchase system.
-        {
-            if (vessel.PricePerTile > 0)
-                modified += tileCount * vessel.PricePerTile;
-
-            if (vessel.DonkCapable)
-            {
-                var expedBonus = modified * 0.5;
-                modified += expedBonus <= _expedCapableMinPrice ? _expedCapableMinPrice : expedBonus;
-            }
-            if (vessel.ExpedCapable)
-            {
-                var donkBonus = modified * 0.3;
-                modified += donkBonus <= _donkCapableMinPrice ? _donkCapableMinPrice : donkBonus;
-            }
-        }
-        else // Tile price can actually get fairly expensive. Let's return at least some of it.
-        {
-            if (vessel.PricePerTile > 0)
-                modified += tileCount * vessel.PricePerTile * _tileCostPercentReturn;
-        }
-        return modified;
+            CoyoteAppraiseGridCommand, CoyoteAppraiseGridCommandCompletions);
     }
 
     [AdminCommand(AdminFlags.Debug)]
@@ -171,22 +120,6 @@ public sealed partial class PricingSystem
             bool expedCapable = false;
             bool donkCapable = false;
 
-            // Try to get deed
-            if (TryComp<ShuttleDeedComponent>(gridId, out var deed) && !string.IsNullOrEmpty(deed.VesselID))
-            {
-                if (_prototypeManager.TryIndex<VesselPrototype>(deed.VesselID, out var vessel))
-                {
-                    markup = vessel.Markup;
-                    pricePerTile = vessel.PricePerTile;
-                    expedCapable = vessel.ExpedCapable;
-                    donkCapable = vessel.DonkCapable;
-                }
-                else
-                {
-                    shell.WriteError($"Vessel prototype {deed.VesselID} not found for grid {gid}. Using defaults.");
-                }
-            }
-
             // Apply overrides
             if (markupOverride.HasValue) markup = markupOverride.Value;
             if (pricePerTileOverride.HasValue) pricePerTile = pricePerTileOverride.Value;
@@ -223,5 +156,27 @@ public sealed partial class PricingSystem
             shell.WriteLine($"  Modified appraisal: {modifiedInt:F2} spesos");
             shell.WriteLine("");
         }
+    }
+    private CompletionResult CoyoteAppraiseGridCommandCompletions(IConsoleShell shell, string[] args)
+    {
+        MapId? playerMap = null;
+        if (shell.Player is { AttachedEntity: { } playerEnt })
+            playerMap = Transform(playerEnt).MapID;
+
+        var options = new List<CompletionOption>();
+
+        if (playerMap == null)
+            return CompletionResult.FromOptions(options);
+
+        foreach (var grid in _mapManager.GetAllGrids(playerMap.Value).OrderBy(o => o.Owner))
+        {
+            var uid = grid.Owner;
+            if (!TryComp(uid, out TransformComponent? gridXform))
+                continue;
+
+            options.Add(new CompletionOption(uid.ToString(), $"{MetaData(uid).EntityName} - Map {gridXform.MapID}"));
+        }
+
+        return CompletionResult.FromOptions(options);
     }
 }

@@ -248,10 +248,7 @@ public sealed partial class ShipyardSystem : SharedShipyardSystem
         {
             CleanGrid(shuttleUid, consoleUid);
         }
-        if (TryComp<ShuttleDeedComponent>(shuttleUid, out var shuttleDeed)) // Coyote: If it has a deed associated, use the special appraise. If not, do not.
-            bill = (int)_pricing.CoyoteAppraiseGrid(shuttleUid, LacksPreserveOnSaleComp, shuttleDeed);
-        else
-            bill = (int)_pricing.AppraiseGrid(shuttleUid, LacksPreserveOnSaleComp);
+        bill = (int)_pricing.AppraiseGrid(shuttleUid, LacksPreserveOnSaleComp);
         QueueDel(shuttleUid);
         _sawmill.Info($"Sold shuttle {shuttleUid} for {bill}");
 
