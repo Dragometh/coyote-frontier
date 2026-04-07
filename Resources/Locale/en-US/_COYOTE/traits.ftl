@@ -555,6 +555,21 @@ trait-scent-hazelnut-desc = You smell kinda like Hazelnut!
 trait-scent-ashwood-name = Ashwood
 trait-scent-ashwood-desc = You smell kinda like Ashwood!
 
+trait-scent-birthdaycake-name = Birthday Cake
+trait-scent-birthdaycake-desc = You smell kinda like Birthday Cake!
+
+trait-scent-bubblegum-name = Bubblegum
+trait-scent-bubblegum-desc = You smell kinda like Bubblegum!
+
+trait-scent-berries-name = Berries
+trait-scent-berries-desc = You smell kinda like Berries!
+
+trait-scent-redwood-name = Redwood
+trait-scent-redwood-desc = You smell kinda like Redwood!
+
+trait-scent-hotdogwater-name = Hotdog Water
+trait-scent-hotdogwater-desc = You smell kinda like Hotdog Water!
+
 trait-scent-harshchemicals-name = Harsh Chemicals
 trait-scent-harshchemicals-desc = You smell kinda like Harsh Chemicals!
 
