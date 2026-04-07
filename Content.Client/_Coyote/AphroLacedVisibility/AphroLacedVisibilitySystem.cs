@@ -4,6 +4,7 @@ using Robust.Shared.Prototypes;
 using Content.Shared.StatusIcon.Components;
 using Content.Shared._Coyote.AphroLacedVisibility;
 using Content.Client.Consent;
+using Content.Shared.Examine;
 
 namespace Content.Client._Coyote.AphroLacedVisibility;
 
@@ -36,9 +37,19 @@ public sealed class AphroLacedVisibilitySystem : EntitySystem
     {
         base.Initialize();
         SubscribeLocalEvent<AphroLacedVisibilityComponent, GetStatusIconsEvent>(OnGetStatusIcon);
+        SubscribeLocalEvent<AphroLacedVisibilityComponent, ExaminedEvent>(OnExamine);
         _consentManager.OnServerDataLoaded += CheckConsent;
 
         CheckConsent();
+    }
+
+    private void OnExamine(EntityUid uid, AphroLacedVisibilityComponent comp, ref ExaminedEvent args)
+    {
+        if (!comp.Laced
+        || !ConsentOn)
+            return;
+
+        args.PushMarkup(Loc.GetString("container-laced-with-aphrodisiacs"));
     }
 
     private void CheckConsent()
