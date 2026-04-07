@@ -95,6 +95,11 @@ story-gen-book-character38 = thief
 story-gen-book-character39 = wizard
 story-gen-book-character40 = slime
 
+# Starlight edit start
+story-gen-book-character41 = resomi
+story-gen-book-character42 = avali
+# Starlight edit end
+
 story-gen-book-character-trait1 = stupid
 story-gen-book-character-trait2 = smart
 story-gen-book-character-trait3 = funny

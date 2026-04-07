@@ -6,7 +6,7 @@
   markingCategory: HeadSide
   followSkinColor: true
   forcedColoring: true
-  speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid, Oni, Resomi]
+  speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid, Oni, Resomi, Avali]
   kindAllowance: [BasicHumanlike, BasicFurry, RaptorLike]
   sprites:
   - sprite: _Starlight/Mobs/Customization/Avali/avali_parts.rsi
@@ -20,7 +20,7 @@
   markingCategory: Tail
   followSkinColor: true
   forcedColoring: true
-  speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid, Oni, Resomi]
+  speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid, Oni, Resomi, Avali]
   kindAllowance: [BasicHumanlike, BasicFurry, RaptorLike]
   sprites:
   - sprite: _Starlight/Mobs/Customization/Avali/avali_parts.rsi
@@ -32,7 +32,7 @@
   id: AvaliEarsStripeOne
   bodyPart: HeadSide
   markingCategory: HeadSide
-  speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid, Oni, Resomi]
+  speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid, Oni, Resomi, Avali]
   kindAllowance: [BasicHumanlike, BasicFurry, RaptorLike]
   sprites:
   - sprite: _Starlight/Mobs/Customization/Avali/avali_parts.rsi
@@ -52,7 +52,7 @@
   id: AvaliHeadStripeOne
   bodyPart: Head
   markingCategory: Head
-  speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid, Oni, Resomi]
+  speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid, Oni, Resomi, Avali]
   kindAllowance: [BasicHumanlike, BasicFurry, RaptorLike]
   sprites:
   - sprite: _Starlight/Mobs/Customization/Avali/avali_stripes_one.rsi
@@ -64,7 +64,7 @@
   id: AvaliTorsoStripeOne
   bodyPart: Chest
   markingCategory: Chest
-  speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid, Oni, Resomi]
+  speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid, Oni, Resomi, Avali]
   kindAllowance: [BasicHumanlike, BasicFurry, RaptorLike]
   sprites:
   - sprite: _Starlight/Mobs/Customization/Avali/avali_stripes_one.rsi
@@ -76,7 +76,7 @@
   id: AvaliLArmStripeOne
   bodyPart: LArm
   markingCategory: Arms
-  speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid, Oni, Resomi]
+  speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid, Oni, Resomi, Avali]
   kindAllowance: [BasicHumanlike, BasicFurry, RaptorLike]
   sprites:
   - sprite: _Starlight/Mobs/Customization/Avali/avali_stripes_one.rsi
@@ -88,7 +88,7 @@
   id: AvaliRArmStripeOne
   bodyPart: RArm
   markingCategory: Arms
-  speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid, Oni, Resomi]
+  speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid, Oni, Resomi, Avali]
   kindAllowance: [BasicHumanlike, BasicFurry, RaptorLike]
   sprites:
   - sprite: _Starlight/Mobs/Customization/Avali/avali_stripes_one.rsi
@@ -100,7 +100,7 @@
   id: AvaliLHandStripeOne
   bodyPart: LHand
   markingCategory: Arms
-  speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid, Oni, Resomi]
+  speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid, Oni, Resomi, Avali]
   kindAllowance: [BasicHumanlike, BasicFurry, RaptorLike]
   sprites:
   - sprite: _Starlight/Mobs/Customization/Avali/avali_stripes_one.rsi
@@ -112,7 +112,7 @@
   id: AvaliRHandStripeOne
   bodyPart: RHand
   markingCategory: Arms
-  speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid, Oni, Resomi]
+  speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid, Oni, Resomi, Avali]
   kindAllowance: [BasicHumanlike, BasicFurry, RaptorLike]
   sprites:
   - sprite: _Starlight/Mobs/Customization/Avali/avali_stripes_one.rsi
@@ -124,7 +124,7 @@
   id: AvaliLLegStripeOne
   bodyPart: LLeg
   markingCategory: Legs
-  speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid, Oni, Resomi]
+  speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid, Oni, Resomi, Avali]
   kindAllowance: [BasicHumanlike, BasicFurry, RaptorLike]
   sprites:
   - sprite: _Starlight/Mobs/Customization/Avali/avali_stripes_one.rsi
@@ -134,7 +134,7 @@
   id: AvaliRLegStripeOne
   bodyPart: RLeg
   markingCategory: Legs
-  speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid, Oni, Resomi]
+  speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid, Oni, Resomi, Avali]
   kindAllowance: [BasicHumanlike, BasicFurry, RaptorLike]
   sprites:
   - sprite: _Starlight/Mobs/Customization/Avali/avali_stripes_one.rsi
@@ -144,7 +144,7 @@
   id: AvaliTailStripeOne
   bodyPart: Tail
   markingCategory: Tail
-  speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid, Oni, Resomi]
+  speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid, Oni, Resomi, Avali]
   kindAllowance: [BasicHumanlike, BasicFurry, RaptorLike]
   sprites:
   - sprite: _Starlight/Mobs/Customization/Avali/avali_parts.rsi
@@ -160,7 +160,7 @@
   id: AvaliEarsTrimOne
   bodyPart: HeadSide
   markingCategory: HeadSide
-  speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid, Oni, Resomi]
+  speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid, Oni, Resomi, Avali]
   kindAllowance: [BasicHumanlike, BasicFurry, RaptorLike]
   sprites:
   - sprite: _Starlight/Mobs/Customization/Avali/avali_parts.rsi
@@ -180,7 +180,7 @@
   id: AvaliHeadTrimOne
   bodyPart: Head
   markingCategory: Head
-  speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid, Oni, Resomi]
+  speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid, Oni, Resomi, Avali]
   kindAllowance: [BasicHumanlike, BasicFurry, RaptorLike]
   sprites:
   - sprite: _Starlight/Mobs/Customization/Avali/avali_trim_one.rsi
@@ -192,7 +192,7 @@
   id: AvaliTorsoTrimOne
   bodyPart: Chest
   markingCategory: Chest
-  speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid, Oni, Resomi]
+  speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid, Oni, Resomi, Avali]
   kindAllowance: [BasicHumanlike, BasicFurry, RaptorLike]
   sprites:
   - sprite: _Starlight/Mobs/Customization/Avali/avali_trim_one.rsi
@@ -204,7 +204,7 @@
   id: AvaliLArmTrimOne
   bodyPart: LArm
   markingCategory: Arms
-  speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid, Oni, Resomi]
+  speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid, Oni, Resomi, Avali]
   kindAllowance: [BasicHumanlike, BasicFurry, RaptorLike]
   sprites:
   - sprite: _Starlight/Mobs/Customization/Avali/avali_trim_one.rsi
@@ -216,7 +216,7 @@
   id: AvaliRArmTrimOne
   bodyPart: RArm
   markingCategory: Arms
-  speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid, Oni, Resomi]
+  speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid, Oni, Resomi, Avali]
   kindAllowance: [BasicHumanlike, BasicFurry, RaptorLike]
   sprites:
   - sprite: _Starlight/Mobs/Customization/Avali/avali_trim_one.rsi
@@ -228,7 +228,7 @@
   id: AvaliRHandTrimOne
   bodyPart: RHand
   markingCategory: Arms
-  speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid, Oni, Resomi]
+  speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid, Oni, Resomi, Avali]
   kindAllowance: [BasicHumanlike, BasicFurry, RaptorLike]
   sprites:
   - sprite: _Starlight/Mobs/Customization/Avali/avali_trim_one.rsi
@@ -240,7 +240,7 @@
   id: AvaliLHandTrimOne
   bodyPart: LHand
   markingCategory: Arms
-  speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid, Oni, Resomi]
+  speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid, Oni, Resomi, Avali]
   kindAllowance: [BasicHumanlike, BasicFurry, RaptorLike]
   sprites:
   - sprite: _Starlight/Mobs/Customization/Avali/avali_trim_one.rsi
@@ -252,7 +252,7 @@
   id: AvaliLLegTrimOne
   bodyPart: LLeg
   markingCategory: Legs
-  speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid, Oni, Resomi]
+  speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid, Oni, Resomi, Avali]
   kindAllowance: [BasicHumanlike, BasicFurry, RaptorLike]
   sprites:
   - sprite: _Starlight/Mobs/Customization/Avali/avali_trim_one.rsi
@@ -264,7 +264,7 @@
   id: AvaliRLegTrimOne
   bodyPart: RLeg
   markingCategory: Legs
-  speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid, Oni, Resomi]
+  speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid, Oni, Resomi, Avali]
   kindAllowance: [BasicHumanlike, BasicFurry, RaptorLike]
   sprites:
   - sprite: _Starlight/Mobs/Customization/Avali/avali_trim_one.rsi
@@ -276,7 +276,7 @@
   id: AvaliTailTrimOne
   bodyPart: Tail
   markingCategory: Tail
-  speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid, Oni, Resomi]
+  speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid, Oni, Resomi, Avali]
   kindAllowance: [BasicHumanlike, BasicFurry, RaptorLike]
   sprites:
   - sprite: _Starlight/Mobs/Customization/Avali/avali_parts.rsi
@@ -292,7 +292,7 @@
   id: AvaliEarsTrimTwo
   bodyPart: HeadSide
   markingCategory: HeadSide
-  speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid, Oni, Resomi]
+  speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid, Oni, Resomi, Avali]
   kindAllowance: [BasicHumanlike, BasicFurry, RaptorLike]
   sprites:
   - sprite: _Starlight/Mobs/Customization/Avali/avali_parts.rsi
@@ -312,7 +312,7 @@
   id: AvaliHeadTrimTwo
   bodyPart: Head
   markingCategory: Head
-  speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid, Oni, Resomi]
+  speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid, Oni, Resomi, Avali]
   kindAllowance: [BasicHumanlike, BasicFurry, RaptorLike]
   sprites:
   - sprite: _Starlight/Mobs/Customization/Avali/avali_trim_two.rsi
@@ -324,7 +324,7 @@
   id: AvaliTorsoTrimTwo
   bodyPart: Chest
   markingCategory: Chest
-  speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid, Oni, Resomi]
+  speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid, Oni, Resomi, Avali]
   kindAllowance: [BasicHumanlike, BasicFurry, RaptorLike]
   sprites:
   - sprite: _Starlight/Mobs/Customization/Avali/avali_trim_two.rsi
@@ -336,7 +336,7 @@
   id: AvaliLArmTrimTwo
   bodyPart: LArm
   markingCategory: Arms
-  speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid, Oni, Resomi]
+  speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid, Oni, Resomi, Avali]
   kindAllowance: [BasicHumanlike, BasicFurry, RaptorLike]
   sprites:
   - sprite: _Starlight/Mobs/Customization/Avali/avali_trim_two.rsi
@@ -348,7 +348,7 @@
   id: AvaliRArmTrimTwo
   bodyPart: RArm
   markingCategory: Arms
-  speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid, Oni, Resomi]
+  speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid, Oni, Resomi, Avali]
   kindAllowance: [BasicHumanlike, BasicFurry, RaptorLike]
   sprites:
   - sprite: _Starlight/Mobs/Customization/Avali/avali_trim_two.rsi
@@ -360,7 +360,7 @@
   id: AvaliLHandTrimTwo
   bodyPart: LHand
   markingCategory: Arms
-  speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid, Oni, Resomi]
+  speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid, Oni, Resomi, Avali]
   kindAllowance: [BasicHumanlike, BasicFurry, RaptorLike]
   sprites:
   - sprite: _Starlight/Mobs/Customization/Avali/avali_trim_two.rsi
@@ -372,7 +372,7 @@
   id: AvaliRHandTrimTwo
   bodyPart: RHand
   markingCategory: Arms
-  speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid, Oni, Resomi]
+  speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid, Oni, Resomi, Avali]
   kindAllowance: [BasicHumanlike, BasicFurry, RaptorLike]
   sprites:
   - sprite: _Starlight/Mobs/Customization/Avali/avali_trim_two.rsi
@@ -384,7 +384,7 @@
   id: AvaliTailTrimTwo
   bodyPart: Tail
   markingCategory: Tail
-  speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid, Oni, Resomi]
+  speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid, Oni, Resomi, Avali]
   kindAllowance: [BasicHumanlike, BasicFurry, RaptorLike]
   sprites:
   - sprite: _Starlight/Mobs/Customization/Avali/avali_parts.rsi

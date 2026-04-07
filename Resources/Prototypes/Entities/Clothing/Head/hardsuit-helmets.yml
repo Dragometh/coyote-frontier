@@ -33,6 +33,11 @@
       head-vox:
       - state: equipped-head-light-vox
         shader: unshaded
+      # Starlight - Start
+      head-avali:
+      - state: equipped-head-light-avali
+        shader: unshaded
+      # Starlight - End
   - type: Clothing
     clothingVisuals:
       head:
@@ -43,6 +48,11 @@
       - state: equipped-head-vox
       - state: equipped-head-unshaded-vox
         shader: unshaded
+      # Starlight - Start
+      head-avali:
+      - state: equipped-head-light-avali
+        shader: unshaded
+      # Starlight - End
   - type: PointLight
     color: "#adffe6"
   - type: PressureProtection
@@ -98,6 +108,11 @@
       head-vox:
       - state: equipped-head-light-vox
         shader: unshaded
+      # Starlight - Start
+      head-avali:
+      - state: equipped-head-light-avali
+        shader: unshaded
+      # Starlight - End
   - type: Clothing
     clothingVisuals:
       head:
@@ -108,6 +123,11 @@
       - state: equipped-head-vox
       - state: equipped-head-unshaded-vox
         shader: unshaded
+      # Starlight - Start
+      head-avali:
+      - state: equipped-head-light-avali
+        shader: unshaded
+      # Starlight - End
   - type: PointLight
     radius: 6
   - type: PressureProtection
@@ -158,6 +178,11 @@
       head-vox:
       - state: equipped-head-light-vox
         shader: unshaded
+      # Starlight - Start
+      head-avali:
+      - state: equipped-head-light-avali
+        shader: unshaded
+      # Starlight - End
   - type: Clothing
     clothingVisuals:
       head:
@@ -168,6 +193,11 @@
       - state: equipped-head-vox
       - state: equipped-head-unshaded-vox
         shader: unshaded
+      # Starlight - Start
+      head-avali:
+      - state: equipped-head-light-avali
+        shader: unshaded
+      # Starlight - End
   - type: PointLight
     radius: 6
   - type: PressureProtection

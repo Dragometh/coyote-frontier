@@ -20,6 +20,7 @@
     - Oni # DeltaV
     - Feroxi # Flooftier
     - Rodentia # Flooftier
+    - Avali # StarLight
     - Resomi
     # Den addition
     - Ovinia
@@ -77,6 +78,12 @@
   id: Rodentia
   name: species-name-rodentia
   text: "/ServerInfo/Guidebook/Mobs/_DV/Rodentia.xml"
+
+# StarLight
+- type: guideEntry
+  id: Avali
+  name: species-name-avali
+  text: "/ServerInfo/Guidebook/Mobs/_StarLight/Avali.xml"
 
 - type: guideEntry
   id: Resomi
