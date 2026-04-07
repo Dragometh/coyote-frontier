@@ -1,26 +1,4 @@
-- type: entity
-  id: BaseColdBird
-  abstract: true
-  components:
-  - type: TemperatureDamage
-    heatDamageThreshold: 310
-    coldDamageThreshold: 223
-  - type: Temperature
-    currentTemperature: 261
-    specificHeat: 48
-  - type: ThermalRegulator
-    metabolismHeat: 400 # icebirb go brrr
-    radiatedHeat: 100
-    implicitHeatRegulation: 1500
-    sweatHeatRegulation: 2000
-    shiveringHeatRegulation: 2000
-    normalBodyTemperature: 261
-    thermalRegulationTemperatureThreshold: 1
-  - type: TemperatureSpeed
-    thresholds:
-      250: 0.9
-      230: 0.8
-      223: 0.6
+# CS - Why do we need ColorBird again?
 
 - type: entity
   save: false
@@ -96,7 +74,7 @@
   - type: Speech
     speechVerb: Parrot # RMC did it right.
     speechSounds: MaleAvali
-    allowedEmotes: ['Chirp', 'Hisses', 'Purr', 'Growl', 'Trill', 'Scree', 'Call', 'Squawk']
+    # CS - Allow all emote
   - type: MobThresholds
     thresholds:
       0: Alive
@@ -124,8 +102,18 @@
     baseWeightlessFriction: 1
     baseWeightlessModifier: 1
   - type: Damageable
-    damageContainer: Biological
-    damageModifierSet: Avali
+  # CS Start - Port Temp + Damage modifier from Resomi
+  - type: Temperature
+    coldDamageThreshold: 195.4 # Goobstation - freezing point of ammonia is -77.75°C
+    heatDamageThreshold: 320.15 # Goobstation - space chickens can't tolerate reasonable temperatures, but requiring them to stay icy would be cringe, so instead make their heat damage threshold dangerously close to standard atmos, at 47°C
+    coldDamage:
+      types:
+        Cold: 0.05 #per second, scales with temperature & other constants
+    heatDamage:
+      types:
+        Heat: 3 #per second, scales with temperature & other constants
+    damageModifierSet: Resomi
+  # End CS
   - type: DamageVisuals
     damageOverlayGroups:
       Brute:
@@ -141,19 +129,19 @@
     damage:
       types:
         Slash: 6.25
-  - type: Stasis
-    enterStasisAction: ActionStasisEnter
-    exitStasisAction: ActionStasisExit
-    updateInterval: 1s
-    healingPerUpdate:
-      types:
-        Heat: 2
-        Cold: 2
-      groups:
-        Brute: 6
-    bleedHealPerUpdate: 1.0
-    critHealingModifier: 0.5
-    stasisDamageReduction: 0.7
+#  - type: Stasis
+#    enterStasisAction: ActionStasisEnter
+#    exitStasisAction: ActionStasisExit
+#    updateInterval: 1s
+#    healingPerUpdate:
+#      types:
+#        Heat: 2
+#        Cold: 2
+#      groups:
+#        Brute: 6
+#    bleedHealPerUpdate: 1.0
+#    critHealingModifier: 0.5
+#    stasisDamageReduction: 0.7
 
 # Chirp!
 
