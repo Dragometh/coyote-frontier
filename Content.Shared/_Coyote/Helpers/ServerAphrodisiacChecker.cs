@@ -10,6 +10,8 @@ namespace Content.Shared._Coyote.Helpers;
 [Virtual]
 public class SharedAphrodisiacChecker
 {
+    public readonly string HideTag = "HideInAphroVis";
+
     private readonly string _aphrodisiacGroup = "Aphrodisiac";
     private readonly string _aphrodisiacDrinkGroup = "AphrodisiacDrink";
 

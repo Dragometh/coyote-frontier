@@ -9,6 +9,7 @@
     tags:
     - Bottle
     - Trash
+    - HideInAphroVis # Coyote
   - type: PhysicalComposition
     materialComposition:
       Glass: 25

@@ -18,7 +18,7 @@ using Content.Shared.Administration.Logs;
 using Content.Shared.Database;
 using Content.Server._NF.Contraband.Systems; // Frontier
 using Content.Server._Coyote.Helpers; // Coyote
-using Content.Shared._Coyote.AphrodisiacLacedContainerVisibility; // Coyote
+using Content.Shared._Coyote.AphroLacedVisibility; // Coyote
 
 namespace Content.Server.Botany.Systems;
 
@@ -201,7 +201,7 @@ public sealed partial class BotanySystem : EntitySystem
             // Coyote start: Ensure component if laced
             if (seedLaced)
             {
-                var aphroVisibility = EnsureComp<AphrodisiacLacedContainerVisibilityComponent>(entity);
+                var aphroVisibility = EnsureComp<AphroLacedVisibilityComponent>(entity);
                 aphroVisibility.Laced = true;
                 aphroVisibility.Solution = produce.SolutionName;
             }

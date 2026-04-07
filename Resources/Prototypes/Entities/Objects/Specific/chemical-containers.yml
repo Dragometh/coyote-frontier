@@ -82,6 +82,7 @@
     - type: Tag
       tags:
       - ChemDispensable
+      - HideInAphroVis # Coyote
     - type: DnaSubstanceTrace
     - type: TrashOnSolutionEmpty # Frontier
       solution: beaker # Frontier

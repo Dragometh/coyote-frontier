@@ -2,15 +2,15 @@ using Content.Shared.Chemistry.Components.SolutionManager;
 using Content.Shared.Chemistry.EntitySystems;
 using Robust.Shared.Prototypes;
 using Content.Shared.StatusIcon.Components;
-using Content.Shared._Coyote.AphrodisiacLacedContainerVisibility;
+using Content.Shared._Coyote.AphroLacedVisibility;
 using Content.Client.Consent;
 
-namespace Content.Client._Coyote.AphrodisiacLacedContainerVisibility;
+namespace Content.Client._Coyote.AphroLacedVisibility;
 
 /// <summary>
 /// System that shows visual feedback to any container that is injected with a aphrodisiac.
 /// </summary>
-public sealed class AphrodisiacLacedContainerVisibilitySystem : EntitySystem
+public sealed class AphroLacedVisibilitySystem : EntitySystem
 {
     [Dependency] private readonly IPrototypeManager _prototypeManager = default!;
     [Dependency] private readonly IClientConsentManager _consentManager = default!;
@@ -35,7 +35,7 @@ public sealed class AphrodisiacLacedContainerVisibilitySystem : EntitySystem
     public override void Initialize()
     {
         base.Initialize();
-        SubscribeLocalEvent<AphrodisiacLacedContainerVisibilityComponent, GetStatusIconsEvent>(OnGetStatusIcon);
+        SubscribeLocalEvent<AphroLacedVisibilityComponent, GetStatusIconsEvent>(OnGetStatusIcon);
         _consentManager.OnServerDataLoaded += CheckConsent;
 
         CheckConsent();
@@ -50,7 +50,7 @@ public sealed class AphrodisiacLacedContainerVisibilitySystem : EntitySystem
         ConsentOn = settings.Toggles.TryGetValue(_consentId, out var val) && val == "on";
     }
 
-    private void OnGetStatusIcon(EntityUid uid, AphrodisiacLacedContainerVisibilityComponent component, ref GetStatusIconsEvent args)
+    private void OnGetStatusIcon(EntityUid uid, AphroLacedVisibilityComponent component, ref GetStatusIconsEvent args)
     {
         if (!component.Laced
         || !ConsentOn)

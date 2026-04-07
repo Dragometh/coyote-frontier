@@ -5,15 +5,15 @@ using Robust.Shared.Prototypes;
 using Content.Server._Coyote.Helpers;
 using Content.Shared.SSDIndicator;
 using Content.Shared.StatusIcon.Components;
-using Content.Shared._Coyote.AphrodisiacLacedContainerVisibility;
+using Content.Shared._Coyote.AphroLacedVisibility;
 using Content.Shared.Chemistry.Components;
 
-namespace Content.Server._Coyote.AphrodisiacLacedContainerVisibility;
+namespace Content.Server._Coyote.AphroLacedVisibility;
 
 /// <summary>
 /// System that shows visual feedback to any container that is injected with a aphrodisiac.
 /// </summary>
-public sealed class AphrodisiacLacedContainerVisibilitySystem : EntitySystem
+public sealed class AphroLacedVisibilitySystem : EntitySystem
 {
     [Dependency] private readonly SharedSolutionContainerSystem _solutionContainerSystem = default!;
     [Dependency] private readonly IPrototypeManager _prototypeManager = default!;
@@ -23,17 +23,17 @@ public sealed class AphrodisiacLacedContainerVisibilitySystem : EntitySystem
     public override void Initialize()
     {
         base.Initialize();
-        SubscribeLocalEvent<AphrodisiacLacedContainerVisibilityComponent, MapInitEvent>(OnMapInit);
-        SubscribeLocalEvent<AphrodisiacLacedContainerVisibilityComponent, SolutionContainerChangedEvent>(OnSolutionChange);
+        SubscribeLocalEvent<AphroLacedVisibilityComponent, MapInitEvent>(OnMapInit);
+        SubscribeLocalEvent<AphroLacedVisibilityComponent, SolutionContainerChangedEvent>(OnSolutionChange);
     }
 
-    public void OnMapInit(Entity<AphrodisiacLacedContainerVisibilityComponent> entity, ref MapInitEvent args)
+    public void OnMapInit(Entity<AphroLacedVisibilityComponent> entity, ref MapInitEvent args)
     {
         EnsureComp<StatusIconComponent>(entity);
         CheckForAphrodisiacs(entity);
     }
 
-    public void OnSolutionChange(Entity<AphrodisiacLacedContainerVisibilityComponent> entity, ref SolutionContainerChangedEvent args)
+    public void OnSolutionChange(Entity<AphroLacedVisibilityComponent> entity, ref SolutionContainerChangedEvent args)
     {
         if (args.Solution != null)
             CheckForAphrodisiacs(entity, args.Solution);
@@ -41,7 +41,7 @@ public sealed class AphrodisiacLacedContainerVisibilitySystem : EntitySystem
             CheckForAphrodisiacs(entity);
     }
 
-    public void CheckForAphrodisiacs(Entity<AphrodisiacLacedContainerVisibilityComponent> entity)
+    public void CheckForAphrodisiacs(Entity<AphroLacedVisibilityComponent> entity)
     {
         if (!EntityManager.HasComponent<SolutionContainerManagerComponent>(entity))
             return;
@@ -53,7 +53,7 @@ public sealed class AphrodisiacLacedContainerVisibilitySystem : EntitySystem
     }
 
     // Override to skip solution TryGet.
-    private void CheckForAphrodisiacs(Entity<AphrodisiacLacedContainerVisibilityComponent> entity, Solution solution)
+    private void CheckForAphrodisiacs(Entity<AphroLacedVisibilityComponent> entity, Solution solution)
     {
         var laced = _helper.CheckForAphrodisiacs(_prototypeManager, solution);
         entity.Comp.Laced = laced;

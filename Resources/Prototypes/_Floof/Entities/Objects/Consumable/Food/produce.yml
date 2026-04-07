@@ -26,7 +26,7 @@
     tags:
     - Vegetable
     - Aphrodisiac # Coyote - Add aphrodisiac Tag, cause I like redundancy
-  - type: AphrodisiacLacedContainerVisibility # Coyote - Add laced component
+  - type: AphroLacedVisibility # Coyote - Add laced component
     solution: food
     laced: true
 
@@ -60,6 +60,6 @@
     tags:
     - Vegetable
     - Aphrodisiac # Coyote - Add aphrodisiac Tag, cause I like redundancy
-  - type: AphrodisiacLacedContainerVisibility # Coyote - Add laced component
+  - type: AphroLacedVisibility # Coyote - Add laced component
     solution: food
     laced: true

@@ -2,14 +2,14 @@ using Content.Shared.StatusIcon;
 using Robust.Shared.Prototypes;
 using Robust.Shared.GameStates;
 
-namespace Content.Shared._Coyote.AphrodisiacLacedContainerVisibility;
+namespace Content.Shared._Coyote.AphroLacedVisibility;
 
 /// <summary>
 /// Component that keeps track of solution containers to see if they have been injected by horny juice.
 /// </summary>
 [RegisterComponent, NetworkedComponent]
 [AutoGenerateComponentState]
-public sealed partial class AphrodisiacLacedContainerVisibilityComponent : Component
+public sealed partial class AphroLacedVisibilityComponent : Component
 {
     /// <summary>
     /// The name of the solution of which to check for HORNY
