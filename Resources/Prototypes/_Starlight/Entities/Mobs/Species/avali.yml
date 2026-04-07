@@ -31,16 +31,19 @@
   abstract: true
   components:
   # CS - No language system
-  # CS - No tag
   # CS - No Thirst Tag
   - type: HumanoidAppearance
     species: Avali
     hideLayersOnEquip:
     - Tail
     - HeadTop
-  # CS - No Hunger tag
+  # CS Start - Use Needs
+  - type: Needs
+    needs:
+    - NeedHungerDefault
+    - NeedThirstDefault
+  # End CS
     baseDecayRate: 0.03
-  # CS - No Thrist Tag
   - type: Icon
     sprite: _Starlight/Mobs/Species/Avali/parts.rsi
     state: full
