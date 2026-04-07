@@ -7,6 +7,7 @@ using Content.Shared.SSDIndicator;
 using Content.Shared.StatusIcon.Components;
 using Content.Shared._Coyote.AphroLacedVisibility;
 using Content.Shared.Chemistry.Components;
+using Content.Shared.Examine;
 
 namespace Content.Server._Coyote.AphroLacedVisibility;
 
@@ -25,6 +26,7 @@ public sealed class AphroLacedVisibilitySystem : EntitySystem
         base.Initialize();
         SubscribeLocalEvent<AphroLacedVisibilityComponent, MapInitEvent>(OnMapInit);
         SubscribeLocalEvent<AphroLacedVisibilityComponent, SolutionContainerChangedEvent>(OnSolutionChange);
+        SubscribeLocalEvent<AphroLacedVisibilityComponent, ExaminedEvent>(OnExamine);
     }
 
     public void OnMapInit(Entity<AphroLacedVisibilityComponent> entity, ref MapInitEvent args)
@@ -39,6 +41,12 @@ public sealed class AphroLacedVisibilitySystem : EntitySystem
             CheckForAphrodisiacs(entity, args.Solution);
         else
             CheckForAphrodisiacs(entity);
+    }
+
+    private void OnExamine(EntityUid uid, AphroLacedVisibilityComponent comp, ref ExaminedEvent args)
+    {
+        if (comp.Laced)
+            args.PushMarkup(Loc.GetString("container-laced-with-aphrodisiacs"));
     }
 
     public void CheckForAphrodisiacs(Entity<AphroLacedVisibilityComponent> entity)
