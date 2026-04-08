@@ -10,6 +10,12 @@ namespace Content.Shared.Chemistry.Components;
 public sealed partial class HyposprayComponent : Component
 {
     [DataField]
+    public float MaxPressure = float.MaxValue;
+
+    [DataField]
+    public float InjectTime = 0f;
+
+    [DataField]
     public string SolutionName = "hypospray";
 
     [DataField]
@@ -40,19 +46,34 @@ public sealed partial class HyposprayComponent : Component
     [DataField]
     public bool InjectOnly = false;
 
-    // Frontier: Upstream, #30704 - MIT
-    /// <summary>
-    /// If set over 0, enables a doafter for the hypospray which must be completed for injection.
-    /// </summary>
-    [DataField]
-    public float DoAfterTime = 0f;
-    // End Frontier
-
     /// <summary>
     /// Frontier: if true, object will not inject when attacking.
     /// </summary>
     [DataField]
     public bool PreventCombatInjection;
+
+    [ViewVariables(VVAccess.ReadWrite)]
+    public bool NeedHands = true;
+
+    /// <summary>
+    /// Whether or not the hypospray injects it's entire capacity on use.
+    /// Used by Jet Injectors.
+    /// </summary>
+    [DataField]
+    public bool InjectMaxCapacity = false;
+
+    /// <summary>
+    /// Whether or not the hypospray can inject chitinids.
+    /// Used by Jet Injectors.
+    /// </summary>
+    [DataField]
+    public bool BypassBlockInjection = true;
+
+    /// <summary>
+    /// Whether or not this hypospray self injects instantly.
+    /// </summary>
+    [DataField]
+    public bool InstantSelfInject = false;
 }
 
 // Frontier: Upstream, #30704 - MIT

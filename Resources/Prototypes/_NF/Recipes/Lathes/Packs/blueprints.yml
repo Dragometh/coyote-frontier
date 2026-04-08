@@ -193,7 +193,8 @@
   - JetpackCaptain
   - ImpCoffeeMachineCircuitboard #imp
   # GravityResistantTech
-  - HoverBedHoloSpawnFolded
+  - HoverBedHoloSpawnFolded # Coyote
+  - JetInjector # Coyote
 
 # region Mercenary
 - type: latheRecipePack

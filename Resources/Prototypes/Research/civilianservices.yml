@@ -147,6 +147,7 @@
   - BorgModuleAdvancedCleaning
   - ReinforcedJug # Frontier
   - PortablePumpMachineCircuitBoard # Frontier
+  - JetInjector # Coyote
 
 - type: technology
   id: HONKMech
