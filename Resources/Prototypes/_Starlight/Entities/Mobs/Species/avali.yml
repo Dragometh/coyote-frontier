@@ -95,6 +95,7 @@
   - type: Speech
     speechVerb: Parrot # RMC did it right.
     speechSounds: MaleAvali
+    # CS - Allow all emote
   - type: MobThresholds
     thresholds:
       0: Alive

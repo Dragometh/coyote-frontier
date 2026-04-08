@@ -32,7 +32,6 @@
   kind:
   - RaptorLike
   # CS - CustomName cause error
-  # End CS
 - type: speciesBaseSprites
   id: MobAvaliSprites
   sprites:
