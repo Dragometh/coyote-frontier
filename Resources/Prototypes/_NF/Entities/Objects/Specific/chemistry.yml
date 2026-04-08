@@ -40,7 +40,6 @@
   - type: Tag
     tags:
     - CentrifugeCompatible
-    - HideInAphroVis # Coyote
   - type: Sprite
     sprite: _NF/Objects/Specific/Chemistry/vial_bluespace.rsi
     layers:

@@ -6,7 +6,6 @@
   - type: Tag
     tags:
     - GlassBeaker
-    - HideInAphroVis # Coyote: Hide beakers from aphrodisiac indicators
   - type: Sprite
     sprite: Objects/Specific/Chemistry/beaker.rsi
     layers:
@@ -163,7 +162,6 @@
   - type: Tag
     tags:
     - GlassBeaker
-    - HideInAphroVis # Coyotes
   - type: Sprite
     sprite: Objects/Specific/Chemistry/beaker.rsi
     layers:
@@ -375,7 +373,6 @@
   - type: Tag
     tags:
     - Dropper
-    - HideInAphroVis # Coyote
   - type: PhysicalComposition
 
 - type: entity
@@ -440,10 +437,7 @@
   - type: Tag
     tags:
     - Syringe
-    # Coyote start - Move trash to basesyringe, add hide in aphrovis comp
-    - Trash
-    - HideInAphroVis
-    # Coyote end
+    - Trash # Coyote start - Move trash to basesyringe
 
 - type: entity
   parent: BaseSyringe
@@ -526,7 +520,6 @@
     - Syringe
     - Trash
     - SyringeGunAmmo
-    - HideInAphroVis # Coyote
 
 - type: entity
   parent: BaseSyringe
@@ -651,7 +644,6 @@
   - type: Tag
     tags:
     - Pill
-    - HideInAphroVis # Coyote
 
 - type: entity
   name: pill canister
