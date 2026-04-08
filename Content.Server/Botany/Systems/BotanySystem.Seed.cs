@@ -17,6 +17,8 @@ using System.Linq;
 using Content.Shared.Administration.Logs;
 using Content.Shared.Database;
 using Content.Server._NF.Contraband.Systems; // Frontier
+using Content.Server._Coyote.Helpers; // Coyote
+using Content.Shared._Coyote.AphroLacedVisibility; // Coyote
 
 namespace Content.Server.Botany.Systems;
 
@@ -32,6 +34,8 @@ public sealed partial class BotanySystem : EntitySystem
     [Dependency] private readonly RandomHelperSystem _randomHelper = default!;
     [Dependency] private readonly ISharedAdminLogManager _adminLogger = default!;
     [Dependency] private readonly ContrabandTurnInSystem _contraband = default!; // Frontier
+
+    private ServerAphrodisiacChecker _helper = new(); // Coyote
 
     public override void Initialize()
     {
@@ -168,6 +172,8 @@ public sealed partial class BotanySystem : EntitySystem
         if (totalYield > 1 || proto.HarvestRepeat != HarvestType.NoRepeat)
             proto.Unique = false;
 
+        bool seedLaced = _helper.IsSeedLaced(_prototypeManager, proto); // Coyote: Check if seed has aphrodisiacs
+
         for (var i = 0; i < totalYield; i++)
         {
             var product = _robustRandom.Pick(proto.ProductPrototypes);
@@ -191,6 +197,15 @@ public sealed partial class BotanySystem : EntitySystem
                 _metaData.SetEntityDescription(entity,
                     metaData.EntityDescription + " " + Loc.GetString("botany-mysterious-description-addon"), metaData);
             }
+
+            // Coyote start: Ensure component if laced
+            if (seedLaced)
+            {
+                var aphroVisibility = EnsureComp<AphroLacedVisibilityComponent>(entity);
+                aphroVisibility.Laced = true;
+                aphroVisibility.Solution = produce.SolutionName;
+            }
+            // Coyote end
         }
 
         return products;
@@ -200,6 +215,5 @@ public sealed partial class BotanySystem : EntitySystem
     {
         return !proto.Ligneous || proto.Ligneous && held != null && HasComp<SharpComponent>(held);
     }
-
     #endregion
 }

@@ -2786,6 +2786,10 @@
   - type: Tag
     tags:
     - Fruit
+    - Aphrodisiac
+  - type: AphroLacedVisibility
+    solution: food
+    laced: true
 
 - type: entity # Floofstation
   name: pomegranate slice
@@ -2817,3 +2821,7 @@
     tags:
     - Fruit
     - Slice
+    - Aphrodisiac # Coyote - Add aphrodisiac Tag, cause I like redundancy
+  - type: AphroLacedVisibility # Coyote - Add laced component
+    solution: food
+    laced: true

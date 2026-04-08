@@ -25,6 +25,10 @@
   - type: Tag
     tags:
     - Vegetable
+    - Aphrodisiac # Coyote - Add aphrodisiac Tag, cause I like redundancy
+  - type: AphroLacedVisibility # Coyote - Add laced component
+    solution: food
+    laced: true
 
 - type: entity
   name: breedshroom
@@ -55,3 +59,7 @@
   - type: Tag
     tags:
     - Vegetable
+    - Aphrodisiac # Coyote - Add aphrodisiac Tag, cause I like redundancy
+  - type: AphroLacedVisibility # Coyote - Add laced component
+    solution: food
+    laced: true

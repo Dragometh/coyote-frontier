@@ -1,7 +1,13 @@
 - type: reagent
+  id: BaseAphrodisiacDrink
+  parent: BaseDrink
+  group: AphrodisiacDrink
+  abstract: true
+
+- type: reagent
   id: NikkosNaughtyNectar
   name: reagent-name-NNN
-  parent: BaseDrink
+  parent: BaseAphrodisiacDrink
   desc: reagent-desc-NNN
   physicalDesc: reagent-physical-desc-creamy
   flavor: nikkonectar
@@ -37,7 +43,7 @@
 - type: reagent
   id: BoykissersEnergy
   name: reagent-name-boykisser-energy
-  parent: BaseDrink
+  parent: BaseAphrodisiacDrink
   desc: reagent-desc-boykisser-energy
   physicalDesc: reagent-physical-desc-bubbly
   flavor: nutty

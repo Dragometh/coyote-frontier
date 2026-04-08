@@ -15,6 +15,7 @@ using Robust.Server.GameObjects;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Random;
 using Content.Server._NF.Kitchen.Components; // Frontier
+using Content.Shared._Coyote.AphroLacedVisibility; // Coyote
 
 namespace Content.Server.Nutrition.EntitySystems;
 
@@ -270,5 +271,13 @@ public sealed class FoodSequenceSystem : SharedFoodSequenceSystem
         if (HasComp<MothFoodComponent>(element))
             EnsureComp<MothFoodComponent>(start);
         // End Frontier
+
+        // Coyote: Ensure the aphro visibility component if it exists, and pass over laced value
+        if (TryComp<AphroLacedVisibilityComponent>(element, out var elementComp))
+        {
+            var startComp = EnsureComp<AphroLacedVisibilityComponent>(start);
+            startComp.Laced = elementComp.Laced;
+        }
+        // Coyote
     }
 }
