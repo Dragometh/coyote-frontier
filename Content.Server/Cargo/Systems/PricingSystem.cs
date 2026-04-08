@@ -27,7 +27,7 @@ namespace Content.Server.Cargo.Systems;
 /// <summary>
 /// This handles calculating the price of items, and implements two basic methods of pricing materials.
 /// </summary>
-public sealed class PricingSystem : EntitySystem
+public sealed partial class PricingSystem : EntitySystem // Coyote: Add Partial
 {
     [Dependency] private readonly IConsoleHost _consoleHost = default!;
     [Dependency] private readonly IPrototypeManager _prototypeManager = default!;
@@ -44,6 +44,8 @@ public sealed class PricingSystem : EntitySystem
         _consoleHost.RegisterCommand("appraisegrid",
             "Calculates the total value of the given grids.",
             "appraisegrid <grid Ids>", AppraiseGridCommand);
+
+        CSInitialize(); // Coyote Initialization for the Pricing System Additions
     }
 
     [AdminCommand(AdminFlags.Debug)]
