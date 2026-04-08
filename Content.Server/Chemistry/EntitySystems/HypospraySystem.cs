@@ -204,9 +204,11 @@ public sealed class HypospraySystem : SharedHypospraySystem
         else
         {
             // Coyote start: Keep in line with Frontier's instant chemical medipens and such.
-            // // Self-injections take half as long.
-            // actualDelay /= 2;
-            actualDelay = TimeSpan.FromSeconds(0);
+            // Self-injections take half as long.
+            if (comp.InstantSelfInject)
+                actualDelay = TimeSpan.FromSeconds(0);
+            else
+                actualDelay /= 2;
             // Coyote end
             AdminLogger.Add(LogType.Ingestion,
                 $"{EntityManager.ToPrettyString(user):user} is attempting to inject themselves with a solution {SharedSolutionContainerSystem.ToPrettyString(solution):solution}.");

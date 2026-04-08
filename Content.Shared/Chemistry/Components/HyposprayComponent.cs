@@ -68,6 +68,12 @@ public sealed partial class HyposprayComponent : Component
     /// </summary>
     [DataField]
     public bool BypassBlockInjection = true;
+
+    /// <summary>
+    /// Whether or not this hypospray self injects instantly.
+    /// </summary>
+    [DataField]
+    public bool InstantSelfInject = true;
 }
 
 // Frontier: Upstream, #30704 - MIT
