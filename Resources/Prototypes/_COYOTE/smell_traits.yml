@@ -765,3 +765,48 @@
   scentProtos:
   - BankCustomers
 
+- type: trait
+  id: ScentBirthdayCake
+  name: trait-scent-birthdaycake-name
+  description: trait-scent-birthdaycake-desc
+  category: Scents
+  cost: 1
+  scentProtos:
+  - BirthdayCake
+
+- type: trait
+  id: ScentBubblegum
+  name: trait-scent-bubblegum-name
+  description: trait-scent-bubblegum-desc
+  category: Scents
+  cost: 1
+  scentProtos:
+  - Bubblegum
+
+- type: trait
+  id: ScentBerries
+  name: trait-scent-berries-name
+  description: trait-scent-berries-desc
+  category: Scents
+  cost: 1
+  scentProtos:
+  - Berries
+
+- type: trait
+  id: ScentRedwood
+  name: trait-scent-redwood-name
+  description: trait-scent-redwood-desc
+  category: Scents
+  cost: 1
+  scentProtos:
+  - Redwood
+
+- type: trait
+  id: ScentHotdogWater
+  name: trait-scent-hotdogwater-name
+  description: trait-scent-hotdogwater-desc
+  category: ScentsNSFW
+  cost: 1
+  scentProtos:
+  - HotdogWater
+

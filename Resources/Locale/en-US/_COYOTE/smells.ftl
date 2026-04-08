@@ -544,6 +544,32 @@ scent-bankcustomers-direct       = {CAPITALIZE($src)} smells like bank customers
 scent-bankcustomers-close        = You smell a trace of bank customers.
 scent-bankcustomers-far          = You catch a faint whiff of bank customers.
 
+# birthdaycake
+scent-birthdaycake-examine      = birthday cake
+scent-birthdaycake-direct       = {CAPITALIZE($src)} smells like birthday cake.
+scent-birthdaycake-close        = You smell a trace of birthday cakes.
+scent-birthdaycake-far          = You catch a faint whiff of birthday cakes.
 
+# bubblegum
+scent-bubblegum-examine      = bubblegum
+scent-bubblegum-direct       = {CAPITALIZE($src)} smells like bubblegum.
+scent-bubblegum-close        = You smell a trace of bubblegum.
+scent-bubblegum-far          = You catch a faint whiff of bubblegum.
 
+# berries
+scent-berries-examine      = berries
+scent-berries-direct       = {CAPITALIZE($src)} smells like berries.
+scent-berries-close        = You smell a trace of berries.
+scent-berries-far          = You catch a faint whiff of berries.
 
+# redwood
+scent-redwood-examine      = redwood
+scent-redwood-direct       = {CAPITALIZE($src)} smells like redwood.
+scent-redwood-close        = You smell a trace of redwood.
+scent-redwood-far          = You catch a faint whiff of redwood.
+
+# hotdog water
+scent-hotdogwater-examine      = hotdogwater
+scent-hotdogwater-direct       = {CAPITALIZE($src)} smells like hotdog water.
+scent-hotdogwater-close        = You smell a trace of hotdog water.
+scent-hotdogwater-far          = You catch a faint whiff of hotdog water.

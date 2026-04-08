@@ -126,8 +126,11 @@ phrase-apples = apples
 phrase-ashwood = ashwood
 phrase-basil = basil
 phrase-bergamot = bergamot
+phrase-birthdaycake = birthday cake
 phrase-blueberry = blueberry
+phrase-bubblegum = bubblegum
 phrase-burningplastic = burning plastic
+phrase-berries = berries
 phrase-cardamom = cardamom
 phrase-cedarwood = cedarwood
 phrase-chamomile = chamomile
@@ -174,6 +177,7 @@ phrase-peaches = peaches
 phrase-pears = pears
 phrase-pine = pine
 phrase-rain = rain
+phrase-redwood = redwood
 phrase-rosewater = rosewater
 phrase-sandalwood = sandalwood
 phrase-seasalt = seasalt
@@ -201,6 +205,7 @@ phrase-latex = latex
 phrase-musk = musk
 phrase-skunk = skunk
 phrase-spaceweed = spaceweed
+phrase-hotdogwater = hotdog water
 
 # pride
 

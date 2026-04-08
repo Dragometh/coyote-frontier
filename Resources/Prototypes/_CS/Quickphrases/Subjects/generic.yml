@@ -613,6 +613,31 @@
   text: phrase-ashwood
 
 - type: quickPhrase
+  id: BirthdayCakePhrase
+  parent: [BaseSubjectPhrase, BaseSmellPhrase]
+  text: phrase-birthdaycake
+
+- type: quickPhrase
+  id: BubblegumPhrase
+  parent: [BaseSubjectPhrase, BaseSmellPhrase]
+  text: phrase-bubblegum
+
+- type: quickPhrase
+  id: BerriesPhrase
+  parent: [BaseSubjectPhrase, BaseSmellPhrase]
+  text: phrase-berries
+
+- type: quickPhrase
+  id: RedwoodPhrase
+  parent: [BaseSubjectPhrase, BaseSmellPhrase]
+  text: phrase-redwood
+
+- type: quickPhrase
+  id: HotdogWaterPhrase
+  parent: [BaseSubjectPhrase, BaseSmellPhrase]
+  text: phrase-hotdogwater
+
+- type: quickPhrase
   id: BasilPhrase
   parent: [BaseSubjectPhrase, BaseSmellPhrase]
   text: phrase-basil

@@ -1241,5 +1241,72 @@
   msgsFar:
   - scent-bankcustomers-far
 
+- type: scent
+  id: BirthdayCake
+  parent:
+  - ScentBase
+  msgsExamine:
+  - scent-birthdaycake-examine
+  msgsDirect:
+  - scent-birthdaycake-direct
+  msgsClose:
+  - scent-birthdaycake-close
+  msgsFar:
+  - scent-birthdaycake-far
+
+- type: scent
+  id: Bubblegum
+  parent:
+  - ScentBase
+  msgsExamine:
+  - scent-bubblegum-examine
+  msgsDirect:
+  - scent-bubblegum-direct
+  msgsClose:
+  - scent-bubblegum-close
+  msgsFar:
+  - scent-bubblegum-far
+
+- type: scent
+  id: Berries
+  parent:
+  - ScentBase
+  msgsExamine:
+  - scent-berries-examine
+  msgsDirect:
+  - scent-berries-direct
+  msgsClose:
+  - scent-berries-close
+  msgsFar:
+  - scent-berries-far
+
+- type: scent
+  id: Redwood
+  parent:
+  - ScentBase
+  msgsExamine:
+  - scent-redwood-examine
+  msgsDirect:
+  - scent-redwood-direct
+  msgsClose:
+  - scent-redwood-close
+  msgsFar:
+  - scent-redwood-far
+
+- type: scent
+  id: HotdogWater
+  parent:
+  - ScentBase
+  isLewd: true
+  isStinky: true
+  msgsExamine:
+  - scent-hotdogwater-examine
+  msgsDirect:
+  - scent-hotdogwater-direct
+  msgsClose:
+  - scent-hotdogwater-close
+  msgsFar:
+  - scent-hotdogwater-far
+
 
 
