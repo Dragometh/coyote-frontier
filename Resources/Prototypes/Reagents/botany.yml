@@ -215,9 +215,12 @@
       effects:
       - !type:HealthChange
         conditions: #Starlight
-        - !type:MetabolizerTypeCondition
-          type: [ Avali, Resomi ]
-          inverted: true
+        - !type:OrganType
+          type: Avali
+          shouldHave: false
+        # - !type:OrganType
+        #   type: Resomi
+        #   shouldHave: false
         damage:
           types:
             Caustic: 1
@@ -225,8 +228,10 @@
       effects:
       - !type:HealthChange
         conditions:
-        - !type:MetabolizerTypeCondition
-          type: [ Avali, Resomi ]
+        - !type:OrganType
+          type: Avali
+        # - !type:OrganType
+        #   type: Resomi
         damage:
           types:
             Asphyxiation: -1
@@ -234,23 +239,38 @@
       effects:
       - !type:HealthChange
         conditions:
-        - !type:MetabolizerTypeCondition
-          type: [ Rat, Avali, Resomi ] #Starlight
-          inverted: true
-        - !type:ReagentCondition
+        - !type:OrganType
+          type: Rat
+          shouldHave: false
+        - !type:OrganType
+          type: Avali
+          shouldHave: false
+#        - !type:OrganType
+#          type: Resomi
+#          shouldHave: false
+        - !type:ReagentThreshold
           reagent: Ammonia
           min: 1
         ignoreResistances: true
         damage:
           types:
             Poison: 0.25
-      - !type:Vomit
+      - !type:ChemVomit
         probability: 0.12
         conditions:
-        - !type:MetabolizerTypeCondition
-          type: [ Rat, Vox, Avali, Resomi ] #Starlight
-          inverted: true
-        - !type:ReagentCondition
+        - !type:OrganType
+          type: Rat
+          shouldHave: false
+        - !type:OrganType
+          type: Vox
+          shouldHave: false
+        - !type:OrganType
+          type: Avali
+          shouldHave: false
+#        - !type:OrganType
+#          type: Resomi
+#          shouldHave: false
+        - !type:ReagentThreshold
           reagent: Ammonia
           min: 0.8
       - !type:PopupMessage
@@ -259,14 +279,14 @@
         messages: [ "ammonia-smell" ]
         probability: 0.1
         conditions:
-        - !type:ReagentCondition
+        - !type:ReagentThreshold
           reagent: Ammonia
           min: 0.25
       - !type:HealthChange
         conditions:
-        - !type:MetabolizerTypeCondition
-          type: [ Rat ]
-        - !type:ReagentCondition
+        - !type:OrganType
+          type: Rat
+        - !type:ReagentThreshold
           reagent: Ammonia
           min: 1
         ignoreResistances: true
@@ -279,15 +299,15 @@
       - !type:ModifyBloodLevel
         amount: 1
         conditions:
-        - !type:MetabolizerTypeCondition
-          type: [ Rat ]
-        - !type:ReagentCondition
+        - !type:OrganType
+          type: Rat
+        - !type:ReagentThreshold
           reagent: Ammonia
           min: 1
       - !type:Oxygenate # ammonia displaces nitrogen in vox blood
         conditions:
-        - !type:MetabolizerTypeCondition
-          type: [ Vox ]
+        - !type:OrganType
+          type: Vox
         factor: -4
 
 

@@ -16,22 +16,24 @@
       effects:
       - !type:HealthChange
         conditions:
-        - !type:MetabolizerTypeCondition
-          type: [ Avali, Resomi ]
+        - !type:OrganType
+          type: Avali
+        #        - !type:OrganType
+        #          type: Resomi
         damage:
           types:
             Asphyxiation: -3.5
             Bloodloss: -3
       - !type:AdjustReagent
         conditions:
-        - !type:ReagentCondition
+        - !type:ReagentThreshold
           reagent: HeartbreakerToxin
           min: 1
         reagent: HeartbreakerToxin
         amount: -3
       - !type:HealthChange
         conditions:
-        - !type:ReagentCondition
+        - !type:ReagentThreshold
           reagent: HeartbreakerToxin
           min: 25
         damage:
@@ -40,9 +42,12 @@
             Cold: 3
       - !type:HealthChange
         conditions:
-        - !type:MetabolizerTypeCondition
-          type: [ Avali, Resomi ]
-          inverted: true
+        - !type:OrganType
+          type: Avali
+          shouldHave: false
+        #        - !type:OrganType
+        #          type: Resomi
+        #          shouldHave: false
         damage:
           types:
             Poison: 1.5 #Ammonia is toxic injected directly into bloodstream
@@ -50,17 +55,8 @@
             Bloodloss: 0.5
       - !type:ModifyBloodLevel
         conditions:
-        - !type:MetabolizerTypeCondition
-          type: [ Avali, Resomi ]
+        - !type:OrganType
+          type: Avali
+        #        - !type:OrganType
+        #          type: Resomi
         amount: 3
-        # Starlight-Start: Cyclorite Metabolism
-      - !type:AdjustReagent # Amoxla for Cyclorites is a toxin not medicine
-        conditions:
-        - !type:ReagentCondition
-          reagent: Amoxla
-          min: 0.26
-        - !type:MetabolizerTypeCondition
-          type: [ Cyclorite ]
-        reagent: Amoxla
-        amount: 0.25
-        # Starlight-End

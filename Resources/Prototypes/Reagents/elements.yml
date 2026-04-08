@@ -162,11 +162,18 @@
             Poison: 0.1
       - !type:HealthChange
         conditions:
-        - !type:MetabolizerTypeCondition # Starlight
-          type: [ Avali, Resomi ]
+        - !type:OrganType # Starlight
+          type: Avali
         damage:
           types:
             Poison: 2
+#      - !type:HealthChange
+#        conditions:
+#        - !type:OrganType # Starlight
+#          type: Resomi
+#        damage:
+#          types:
+#            Poison: 2
     Medicine:
       effects:
       - !type:ModifyBloodLevel
