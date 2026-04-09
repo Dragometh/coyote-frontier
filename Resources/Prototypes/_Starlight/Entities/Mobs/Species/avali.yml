@@ -2,7 +2,7 @@
   id: BaseColdBird
   abstract: true
   components:
-  - type: TemperatureDamage
+  - type: TemperatureDamageThresholds
     heatDamageThreshold: 310
     coldDamageThreshold: 223
   - type: Temperature
