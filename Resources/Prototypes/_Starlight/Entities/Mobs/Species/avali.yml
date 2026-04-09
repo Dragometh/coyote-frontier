@@ -2,10 +2,9 @@
   id: BaseColdBird
   abstract: true
   components:
-  - type: TemperatureDamageThresholds
+  - type: Temperature
     heatDamageThreshold: 310
     coldDamageThreshold: 223
-  - type: Temperature
     currentTemperature: 261
     specificHeat: 48
   - type: ThermalRegulator
