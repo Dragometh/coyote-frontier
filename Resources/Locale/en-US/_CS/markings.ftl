@@ -27,16 +27,6 @@ marking-ResomiRLegFeathers = Right Leg Feathers
 marking-ResomiTailFeathers = Resomi Tail Feathers
 marking-ResomiTail = (Base) Resomi Tail
 
-marking-AvaliHairBigPonytail = Big Ponytail (Avali)
-marking-AvaliHairCockatiel = Cockatiel (Avali)
-marking-AvaliHairCockatoo = Cockatoo (Avali)
-marking-AvaliHairDuelFeather = Dual Feathers (Avali)
-marking-AvaliHairHooked = Hooked (Avali)
-marking-AvaliHairJay = Jay (Avali)
-marking-AvaliHairLongFeather = Long Feather (Avali)
-marking-AvaliHairPunk = Punk (Avali)
-marking-RodentiaHeadTopEarDefault = Ears - Rodentia
-
 marking-UnderwearPantiesBow = Panties, Bow (Alt)
 marking-UnderwearPantiesBowSlim = Panties, Slim w/ Bow (Alt)
 marking-UnderwearPantiesBowThong = Thong, Bow (Alt)
