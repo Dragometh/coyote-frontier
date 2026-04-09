@@ -7,8 +7,8 @@
   defaultSkinTone: "#faf7f7"
   markingLimits: MobResomiMarkingLimits
   # CS - Use Starlight's naming scheme
-  maleFirstNames: resomi_first
-  femaleFirstNames: resomi_first
+  maleFirstNames: names_resomi_first
+  femaleFirstNames: names_resomi_first
   lastNames: names_resomi_packs
   # End CS
   dollPrototype: MobResomiDummy
