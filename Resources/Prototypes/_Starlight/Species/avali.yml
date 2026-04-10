@@ -54,7 +54,7 @@
 
 - type: markingPoints
   id: MobAvaliMarkingLimits
-  onlyWhitelisted: true
+  # CS - Allow all markings
   points:
     Hair:
       points: 1

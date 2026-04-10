@@ -17,9 +17,21 @@
   oldAge: 257
   maxAge: 430
   # CS - CustomName cause error
-  standardSize: 150
-  standardWeight: 40
-  standardDensity: 17
+  # CS: Small enough to fit in a bag, maybe too small even
+  minHeight: 0.7
+  defaultHeight: 1
+  minWidth: 0.65
+  defaultWidth: 1
+  # End CS
+  # CS: More properties
+  sexes:
+  - Unsexed
+  - Male
+  - Female
+  kind:
+  - RaptorLike
+  allowDigilegDisplacement: false
+  # End CS
 
 - type: speciesBaseSprites
   id: MobResomiSprites
@@ -46,7 +58,7 @@
 
 - type: markingPoints
   id: MobResomiMarkingLimits
-  onlyWhitelisted: true
+  # CS - ALlow all markings
   points:
     Special:
       points: 10
