@@ -287,12 +287,10 @@
       sprite: "_Starlight/Effects/creampie.rsi"
       state: "creampie_resomi"
       visible: false
-  # CS - Can't use both Speech and Vocal for some reason
-  - type: Vocal
-    sounds:
-      Male: UnisexResomi
-      Female: UnisexResomi
-      Unsexed: UnisexResomi
+  # CS - Vocal is already defined for some reason??
+  - type: Speech
+    speechVerb: Resomi
+    speechSounds: UnisexResomi
   - type: TypingIndicator
     proto: resomi
   - type: Tag
