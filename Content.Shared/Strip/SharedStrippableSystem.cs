@@ -208,7 +208,7 @@ public abstract class SharedStrippableSystem : EntitySystem
             return;
         }
 
-        var (time, stealth) = GetStripTimeModifiers(user, target, held, slotDef.StripTime);
+        var (time, stealth) = GetStripTimeModifiers(user, target, held, slotDef.StripTime, slotDef.Name, slotDef.SlotFlags);
 
         if (!stealth)
             _popupSystem.PopupEntity(Loc.GetString("strippable-component-alert-owner-insert",
@@ -299,7 +299,7 @@ public abstract class SharedStrippableSystem : EntitySystem
             return;
         }
 
-        var (time, stealth) = GetStripTimeModifiers(user, target, item, slotDef.StripTime);
+        var (time, stealth) = GetStripTimeModifiers(user, target, item, slotDef.StripTime, slotDef.Name, slotDef.SlotFlags);
 
         if (!stealth)
         {
@@ -629,14 +629,14 @@ public abstract class SharedStrippableSystem : EntitySystem
     /// <summary>
     /// Modify the strip time via events. Raised directed at the item being stripped, the player stripping someone and the player being stripped.
     /// </summary>
-    public (TimeSpan Time, bool Stealth) GetStripTimeModifiers(EntityUid user, EntityUid targetPlayer, EntityUid? targetItem, TimeSpan initialTime)
+    public (TimeSpan Time, bool Stealth) GetStripTimeModifiers(EntityUid user, EntityUid targetPlayer, EntityUid? targetItem, TimeSpan initialTime, string? slot = null, SlotFlags slotFlags = SlotFlags.NONE)
     {
-        var itemEv = new BeforeItemStrippedEvent(initialTime, false);
+        var itemEv = new BeforeItemStrippedEvent(initialTime, false, slot, slotFlags);
         if (targetItem != null)
             RaiseLocalEvent(targetItem.Value, ref itemEv);
-        var userEv = new BeforeStripEvent(itemEv.Time, itemEv.Stealth);
+        var userEv = new BeforeStripEvent(itemEv.Time, itemEv.Stealth, slot, slotFlags);
         RaiseLocalEvent(user, ref userEv);
-        var targetEv = new BeforeGettingStrippedEvent(userEv.Time, userEv.Stealth);
+        var targetEv = new BeforeGettingStrippedEvent(userEv.Time, userEv.Stealth, slot, slotFlags);
         RaiseLocalEvent(targetPlayer, ref targetEv);
         return (targetEv.Time, targetEv.Stealth);
     }
