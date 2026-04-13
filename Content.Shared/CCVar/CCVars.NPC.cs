@@ -63,4 +63,34 @@ public sealed partial class CCVars
     public static readonly CVarDef<float> NPCPathShareDirectOverrideRatio =
         CVarDef.Create("npc.path_share_direct_override_ratio", 0.70f);
 
+    /// <summary>
+    ///     If true, NPCs that are not actively in combat can still reuse shared paths.
+    /// </summary>
+    public static readonly CVarDef<bool> NPCPathShareNonCombatEnabled =
+        CVarDef.Create("npc.path_share_noncombat_enabled", true);
+
+    /// <summary>
+    ///     If true, non-combat shared-path followers apply small path variation to avoid rigid clumping.
+    /// </summary>
+    public static readonly CVarDef<bool> NPCPathShareNonCombatDynamic =
+        CVarDef.Create("npc.path_share_noncombat_dynamic", true);
+
+    /// <summary>
+    ///     Max number of initial shared nodes a non-combat follower can skip for formation variation.
+    /// </summary>
+    public static readonly CVarDef<int> NPCPathShareNonCombatMaxSkip =
+        CVarDef.Create("npc.path_share_noncombat_max_skip", 1);
+
+    /// <summary>
+    ///     Chance that a non-combat follower flips a loop-like shared path direction.
+    /// </summary>
+    public static readonly CVarDef<float> NPCPathShareNonCombatFlipChance =
+        CVarDef.Create("npc.path_share_noncombat_flip_chance", 0.04f);
+
+    /// <summary>
+    ///     Endpoint distance tolerance (in tiles) used to detect loop-like shared paths eligible for flip.
+    /// </summary>
+    public static readonly CVarDef<float> NPCPathShareLoopFlipEndpointTolerance =
+        CVarDef.Create("npc.path_share_loop_flip_endpoint_tolerance", 1.00f);
+
 }

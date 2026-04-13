@@ -98,6 +98,11 @@ public sealed partial class NPCSteeringSystem : SharedNPCSteeringSystem
     private float _pathShareBreakawayChance;
     private float _pathShareBreakawayDuration;
     private float _pathShareDirectOverrideRatio;
+    private bool _pathShareNonCombatEnabled;
+    private bool _pathShareNonCombatDynamic;
+    private int _pathShareNonCombatMaxSkip;
+    private float _pathShareNonCombatFlipChance;
+    private float _pathShareLoopFlipEndpointTolerance;
 
     private static readonly TimeSpan SharedPathLifetime = TimeSpan.FromSeconds(1.5);
     private readonly Dictionary<PathGroupKey, SharedPathSnapshot> _sharedPaths = new();
@@ -153,6 +158,11 @@ public sealed partial class NPCSteeringSystem : SharedNPCSteeringSystem
         Subs.CVar(_configManager, CCVars.NPCPathShareBreakawayChance, value => _pathShareBreakawayChance = Math.Clamp(value, 0f, 1f), true);
         Subs.CVar(_configManager, CCVars.NPCPathShareBreakawayDuration, value => _pathShareBreakawayDuration = MathF.Max(0f, value), true);
         Subs.CVar(_configManager, CCVars.NPCPathShareDirectOverrideRatio, value => _pathShareDirectOverrideRatio = MathF.Max(0f, value), true);
+        Subs.CVar(_configManager, CCVars.NPCPathShareNonCombatEnabled, value => _pathShareNonCombatEnabled = value, true);
+        Subs.CVar(_configManager, CCVars.NPCPathShareNonCombatDynamic, value => _pathShareNonCombatDynamic = value, true);
+        Subs.CVar(_configManager, CCVars.NPCPathShareNonCombatMaxSkip, value => _pathShareNonCombatMaxSkip = Math.Max(0, value), true);
+        Subs.CVar(_configManager, CCVars.NPCPathShareNonCombatFlipChance, value => _pathShareNonCombatFlipChance = Math.Clamp(value, 0f, 1f), true);
+        Subs.CVar(_configManager, CCVars.NPCPathShareLoopFlipEndpointTolerance, value => _pathShareLoopFlipEndpointTolerance = MathF.Max(0f, value), true);
         _player.PlayerStatusChanged += OnPlayerStatusChanged;
 
         SubscribeLocalEvent<NPCSteeringComponent, ComponentShutdown>(OnSteeringShutdown);
@@ -395,13 +405,22 @@ public sealed partial class NPCSteeringSystem : SharedNPCSteeringSystem
         return _pathfinding;
     }
 
-    private bool ShouldUsePathSharing(EntityUid uid)
+    private bool ShouldUsePathSharing(EntityUid uid, out bool inCombat)
     {
+        inCombat = false;
+
         if (!_pathShareEnabled)
             return false;
 
-        // If enabled, only apply chaining to active combat chases.
-        if (_pathfindingCombatOnly && !IsActivelyChasing(uid))
+        inCombat = IsActivelyChasing(uid);
+
+        if (inCombat)
+            return true;
+
+        if (_pathfindingCombatOnly && !_pathShareNonCombatEnabled)
+            return false;
+
+        if (!_pathfindingCombatOnly && !_pathShareNonCombatEnabled)
             return false;
 
         return true;
@@ -409,7 +428,7 @@ public sealed partial class NPCSteeringSystem : SharedNPCSteeringSystem
 
     private bool TryReuseSharedPath(EntityUid uid, NPCSteeringComponent steering, TransformComponent xform)
     {
-        if (!ShouldUsePathSharing(uid) || _sharedPaths.Count == 0)
+        if (!ShouldUsePathSharing(uid, out var inCombat) || _sharedPaths.Count == 0)
             return false;
 
         // Do not override pathing while we're already in-range for current behavior
@@ -478,7 +497,15 @@ public sealed partial class NPCSteeringSystem : SharedNPCSteeringSystem
             }
         }
 
-        steering.CurrentPath = new Queue<PathPoly>(snapshot.Path);
+        var adoptedPath = new List<PathPoly>(snapshot.Path);
+
+        if (!inCombat)
+            ApplyNonCombatPathVariation(uid, key, ourMap, targetMap, adoptedPath);
+
+        if (adoptedPath.Count == 0)
+            return false;
+
+        steering.CurrentPath = new Queue<PathPoly>(adoptedPath);
         steering.FailedPathCount = 0;
 
         // Chain propagation: a follower that reuses the path becomes a fresh local anchor.
@@ -487,6 +514,83 @@ public sealed partial class NPCSteeringSystem : SharedNPCSteeringSystem
         snapshot.Timestamp = now;
 
         return true;
+    }
+
+    private void ApplyNonCombatPathVariation(
+        EntityUid uid,
+        PathGroupKey key,
+        MapCoordinates ourMap,
+        MapCoordinates targetMap,
+        List<PathPoly> path)
+    {
+        if (!_pathShareNonCombatDynamic || path.Count <= 1)
+            return;
+
+        if (ShouldFlipNonCombatSharedPath(uid, key, path))
+            path.Reverse();
+
+        if (_pathShareNonCombatMaxSkip > 0 && path.Count > 1)
+        {
+            var maxSkips = Math.Min(_pathShareNonCombatMaxSkip, path.Count - 1);
+
+            if (maxSkips > 0)
+            {
+                var hash = Math.Abs(uid.GetHashCode());
+                var skipCount = hash % (maxSkips + 1);
+
+                if (skipCount > 0)
+                    path.RemoveRange(0, skipCount);
+            }
+        }
+
+        if (path.Count == 0)
+            return;
+
+        // Ensure variation does not adopt a path heading away from the target.
+        var first = _transform.ToMapCoordinates(GetCoordinates(path[0]));
+        if (first.MapId != ourMap.MapId)
+            return;
+
+        var direct = targetMap.Position - ourMap.Position;
+        var entry = first.Position - ourMap.Position;
+
+        if (direct.LengthSquared() > 0.0001f && entry.LengthSquared() > 0.0001f && Vector2.Dot(direct, entry) < 0f)
+            path.Reverse();
+    }
+
+    private bool CanFlipLoopLikePath(List<PathPoly> path)
+    {
+        if (path.Count < 4)
+            return false;
+
+        var first = _transform.ToMapCoordinates(GetCoordinates(path[0]));
+        var last = _transform.ToMapCoordinates(GetCoordinates(path[^1]));
+
+        if (first.MapId != last.MapId)
+            return false;
+
+        var tolerance = _pathShareLoopFlipEndpointTolerance;
+        return (first.Position - last.Position).LengthSquared() <= tolerance * tolerance;
+    }
+
+    private bool ShouldFlipNonCombatSharedPath(EntityUid uid, PathGroupKey key, List<PathPoly> path)
+    {
+        if (_pathShareNonCombatFlipChance <= 0f || !CanFlipLoopLikePath(path))
+            return false;
+
+        // Use a deterministic roll per NPC + path group to avoid rapid flip/no-flip oscillation.
+        unchecked
+        {
+            var hash = 17;
+            hash = hash * 31 + uid.GetHashCode();
+            hash = hash * 31 + key.TargetUid.GetHashCode();
+            hash = hash * 31 + (int)key.MapId;
+            hash = hash * 31 + (int)key.Flags;
+            hash = hash * 31 + path.Count;
+
+            var roll = (uint)hash % 10000u;
+            return roll < _pathShareNonCombatFlipChance * 10000f;
+        }
     }
 
     private bool TryGetPathGroupKey(EntityUid uid, NPCSteeringComponent steering, out PathGroupKey key)
@@ -744,7 +848,7 @@ public sealed partial class NPCSteeringSystem : SharedNPCSteeringSystem
         PrunePath(uid, ourPos, targetPos.Position - ourPos.Position, result.Path);
         steering.CurrentPath = new Queue<PathPoly>(result.Path);
 
-        if (ShouldUsePathSharing(uid) && TryGetPathGroupKey(uid, steering, out var key))
+        if (ShouldUsePathSharing(uid, out _) && TryGetPathGroupKey(uid, steering, out var key))
         {
             _sharedPaths[key] = new SharedPathSnapshot
             {
