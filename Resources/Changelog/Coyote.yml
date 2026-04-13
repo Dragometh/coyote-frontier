@@ -3194,3 +3194,10 @@ Entries:
   id: 376
   time: '2026-04-13T03:12:08.0000000+00:00'
   url: https://github.com/ARF-SS13/coyote-frontier/pull/1149
+- author: tank8673
+  changes:
+    - type: Tweak
+      message: Utilizes mini vgroids for testing this week.
+  id: 377
+  time: '2026-04-13T05:08:54.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/1151
