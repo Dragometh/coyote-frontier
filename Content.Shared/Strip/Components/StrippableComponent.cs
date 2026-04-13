@@ -32,13 +32,13 @@ namespace Content.Shared.Strip.Components
     public sealed class StrippingEnsnareButtonPressed : BoundUserInterfaceMessage;
 
     [ByRefEvent]
-    public abstract class BaseBeforeStripEvent(TimeSpan initialTime, bool stealth = false, string? slot = null, SlotFlags slotFlags = SlotFlags.NONE) : EntityEventArgs, IInventoryRelayEvent
+    public abstract class BaseBeforeStripEvent(TimeSpan initialTime, bool stealth = false, string? slot = null, SlotFlags slotFlags = SlotFlags.NONE) : EntityEventArgs, IInventoryRelayEvent // Coyote: Add string? slot = null, SlotFlags slotFlags = SlotFlags.NONE
     {
         public readonly TimeSpan InitialTime = initialTime;
         public float Multiplier = 1f;
         public TimeSpan Additive = TimeSpan.Zero;
         public bool Stealth = stealth;
-        public readonly string? Slot = slot;
+        public readonly string? Slot = slot; // Coyote
         public readonly SlotFlags SlotFlags = slotFlags;
 
         public TimeSpan Time => TimeSpan.FromSeconds(MathF.Max(InitialTime.Seconds * Multiplier + Additive.Seconds, 0f));
