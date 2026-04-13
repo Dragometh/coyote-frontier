@@ -174,18 +174,12 @@ public sealed class BluespaceDrydockSystem : EntitySystem
                     return;
                 }
 
-                EntityUid? deletedStation = null;
                 if (_station.GetOwningStation(shuttleUid) is { Valid: true } shuttleStation)
                 {
-                    deletedStation = shuttleStation;
                     _sawmill.Info($"Deleting station {shuttleStation} before serializing ship {shuttleUid}");
 
                     _station.DeleteStation(shuttleStation);
-                    RemComp<StationRecordsComponent>(shuttleStation);
-                    RemComp<StationBankAccountComponent>(shuttleStation);
-                    Del(shuttleStation);
-
-                    _sawmill.Info($"Deleted station {shuttleStation} immediately");
+                    _sawmill.Info($"Queued station {shuttleStation} for standard deletion lifecycle");
                 }
 
                 ConsolePopup(player, "Ship undocking...");
@@ -401,7 +395,7 @@ public sealed class BluespaceDrydockSystem : EntitySystem
 
                     ConsolePopup(player, "Docking ship...");
 
-                    if (shuttleComp != null && targetGrid != null)
+                    if (shuttleComp != null)
                     {
                         _shuttle.TryFTLDock(shuttleUidValue, shuttleComp, targetGrid.Value);
                     }
@@ -815,18 +809,12 @@ public sealed class BluespaceDrydockSystem : EntitySystem
                     return;
                 }
 
-                EntityUid? deletedStation = null;
                 if (_station.GetOwningStation(shuttleUid) is { Valid: true } shuttleStation)
                 {
-                    deletedStation = shuttleStation;
                     _sawmill.Info($"Deleting station {shuttleStation} before serializing ship {shuttleUid}");
 
                     _station.DeleteStation(shuttleStation);
-                    RemComp<StationRecordsComponent>(shuttleStation);
-                    RemComp<StationBankAccountComponent>(shuttleStation);
-                    Del(shuttleStation);
-
-                    _sawmill.Info($"Deleted station {shuttleStation} immediately");
+                    _sawmill.Info($"Queued station {shuttleStation} for standard deletion lifecycle");
                 }
 
                 ConsolePopup(player, "Ship undocking...");
@@ -912,7 +900,13 @@ public sealed class BluespaceDrydockSystem : EntitySystem
     /// <param name="storage">The bluespace storage component</param>
     /// <param name="dockingTarget">The grid to dock the ship to</param>
     /// <returns>True if retrieval was initiated successfully</returns>
-    public bool TryRetrieveShuttleFromRecords(EntityUid player, EntityUid targetId, EntityUid consoleUid, BluespaceStorageComponent storage, EntityUid dockingTarget)
+    public bool TryRetrieveShuttleFromRecords(
+        EntityUid player,
+        EntityUid targetId,
+        EntityUid consoleUid,
+        BluespaceStorageComponent storage,
+        EntityUid dockingTarget,
+        Action<EntityUid?>? onCompleted = null)
     {
         // Check if the ID card already has an active ship
         if (HasComp<ShuttleDeedComponent>(targetId))
@@ -942,115 +936,207 @@ public sealed class BluespaceDrydockSystem : EntitySystem
             return false;
         }
 
+        var storedData = storage.StoredGridData;
+        if (string.IsNullOrEmpty(storedData))
+        {
+            ConsolePopup(player, "No stored ship found on ID card!");
+            return false;
+        }
+
         // Mark as processing
         _processingRetrieves.Add(targetId);
 
         var storedShipFullName = storage.StoredShipFullName;
-        var targetGrid = dockingTarget;
+        var storedShipName = storage.StoredShipName;
 
-        // Start the multi-step retrieval process
+        // Start retrieval process.
         ConsolePopup(player, "Beginning ship retrieval sequence...");
         ConsolePopup(player, "Materializing ship...");
 
-        // Step 1: Deserialize asynchronously (heavy operation - don't block server)
-        var deserializeTask = TryDeserializeShuttleAsync(storage.StoredGridData);
+        RunRetrieveFromRecords(
+            player,
+            targetId,
+            dockingTarget,
+            storedData,
+            storedShipFullName,
+            storedShipName,
+            onCompleted);
+
+        return true;
+    }
+
+    private void RunRetrieveFromRecords(
+        EntityUid player,
+        EntityUid targetId,
+        EntityUid dockingTarget,
+        string storedGridData,
+        string? storedShipFullName,
+        string? storedShipName,
+        Action<EntityUid?>? onCompleted)
+    {
+        var deserializeTask = TryDeserializeShuttleAsync(storedGridData);
         deserializeTask.ContinueWith(task =>
         {
-            if (!Exists(targetId))
+            try
             {
-                _processingRetrieves.Remove(targetId);
-                return;
-            }
-
-#pragma warning disable RA0004
-            var shuttleUid = task.Result;
-#pragma warning restore RA0004
-
-            if (shuttleUid == null)
-            {
-                ConsolePopup(player, "Failed to deserialize ship data!");
-                _processingRetrieves.Remove(targetId);
-                return;
-            }
-
-            _sawmill.Info($"Successfully deserialized ship {shuttleUid}");
-
-            var shuttleUidValue = shuttleUid.Value;
-
-            // Step 2: Create station (delayed)
-            Timer.Spawn(TimeSpan.FromSeconds(ProcessingDelaySeconds), () =>
-            {
-                if (!Exists(shuttleUidValue) || !Exists(targetId))
+                if (!Exists(targetId))
                 {
                     _processingRetrieves.Remove(targetId);
+                    onCompleted?.Invoke(null);
                     return;
                 }
 
-                ConsolePopup(player, "Initializing ship systems...");
+#pragma warning disable RA0004
+                var shuttleUid = task.Result;
+#pragma warning restore RA0004
 
-                EntityUid? shuttleStation = null;
-                if (TryComp<ShuttleComponent>(shuttleUidValue, out var shuttleComp))
+                if (shuttleUid is not { } shuttleUidValue)
                 {
-                    shuttleComp.PlayerShuttle = true;
-
-                    var stationConfig = new StationConfig
-                    {
-                        StationPrototype = "StandardFrontierVessel"
-                    };
-                    List<EntityUid> gridUids = new() { shuttleUidValue };
-                    shuttleStation = _station.InitializeNewStation(stationConfig, gridUids);
-
-                    if (shuttleStation != null)
-                    {
-                        _station.RenameStation(shuttleStation.Value, storedShipFullName ?? "Unknown Ship", loud: false);
-                    }
+                    ConsolePopup(player, "Failed to deserialize ship data!");
+                    _processingRetrieves.Remove(targetId);
+                    onCompleted?.Invoke(null);
+                    return;
                 }
 
-                // Step 3: Dock shuttle (delayed)
+                if (!Exists(shuttleUidValue))
+                {
+                    _processingRetrieves.Remove(targetId);
+                    onCompleted?.Invoke(null);
+                    return;
+                }
+
+                _sawmill.Info($"Successfully deserialized ship {shuttleUidValue}");
+
                 Timer.Spawn(TimeSpan.FromSeconds(ProcessingDelaySeconds), () =>
                 {
-                    if (!Exists(shuttleUidValue) || !Exists(targetId))
+                    try
                     {
-                        _processingRetrieves.Remove(targetId);
-                        return;
-                    }
-
-                    ConsolePopup(player, "Docking ship...");
-
-                    if (shuttleComp != null && targetGrid != null)
-                    {
-                        _shuttle.TryFTLDock(shuttleUidValue, shuttleComp, targetGrid);
-                    }
-
-                    // Step 4: Finalize (delayed)
-                    Timer.Spawn(TimeSpan.FromSeconds(ProcessingDelaySeconds), () =>
-                    {
-                        if (!Exists(shuttleUidValue) || !Exists(targetId))
+                        if (!Exists(targetId) || !Exists(shuttleUidValue))
                         {
                             _processingRetrieves.Remove(targetId);
+                            onCompleted?.Invoke(null);
                             return;
                         }
 
-                        // Create the deed on the ID card
-                        var shuttleDeed = EnsureComp<ShuttleDeedComponent>(targetId);
-                        shuttleDeed.ShuttleUid = shuttleUidValue;
-                        shuttleDeed.ShuttleName = storage.StoredShipName ?? "Unknown";
-                        shuttleDeed.ShuttleNameSuffix = "";
-                        shuttleDeed.ShuttleOwner = "Unknown";
-                        Dirty(targetId, shuttleDeed);
+                        ConsolePopup(player, "Initializing ship systems...");
 
-                        // Clear the storage
-                        RemComp<BluespaceStorageComponent>(targetId);
+                        if (!TryComp<ShuttleComponent>(shuttleUidValue, out var shuttleComp))
+                        {
+                            ConsolePopup(player, "Retrieved ship is missing shuttle systems!");
+                            _processingRetrieves.Remove(targetId);
+                            onCompleted?.Invoke(null);
+                            return;
+                        }
 
-                        ConsolePopup(player, $"Ship '{storedShipFullName}' retrieved successfully!");
+                        shuttleComp.PlayerShuttle = true;
+
+                        var stationConfig = new StationConfig
+                        {
+                            StationPrototype = "StandardFrontierVessel"
+                        };
+
+                        var shuttleStation = _station.InitializeNewStation(stationConfig, new List<EntityUid> { shuttleUidValue });
+                        if (!Exists(shuttleStation))
+                        {
+                            ConsolePopup(player, "Failed to initialize ship station context!");
+                            _processingRetrieves.Remove(targetId);
+                            onCompleted?.Invoke(null);
+                            return;
+                        }
+
+                        _station.RenameStation(shuttleStation, storedShipFullName ?? "Unknown Ship", loud: false);
+
+                        Timer.Spawn(TimeSpan.FromSeconds(ProcessingDelaySeconds), () =>
+                        {
+                            try
+                            {
+                                if (!Exists(targetId) || !Exists(shuttleUidValue) || !Exists(dockingTarget))
+                                {
+                                    _processingRetrieves.Remove(targetId);
+                                    onCompleted?.Invoke(null);
+                                    return;
+                                }
+
+                                ConsolePopup(player, "Docking ship...");
+
+                                var docked = _shuttle.TryFTLDock(shuttleUidValue, shuttleComp, dockingTarget);
+                                if (!docked)
+                                {
+                                    ConsolePopup(player, "Failed to dock retrieved ship!");
+                                    _processingRetrieves.Remove(targetId);
+                                    onCompleted?.Invoke(null);
+                                    return;
+                                }
+
+                                Timer.Spawn(TimeSpan.FromSeconds(ProcessingDelaySeconds), () =>
+                                {
+                                    try
+                                    {
+                                        if (!Exists(targetId) || !Exists(shuttleUidValue))
+                                        {
+                                            _processingRetrieves.Remove(targetId);
+                                            onCompleted?.Invoke(null);
+                                            return;
+                                        }
+
+                                        var shuttleDeed = EnsureComp<ShuttleDeedComponent>(targetId);
+                                        shuttleDeed.ShuttleUid = shuttleUidValue;
+                                        shuttleDeed.ShuttleName = storedShipName ?? "Unknown";
+                                        shuttleDeed.ShuttleNameSuffix = string.Empty;
+                                        shuttleDeed.ShuttleOwner = "Unknown";
+                                        Dirty(targetId, shuttleDeed);
+
+                                        if (HasComp<BluespaceStorageComponent>(targetId))
+                                            RemComp<BluespaceStorageComponent>(targetId);
+
+                                        ConsolePopup(player, $"Ship '{storedShipFullName}' retrieved successfully!");
+                                        _sawmill.Info($"{ToPrettyString(player)} retrieved ship {shuttleUidValue} from ID {ToPrettyString(targetId)}");
+                                        onCompleted?.Invoke(shuttleUidValue);
+                                    }
+                                    catch (Exception ex)
+                                    {
+                                        HandleRetrieveFailure(player, targetId, onCompleted, ex);
+                                    }
+                                    finally
+                                    {
+                                        _processingRetrieves.Remove(targetId);
+                                    }
+                                });
+                            }
+                            catch (Exception ex)
+                            {
+                                HandleRetrieveFailure(player, targetId, onCompleted, ex);
+                                _processingRetrieves.Remove(targetId);
+                            }
+                        });
+                    }
+                    catch (Exception ex)
+                    {
+                        HandleRetrieveFailure(player, targetId, onCompleted, ex);
                         _processingRetrieves.Remove(targetId);
-                        _sawmill.Info($"{ToPrettyString(player)} retrieved ship {shuttleUidValue} from ID {ToPrettyString(targetId)}");
-                    });
+                    }
                 });
-            });
+            }
+            catch (Exception ex)
+            {
+                HandleRetrieveFailure(player, targetId, onCompleted, ex);
+                _processingRetrieves.Remove(targetId);
+            }
         }, TaskScheduler.FromCurrentSynchronizationContext());
+    }
 
-        return true;
+    private void HandleRetrieveFailure(
+        EntityUid player,
+        EntityUid targetId,
+        Action<EntityUid?>? onCompleted,
+        Exception ex)
+    {
+        _sawmill.Error($"Exception while retrieving ship from records: {ex}");
+
+        if (Exists(targetId))
+            ConsolePopup(player, "Ship retrieval failed due to an internal error.");
+
+        onCompleted?.Invoke(null);
     }
 
     #endregion
