@@ -20,6 +20,8 @@ using Content.Server._NF.Station.Systems;
 using Content.Server._NF.StationEvents.Components;
 using Robust.Shared.EntitySerialization.Systems;
 using Content.Server._Mono.StationEvents; /// Coyote add: ports monoliths vgroid retention when players are nearby (monolith PR 1981)
+using System.Linq;
+
 
 namespace Content.Server._NF.StationEvents.Events;
 
@@ -255,7 +257,8 @@ public sealed class BluespaceErrorRule : StationEventSystem<BluespaceErrorRuleCo
                     _transform.DetachEntity(mob.Entity.Owner, mob.Entity.Comp);
                 }
 
-                var gridValue = _pricing.AppraiseGrid(gridUid, null);
+                // Grid value is only needed if payout is required, and is computationally expensive. Skip if no payout accounts
+                var gridValue = component.RewardAccounts.Any() ? _pricing.AppraiseGrid(gridUid, null) : 0;
 
                 // Deletion has to happen before grid traversal re-parents players.
                 Del(gridUid);
