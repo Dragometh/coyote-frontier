@@ -1,2154 +1,865 @@
 Entries:
-- author: tank8673
+- author: Kilmented
   changes:
+    - type: Add
+      message: roleplaying prototype guidebook entry
+    - type: Add
+      message: lore prototype guidebook entry
+  id: 1
+  time: '2025-06-29T02:25:21.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/10
+- author: Superlagg
+  changes:
+    - type: Add
+      message: subtles
     - type: Tweak
-      message: >-
-        reduced max vgroid spawns from 3 to 2 to try and make big lag spikes
-        less noticeable until we find a better optimization strategy for
-        deletion
-    - type: Tweak
-      message: >-
-        reduced the amount of vgroid clutter that spawns to try and reduce lag
-        from vgroids
+      message: emotes dont go through walls and u got a color in ur name, lol
+    - type: Fix
+      message: Fixed fun!
   id: 2
-  time: '2026-04-10T05:32:46.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/1142
-- author: tank8673
+  time: '2025-07-01T04:16:51.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/20
+- author: Superlagg
   changes:
-    - type: Tweak
-      message: >-
-        Changed the loot table for expeds and vgroids to give more useful items
-        and less warcrime cannons.
+    - type: Add
+      message: Adds a bunch of underwear, and a SHITLOAD of huge boob undershirts
   id: 3
-  time: '2026-04-10T04:56:02.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/1138
-- author: Dragometh
+  time: '2025-07-04T03:54:35.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/31
+- author: Superlagg and Casey
   changes:
     - type: Add
-      message: Ports in [signature], [form] and [check] tags from RMC (by yagwog!)
+      message: >-
+        Adds support for tails (and such) to have more control over their
+        layering, so they'll look good even if you're wearing a skirt.
+    - type: Add
+      message: >-
+        Adds support for markings to have sprites inherit color from other
+        sprites in the marking, so you can change multiple sprite colors with
+        one slider!
+    - type: Add
+      message: >-
+        Ports dozens of tails, snouts, and ears from Skyrat SS13. These use the
+        new layering system, and will layer under skirts properly. (Note,
+        pre-existing tails still use the old system, and will likely layer over
+        skirts)
+    - type: Add
+      message: >-
+        You can now take off / put on individual undies. This'll be great,
+        because...
+    - type: Tweak
+      message: >-
+        You can wear two undershirts and two underpants! You can wear a bra
+        under a shirt, and panties under some other kind of panties!
+    - type: Tweak
+      message: Its actually three
   id: 4
-  time: '2026-04-08T23:13:34.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/1136
-- author: tank8673
+  time: '2025-07-05T22:47:53.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/34
+- author: Superlagg
   changes:
     - type: Fix
-      message: >-
-        Fixed oversight where genpop turnstiles could not have their access
-        fixed ICly
+      message: rat undies, and busty shirt
   id: 5
-  time: '2026-04-08T23:12:45.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/1135
-- author: Dragometh
+  time: '2025-07-07T15:43:46.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/38
+- author: Superlagg
   changes:
     - type: Add
-      message: Ports in Jet Injectors (made by SirWarock!)
+      message: Roleplay Incentive Income System Thing!!
   id: 6
-  time: '2026-04-08T23:12:29.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/1134
-- author: Sulfari
+  time: '2025-07-10T04:22:50.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/41
+- author: Superlagg
   changes:
-    - type: Tweak
-      message: Made Collars engraveable
+    - type: Fix
+      message: >-
+        You should actually lie down when you lie down on things that make you
+        lie down.
   id: 7
-  time: '2026-04-06T06:11:38.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/1128
-- author: tank8673
+  time: '2025-07-11T02:27:08.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/44
+- author: Superlagg and Fenny
   changes:
-    - type: Tweak
-      message: >-
-        made cassette duration 10x longer so you can record a full conversation
-        per tape
+    - type: Add
+      message: Boob shirts that have their south facing boob go OVER your clothes!!!
   id: 8
-  time: '2026-04-06T05:20:10.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/1127
-- author: tank8673
+  time: '2025-07-12T05:42:21.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/47
+- author: Superlagg
   changes:
-    - type: Fix
-      message: Fixed missing damage from .30 rifle, uranium
+    - type: Add
+      message: Slimes can be furries!
+    - type: Tweak
+      message: IPCs just become a nightmare to play when their batteries die!
   id: 9
-  time: '2026-04-06T02:54:38.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/1126
-- author: tank8673
+  time: '2025-07-14T01:42:33.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/51
+- author: Superlagg
   changes:
-    - type: Add
-      message: added possibility for UIVs and Vgroids to spawn more than once
     - type: Tweak
       message: >-
-        tweaked vgroid size to add more dungeons to them (and thus more places
-        for ships to dock and start clearing them)
-    - type: Tweak
-      message: made dino UIV able to spawn more than once
+        Feroxi no longer suffocate when thirsty, instead they just get really
+        really slow. They also get a little bit faster when overhydrated!
   id: 10
-  time: '2026-04-06T02:58:56.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/1124
-- author: tank8673
+  time: '2025-07-17T02:27:08.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/59
+- author: Superlagg
   changes:
-    - type: Remove
-      message: >-
-        Removed caveman clubs giving you the caveman accent due to the permanent
-        and socially debilitating effect this had on players using it
+    - type: Add
+      message: A service worker!
   id: 11
-  time: '2026-04-05T20:51:51.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/1123
-- author: Sulfari
+  time: '2025-07-20T21:32:00.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/74
+- author: Superlagg
   changes:
-    - type: Add
-      message: Added the Anaconda!
+    - type: Tweak
+      message: Radio static is louder a bit, also a volume selector on the headset
+    - type: Tweak
+      message: >-
+        Ahelps make the admin chat sound for admins who have the bwoink turned
+        off
+    - type: Tweak
+      message: Prays display your character name
+    - type: Tweak
+      message: RP Incentive values can be adjusted by admemes for some reason
+    - type: Tweak
+      message: The ghost follow thing looks a bit better
   id: 12
-  time: '2026-04-06T02:54:10.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/1122
-- author: tank8673
+  time: '2025-07-29T02:31:17.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/102
+- author: cebutris
   changes:
     - type: Tweak
-      message: Increased LSE-400c Svalinn (ship gun) damage to 37 heat from 21 heat
+      message: Slimepeople's hair colour is no longer forced to match their body colour
   id: 13
-  time: '2026-04-06T04:52:42.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/1121
-- author: stinky, Absotively, walksanatora
+  time: '2025-08-06T01:48:01.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/128
+- author: Toriate
   changes:
     - type: Tweak
-      message: reverses the display order for labels from hand labelers
+      message: Xenoarch artifacts should explode less often now
     - type: Tweak
-      message: merges labeler UI improvements from wizden (reset/clear button)
-    - type: Tweak
-      message: >-
-        ports hand labeler label saving from starlight (saved labels persist
-        through client restarts & through new rounds)
+      message: Xenoarch artifacts should provide 40% more science points at base
   id: 14
-  time: '2026-04-05T20:51:37.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/1120
-- author: Feathernights
+  time: '2025-08-13T14:24:07.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/152
+- author: Toriate
   changes:
-    - type: Add
-      message: >-
-        Added the Mantle, Noble Mantle, Chaplain's Mantle, and Druidic Tablet to
-        loadouts.
+    - type: Tweak
+      message: Nash Station's fax machines are no longer labeled Trade Mall
   id: 15
-  time: '2026-04-05T20:49:36.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/1119
-- author: Feathernights
+  time: '2025-08-13T14:26:11.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/154
+- author: Toriate
   changes:
-    - type: Fix
-      message: >-
-        Fixed a lot of localization files *(mostly pertaining to markings and
-        bleeding)*.
+    - type: Tweak
+      message: Nash holopads are now properly named
   id: 16
-  time: '2026-04-05T20:49:12.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/1118
-- author: stinky
+  time: '2025-08-14T13:57:25.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/156
+- author: PatchyDragon
   changes:
-    - type: Add
-      message: Hand labeler can apply labels to airlocks!
-    - type: Add
+    - type: Tweak
       message: >-
-        Papers can now be attached to airlocks in the same way that papers are
-        attached to lockers, crates, etc
+        Reduced the minimum and maximum sizes for Rodentia, Resomi, and Goblins,
+        in keeping with lore.
   id: 17
-  time: '2026-04-03T05:54:13.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/1117
-- author: DevArchwave
+  time: '2025-09-30T05:34:35.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/224
+- author: QTNeen
   changes:
-    - type: Tweak
-      message: Ambrosia Deus now produces Tricordrazine.
+    - type: Add
+      message: >-
+        Almost every instrument has been updated to a new soundfont
+        (GeneralUser-GS), unifying all operating systems and massively improving
+        the sound of certain instruments.
   id: 18
-  time: '2026-04-02T01:54:12.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/1113
-- author: tank8673
+  time: '2025-10-03T00:36:32.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/231
+- author: QTNeen
   changes:
     - type: Add
-      message: Added Duster machineboard to NFSD uplink for senior staff roles
-    - type: Tweak
-      message: >-
-        Gave sergeant and Baliff the ability to also get NFSD techfab boards as
-        well as headset chips for NFSD
+      message: Hydroponic magboots
+    - type: Add
+      message: Red satchel
+    - type: Add
+      message: New syndicate helmet sprite
   id: 19
-  time: '2026-04-02T01:53:50.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/1112
-- author: Dragometh
+  time: '2025-10-15T09:29:19.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/262
+- author: IrkallaEpsilon
   changes:
-    - type: Add
-      message: >-
-        Holographic Hoverbeds! They can be researched and built from a medfab.
-        (by SirWarock on github!)
-    - type: Tweak
-      message: >-
-        Changes to rollerbeds and body bag densities. The one with wheels should
-        be easier to drag than the one without, now. (also by SirWarock!)
+    - type: Fix
+      message: Resomi ear inconsistency. Now I can finally sleep at night.
   id: 20
-  time: '2026-04-02T01:51:24.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/1109
-- author: YumiGumi
+  time: '2025-10-15T09:30:26.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/265
+- author: W0LF-101
   changes:
-    - type: Remove
-      message: Removed SLI Seraphim
+    - type: Add
+      message: EMP Grenade Magazines to NFSD Uplink
+    - type: Add
+      message: Added Standard 15 FUC Uplink to Deputies, Brigmedics and Detectives
+    - type: Tweak
+      message: Made NFSD Combat Hardsuit & Command Combat Hardsuit equal in resistances
+    - type: Tweak
+      message: Given Sergeant, Bailiff & Sheriff 5 more FUCs each as starting currency
+    - type: Tweak
+      message: Tweaked NFSD Uplink contents rank requirements almost across the board
   id: 21
-  time: '2026-04-02T01:50:46.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/1107
-- author: Sulfari
+  time: '2025-10-20T12:30:03.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/294
+- author: drraccoony
   changes:
     - type: Add
-      message: Lollypops
+      message: >-
+        Added the Horny Hawker vending machine, a new adult-themed vending
+        machine with a wide selection of lewd items
+    - type: Add
+      message: Added Horny Hawker restock boxes for refilling the vending machine
   id: 22
-  time: '2026-04-02T04:30:18.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/1104
-- author: Feathernights
+  time: '2025-10-23T02:54:14.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/303
+- author: Forzii
   changes:
-    - type: Fix
-      message: Localization errors *(Pomegranate seeds and Subtle LOOC)*
+    - type: Remove
+      message: Removed mail EMPs from the mail delivery pool.
   id: 23
-  time: '2026-03-29T21:50:19.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/1103
-- author: DevArchwave
+  time: '2025-10-25T10:12:30.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/307
+- author: W0LF-101
   changes:
+    - type: Add
+      message: >-
+        NFSD Variant of the Hristov and it's boxed ammunition to the NFSD
+        Uplink.
     - type: Tweak
-      message: Lowered the price of cat ears and syndie balloons in the contravend.
+      message: >-
+        Enforcer, Vulcan, Energy SMG, Disabler SMG and NFSD Encryption Keys are
+        now C2 NFSD/Command Restricted Contraband.
   id: 24
-  time: '2026-03-29T21:51:49.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/1102
-- author: Sulfari
+  time: '2025-10-25T21:01:17.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/311
+- author: W0LF-101
   changes:
     - type: Tweak
-      message: IPC blood works as artifact trigger.
+      message: Added appropriate in-code documentation for past PRs
   id: 25
-  time: '2026-03-29T21:51:33.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/1101
-- author: DevArchwave
+  time: '2025-10-25T22:13:17.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/313
+- author: W0LF-101
   changes:
+    - type: Tweak
+      message: >-
+        Seismic Charges, Pipebombs & Firebombs are now C2 Contraband, not C2
+        NFSD/Command Restricted.
+    - type: Tweak
+      message: >-
+        Role Restricted Contraband examine text tweaked to clarify permits do
+        not apply.
     - type: Add
-      message: DoC gets their own RPI aura.
+      message: >-
+        Added contraband restriction to pipebombs that are missing cabling,
+        bringing them in line with the rest.
   id: 26
-  time: '2026-03-29T21:50:54.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/1099
-- author: DevArchwave
+  time: '2025-10-26T16:34:02.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/314
+- author: Forzii
   changes:
-    - type: Add
+    - type: Tweak
       message: >-
-        Biogenerators now have a buffer system! They generate biomass slowly to
-        a certain limit, which is used before the material stacks.
+        Added a trash bag to janitor loadouts. No tweaking needed, just spawn
+        and check your backpack!
   id: 27
-  time: '2026-04-02T01:49:57.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/1098
-- author: Luweth
+  time: '2025-10-26T23:23:28.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/316
+- author: W0LF-101
   changes:
     - type: Add
-      message: 'Gas Miners with redone engineering/atmos/beacons. '
-    - type: Add
-      message: Main room setup and structural refit.
-    - type: Add
-      message: Power/Atmos consoles for station monitoring.
-    - type: Remove
       message: >-
-        Current hospital as it stands by restoring the last version before
-        changes.
-    - type: Remove
-      message: All flatpacks and booze crate as these are now baseline to the build.
+        Added ability for AI slimes to eat everything that animals, goblins and
+        moths can.
+    - type: Add
+      message: >-
+        Added ability for slimepeople to eat everything that animals, goblins
+        and moths can.
     - type: Tweak
-      message: 'General layout of things within the bar and main medical room. '
-    - type: Tweak
-      message: 'Moved booze-o-mat restock into janitor room. '
-    - type: Tweak
-      message: Moved Basic materials crate into the main room.
-    - type: Tweak
-      message: Moved CDETS into DoC office.
+      message: Added back ability for Moths to eat certain clothing and paper.
   id: 28
-  time: '2026-03-29T21:50:31.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/1097
-- author: DevArchwave
+  time: '2025-10-27T00:17:08.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/319
+- author: Forzii
   changes:
-    - type: Remove
-      message: Disabled air gas pockets from spawning in asteroids.
-    - type: Tweak
-      message: Doubled the size of gas deposits.
+    - type: Fix
+      message: FSC Express now spawns with a usable mailbag
   id: 29
-  time: '2026-03-27T03:54:54.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/1096
-- author: Feathernights
+  time: '2025-10-30T04:08:54.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/322
+- author: Forzii
   changes:
-    - type: Tweak
-      message: Changed Ambrosia Vitalis Plant and Seed sprites.
+    - type: Fix
+      message: Fixed the grammar of the receiving a pet message.
   id: 30
-  time: '2026-03-27T03:53:01.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/1092
-- author: Luweth
+  time: '2025-10-30T04:08:05.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/323
+- author: Forzii
   changes:
-    - type: Add
-      message: AussieShepTail markings
-    - type: Tweak
-      message: Markings folder name to match all others
+    - type: Fix
+      message: Moths and Slimes can correctly eat certain cotton and cloth foods.
   id: 31
-  time: '2026-03-26T05:36:20.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/1090
-- author: Dragometh
+  time: '2025-10-30T04:06:48.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/325
+- author: Forzii
   changes:
     - type: Tweak
-      message: Repair patches and sprays are now able to be stored in medical bags.
+      message: >-
+        Added a small NFSD department time requirement to a few NFSD roles'
+        alternative time requirement.
   id: 32
-  time: '2026-03-26T00:39:51.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/1088
-- author: Dragometh
+  time: '2025-10-31T07:48:57.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/331
+- author: Forzii
   changes:
-    - type: Add
-      message: >-
-        Ability to visualize if some things have aphrodisiacs in them. This
-        feature can be toggled on and off via preferences.
+    - type: Tweak
+      message: Doubled the times it takes for mail to teleport in
   id: 33
-  time: '2026-04-08T23:15:31.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/1087
-- author: Dragometh
+  time: '2025-11-01T19:22:54.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/334
+- author: drraccoony
   changes:
-    - type: Tweak
-      message: Added explosion resistance to contents on NFSD belts and webbings.
+    - type: Fix
+      message: >-
+        size gun now displays correctly for all players including those who
+        join/return from ssd after resizing occurs
+    - type: Fix
+      message: players reconnecting no longer see incorrect entity sizes
+    - type: Add
+      message: examine text for resized players/mobs
   id: 34
-  time: '2026-03-26T00:38:35.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/1086
-- author: DevArchwave
+  time: '2025-11-01T20:26:04.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/335
+- author: ashkitten
   changes:
+    - type: Tweak
+      message: Tweaks to genital layering and interactions.
+    - type: Fix
+      message: Genital visibility consent toggle works properly now.
     - type: Add
-      message: A purple puppy plushie has made its way to the sector
+      message: Added consent toggle for letting others modify your underwear.
   id: 35
-  time: '2026-03-25T07:22:43.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/1084
-- author: Dragometh
+  time: '2025-11-07T04:50:33.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/343
+- author: drraccoony
   changes:
     - type: Add
       message: >-
-        The Bluespace air tank and the Pocket bluespace air tank are now
-        available to research (made by blacknight954!)
+        Station command can now store and retrieve shuttles via the shuttle
+        records computer
+    - type: Tweak
+      message: Shuttle records now show "In Storage" status for stored ships
   id: 36
-  time: '2026-03-26T00:37:53.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/1083
-- author: Dragometh
+  time: '2025-11-05T14:53:43.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/346
+- author: drraccoony
   changes:
     - type: Fix
-      message: >-
-        Corrected a few cases where board DRM would be incorrectly applied or
-        transferred upon flatpack installation (by the great marlyn-x86!)
+      message: Size Manipulator issues with sprites and examine text
   id: 37
-  time: '2026-03-25T07:21:26.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/1082
-- author: Dragometh
+  time: '2025-11-04T22:04:57.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/350
+- author: EchoFade
   changes:
     - type: Add
-      message: Ports in from Wizden Fruitsalad's rework on the Cryo Pod UI!
+      message: HGH Salto to expedition consoles
   id: 38
-  time: '2026-03-26T00:36:06.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/1081
-- author: DevArchwave
+  time: '2025-11-05T22:41:44.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/352
+- author: drraccoony
   changes:
-    - type: Tweak
-      message: Major Pathfinder Overhaul
+    - type: Add
+      message: >-
+        Added some head and chest markings for lizards, as well as a large snake
+        tail marking that animates when wagging.
   id: 39
-  time: '2026-03-26T00:35:36.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/1080
-- author: DevArchwave
+  time: '2025-11-06T22:35:34.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/369
+- author: Forzii
   changes:
-    - type: Remove
-      message: Removes the access lock from the bruise-o-mat and syndiejuice.
+    - type: Fix
+      message: Janitors no longer attempt to wear jumpsuits on their head.
   id: 40
-  time: '2026-03-25T07:18:34.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/1075
-- author: DevArchwave
+  time: '2025-11-08T20:49:14.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/387
+- author: Forzii and Alkheemist
   changes:
-    - type: Add
-      message: Added a new plant, ambrosia vitalis.
-    - type: Remove
-      message: Removed omnizine from ambrosia deus.
+    - type: Tweak
+      message: Re-added capacitor and matter bin to autolathe
   id: 41
-  time: '2026-03-23T04:44:06.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/1074
-- author: Luweth
+  time: '2025-11-08T20:49:33.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/390
+- author: Forzii
   changes:
-    - type: Add
-      message: bar flask & MRE flask in loadouts.
+    - type: Fix
+      message: Fixed moth squeak and some other minor emote issues
   id: 42
-  time: '2026-03-23T04:42:55.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/1073
-- author: Sulfari
+  time: '2025-11-08T20:50:36.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/391
+- author: Forzii
   changes:
     - type: Tweak
-      message: SmartFridges can store food!
+      message: Adjusted service worker loadouts to be more in-line with other roles
   id: 43
-  time: '2026-03-23T00:54:34.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/1071
-- author: DevArchwave
+  time: '2025-11-10T01:07:27.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/393
+- author: SimplyPoodle
   changes:
-    - type: Tweak
-      message: >-
-        Reverts the previous omnizine healing nerfs, instead simply increasing
-        how slow it was to heal.
+    - type: Add
+      message: Oculus and Peeper
   id: 44
-  time: '2026-03-23T00:54:45.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/1070
-- author: Sulfari
+  time: '2025-11-13T05:49:19.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/394
+- author: SimplyPoodle
   changes:
     - type: Add
-      message: Chameleon projector and StealthBox added to Escort uplinks!
+      message: fixes for the stallion
   id: 45
-  time: '2026-03-23T00:55:20.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/1069
-- author: DevArchwave
+  time: '2025-11-13T05:42:16.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/416
+- author: SmolGreenBuggo
   changes:
-    - type: Tweak
-      message: Increased the size of dresser storage
+    - type: Add
+      message: KAZ Albatross, a dedicated cargo freighter!
+    - type: Fix
+      message: >-
+        turned on the single engine on the KAZ Albatross that was turned off by
+        default, replaced a few tiles
+    - type: Fix
+      message: >-
+        more tweaks. should be final tweaks before review. added missing
+        firelock, missing fire alarms, replaced gas mixer with "on" variant
   id: 46
-  time: '2026-03-23T00:56:40.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/1065
-- author: DevArchwave
+  time: '2025-11-13T22:15:57.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/417
+- author: Forzii
   changes:
-    - type: Remove
-      message: Removes cash conversion from uplinks
+    - type: Fix
+      message: Fixed logprobe PDA app printing
   id: 47
-  time: '2026-03-23T00:57:26.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/1062
-- author: DevArchwave
+  time: '2025-11-13T05:52:40.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/420
+- author: SimplyPoodle
   changes:
-    - type: Tweak
-      message: Disables turn-in of lower tier explosives, reduces explosive spawns
+    - type: Add
+      message: bwuh
   id: 48
-  time: '2026-03-23T00:57:44.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/1061
-- author: DevArchwave
+  time: '2025-11-14T04:12:56.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/426
+- author: SimplyPoodle
   changes:
     - type: Add
-      message: Adds a variant of the HoS Winter coat to the nfsddrobe
+      message: Vindicator
   id: 49
-  time: '2026-03-23T00:57:54.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/1060
-- author: DevArchwave
+  time: '2025-11-14T04:14:33.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/428
+- author: SimplyPoodle
   changes:
     - type: Add
-      message: >-
-        Clothing that Inherits ClothingOuterStorageBase can now use Armor
-        Plates.
+      message: Port of the BaristaVend and tea's from Monolith.
   id: 50
-  time: '2026-03-20T05:35:20.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/1059
-- author: Dragometh
+  time: '2025-11-16T20:46:34.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/429
+- author: W0LF-101
   changes:
-    - type: Add
-      message: Ports in dynamic anomaly scanners (by Quantum-cross)
+    - type: Tweak
+      message: Changes baby dragon to a fully fledged space drake
   id: 51
-  time: '2026-03-20T05:35:07.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/1058
-- author: DevArchwave
+  time: '2025-11-14T19:23:40.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/432
+- author: W0LF-101
   changes:
+    - type: Add
+      message: Added NFSD energy sword to their uplink.
     - type: Tweak
-      message: Renamed the C20P to C19R
+      message: Changed price of uplink captains sabre to 5 FUCs
   id: 52
-  time: '2026-03-20T05:35:31.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/1057
-- author: DevArchwave
+  time: '2025-11-14T19:23:07.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/433
+- author: Forzii
   changes:
     - type: Fix
-      message: Prevents the SM from starting by consuming trash that spawns on it.
+      message: Fixed curators spawning with extra stuff
   id: 53
-  time: '2026-03-20T05:34:44.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/1056
-- author: DevArchwave
+  time: '2025-11-16T20:48:38.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/435
+- author: W0LF-101
   changes:
     - type: Tweak
-      message: Reduces the chameleon kit price back down to 16 dubs
+      message: Pirate IDs, PDAs and Headsets are no longer inherently C3 Contraband.
   id: 54
-  time: '2026-03-19T06:48:53.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/1054
-- author: DevArchwave
+  time: '2025-11-14T20:21:51.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/436
+- author: SmolGreenBuggo
   changes:
-    - type: Add
-      message: Adds the C20P.
-    - type: Add
-      message: Implements a few rare mail prototypes.
     - type: Tweak
-      message: Gives the AKM a unique sound.
-    - type: Remove
-      message: Disables the threat mail. Who really wanted these?
+      message: >-
+        made Ambition exped capable again, adjusted price to reflect this and
+        updated the original price with our downstream speso value differences
   id: 55
-  time: '2026-03-19T06:49:01.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/1053
-- author: DevArchwave
+  time: '2025-11-16T20:49:27.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/438
+- author: SimplyPoodle
   changes:
     - type: Add
-      message: Adds Rubber Pistol, SMG and Rifle Mags to the Less Lethal Vendor.
+      message: uhhh fuck if i know
   id: 56
-  time: '2026-03-19T04:25:03.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/1050
-- author: DevArchwave
+  time: '2025-11-16T21:05:08.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/442
+- author: SmolGreenBuggo
   changes:
-    - type: Fix
-      message: >-
-        Chameleon headsets no longer turn into c4 when changing into blood-red
-        headsets and wizard headsets
+    - type: Add
+      message: added the KAZ Petrel!
   id: 57
-  time: '2026-03-19T01:48:14.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/1047
-- author: DevArchwave
+  time: '2025-11-17T05:46:02.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/444
+- author: SmolGreenBuggo
   changes:
-    - type: Tweak
-      message: Reduced the spawn of omnizine bottles in dungeons/roids by 3/4
+    - type: Add
+      message: added the Yegorov
   id: 58
-  time: '2026-03-18T23:51:50.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/1046
-- author: DevArchwave
+  time: '2025-11-17T19:49:03.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/461
+- author: SmolGreenBuggo
   changes:
-    - type: Remove
-      message: Removed .25 ammo from loot tables
+    - type: Add
+      message: added the Chunk
   id: 59
-  time: '2026-03-19T01:46:54.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/1045
-- author: DevArchwave
+  time: '2025-11-17T19:54:21.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/465
+- author: ShepardToTheStars
   changes:
-    - type: Fix
-      message: Adds .40 ammo loot to the loot tables.
+    - type: Add
+      message: >-
+        Added the AAC tablet so that mute players can attempt to communicate
+        better!
   id: 60
-  time: '2026-03-18T21:28:02.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/1043
-- author: DevArchwave
+  time: '2025-11-18T20:57:13.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/466
+- author: SimplyPoodle
   changes:
-    - type: Tweak
-      message: >-
-        Nerfs omnizine, yet again, making its metabolism faster, but giving it a
-        smaller OD threshold and less healing.
+    - type: Add
+      message: my nuts
   id: 61
-  time: '2026-03-18T21:27:49.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/1042
-- author: DevArchwave
+  time: '2025-11-18T20:55:55.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/469
+- author: SimplyPoodle
   changes:
     - type: Add
-      message: Adds the estoc to the smuggler uplink loot boxes.
+      message: my nuts(2)
   id: 62
-  time: '2026-03-18T21:26:33.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/1041
-- author: DevArchwave
+  time: '2025-11-21T07:51:54.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/471
+- author: SimplyPoodle
   changes:
-    - type: Fix
-      message: >-
-        The e-sword and double-bladed e-sword should no longer hum after its
-        toggled off.
+    - type: Add
+      message: distorted poodle
   id: 63
-  time: '2026-03-19T01:47:40.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/1037
-- author: DevArchwave
+  time: '2025-11-19T21:07:39.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/480
+- author: SmolGreenBuggo
   changes:
-    - type: Remove
-      message: Removed bone crushers from loot tables
     - type: Tweak
-      message: Lowered the truncheon's overall damage and stamina damage
-    - type: Fix
-      message: Fixed armblades not... Functioning as armblades.
+      message: changed tiles
   id: 64
-  time: '2026-03-18T21:12:29.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/1035
-- author: Dragometh
+  time: '2025-11-20T03:10:18.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/484
+- author: SmolGreenBuggo
   changes:
-    - type: Add
-      message: >-
-        Allows chemmaster's pill sources to come either from buffer or from
-        beaker (by OnyxTheBrave)
+    - type: Fix
+      message: Fixed Albatross
   id: 65
-  time: '2026-03-19T03:09:44.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/1034
-- author: Dragometh
+  time: '2025-11-20T21:11:07.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/487
+- author: SmolGreenBuggo
   changes:
-    - type: Tweak
-      message: >-
-        The MIDI Channel Selector now shows the instrument name of the track!
-        (ported from upstream; PR by Simyon264)
+    - type: Add
+      message: added the Gadfly
   id: 66
-  time: '2026-03-19T03:09:30.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/1033
-- author: FlickFops
+  time: '2025-11-21T05:45:17.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/491
+- author: Forzii
   changes:
+    - type: Add
+      message: Added showers and a new plumbing assembly part
     - type: Tweak
-      message: updated edison
+      message: Sinks and drains now require the new plumbing assembly to build
   id: 67
-  time: '2026-03-18T21:11:05.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/1032
-- author: Dragometh
+  time: '2025-11-25T22:46:34.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/500
+- author: SmolGreenBuggo
   changes:
     - type: Tweak
-      message: Halves swabbing time between plants.
+      message: tweaked yegorov a bit
   id: 68
-  time: '2026-03-19T03:08:11.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/1030
-- author: Dragometh
+  time: '2025-11-24T08:18:18.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/510
+- author: Mace70903
   changes:
-    - type: Remove
-      message: >-
-        Removes 155% impermanence modifier from the anomaly behaviour pool.
-        Scientists, rejoice.
+    - type: Add
+      message: New version of the NFSD Outpost with GenPop!
   id: 69
-  time: '2026-03-19T03:07:59.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/1029
-- author: Dragometh
+  time: '2025-11-26T22:03:00.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/520
+- author: Steffo99
   changes:
-    - type: Tweak
-      message: >-
-        Changes and tweaks to the random reagent mutation pool; Vestine
-        mutations are VERY MUCH harder to achieve and makes them yield less,
-        while juice and food-related mutations are very much easier to achieve.
-        Adds Hew juice and Fat. Removes Mercury, Slime, Pulped Banana Peel.
+    - type: Fix
+      message: Fixed the RGB staff not working.
   id: 70
-  time: '2026-03-19T01:47:24.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/1028
-- author: DevArchwave
+  time: '2026-01-20T20:25:31.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/558
+- author: Jakumba
   changes:
     - type: Tweak
+      message: Repair Patches for IPCs now stack up to 10
+    - type: Tweak
       message: >-
-        Increased the damage of most projectiles from master wizard staves,
-        making them a little more viable and rewarding to use.
+        Repair Patches cost slightly more at the CiviMed Plus ($2500 => $3000)
+        but are sold in packs of 10
   id: 71
-  time: '2026-03-16T06:35:53.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/1027
-- author: TheLife
+  time: '2025-12-01T20:30:31.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/573
+- author: Jakumba
   changes:
+    - type: Tweak
+      message: Changes to IPC damage modifier set (less damage across the board)
+    - type: Tweak
+      message: Changes to IPC topical healing amount
     - type: Add
-      message: The controls tab in options now features a search bar.
+      message: Repair patches can be crafted now
   id: 72
-  time: '2026-03-16T02:27:24.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/1026
-- author: DevArchwave
+  time: '2025-12-01T21:35:08.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/575
+- author: Jakumba
   changes:
-    - type: Remove
-      message: Removed macro bomb implanters from the loot tables.
+    - type: Add
+      message: Added new phrases and sounds to the AAC tablet!
   id: 73
-  time: '2026-03-15T20:09:24.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/1025
-- author: DevArchwave
+  time: '2025-12-04T00:01:27.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/577
+- author: W0LF-101
   changes:
-    - type: Remove
-      message: Contra crates no longer spawnable with the smuggler uplink.
+    - type: Tweak
+      message: Sustenance vendor description changed.
+    - type: Tweak
+      message: Sustenance vendor stock changed, basic essentials made infinite.
+    - type: Tweak
+      message: Water bottles are now sellable on cargo pads, with a base value of 50.
   id: 74
-  time: '2026-03-15T20:09:08.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/1024
-- author: DevArchwave
+  time: '2025-12-04T00:04:46.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/582
+- author: Jakumba
   changes:
-    - type: Add
-      message: Some new interactions for spacepresso nanocaf drinks!
+    - type: Tweak
+      message: Changed belts to layer on top of outerwear again.
   id: 75
-  time: '2026-03-15T20:07:06.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/1020
-- author: DevArchwave
+  time: '2025-12-04T00:05:09.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/584
+- author: Jakumba
   changes:
-    - type: Add
-      message: Armor plates.
+    - type: Fix
+      message: >-
+        Fixed silicon topicals (repair patches and spray) not working on IPCs.
+        Sorry gang!
   id: 76
-  time: '2026-03-18T21:10:53.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/1018
-- author: DevArchwave
+  time: '2025-12-04T17:39:42.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/589
+- author: Dahlular
   changes:
     - type: Add
-      message: Cobra added to the escort uplink.
-    - type: Tweak
-      message: Changed a few more contraband levels.
-    - type: Tweak
-      message: Lowered the price of the throwing knives kit in the escort uplink.
+      message: Scurrets! (Wawas)
   id: 77
-  time: '2026-03-13T04:43:39.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/1015
-- author: lucentlavender
+  time: '2025-12-05T03:38:07.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/592
+- author: Jakumba
   changes:
     - type: Fix
       message: >-
-        Genitals will now be hidden by default. Anyone who has played prior to
-        this PR may have to fix them manually.
+        Fixed the repair patch blueprint printing an entire stack of patches at
+        a time.
   id: 78
-  time: '2026-03-13T04:42:17.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/1014
-- author: DevArchwave
+  time: '2025-12-05T22:53:35.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/619
+- author: drraccoony
   changes:
-    - type: Fix
-      message: Fixed the PPR being able to shoot while unwielded, buffed it a little.
+    - type: Tweak
+      message: Vore system adjustments
   id: 79
-  time: '2026-03-12T05:00:10.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/1012
-- author: DevArchwave
+  time: '2025-12-08T05:04:21.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/633
+- author: Jakumba
   changes:
     - type: Tweak
-      message: changes the cost of the pirate captain chest to 20db
+      message: Welding IPCs will remove bloodloss damage
+    - type: Fix
+      message: Fixed diagnostic HUDs not reading IPC healthbars
   id: 80
-  time: '2026-03-12T04:59:13.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/1010
-- author: DevArchwave
+  time: '2025-12-13T22:18:03.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/653
+- author: drraccoony
   changes:
-    - type: Tweak
-      message: More contra changes
+    - type: Fix
+      message: 'Thruster Layers for damage consistency '
   id: 81
-  time: '2026-03-12T04:59:01.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/1009
-- author: lucentlavender
+  time: '2025-12-13T22:17:13.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/656
+- author: Superlagg
   changes:
     - type: Add
-      message: Markings can now be set as toggle-able regardless of layer.
-    - type: Add
-      message: Markings can now have a custom name specified that will show in game.
-    - type: Add
-      message: Markings can now be specified to only allow the user to adjust them.
-    - type: Add
-      message: Markings can now have custom verbiage for putting on and taking off.
+      message: Added smell mechanics!
   id: 82
-  time: '2026-03-12T04:56:15.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/1007
-- author: DevArchwave
+  time: '2025-12-14T05:39:10.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/657
+- author: Jakumba
   changes:
     - type: Add
-      message: Estoc DMR
+      message: Added holster slots or medkit pouches to a variety of belts!
   id: 83
-  time: '2026-03-12T04:54:56.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/1006
-- author: DevArchwave
+  time: '2025-12-13T22:21:18.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/658
+- author: Nnelg
   changes:
     - type: Fix
-      message: Fixed some inaccurate references with ammo generation.
+      message: Pomegranates now have proper English names.
   id: 84
-  time: '2026-03-11T20:46:32.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/1005
-- author: DevArchwave
+  time: '2025-12-14T05:29:02.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/660
+- author: Superlagg
   changes:
-    - type: Add
-      message: More ambient sounds for computers.
+    - type: Fix
+      message: Fixed the pirate-near-capturebait thing?
   id: 85
-  time: '2026-03-11T20:46:04.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/1004
-- author: DevArchwave
+  time: '2025-12-15T01:58:39.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/665
+- author: Jakumba
   changes:
-    - type: Remove
-      message: Removed medical tracking from cult cats by default.
+    - type: Add
+      message: Added Ovinia species!
   id: 86
-  time: '2026-03-11T20:45:39.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/1003
-- author: DevArchwave
+  time: '2025-12-15T06:06:00.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/666
+- author: lucentlavender
   changes:
-    - type: Fix
-      message: Fixed the Donk N Go shuttle, hopefully.
+    - type: Tweak
+      message: >-
+        Added additional options to Air Scrubber's "Gas Filters", allowing them
+        to filter gases over a threshold percentage.
   id: 87
-  time: '2026-03-11T20:45:03.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/1002
-- author: DevArchwave
+  time: '2025-12-17T04:11:14.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/669
+- author: drraccoony
   changes:
-    - type: Add
-      message: Throwing knives kit to the escort uplink
+    - type: Tweak
+      message: Reworked Verb Categories
   id: 88
-  time: '2026-03-11T20:44:28.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/1001
-- author: DevArchwave
+  time: '2025-12-18T00:22:40.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/671
+- author: Nersylla
   changes:
-    - type: Tweak
-      message: LPB spawns a lot farther now.
+    - type: Add
+      message: Ported the Stringer journalism shuttle as a LL0 ship.
   id: 89
-  time: '2026-03-11T20:44:15.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/1000
-- author: DevArchwave
+  time: '2025-12-18T04:41:46.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/674
+- author: Superlagg
   changes:
-    - type: Tweak
-      message: Reverted the advanced radar's range back to previous values.
+    - type: Fix
+      message: >-
+        No longer need to have your own smell to stop smelling other peoples
+        smelly smells
   id: 90
-  time: '2026-03-12T05:19:09.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/999
-- author: DevArchwave
+  time: '2025-12-18T03:45:39.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/676
+- author: Superlagg
   changes:
     - type: Add
-      message: Jaws of death added to escort uplink.
+      message: Adds blood smell
+    - type: Tweak
+      message: Bank Customers are smelly
+    - type: Add
+      message: Added Nuzzle
+    - type: Tweak
+      message: You can Check Out (and such) non-players.
+    - type: Tweak
+      message: This'll make the popup visible!
+    - type: Tweak
+      message: doing private interactions with actual players is still private
+    - type: Fix
+      message: Fixed bodytypes
+    - type: Fix
+      message: Her is no longer
+    - type: Tweak
+      message: interaction submenus should be in the right order more often
   id: 91
-  time: '2026-03-11T20:43:28.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/998
-- author: DevArchwave
+  time: '2025-12-19T00:40:03.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/682
+- author: Superlagg
   changes:
-    - type: Fix
-      message: Fixed more broken contraband levels for a few items
+    - type: Add
+      message: Added butts and bellies from SS13!
   id: 92
-  time: '2026-03-11T20:43:18.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/997
-- author: DevArchwave
+  time: '2025-12-22T07:03:09.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/684
+- author: Kilmented
   changes:
     - type: Tweak
-      message: Harpies should gasp a little less.
+      message: buffed melee by 2.7x
   id: 93
-  time: '2026-03-11T20:42:58.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/996
-- author: DevArchwave
+  time: '2025-12-22T07:34:06.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/688
+- author: Jakumba
   changes:
     - type: Add
-      message: Conveyor Belt Cleanup system to help with the performance degradation.
+      message: Added a new NFSD form for tracking your own pay.
   id: 94
-  time: '2026-03-11T20:41:39.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/994
-- author: DevArchwave
+  time: '2025-12-25T00:58:05.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/696
+- author: Superlagg
   changes:
     - type: Add
-      message: Stackables items now merge when stopping on/after a conveyor belt.
+      message: Ported some cute tails from floof!
   id: 95
-  time: '2026-03-09T04:41:34.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/987
-- author: lpeapnni
+  time: '2025-12-27T22:24:03.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/699
+- author: Jakumba
   changes:
     - type: Add
-      message: Added new Anthromorph species
+      message: Added Chitinids' from the Delta Sector!
   id: 96
-  time: '2026-03-09T05:16:17.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/986
-- author: DevArchwave
+  time: '2025-12-29T02:35:36.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/700
+- author: W0LF-101
   changes:
-    - type: Add
-      message: Added several new wallets to loadout.
-    - type: Add
-      message: Added several new wallets to the arcadiawear/punk vendors.
-    - type: Add
-      message: >-
-        Added the extremely rare and highly in demand lizard wallet (Wehlet
-        even) as a mail item. Weh!
-    - type: Add
-      message: Added new items to the Arcadiawear Vendor. Drip is Eternal!
+    - type: Tweak
+      message: Smuggler Job now requires Pirate Whitelist.
   id: 97
-  time: '2026-03-08T20:43:48.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/984
-- author: DevArchwave
+  time: '2025-12-29T02:37:08.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/702
+- author: infinitelyExplosive
   changes:
     - type: Fix
-      message: Cybersun pens work as intended again.
+      message: Fixed weird message when waving while dragging object
   id: 98
-  time: '2026-03-08T20:44:02.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/983
-- author: DevArchwave
+  time: '2026-01-02T23:40:04.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/703
+- author: Jakumba
   changes:
-    - type: Tweak
-      message: >-
-        Changed the cost of advanced medkits in the NFSD uplink from 2 to 10
-        coins, restricted it to brigmedics.
+    - type: Add
+      message: Added Nurse and Therapist spawns to Saint Michaels
+    - type: Fix
+      message: Fixed Edisons cargo consoles.
   id: 99
-  time: '2026-03-08T20:44:46.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/980
-- author: DevArchwave
-  changes:
-    - type: Fix
-      message: Fixed contraband levels for expedition loot
-  id: 100
-  time: '2026-03-08T20:44:56.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/979
-- author: DevArchwave
-  changes:
-    - type: Remove
-      message: >-
-        Disabled the part of the supermatter code that makes you permanently
-        hallucinate upon looking at it.
-  id: 101
-  time: '2026-03-08T20:45:05.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/978
-- author: Sulfari
-  changes:
-    - type: Add
-      message: Guidebook entry for B-RTG
-  id: 102
-  time: '2026-03-06T04:41:14.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/974
-- author: DevArchwave
-  changes:
-    - type: Tweak
-      message: Supermatter backend changes
-  id: 103
-  time: '2026-03-06T04:40:31.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/973
-- author: DevArchwave
-  changes:
-    - type: Add
-      message: Pockets to flannel jackets, grey and black hoodies
-  id: 104
-  time: '2026-03-06T02:59:57.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/971
-- author: DevArchwave
-  changes:
-    - type: Tweak
-      message: Shipyard purchase backend optimizations
-  id: 105
-  time: '2026-03-06T02:57:23.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/970
-- author: Sulfari
-  changes:
-    - type: Add
-      message: Add clickers to CuddlyCritter and HornyHawker vends
-  id: 106
-  time: '2026-03-06T02:55:47.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/969
-- author: DevArchwave
-  changes:
-    - type: Fix
-      message: Expeditions should now properly determine the present factions
-  id: 107
-  time: '2026-03-06T02:47:48.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/966
-- author: DevArchwave
-  changes:
-    - type: Tweak
-      message: New atmospheric sprites
-  id: 108
-  time: '2026-03-06T02:45:42.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/964
-- author: DevArchwave
-  changes:
-    - type: Tweak
-      message: SSD characters no longer breathe, and thus, do not asphyxiate.
-  id: 109
-  time: '2026-03-05T03:20:48.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/962
-- author: FlickFops
-  changes:
-    - type: Add
-      message: added new plushie
-    - type: Add
-      message: added edison lathe
-    - type: Add
-      message: added new edison map
-    - type: Remove
-      message: removed old edison map
-  id: 110
-  time: '2026-03-05T05:19:11.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/961
-- author: DevArchwave
-  changes:
-    - type: Tweak
-      message: Rebalanced and re-added the prototype pulse rifle to loot tables.
-  id: 111
-  time: '2026-03-05T03:20:07.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/960
-- author: DevArchwave
-  changes:
-    - type: Remove
-      message: Removed artifact portal node from the effects table
-  id: 112
-  time: '2026-03-02T07:03:38.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/954
-- author: DevArchwave
-  changes:
-    - type: Add
-      message: Blackmarket access for Rippers and Escorts
-  id: 113
-  time: '2026-03-02T05:45:40.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/951
-- author: Marlyn
-  changes:
-    - type: Fix
-      message: >-
-        Fixed numerous movementspeedmodifier definitions so that vehicles and
-        various mobs now have their correct handling again
-  id: 114
-  time: '2026-03-01T21:57:25.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/949
-- author: Sulfari
-  changes:
-    - type: Tweak
-      message: ContraVend now has the correct name for Jaws of Death
-  id: 115
-  time: '2026-03-01T21:56:23.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/948
-- author: DevArchwave
-  changes:
-    - type: Add
-      message: >-
-        Sounds in large areas now have an echo. This effect can be disabled in
-        settings. This is all client-side.
-  id: 116
-  time: '2026-03-05T06:49:28.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/946
-- author: DevArchwave
-  changes:
-    - type: Tweak
-      message: Flashlights are now smoother in combat.
-  id: 117
-  time: '2026-03-01T08:31:33.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/944
-- author: Sulfari
-  changes:
-    - type: Tweak
-      message: Nerfed short-sightedness so glasses actually work
-  id: 118
-  time: '2026-03-01T08:32:43.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/942
-- author: Sulfari
-  changes:
-    - type: Tweak
-      message: Smartfridges are printable!
-  id: 119
-  time: '2026-03-02T06:03:14.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/940
-- author: YumiGumi
-  changes:
-    - type: Tweak
-      message: Seraphim and Gourd
-  id: 120
-  time: '2026-03-01T08:33:20.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/939
-- author: Illumos
-  changes:
-    - type: Add
-      message: All lawyer clothing to the Uniform Priner.
-  id: 121
-  time: '2026-02-27T07:10:24.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/938
-- author: Illumos
-  changes:
-    - type: Tweak
-      message: Milk cartons now have 120u, up from 100u.
-    - type: Tweak
-      message: Cheese now costs half as much milk to make.
-  id: 122
-  time: '2026-02-27T07:07:37.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/937
-- author: Illumos
-  changes:
-    - type: Tweak
-      message: >-
-        Meatcube mobs are now vulnerable to anti-material rifles. Because
-        they're made of material.
-  id: 123
-  time: '2026-02-27T07:10:48.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/936
-- author: DevArchwave
-  changes:
-    - type: Add
-      message: Added syndicate airlocks to the list of spray paintable airlocks options
-  id: 124
-  time: '2026-02-27T07:06:42.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/935
-- author: Illumos
-  changes:
-    - type: Add
-      message: Tennis ball. Woof.
-  id: 125
-  time: '2026-02-27T04:45:07.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/934
-- author: DevArchwave
-  changes:
-    - type: Tweak
-      message: Increased TC drop rates from smuggling by about 17%.
-  id: 126
-  time: '2026-02-27T04:42:27.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/933
-- author: DevArchwave
-  changes:
-    - type: Tweak
-      message: Syndiejuice machines can now be restocked by chemvend restocks.
-  id: 127
-  time: '2026-02-27T04:42:09.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/932
-- author: DevArchwave
-  changes:
-    - type: Add
-      message: Many new things from frontier's august upstream update
-  id: 128
-  time: '2026-03-05T05:18:37.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/931
-- author: lucentlavender
-  changes:
-    - type: Add
-      message: Added constructible wallmount storage lockers with grid storage
-  id: 129
-  time: '2026-02-26T07:44:09.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/929
-- author: DevArchwave
-  changes:
-    - type: Tweak
-      message: Makes the Pirate RCD Class 4 unredeemable contra.
-  id: 130
-  time: '2026-02-26T06:41:54.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/927
-- author: DevArchwave
-  changes:
-    - type: Add
-      message: Civilian Access Configurator
-  id: 131
-  time: '2026-02-26T06:41:19.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/926
-- author: Illumos
-  changes:
-    - type: Add
-      message: Leather satchels to loadouts.
-  id: 132
-  time: '2026-02-26T06:40:10.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/925
-- author: Illumos
-  changes:
-    - type: Add
-      message: High heels! Now you can click clack all over Nash.
-    - type: Add
-      message: Coloured uniforms into the ClothesMate.
-  id: 133
-  time: '2026-02-26T06:39:46.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/924
-- author: DevArchwave
-  changes:
-    - type: Tweak
-      message: Minor base game hardsuit tweaks
-  id: 134
-  time: '2026-02-25T09:42:01.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/922
-- author: DevArchwave
-  changes:
-    - type: Fix
-      message: wrong contra levels for atreides, GL and RPG
-  id: 135
-  time: '2026-02-25T09:39:24.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/921
-- author: DevArchwave
-  changes:
-    - type: Tweak
-      message: Fireball is back on the menu
-  id: 136
-  time: '2026-02-25T09:34:51.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/918
-- author: DevArchwave
-  changes:
-    - type: Add
-      message: Held Orbiter System
-  id: 137
-  time: '2026-02-25T09:35:28.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/917
-- author: DevArchwave
-  changes:
-    - type: Tweak
-      message: Magic projectiles have been moderately rebalanced.
-    - type: Tweak
-      message: Master staves self-charge a little.
-  id: 138
-  time: '2026-02-25T09:37:03.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/916
-- author: DevArchwave
-  changes:
-    - type: Add
-      message: New holy books available from the chaplain's loadout
-    - type: Fix
-      message: Chaplain spawning with extra things
-  id: 139
-  time: '2026-02-23T04:30:06.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/915
-- author: DevArchwave
-  changes:
-    - type: Tweak
-      message: >-
-        Lighting attenuation has changed slightly. You shouldn't notice much
-        difference, but the edges of lights should look better. If any lights
-        are significantly different than they used to be, make a GitHub issue.
-  id: 140
-  time: '2026-02-25T09:33:58.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/914
-- author: Illumos
-  changes:
-    - type: Add
-      message: Added yip & whine emote to Vulpkanin, from the fox sounds.
-    - type: Tweak
-      message: Old Vulpkanin whine is now called "whimper".
-  id: 141
-  time: '2026-02-22T23:10:53.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/910
-- author: DevArchwave
-  changes:
-    - type: Tweak
-      message: Turned a lot of wizard items into proper types of contraband
-    - type: Tweak
-      message: Removed lighting from blood cult soaplets
-  id: 142
-  time: '2026-02-23T01:32:23.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/908
-- author: DevArchwave
-  changes:
-    - type: Add
-      message: >-
-        Added a colour picker and colour palette selector to the Spraypainter's
-        decal menu.
-    - type: Add
-      message: Added floral decals to the spray painter.
-    - type: Tweak
-      message: Made a few other tweaks to the Spraypainter's UI as well.
-  id: 143
-  time: '2026-02-22T22:47:12.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/903
-- author: DevArchwave
-  changes:
-    - type: Tweak
-      message: Multiple tweaks to the syndicate infiltrator shuttle.
-  id: 144
-  time: '2026-03-06T02:43:09.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/898
-- author: DevArchwave
-  changes:
-    - type: Add
-      message: Advanced radar computer board for the NFSD uplink
-  id: 145
-  time: '2026-02-20T01:57:39.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/897
-- author: DevArchwave
-  changes:
-    - type: Add
-      message: Added kink vend and scrapyard console to the den.
-    - type: Remove
-      message: A bunch of drains.
-    - type: Fix
-      message: 'Bad atmos issue with a few tiles in the medical dock. '
-  id: 146
-  time: '2026-03-05T07:20:50.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/892
-- author: KodiCraft
-  changes:
-    - type: Tweak
-      message: potted plants now scrub ammonia and nitrous oxide
-  id: 147
-  time: '2026-02-19T03:47:04.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/889
-- author: KodiCraft
-  changes:
-    - type: Fix
-      message: typo in foot protector description
-  id: 148
-  time: '2026-02-19T01:35:28.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/886
-- author: DevArchwave
-  changes:
-    - type: Fix
-      message: Shielded lights are actually shielded, again. Whoops.
-  id: 149
-  time: '2026-02-18T03:30:49.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/885
-- author: Deltanedas
-  changes:
-    - type: Fix
-      message: Wrong text when popping an IPC's encryption keys
-  id: 150
-  time: '2026-02-16T06:06:27.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/882
-- author: DevArchwave
-  changes:
-    - type: Tweak
-      message: >-
-        Regular lights break 3x harder during a solar flare, and shielded lights
-        100x harder.
-  id: 151
-  time: '2026-02-15T23:24:54.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/880
-- author: Luksuu
-  changes:
-    - type: Add
-      message: Pirate Baddie Turtleneck
-    - type: Add
-      message: Pirate Baddie Suspenders
-  id: 152
-  time: '2026-02-15T23:25:57.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/878
-- author: DevArchwave
-  changes:
-    - type: Tweak
-      message: Tweaked the spawn rate of unique weapons
-    - type: Tweak
-      message: Removed lootboxmines from the engineering tools generation tables.
-  id: 153
-  time: '2026-02-15T20:27:13.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/875
-- author: DevArchwave
-  changes:
-    - type: Add
-      message: Added pilot colors to the Frontier color palette.
-    - type: Add
-      message: Added pilot wall locker.
-    - type: Tweak
-      message: >-
-        Tweaked pilot webbing contents: replaced mass scanner, remote signaler
-        with welder and universal pinpointer.
-    - type: Tweak
-      message: >-
-        Any amount of Ethylredoxrazine will now fully cleanse drinks from a
-        drunken patient's system
-    - type: Tweak
-      message: >-
-        Dwarves are now even more tolerant to alcohol poisoning, and can be
-        resuscitated with booze
-  id: 154
-  time: '2026-02-15T20:28:09.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/874
-- author: DevArchwave
-  changes:
-    - type: Fix
-      message: Build issue
-  id: 155
-  time: '2026-02-13T07:14:14.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/872
-- author: DevArchwave
-  changes:
-    - type: Tweak
-      message: Reworked wizard NPCs and the wizard-themed UIV bluespace event.
-    - type: Tweak
-      message: Wizards and Cultists are now vulnerable to Holy Damage.
-    - type: Add
-      message: Added a variety of new magical items, spell scrolls, and staves.
-  id: 156
-  time: '2026-02-19T01:36:15.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/871
-- author: DevArchwave
-  changes:
-    - type: Tweak
-      message: Fully remade waddling, clowns will be much better.
-  id: 157
-  time: '2026-02-13T03:58:12.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/870
-- author: DevArchwave
-  changes:
-    - type: Add
-      message: Adds fake wizard robes and staff
-  id: 158
-  time: '2026-02-13T03:57:23.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/869
-- author: DevArchwave
-  changes:
-    - type: Add
-      message: Added barista vend restocks to the dungeon loot tables
-  id: 159
-  time: '2026-02-12T23:21:09.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/865
-- author: DevArchwave
-  changes:
-    - type: Add
-      message: Added lettering decals to the spraypainter.
-  id: 160
-  time: '2026-02-12T23:20:49.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/864
-- author: Jakumba
-  changes:
-    - type: Fix
-      message: Fixed typo on marine suit descriptions.
-  id: 161
-  time: '2026-02-12T23:19:55.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/863
-- author: Sulfari
-  changes:
-    - type: Tweak
-      message: Morgues are now destroyable
-  id: 162
-  time: '2026-02-12T06:39:31.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/860
-- author: DevArchwave
-  changes:
-    - type: Add
-      message: Adds the Supermatter Crystal and SM Monitoring Console.
-  id: 163
-  time: '2026-02-27T07:10:00.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/858
-- author: Jakumba
-  changes:
-    - type: Add
-      message: >-
-        Added a new alternative patrol suit for the NFSD. Cosplay a marine
-        today!
-  id: 164
-  time: '2026-02-12T03:04:09.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/857
-- author: DevArchwave
-  changes:
-    - type: Tweak
-      message: IPC battery rate drastically reduced
-    - type: Fix
-      message: Fixed a bad description for a hypospray
-  id: 165
-  time: '2026-02-12T03:03:21.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/854
-- author: DevArchwave
-  changes:
-    - type: Add
-      message: Horrific Necktie to the Detective's loadout
-  id: 166
-  time: '2026-02-12T03:02:01.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/852
-- author: DevArchwave
-  changes:
-    - type: Tweak
-      message: >-
-        Made Andy, the announcer, less chatty and gave him a special little
-        jingle.
-  id: 167
-  time: '2026-02-09T06:57:03.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/851
-- author: DevArchwave
-  changes:
-    - type: Add
-      message: DoC's hypospray.
-    - type: Add
-      message: NTCS-104 hypospray.
-    - type: Tweak
-      message: >-
-        old hypospray purchase removed from the DoC's loadout, as they now spawn
-        with a unique one.
-    - type: Add
-      message: Nurses and Brigmedics have access to a new hypospray in their loadout.
-  id: 168
-  time: '2026-02-09T02:25:51.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/849
-- author: DevArchwave
-  changes:
-    - type: Tweak
-      message: Wearing some clothes no longer makes the CDET shoot you.
-  id: 169
-  time: '2026-02-09T02:16:40.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/848
-- author: Sulfari
-  changes:
-    - type: Tweak
-      message: >-
-        The health analyzer and the MedTek PDA app now reactivate once you get
-        back in range of your patient.
-  id: 170
-  time: '2026-02-09T06:57:16.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/847
-- author: DevArchwave
-  changes:
-    - type: Tweak
-      message: DIY donk pockets now have omnizine in them and higher nutriment values.
-    - type: Tweak
-      message: >-
-        Omnizine now metabolizes 4x slower, heals the same, but has an overdose
-        threshold.
-    - type: Tweak
-      message: >-
-        Bicaridine, Kelotane and Tricordrazine have been made a little bit more
-        useful.
-  id: 171
-  time: '2026-02-09T02:25:02.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/846
-- author: DevArchwave
-  changes:
-    - type: Tweak
-      message: >-
-        Speso tree is now the gold leaf tree, which drops gold leaves. Which are
-        worth spesos. We've gone full circle.
-  id: 172
-  time: '2026-02-09T02:15:42.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/845
-- author: DevArchwave
-  changes:
-    - type: Add
-      message: Sylashizine auto-injector for IPCs
-    - type: Fix
-      message: IPC Metabolism
-    - type: Fix
-      message: IPCs not showing in medical and security huds
-    - type: Fix
-      message: Capitalization
-  id: 173
-  time: '2026-02-09T02:17:31.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/844
-- author: DevArchwave
-  changes:
-    - type: Add
-      message: Added Ephedrine auto-injector
-    - type: Add
-      message: >-
-        magic spray painter to the Fun loadouts, now with expanded pipe colors
-        and infinite paint!
-    - type: Add
-      message: Branded lighters
-  id: 174
-  time: '2026-02-09T02:14:34.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/842
-- author: DevArchwave
-  changes:
-    - type: Tweak
-      message: >-
-        Adjusted loot pool and spawn probabilities for expeditions: valuables
-        are slightly more prevalent, more useful items in the pool.)
-  id: 175
-  time: '2026-02-12T06:26:57.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/841
-- author: DevArchwave
-  changes:
-    - type: Tweak
-      message: >-
-        Trimmed and stitched two of the announcement audios in order to avoid
-        mentioning NT.
-  id: 176
-  time: '2026-02-09T02:12:46.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/840
-- author: DevArchwave
-  changes:
-    - type: Add
-      message: DoCs and Secretaries can also choose from the coyoteshoes loadout group
-  id: 177
-  time: '2026-02-09T02:12:23.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/839
-- author: DevArchwave
-  changes:
-    - type: Tweak
-      message: Nurses start with medical access
-  id: 178
-  time: '2026-02-05T21:23:19.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/837
-- author: DevArchwave
-  changes:
-    - type: Add
-      message: >-
-        Three new types of garlic bread - french garlic bread, french garlic
-        bread slices, and texas toast
-  id: 179
-  time: '2026-02-05T21:22:47.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/836
-- author: DevArchwave
-  changes:
-    - type: Tweak
-      message: >-
-        Material reclaimers no longer spill excess reagents on the ground after
-        the buffer fills.
-    - type: Tweak
-      message: Material reclaimer reagent buffer increased to 2000u.
-    - type: Tweak
-      message: Redundant drains removed from Frontier POIs.
-    - type: Tweak
-      message: Redundant drains removed from Frontier expeditions and vgroids.
-  id: 180
-  time: '2026-02-05T00:23:06.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/833
-- author: Luksuu
-  changes:
-    - type: Add
-      message: Ability for moths to have hairs
-  id: 181
-  time: '2026-02-05T00:22:52.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/831
-- author: Credits
-  changes:
-    - type: Add
-      message: Foot protectors! Shoes but without the visuals of shoes!
-  id: 182
-  time: '2026-02-05T00:22:07.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/826
-- author: DevArchwave
-  changes:
-    - type: Add
-      message: >-
-        Added a chance for ranged NPCs to miss their target independent of
-        bullet spread.
-  id: 183
-  time: '2026-02-03T00:12:09.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/825
-- author: DevArchwave
-  changes:
-    - type: Add
-      message: Ported upstream broadcast lines
-  id: 184
-  time: '2026-02-05T00:21:45.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/824
-- author: DevArchwave
-  changes:
-    - type: Add
-      message: 'New Recipes: Breakfasts'
-    - type: Add
-      message: 'New Recipes: Hot dogs'
-  id: 185
-  time: '2026-02-05T00:21:55.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/822
-- author: DevArchwave
-  changes:
-    - type: Add
-      message: Moproaches have been added to the game.
-    - type: Add
-      message: Moproaches can sometimes appear from the station's sewage system.
-  id: 186
-  time: '2026-02-02T00:32:24.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/811
-- author: DevArchwave
-  changes:
-    - type: Add
-      message: The mail vend now sells colored paper.
-    - type: Add
-      message: Added goblin plushie.
-    - type: Tweak
-      message: Spesos and spessos now fit in envelopes.
-    - type: Fix
-      message: >-
-        Fixed the error when holding the military mail carrier jumpsuit in your
-        left hand.
-  id: 187
-  time: '2026-02-02T04:46:13.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/810
-- author: Duran
-  changes:
-    - type: Add
-      message: >-
-        Added three new hardsuits — Hostile Environment Hardsuit, Noble Combat
-        Suit, and Surplus Combat Suit.
-  id: 188
-  time: '2026-02-02T04:45:49.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/809
-- author: DevArchwave
-  changes:
-    - type: Fix
-      message: Science fab recipes that were missing are no longer missing.
-  id: 189
-  time: '2026-02-02T00:26:39.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/808
-- author: Superlagg
-  changes:
-    - type: Add
-      message: Adds NARPI
-  id: 190
-  time: '2026-01-30T03:57:38.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/805
-- author: lucentlavender
-  changes:
-    - type: Add
-      message: Added shipyard preview screen to view ship footprint and items
-    - type: Tweak
-      message: Adjusted the Station Map view to allow resuse
-  id: 191
-  time: '2026-01-30T03:25:18.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/802
-- author: DevArchwave
-  changes:
-    - type: Fix
-      message: Adds dim and warm light bulbs back to the lathes
-  id: 192
-  time: '2026-01-29T03:30:55.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/801
-- author: Superlagg
-  changes:
-    - type: Add
-      message: >-
-        A way for freelancers to make DBs, even when the odds are stacked
-        against them!
-  id: 193
-  time: '2026-01-28T22:12:59.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/800
-- author: lucentlavender
-  changes:
-    - type: Add
-      message: Added a search bar to the Late Join crew browser
-    - type: Tweak
-      message: >-
-        Ships that do not have an "Advertisement" set will be hidden by the
-        toggle
-  id: 194
-  time: '2026-01-29T05:41:36.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/798
-- author: YumiGumi
-  changes:
-    - type: Add
-      message: SLI Seraphim, a specialized medical expo ship!
-  id: 195
-  time: '2026-01-28T21:38:25.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/797
-- author: lucentlavender
-  changes:
-    - type: Tweak
-      message: The chatbox will now dynamically resize as you type.
-    - type: Add
-      message: Added a setting to configure the max chatbox height
-  id: 196
-  time: '2026-01-26T07:33:04.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/795
-- author: DevArchwave
-  changes:
-    - type: Fix
-      message: Camera bug uplink purchase
-  id: 197
-  time: '2026-01-26T02:50:21.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/790
-- author: DevArchwave
-  changes:
-    - type: Add
-      message: Donk. Co Assembler board to the Combat Bakery Kit
-  id: 198
-  time: '2026-01-25T01:31:33.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/789
-- author: DevArchwave
-  changes:
-    - type: Fix
-      message: most DIY donk pocket recipes not showing up.
-  id: 199
-  time: '2026-01-25T01:40:59.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/788
-- author: DevArchwave
-  changes:
-    - type: Fix
-      message: re-adds paper buckets to the service lathe
-  id: 200
-  time: '2026-01-25T01:38:19.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/787
-- author: DevArchwave
-  changes:
-    - type: Fix
-      message: donk go ship actually purchasable without causing server errors
-  id: 201
-  time: '2026-01-25T01:37:59.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/786
-- author: Superlagg
-  changes:
-    - type: Add
-      message: You can see whos on a ship's crew in the lobby
-  id: 202
-  time: '2026-01-23T05:36:59.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/783
-- author: Superlagg
-  changes:
-    - type: Add
-      message: Adds more better role grandfathering
-  id: 203
-  time: '2026-01-22T06:12:34.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/781
-- author: Superlagg
-  changes:
-    - type: Tweak
-      message: Alterfies the contraband
-  id: 204
-  time: '2026-01-22T04:00:12.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/780
-- author: Jakumba
-  changes:
-    - type: Tweak
-      message: Quality of life changes to Saint Michales.
-  id: 205
-  time: '2026-01-22T05:24:28.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/779
-- author: Superlagg
-  changes:
-    - type: Tweak
-      message: Tweaked NFSD required times
-  id: 206
-  time: '2026-01-22T03:59:47.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/778
-- author: Jakumba
-  changes:
-    - type: Add
-      message: Cargo Techfab, which can produce a small set of salvage kit
-    - type: Add
-      message: Pirate Techfab, yarrharr print ammo and stick up landlubbers
-    - type: Add
-      message: New melee weapons, available now in the Merc Techfab
-    - type: Tweak
-      message: Techfabs now have extended recipe lists to support their archetypes.
-  id: 207
-  time: '2026-01-21T20:07:41.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/777
-- author: Jakumba
-  changes:
-    - type: Tweak
-      message: Material silos are no longer restricted by range.
-  id: 208
-  time: '2026-01-21T19:41:42.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/776
-- author: DevArchwave
-  changes:
-    - type: Fix
-      message: >-
-        Repair Spray medical assembler recipe now crafts successfully.
-        Previously, it would still craft a synthetic emergency autoinjector.
-    - type: Tweak
-      message: >-
-        Repair Spray medical assembler recipe has been changed to reflect what
-        it heals.
-    - type: Add
-      message: Arcadian Repair Spray.
-  id: 209
-  time: '2026-01-21T03:43:00.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/774
-- author: Superlagg
-  changes:
-    - type: Tweak
-      message: Ship jobs start open
-  id: 210
-  time: '2026-01-21T03:41:26.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/773
-- author: Superlagg
-  changes:
-    - type: Remove
-      message: Prisoner, Pirate captain, pirate first mate, removed
-  id: 211
-  time: '2026-01-21T06:15:08.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/769
-- author: Superlagg
-  changes:
-    - type: Tweak
-      message: Messed with NFSD!
-  id: 212
-  time: '2026-01-20T21:02:02.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/768
-- author: DevArchwave
-  changes:
-    - type: Add
-      message: Caramixin to soda dispensers
-    - type: Add
-      message: Added a new mixed drink "the madgob"
-    - type: Tweak
-      message: >-
-        Coffee production chain simplified, caffeine and decafenol added as a
-        new reagents.
-    - type: Tweak
-      message: >-
-        Tea and coffee based recipes should now consistently have theobromine
-        and caffeine
-  id: 213
-  time: '2026-01-20T21:02:48.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/767
-- author: Superlagg
-  changes:
-    - type: Tweak
-      message: Sec Guard is an NFSD guy
-  id: 214
-  time: '2026-01-20T20:43:32.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/763
-- author: DevArchwave
-  changes:
-    - type: Tweak
-      message: IPCs are now 50% rad resistant by default
-    - type: Tweak
-      message: Changed the IPC guidebook to reflect current changes
-    - type: Fix
-      message: IPCs can properly use borg chargers to charge
-    - type: Fix
-      message: IPC slowdowns due to cold
-    - type: Fix
-      message: >-
-        Blinking pressure and cold icons when IPCs are immune to those damage
-        types
-  id: 215
-  time: '2026-01-20T21:03:58.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/761
-- author: Superlagg
-  changes:
-    - type: Add
-      message: Ports avali markings from Starlight
-  id: 216
-  time: '2026-02-27T04:40:58.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/760
-- author: Superlagg
-  changes:
-    - type: Add
-      message: >-
-        Added Secretary, a broad command role for Nash, combined with STC and
-        Valet
-    - type: Remove
-      message: STC, Valet
-  id: 217
-  time: '2026-01-20T23:25:55.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/758
-- author: Superlagg
-  changes:
-    - type: Tweak
-      message: Plant Tech jobs start open, also some reflavoring
-  id: 218
-  time: '2026-01-20T20:39:42.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/756
-- author: Superlagg
-  changes:
-    - type: Add
-      message: Companion job!
-  id: 219
-  time: '2026-01-20T20:59:43.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/755
-- author: Superlagg
-  changes:
-    - type: Tweak
-      message: Reflavors the DoC and PM to be part of Nash's command.
-  id: 220
-  time: '2026-01-20T20:34:35.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/754
-- author: Superlagg
-  changes:
-    - type: Tweak
-      message: Contractor? Now, resident
-  id: 221
-  time: '2026-01-20T20:28:36.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/752
-- author: Superlagg
-  changes:
-    - type: Add
-      message: Cool radio static gradient for shortband radio!
-  id: 222
-  time: '2026-01-20T20:28:11.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/751
-- author: YumiGumi
-  changes:
-    - type: Add
-      message: overhauled kitchen, armory
-    - type: Remove
-      message: merc fab
-    - type: Tweak
-      message: price of ship
-    - type: Fix
-      message: lathes disconnected from silo
-  id: 223
-  time: '2026-01-20T20:27:53.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/750
-- author: drraccoony
-  changes:
-    - type: Fix
-      message: >-
-        Fixed IFF consoles included with shuttles not correctly displaying the
-        current on/off status
-    - type: Tweak
-      message: Changed IFF consoles to force IFF on if detached from a shuttle
-  id: 224
-  time: '2026-01-16T06:21:26.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/749
-- author: Superlagg
-  changes:
-    - type: Tweak
-      message: Players are carriable
-  id: 225
-  time: '2026-01-16T06:21:10.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/747
-- author: stinky
-  changes:
-    - type: Tweak
-      message: More loot from rogue silicon, new combat-borg upgrade path
-    - type: Add
-      message: Advanced borg modules can be found in rogue silicon lootbags
-    - type: Add
-      message: >-
-        Syndicate assault borg chassis, L6 module, Esword module, 2x TC, can
-        rarely be found in rogue silicon boss lootbag
-  id: 226
-  time: '2026-01-16T06:15:04.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/746
-- author: Possumongus
-  changes:
-    - type: Tweak
-      message: WT mag to 50
-  id: 227
-  time: '2026-01-16T06:14:26.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/745
-- author: Possumongus
-  changes:
-    - type: Tweak
-      message: Drum mag to medium and ammo down to 50
-  id: 228
-  time: '2026-01-16T06:13:59.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/744
-- author: lucentlavender
-  changes:
-    - type: Tweak
-      message: >-
-        Lathes, including ore processors, are no longer capped to making 1 item
-        per tick. High tier manipulators will now be more useful on already fast
-        machines.
-  id: 229
-  time: '2026-01-16T06:13:18.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/743
-- author: YumiGumi
-  changes:
-    - type: Add
-      message: SLI Gourd
-  id: 230
-  time: '2026-01-16T08:08:31.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/742
-- author: LiataiOfTheWood
-  changes:
-    - type: Add
-      message: >-
-        Added new types of filled barrels, and added them to the loot tables of
-        wrecks
-  id: 231
-  time: '2026-01-15T03:02:09.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/740
-- author: Superlagg
-  changes:
-    - type: Add
-      message: Added digitigrade legs for (almost) everyone!
-  id: 232
-  time: '2026-01-15T01:51:14.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/739
-- author: Pharaz4
-  changes:
-    - type: Remove
-      message: Removed Ephedrine from Vent Clogs.
-  id: 233
-  time: '2026-01-15T02:18:31.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/738
-- author: Possumongus
-  changes:
-    - type: Tweak
-      message: Spray paint ammo to 30
-  id: 234
-  time: '2026-01-15T00:58:05.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/736
-- author: Possumongus
-  changes:
-    - type: Tweak
-      message: >-
-        rickenbacken 4003 (the antag one) changed bult stam crit value,
-        misscalculation had lead to onis one shooting. added a bit of extra
-        structural to rickenbacken
-  id: 235
-  time: '2026-01-20T20:27:03.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/735
-- author: LiataiOfTheWood
-  changes:
-    - type: Tweak
-      message: Changed flavor profile of grenadine from bitter to sweet
-  id: 236
-  time: '2026-01-15T02:39:10.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/734
-- author: ErhardSteinhauer
-  changes:
-    - type: Add
-      message: >-
-        Adds a new expedition enemy type - zombies. Unlike real zombies, these
-        ones cannot infect players or NPCs.
-    - type: Add
-      message: >-
-        Adds new armor suit: mercenary armored bio suit. Available from bounty
-        vend.
-  id: 237
-  time: '2026-01-12T07:35:04.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/732
-- author: Bartholemew Dingleberry
-  changes:
-    - type: Tweak
-      message: Construction crates can now store pipes and other atmos devices
-  id: 238
-  time: '2026-01-12T07:34:25.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/731
-- author: W0LF-101
-  changes:
-    - type: Tweak
-      message: No more NT in event messages
-    - type: Tweak
-      message: Clarpy is now wanted by the TSF
-  id: 239
-  time: '2026-01-09T08:08:38.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/728
-- author: Jakumba
-  changes:
-    - type: Tweak
-      message: Capped IPC bleed stacks at 4 (usual is 10).
-    - type: Tweak
-      message: >-
-        IPCs do not take bloodloss damage until they have lost 50% of their
-        internal fluid.
-    - type: Tweak
-      message: IPCs are no longer slowed by cold again.
-    - type: Tweak
-      message: Increased damage that IPCs take from heat, watch out for lava.
-  id: 240
-  time: '2026-01-09T08:05:50.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/727
-- author: Mace70904
-  changes:
-    - type: Tweak
-      message: Bocakillo given a fresh coat of paint and some QoL changes
-    - type: Tweak
-      message: Bocakillo atmospherics changed to support pipe layering
-  id: 241
-  time: '2026-01-09T08:07:09.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/726
-- author: dustylens
-  changes:
-    - type: Tweak
-      message: Updated the Dragonfly to it's new upstream refreshed version.
-  id: 242
-  time: '2026-01-09T08:07:35.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/725
-- author: W0LF-101
-  changes:
-    - type: Fix
-      message: Filled Security Belt now contains default Stunbaton.
-  id: 243
-  time: '2026-01-09T08:07:59.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/724
-- author: Superlagg
-  changes:
-    - type: Tweak
-      message: Tajaran sizes are retouched, as a sort of idk test
-    - type: Fix
-      message: Tajaran needs and markings work more better!
-  id: 244
-  time: '2026-01-08T06:42:41.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/723
-- author: KyuPolaris
-  changes:
-    - type: Add
-      message: >-
-        Added a TON of AAC tablet phrases for all the lovely mutes/non-verbal
-        friends out there on the frontier
-  id: 245
-  time: '2026-01-08T06:41:50.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/722
-- author: oooielp
-  changes:
-    - type: Tweak
-      message: renamed syndicate jaws of life -> jaws of death
-  id: 246
-  time: '2026-01-04T09:11:13.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/718
-- author: Karlm4x, DustyLens, Jakumba
-  changes:
-    - type: Add
-      message: Added plasma & uranium glass floor tiles
-    - type: Add
-      message: Added inter-ship holopads.
-    - type: Tweak
-      message: Updated the Crescent to it's upstream rework
-  id: 247
-  time: '2026-01-05T06:17:52.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/717
-- author: stinky
-  changes:
-    - type: Tweak
-      message: Even more ammo alignment
-    - type: Tweak
-      message: NFSD & Syndicate uplinks now have .40 pistol ammo
-  id: 248
-  time: '2026-01-05T05:56:59.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/716
-- author: Ark, Jakumba
-  changes:
-    - type: Add
-      message: Radio channels can now be range limited.
-    - type: Tweak
-      message: Traffic -> Shortband (750 Meters).
-  id: 249
-  time: '2026-01-04T09:06:53.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/715
-- author: W0LF-101
-  changes:
-    - type: Add
-      message: >-
-        Added metaprotected security stunbaton variant, available to NFSD and
-        Station Sec
-    - type: Tweak
-      message: >-
-        Standard stunbatons now have the intended ~1.5x stamina damage
-        multiplier rather than 3x
-  id: 250
-  time: '2026-01-04T09:07:13.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/714
-- author: oooielp
-  changes:
-    - type: Add
-      message: experiment plushie in loadout options
-  id: 251
-  time: '2026-01-03T17:50:30.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/713
-- author: oooielp
-  changes:
-    - type: Tweak
-      message: Syndicate UIV c20r lootboxes now contain correct ammo
-  id: 252
-  time: '2026-01-02T23:40:18.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/710
-- author: oooielp
-  changes:
-    - type: Tweak
-      message: Sec & NFSD roles that spawn with mk32 have correct ammo
-  id: 253
-  time: '2026-01-02T23:40:32.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/709
-- author: Jakumba
-  changes:
-    - type: Add
-      message: Added Tajaran from Paradise 13!
-  id: 254
-  time: '2026-01-05T05:58:33.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/708
-- author: drraccoony
-  changes:
-    - type: Tweak
-      message: >-
-        Shuttle e-break logic. Minor performance improvements on server
-        overhead.
-  id: 255
-  time: '2026-01-02T21:55:30.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/707
+  time: '2026-01-02T22:48:52.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/704
 - author: lucentlavender
   changes:
     - type: Add
@@ -2181,1032 +892,1631 @@ Entries:
       message: >-
         Bounties will no longer display the poster's true name, except to
         SR/Sheriff
-  id: 256
+  id: 100
   time: '2026-01-02T21:58:27.0000000+00:00'
   url: https://github.com/ARF-SS13/coyote-frontier/pull/706
 - author: Jakumba
   changes:
     - type: Add
-      message: Added Nurse and Therapist spawns to Saint Michaels
-    - type: Fix
-      message: Fixed Edisons cargo consoles.
-  id: 257
-  time: '2026-01-02T22:48:52.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/704
-- author: infinitelyExplosive
+      message: Added Tajaran from Paradise 13!
+  id: 101
+  time: '2026-01-05T05:58:33.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/708
+- author: oooielp
   changes:
-    - type: Fix
-      message: Fixed weird message when waving while dragging object
-  id: 258
-  time: '2026-01-02T23:40:04.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/703
+    - type: Tweak
+      message: Sec & NFSD roles that spawn with mk32 have correct ammo
+  id: 102
+  time: '2026-01-02T23:40:32.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/709
+- author: oooielp
+  changes:
+    - type: Add
+      message: experiment plushie in loadout options
+  id: 103
+  time: '2026-01-03T17:50:30.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/713
 - author: W0LF-101
   changes:
+    - type: Add
+      message: >-
+        Added metaprotected security stunbaton variant, available to NFSD and
+        Station Sec
     - type: Tweak
-      message: Smuggler Job now requires Pirate Whitelist.
-  id: 259
-  time: '2025-12-29T02:37:08.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/702
-- author: Jakumba
+      message: >-
+        Standard stunbatons now have the intended ~1.5x stamina damage
+        multiplier rather than 3x
+  id: 104
+  time: '2026-01-04T09:07:13.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/714
+- author: Ark, Jakumba
   changes:
     - type: Add
-      message: Added gas miners to Nash, and a cargo purchase computer to the dry dock.
-  id: 260
-  time: '2025-12-29T02:36:18.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/701
-- author: Jakumba
-  changes:
-    - type: Add
-      message: Added Chitinids' from the Delta Sector!
-  id: 261
-  time: '2025-12-29T02:35:36.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/700
-- author: Superlagg
-  changes:
-    - type: Add
-      message: Ported some cute tails from floof!
-  id: 262
-  time: '2025-12-27T22:24:03.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/699
-- author: Superlagg
-  changes:
-    - type: Add
-      message: Added a d20 button and verb!
-  id: 263
-  time: '2025-12-25T02:59:48.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/697
-- author: Jakumba
-  changes:
-    - type: Add
-      message: Added a new NFSD form for tracking your own pay.
-  id: 264
-  time: '2025-12-25T00:58:05.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/696
-- author: Kilmented
+      message: Radio channels can now be range limited.
+    - type: Tweak
+      message: Traffic -> Shortband (750 Meters).
+  id: 105
+  time: '2026-01-04T09:06:53.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/715
+- author: stinky
   changes:
     - type: Tweak
-      message: buffed melee by 2.7x
-  id: 265
-  time: '2025-12-22T07:34:06.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/688
-- author: Superlagg
+      message: Even more ammo alignment
+    - type: Tweak
+      message: NFSD & Syndicate uplinks now have .40 pistol ammo
+  id: 106
+  time: '2026-01-05T05:56:59.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/716
+- author: oooielp
+  changes:
+    - type: Tweak
+      message: renamed syndicate jaws of life -> jaws of death
+  id: 107
+  time: '2026-01-04T09:11:13.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/718
+- author: KyuPolaris
   changes:
     - type: Add
-      message: Added butts and bellies from SS13!
-  id: 266
-  time: '2025-12-22T07:03:09.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/684
-- author: Superlagg
+      message: >-
+        Added a TON of AAC tablet phrases for all the lovely mutes/non-verbal
+        friends out there on the frontier
+  id: 108
+  time: '2026-01-08T06:41:50.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/722
+- author: W0LF-101
   changes:
-    - type: Add
-      message: Adds blood smell
-    - type: Tweak
-      message: Bank Customers are smelly
-    - type: Add
-      message: Added Nuzzle
-    - type: Tweak
-      message: You can Check Out (and such) non-players.
-    - type: Tweak
-      message: This'll make the popup visible!
-    - type: Tweak
-      message: doing private interactions with actual players is still private
     - type: Fix
-      message: Fixed bodytypes
-    - type: Fix
-      message: Her is no longer
+      message: Filled Security Belt now contains default Stunbaton.
+  id: 109
+  time: '2026-01-09T08:07:59.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/724
+- author: dustylens
+  changes:
     - type: Tweak
-      message: interaction submenus should be in the right order more often
-  id: 267
-  time: '2025-12-19T00:40:03.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/682
-- author: Superlagg
+      message: Updated the Dragonfly to it's new upstream refreshed version.
+  id: 110
+  time: '2026-01-09T08:07:35.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/725
+- author: Mace70904
+  changes:
+    - type: Tweak
+      message: Bocakillo given a fresh coat of paint and some QoL changes
+    - type: Tweak
+      message: Bocakillo atmospherics changed to support pipe layering
+  id: 111
+  time: '2026-01-09T08:07:09.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/726
+- author: Jakumba
+  changes:
+    - type: Tweak
+      message: Capped IPC bleed stacks at 4 (usual is 10).
+    - type: Tweak
+      message: >-
+        IPCs do not take bloodloss damage until they have lost 50% of their
+        internal fluid.
+    - type: Tweak
+      message: IPCs are no longer slowed by cold again.
+    - type: Tweak
+      message: Increased damage that IPCs take from heat, watch out for lava.
+  id: 112
+  time: '2026-01-09T08:05:50.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/727
+- author: Bartholemew Dingleberry
+  changes:
+    - type: Tweak
+      message: Construction crates can now store pipes and other atmos devices
+  id: 113
+  time: '2026-01-12T07:34:25.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/731
+- author: ErhardSteinhauer
+  changes:
+    - type: Add
+      message: >-
+        Adds a new expedition enemy type - zombies. Unlike real zombies, these
+        ones cannot infect players or NPCs.
+    - type: Add
+      message: >-
+        Adds new armor suit: mercenary armored bio suit. Available from bounty
+        vend.
+  id: 114
+  time: '2026-01-12T07:35:04.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/732
+- author: LiataiOfTheWood
+  changes:
+    - type: Tweak
+      message: Changed flavor profile of grenadine from bitter to sweet
+  id: 115
+  time: '2026-01-15T02:39:10.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/734
+- author: Possumongus
+  changes:
+    - type: Tweak
+      message: >-
+        rickenbacken 4003 (the antag one) changed bult stam crit value,
+        misscalculation had lead to onis one shooting. added a bit of extra
+        structural to rickenbacken
+  id: 116
+  time: '2026-01-20T20:27:03.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/735
+- author: Pharaz4
+  changes:
+    - type: Remove
+      message: Removed Ephedrine from Vent Clogs.
+  id: 117
+  time: '2026-01-15T02:18:31.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/738
+- author: LiataiOfTheWood
+  changes:
+    - type: Add
+      message: >-
+        Added new types of filled barrels, and added them to the loot tables of
+        wrecks
+  id: 118
+  time: '2026-01-15T03:02:09.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/740
+- author: YumiGumi
+  changes:
+    - type: Add
+      message: SLI Gourd
+  id: 119
+  time: '2026-01-16T08:08:31.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/742
+- author: Possumongus
+  changes:
+    - type: Tweak
+      message: Drum mag to medium and ammo down to 50
+  id: 120
+  time: '2026-01-16T06:13:59.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/744
+- author: stinky
+  changes:
+    - type: Tweak
+      message: More loot from rogue silicon, new combat-borg upgrade path
+    - type: Add
+      message: Advanced borg modules can be found in rogue silicon lootbags
+    - type: Add
+      message: >-
+        Syndicate assault borg chassis, L6 module, Esword module, 2x TC, can
+        rarely be found in rogue silicon boss lootbag
+  id: 121
+  time: '2026-01-16T06:15:04.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/746
+- author: drraccoony
   changes:
     - type: Fix
       message: >-
-        No longer need to have your own smell to stop smelling other peoples
-        smelly smells
-  id: 268
-  time: '2025-12-18T03:45:39.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/676
-- author: Superlagg
-  changes:
+        Fixed IFF consoles included with shuttles not correctly displaying the
+        current on/off status
     - type: Tweak
-      message: Subtle range increased from 1 to 1.5 radius (its a circle!!)
-  id: 269
-  time: '2025-12-18T00:22:09.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/675
-- author: Nersylla
+      message: Changed IFF consoles to force IFF on if detached from a shuttle
+  id: 122
+  time: '2026-01-16T06:21:26.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/749
+- author: Superlagg
   changes:
     - type: Add
-      message: Ported the Stringer journalism shuttle as a LL0 ship.
-  id: 270
-  time: '2025-12-18T04:41:46.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/674
+      message: Cool radio static gradient for shortband radio!
+  id: 123
+  time: '2026-01-20T20:28:11.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/751
 - author: Superlagg
   changes:
-    - type: Fix
-      message: Athletic is no longer Her
-  id: 271
-  time: '2025-12-17T03:51:00.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/672
-- author: drraccoony
+    - type: Tweak
+      message: Reflavors the DoC and PM to be part of Nash's command.
+  id: 124
+  time: '2026-01-20T20:34:35.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/754
+- author: Superlagg
+  changes:
+    - type: Add
+      message: Companion job!
+  id: 125
+  time: '2026-01-20T20:59:43.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/755
+- author: Superlagg
+  changes:
+    - type: Add
+      message: >-
+        Added Secretary, a broad command role for Nash, combined with STC and
+        Valet
+    - type: Remove
+      message: STC, Valet
+  id: 126
+  time: '2026-01-20T23:25:55.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/758
+- author: Superlagg
+  changes:
+    - type: Add
+      message: Ports avali markings from Starlight
+  id: 127
+  time: '2026-02-27T04:40:58.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/760
+- author: DevArchwave
   changes:
     - type: Tweak
-      message: Reworked Verb Categories
-  id: 272
-  time: '2025-12-18T00:22:40.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/671
+      message: IPCs are now 50% rad resistant by default
+    - type: Tweak
+      message: Changed the IPC guidebook to reflect current changes
+    - type: Fix
+      message: IPCs can properly use borg chargers to charge
+    - type: Fix
+      message: IPC slowdowns due to cold
+    - type: Fix
+      message: >-
+        Blinking pressure and cold icons when IPCs are immune to those damage
+        types
+  id: 128
+  time: '2026-01-20T21:03:58.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/761
+- author: Superlagg
+  changes:
+    - type: Tweak
+      message: Sec Guard is an NFSD guy
+  id: 129
+  time: '2026-01-20T20:43:32.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/763
+- author: DevArchwave
+  changes:
+    - type: Add
+      message: Caramixin to soda dispensers
+    - type: Add
+      message: Added a new mixed drink "the madgob"
+    - type: Tweak
+      message: >-
+        Coffee production chain simplified, caffeine and decafenol added as a
+        new reagents.
+    - type: Tweak
+      message: >-
+        Tea and coffee based recipes should now consistently have theobromine
+        and caffeine
+  id: 130
+  time: '2026-01-20T21:02:48.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/767
+- author: Superlagg
+  changes:
+    - type: Remove
+      message: Prisoner, Pirate captain, pirate first mate, removed
+  id: 131
+  time: '2026-01-21T06:15:08.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/769
+- author: Superlagg
+  changes:
+    - type: Tweak
+      message: Ship jobs start open
+  id: 132
+  time: '2026-01-21T03:41:26.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/773
+- author: DevArchwave
+  changes:
+    - type: Fix
+      message: >-
+        Repair Spray medical assembler recipe now crafts successfully.
+        Previously, it would still craft a synthetic emergency autoinjector.
+    - type: Tweak
+      message: >-
+        Repair Spray medical assembler recipe has been changed to reflect what
+        it heals.
+    - type: Add
+      message: Arcadian Repair Spray.
+  id: 133
+  time: '2026-01-21T03:43:00.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/774
+- author: Jakumba
+  changes:
+    - type: Tweak
+      message: Material silos are no longer restricted by range.
+  id: 134
+  time: '2026-01-21T19:41:42.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/776
+- author: Jakumba
+  changes:
+    - type: Add
+      message: Cargo Techfab, which can produce a small set of salvage kit
+    - type: Add
+      message: Pirate Techfab, yarrharr print ammo and stick up landlubbers
+    - type: Add
+      message: New melee weapons, available now in the Merc Techfab
+    - type: Tweak
+      message: Techfabs now have extended recipe lists to support their archetypes.
+  id: 135
+  time: '2026-01-21T20:07:41.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/777
+- author: Jakumba
+  changes:
+    - type: Tweak
+      message: Quality of life changes to Saint Michales.
+  id: 136
+  time: '2026-01-22T05:24:28.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/779
+- author: Superlagg
+  changes:
+    - type: Add
+      message: Adds more better role grandfathering
+  id: 137
+  time: '2026-01-22T06:12:34.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/781
+- author: Superlagg
+  changes:
+    - type: Add
+      message: You can see whos on a ship's crew in the lobby
+  id: 138
+  time: '2026-01-23T05:36:59.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/783
+- author: DevArchwave
+  changes:
+    - type: Fix
+      message: donk go ship actually purchasable without causing server errors
+  id: 139
+  time: '2026-01-25T01:37:59.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/786
+- author: DevArchwave
+  changes:
+    - type: Fix
+      message: re-adds paper buckets to the service lathe
+  id: 140
+  time: '2026-01-25T01:38:19.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/787
+- author: DevArchwave
+  changes:
+    - type: Fix
+      message: most DIY donk pocket recipes not showing up.
+  id: 141
+  time: '2026-01-25T01:40:59.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/788
+- author: DevArchwave
+  changes:
+    - type: Fix
+      message: Camera bug uplink purchase
+  id: 142
+  time: '2026-01-26T02:50:21.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/790
 - author: lucentlavender
   changes:
     - type: Tweak
-      message: >-
-        Added additional options to Air Scrubber's "Gas Filters", allowing them
-        to filter gases over a threshold percentage.
-  id: 273
-  time: '2025-12-17T04:11:14.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/669
-- author: Superlagg
-  changes:
-    - type: Fix
-      message: Turning off smelling things works now
-  id: 274
-  time: '2025-12-15T04:00:23.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/667
-- author: Jakumba
+      message: The chatbox will now dynamically resize as you type.
+    - type: Add
+      message: Added a setting to configure the max chatbox height
+  id: 143
+  time: '2026-01-26T07:33:04.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/795
+- author: YumiGumi
   changes:
     - type: Add
-      message: Added Ovinia species!
-  id: 275
-  time: '2025-12-15T06:06:00.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/666
-- author: Superlagg
+      message: SLI Seraphim, a specialized medical expo ship!
+  id: 144
+  time: '2026-01-28T21:38:25.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/797
+- author: lucentlavender
   changes:
-    - type: Fix
-      message: Fixed the pirate-near-capturebait thing?
-  id: 276
-  time: '2025-12-15T01:58:39.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/665
+    - type: Add
+      message: Added a search bar to the Late Join crew browser
+    - type: Tweak
+      message: >-
+        Ships that do not have an "Advertisement" set will be hidden by the
+        toggle
+  id: 145
+  time: '2026-01-29T05:41:36.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/798
 - author: Superlagg
   changes:
     - type: Add
-      message: Body type descriptor traits!
-  id: 277
-  time: '2025-12-15T01:56:47.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/663
-- author: Nnelg
-  changes:
-    - type: Fix
-      message: Pomegranates now have proper English names.
-  id: 278
-  time: '2025-12-14T05:29:02.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/660
-- author: Kilmented
+      message: >-
+        A way for freelancers to make DBs, even when the odds are stacked
+        against them!
+  id: 146
+  time: '2026-01-28T22:12:59.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/800
+- author: lucentlavender
   changes:
     - type: Add
-      message: nfsd exclusive chud shipgun machinegun
-  id: 279
-  time: '2025-12-13T22:15:03.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/659
-- author: Jakumba
-  changes:
-    - type: Add
-      message: Added holster slots or medkit pouches to a variety of belts!
-  id: 280
-  time: '2025-12-13T22:21:18.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/658
+      message: Added shipyard preview screen to view ship footprint and items
+    - type: Tweak
+      message: Adjusted the Station Map view to allow resuse
+  id: 147
+  time: '2026-01-30T03:25:18.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/802
 - author: Superlagg
   changes:
     - type: Add
-      message: Added smell mechanics!
-  id: 281
-  time: '2025-12-14T05:39:10.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/657
-- author: drraccoony
+      message: Adds NARPI
+  id: 148
+  time: '2026-01-30T03:57:38.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/805
+- author: DevArchwave
   changes:
     - type: Fix
-      message: 'Thruster Layers for damage consistency '
-  id: 282
-  time: '2025-12-13T22:17:13.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/656
+      message: Science fab recipes that were missing are no longer missing.
+  id: 149
+  time: '2026-02-02T00:26:39.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/808
+- author: Duran
+  changes:
+    - type: Add
+      message: >-
+        Added three new hardsuits — Hostile Environment Hardsuit, Noble Combat
+        Suit, and Surplus Combat Suit.
+  id: 150
+  time: '2026-02-02T04:45:49.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/809
+- author: DevArchwave
+  changes:
+    - type: Add
+      message: Moproaches have been added to the game.
+    - type: Add
+      message: Moproaches can sometimes appear from the station's sewage system.
+  id: 151
+  time: '2026-02-02T00:32:24.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/811
+- author: DevArchwave
+  changes:
+    - type: Add
+      message: 'New Recipes: Breakfasts'
+    - type: Add
+      message: 'New Recipes: Hot dogs'
+  id: 152
+  time: '2026-02-05T00:21:55.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/822
+- author: DevArchwave
+  changes:
+    - type: Add
+      message: Ported upstream broadcast lines
+  id: 153
+  time: '2026-02-05T00:21:45.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/824
+- author: DevArchwave
+  changes:
+    - type: Add
+      message: >-
+        Added a chance for ranged NPCs to miss their target independent of
+        bullet spread.
+  id: 154
+  time: '2026-02-03T00:12:09.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/825
+- author: Luksuu
+  changes:
+    - type: Add
+      message: Ability for moths to have hairs
+  id: 155
+  time: '2026-02-05T00:22:52.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/831
+- author: DevArchwave
+  changes:
+    - type: Tweak
+      message: >-
+        Material reclaimers no longer spill excess reagents on the ground after
+        the buffer fills.
+    - type: Tweak
+      message: Material reclaimer reagent buffer increased to 2000u.
+    - type: Tweak
+      message: Redundant drains removed from Frontier POIs.
+    - type: Tweak
+      message: Redundant drains removed from Frontier expeditions and vgroids.
+  id: 156
+  time: '2026-02-05T00:23:06.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/833
+- author: DevArchwave
+  changes:
+    - type: Add
+      message: >-
+        Three new types of garlic bread - french garlic bread, french garlic
+        bread slices, and texas toast
+  id: 157
+  time: '2026-02-05T21:22:47.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/836
+- author: DevArchwave
+  changes:
+    - type: Add
+      message: DoCs and Secretaries can also choose from the coyoteshoes loadout group
+  id: 158
+  time: '2026-02-09T02:12:23.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/839
+- author: DevArchwave
+  changes:
+    - type: Tweak
+      message: >-
+        Trimmed and stitched two of the announcement audios in order to avoid
+        mentioning NT.
+  id: 159
+  time: '2026-02-09T02:12:46.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/840
+- author: DevArchwave
+  changes:
+    - type: Tweak
+      message: >-
+        Adjusted loot pool and spawn probabilities for expeditions: valuables
+        are slightly more prevalent, more useful items in the pool.)
+  id: 160
+  time: '2026-02-12T06:26:57.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/841
+- author: DevArchwave
+  changes:
+    - type: Add
+      message: Sylashizine auto-injector for IPCs
+    - type: Fix
+      message: IPC Metabolism
+    - type: Fix
+      message: IPCs not showing in medical and security huds
+    - type: Fix
+      message: Capitalization
+  id: 161
+  time: '2026-02-09T02:17:31.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/844
+- author: DevArchwave
+  changes:
+    - type: Tweak
+      message: DIY donk pockets now have omnizine in them and higher nutriment values.
+    - type: Tweak
+      message: >-
+        Omnizine now metabolizes 4x slower, heals the same, but has an overdose
+        threshold.
+    - type: Tweak
+      message: >-
+        Bicaridine, Kelotane and Tricordrazine have been made a little bit more
+        useful.
+  id: 162
+  time: '2026-02-09T02:25:02.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/846
+- author: DevArchwave
+  changes:
+    - type: Tweak
+      message: Wearing some clothes no longer makes the CDET shoot you.
+  id: 163
+  time: '2026-02-09T02:16:40.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/848
+- author: DevArchwave
+  changes:
+    - type: Add
+      message: DoC's hypospray.
+    - type: Add
+      message: NTCS-104 hypospray.
+    - type: Tweak
+      message: >-
+        old hypospray purchase removed from the DoC's loadout, as they now spawn
+        with a unique one.
+    - type: Add
+      message: Nurses and Brigmedics have access to a new hypospray in their loadout.
+  id: 164
+  time: '2026-02-09T02:25:51.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/849
+- author: DevArchwave
+  changes:
+    - type: Add
+      message: Horrific Necktie to the Detective's loadout
+  id: 165
+  time: '2026-02-12T03:02:01.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/852
+- author: DevArchwave
+  changes:
+    - type: Tweak
+      message: IPC battery rate drastically reduced
+    - type: Fix
+      message: Fixed a bad description for a hypospray
+  id: 166
+  time: '2026-02-12T03:03:21.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/854
 - author: Jakumba
   changes:
-    - type: Tweak
-      message: Welding IPCs will remove bloodloss damage
-    - type: Fix
-      message: Fixed diagnostic HUDs not reading IPC healthbars
-  id: 283
-  time: '2025-12-13T22:18:03.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/653
-- author: drraccoony
+    - type: Add
+      message: >-
+        Added a new alternative patrol suit for the NFSD. Cosplay a marine
+        today!
+  id: 167
+  time: '2026-02-12T03:04:09.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/857
+- author: DevArchwave
   changes:
-    - type: Tweak
-      message: Vore system adjustments
-  id: 284
-  time: '2025-12-08T05:04:21.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/633
+    - type: Add
+      message: Adds the Supermatter Crystal and SM Monitoring Console.
+  id: 168
+  time: '2026-02-27T07:10:00.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/858
 - author: Jakumba
   changes:
     - type: Fix
-      message: >-
-        Fixed the repair patch blueprint printing an entire stack of patches at
-        a time.
-  id: 285
-  time: '2025-12-05T22:53:35.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/619
-- author: Dahlular
+      message: Fixed typo on marine suit descriptions.
+  id: 169
+  time: '2026-02-12T23:19:55.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/863
+- author: DevArchwave
   changes:
     - type: Add
-      message: Scurrets! (Wawas)
-  id: 286
-  time: '2025-12-05T03:38:07.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/592
-- author: Jakumba
-  changes:
-    - type: Fix
-      message: >-
-        Fixed silicon topicals (repair patches and spray) not working on IPCs.
-        Sorry gang!
-  id: 287
-  time: '2025-12-04T17:39:42.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/589
-- author: Jakumba
-  changes:
-    - type: Fix
-      message: >-
-        Fixed IPCs & Borgs taking unintended types of damage (structural &
-        radiation respectively)
-  id: 288
-  time: '2025-12-04T06:01:18.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/585
-- author: Jakumba
-  changes:
-    - type: Tweak
-      message: Changed belts to layer on top of outerwear again.
-  id: 289
-  time: '2025-12-04T00:05:09.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/584
-- author: W0LF-101
-  changes:
-    - type: Tweak
-      message: Sustenance vendor description changed.
-    - type: Tweak
-      message: Sustenance vendor stock changed, basic essentials made infinite.
-    - type: Tweak
-      message: Water bottles are now sellable on cargo pads, with a base value of 50.
-  id: 290
-  time: '2025-12-04T00:04:46.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/582
-- author: Jakumba
+      message: Added lettering decals to the spraypainter.
+  id: 170
+  time: '2026-02-12T23:20:49.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/864
+- author: DevArchwave
   changes:
     - type: Add
-      message: Added new phrases and sounds to the AAC tablet!
-  id: 291
-  time: '2025-12-04T00:01:27.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/577
-- author: Jakumba
+      message: Adds fake wizard robes and staff
+  id: 171
+  time: '2026-02-13T03:57:23.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/869
+- author: DevArchwave
   changes:
     - type: Tweak
-      message: Changes to IPC damage modifier set (less damage across the board)
+      message: Reworked wizard NPCs and the wizard-themed UIV bluespace event.
     - type: Tweak
-      message: Changes to IPC topical healing amount
+      message: Wizards and Cultists are now vulnerable to Holy Damage.
     - type: Add
-      message: Repair patches can be crafted now
-  id: 292
-  time: '2025-12-01T21:35:08.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/575
-- author: Jakumba
+      message: Added a variety of new magical items, spell scrolls, and staves.
+  id: 172
+  time: '2026-02-19T01:36:15.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/871
+- author: DevArchwave
   changes:
-    - type: Tweak
-      message: Repair Patches for IPCs now stack up to 10
+    - type: Add
+      message: Added pilot colors to the Frontier color palette.
+    - type: Add
+      message: Added pilot wall locker.
     - type: Tweak
       message: >-
-        Repair Patches cost slightly more at the CiviMed Plus ($2500 => $3000)
-        but are sold in packs of 10
-  id: 293
-  time: '2025-12-01T20:30:31.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/573
-- author: Steffo99
-  changes:
-    - type: Fix
-      message: Fixed the RGB staff not working.
-  id: 294
-  time: '2026-01-20T20:25:31.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/558
-- author: Mace70903
-  changes:
-    - type: Add
-      message: New version of the NFSD Outpost with GenPop!
-  id: 295
-  time: '2025-11-26T22:03:00.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/520
-- author: SmolGreenBuggo
-  changes:
+        Tweaked pilot webbing contents: replaced mass scanner, remote signaler
+        with welder and universal pinpointer.
     - type: Tweak
-      message: tweaked yegorov a bit
-  id: 296
-  time: '2025-11-24T08:18:18.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/510
-- author: Forzii
-  changes:
-    - type: Add
-      message: Added showers and a new plumbing assembly part
-    - type: Tweak
-      message: Sinks and drains now require the new plumbing assembly to build
-  id: 297
-  time: '2025-11-25T22:46:34.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/500
-- author: SmolGreenBuggo
-  changes:
-    - type: Add
-      message: added the Gadfly
-  id: 298
-  time: '2025-11-21T05:45:17.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/491
-- author: SmolGreenBuggo
-  changes:
-    - type: Fix
-      message: Fixed Albatross
-  id: 299
-  time: '2025-11-20T21:11:07.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/487
-- author: SmolGreenBuggo
-  changes:
-    - type: Tweak
-      message: changed tiles
-  id: 300
-  time: '2025-11-20T03:10:18.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/484
-- author: SimplyPoodle
-  changes:
-    - type: Add
-      message: distorted poodle
-  id: 301
-  time: '2025-11-19T21:07:39.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/480
-- author: SimplyPoodle
-  changes:
-    - type: Add
-      message: my nuts(2)
-  id: 302
-  time: '2025-11-21T07:51:54.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/471
-- author: SimplyPoodle
-  changes:
-    - type: Add
-      message: my nuts
-  id: 303
-  time: '2025-11-18T20:55:55.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/469
-- author: Forzii
-  changes:
-    - type: Tweak
-      message: Made smugglers always spawn with chameleon PDA and ID
-  id: 304
-  time: '2025-11-17T19:49:37.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/467
-- author: ShepardToTheStars
-  changes:
-    - type: Add
       message: >-
-        Added the AAC tablet so that mute players can attempt to communicate
-        better!
-  id: 305
-  time: '2025-11-18T20:57:13.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/466
-- author: SmolGreenBuggo
-  changes:
-    - type: Add
-      message: added the Chunk
-  id: 306
-  time: '2025-11-17T19:54:21.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/465
-- author: SmolGreenBuggo
-  changes:
+        Any amount of Ethylredoxrazine will now fully cleanse drinks from a
+        drunken patient's system
     - type: Tweak
-      message: adjusted Placebo a bit for QOL
-  id: 307
-  time: '2025-11-17T05:47:22.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/463
-- author: SmolGreenBuggo
+      message: >-
+        Dwarves are now even more tolerant to alcohol poisoning, and can be
+        resuscitated with booze
+  id: 173
+  time: '2026-02-15T20:28:09.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/874
+- author: Luksuu
   changes:
     - type: Add
-      message: added the Yegorov
-  id: 308
-  time: '2025-11-17T19:49:03.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/461
-- author: SmolGreenBuggo
-  changes:
+      message: Pirate Baddie Turtleneck
     - type: Add
-      message: added the KAZ Petrel!
-  id: 309
-  time: '2025-11-17T05:46:02.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/444
-- author: SimplyPoodle
-  changes:
-    - type: Add
-      message: uhhh fuck if i know
-  id: 310
-  time: '2025-11-16T21:05:08.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/442
-- author: SmolGreenBuggo
+      message: Pirate Baddie Suspenders
+  id: 174
+  time: '2026-02-15T23:25:57.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/878
+- author: DevArchwave
   changes:
     - type: Tweak
       message: >-
-        made Ambition exped capable again, adjusted price to reflect this and
-        updated the original price with our downstream speso value differences
-  id: 311
-  time: '2025-11-16T20:49:27.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/438
-- author: W0LF-101
+        Regular lights break 3x harder during a solar flare, and shielded lights
+        100x harder.
+  id: 175
+  time: '2026-02-15T23:24:54.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/880
+- author: DevArchwave
+  changes:
+    - type: Fix
+      message: Shielded lights are actually shielded, again. Whoops.
+  id: 176
+  time: '2026-02-18T03:30:49.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/885
+- author: KodiCraft
+  changes:
+    - type: Fix
+      message: typo in foot protector description
+  id: 177
+  time: '2026-02-19T01:35:28.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/886
+- author: KodiCraft
   changes:
     - type: Tweak
-      message: Pirate IDs, PDAs and Headsets are no longer inherently C3 Contraband.
-  id: 312
-  time: '2025-11-14T20:21:51.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/436
-- author: Forzii
+      message: potted plants now scrub ammonia and nitrous oxide
+  id: 178
+  time: '2026-02-19T03:47:04.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/889
+- author: DevArchwave
   changes:
+    - type: Add
+      message: Added kink vend and scrapyard console to the den.
+    - type: Remove
+      message: A bunch of drains.
     - type: Fix
-      message: Fixed curators spawning with extra stuff
-  id: 313
-  time: '2025-11-16T20:48:38.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/435
-- author: W0LF-101
+      message: 'Bad atmos issue with a few tiles in the medical dock. '
+  id: 179
+  time: '2026-03-05T07:20:50.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/892
+- author: DevArchwave
   changes:
     - type: Add
-      message: Added NFSD energy sword to their uplink.
-    - type: Tweak
-      message: Changed price of uplink captains sabre to 5 FUCs
-  id: 314
-  time: '2025-11-14T19:23:07.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/433
-- author: W0LF-101
-  changes:
-    - type: Tweak
-      message: Changes baby dragon to a fully fledged space drake
-  id: 315
-  time: '2025-11-14T19:23:40.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/432
-- author: SimplyPoodle
-  changes:
-    - type: Add
-      message: Port of the BaristaVend and tea's from Monolith.
-  id: 316
-  time: '2025-11-16T20:46:34.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/429
-- author: SimplyPoodle
-  changes:
-    - type: Add
-      message: Vindicator
-  id: 317
-  time: '2025-11-14T04:14:33.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/428
-- author: SimplyPoodle
-  changes:
-    - type: Add
-      message: bwuh
-  id: 318
-  time: '2025-11-14T04:12:56.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/426
-- author: Forzii
-  changes:
-    - type: Fix
-      message: Fixed logprobe PDA app printing
-  id: 319
-  time: '2025-11-13T05:52:40.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/420
-- author: SmolGreenBuggo
-  changes:
-    - type: Add
-      message: KAZ Albatross, a dedicated cargo freighter!
-    - type: Fix
-      message: >-
-        turned on the single engine on the KAZ Albatross that was turned off by
-        default, replaced a few tiles
-    - type: Fix
-      message: >-
-        more tweaks. should be final tweaks before review. added missing
-        firelock, missing fire alarms, replaced gas mixer with "on" variant
-  id: 320
-  time: '2025-11-13T22:15:57.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/417
-- author: SimplyPoodle
-  changes:
-    - type: Add
-      message: fixes for the stallion
-  id: 321
-  time: '2025-11-13T05:42:16.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/416
-- author: SimplyPoodle
-  changes:
-    - type: Add
-      message: Added the two aforementioned ships
-  id: 322
-  time: '2025-11-13T05:50:53.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/395
-- author: SimplyPoodle
-  changes:
-    - type: Add
-      message: Oculus and Peeper
-  id: 323
-  time: '2025-11-13T05:49:19.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/394
-- author: Forzii
+      message: Advanced radar computer board for the NFSD uplink
+  id: 180
+  time: '2026-02-20T01:57:39.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/897
+- author: DevArchwave
   changes:
     - type: Tweak
-      message: Adjusted service worker loadouts to be more in-line with other roles
-  id: 324
-  time: '2025-11-10T01:07:27.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/393
-- author: Forzii
-  changes:
-    - type: Fix
-      message: Fixed moth squeak and some other minor emote issues
-  id: 325
-  time: '2025-11-08T20:50:36.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/391
-- author: Forzii and Alkheemist
-  changes:
-    - type: Tweak
-      message: Re-added capacitor and matter bin to autolathe
-  id: 326
-  time: '2025-11-08T20:49:33.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/390
-- author: Forzii
-  changes:
-    - type: Fix
-      message: Janitors no longer attempt to wear jumpsuits on their head.
-  id: 327
-  time: '2025-11-08T20:49:14.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/387
-- author: ashkitten
-  changes:
-    - type: Fix
-      message: Fixed bleeding text in examine.
-  id: 328
-  time: '2025-11-06T21:31:01.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/372
-- author: drraccoony
+      message: Multiple tweaks to the syndicate infiltrator shuttle.
+  id: 181
+  time: '2026-03-06T02:43:09.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/898
+- author: DevArchwave
   changes:
     - type: Add
       message: >-
-        Added some head and chest markings for lizards, as well as a large snake
-        tail marking that animates when wagging.
-  id: 329
-  time: '2025-11-06T22:35:34.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/369
-- author: EchoFade
+        Added a colour picker and colour palette selector to the Spraypainter's
+        decal menu.
+    - type: Add
+      message: Added floral decals to the spray painter.
+    - type: Tweak
+      message: Made a few other tweaks to the Spraypainter's UI as well.
+  id: 182
+  time: '2026-02-22T22:47:12.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/903
+- author: DevArchwave
+  changes:
+    - type: Tweak
+      message: Turned a lot of wizard items into proper types of contraband
+    - type: Tweak
+      message: Removed lighting from blood cult soaplets
+  id: 183
+  time: '2026-02-23T01:32:23.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/908
+- author: Illumos
   changes:
     - type: Add
-      message: HGH Salto to expedition consoles
-  id: 330
-  time: '2025-11-05T22:41:44.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/352
-- author: drraccoony
+      message: Added yip & whine emote to Vulpkanin, from the fox sounds.
+    - type: Tweak
+      message: Old Vulpkanin whine is now called "whimper".
+  id: 184
+  time: '2026-02-22T23:10:53.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/910
+- author: DevArchwave
+  changes:
+    - type: Tweak
+      message: >-
+        Lighting attenuation has changed slightly. You shouldn't notice much
+        difference, but the edges of lights should look better. If any lights
+        are significantly different than they used to be, make a GitHub issue.
+  id: 185
+  time: '2026-02-25T09:33:58.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/914
+- author: DevArchwave
+  changes:
+    - type: Tweak
+      message: Magic projectiles have been moderately rebalanced.
+    - type: Tweak
+      message: Master staves self-charge a little.
+  id: 186
+  time: '2026-02-25T09:37:03.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/916
+- author: DevArchwave
+  changes:
+    - type: Add
+      message: Held Orbiter System
+  id: 187
+  time: '2026-02-25T09:35:28.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/917
+- author: DevArchwave
   changes:
     - type: Fix
-      message: Fixed reptilian tailthump sound playback
-  id: 331
-  time: '2025-11-04T22:03:12.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/351
-- author: drraccoony
+      message: wrong contra levels for atreides, GL and RPG
+  id: 188
+  time: '2026-02-25T09:39:24.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/921
+- author: DevArchwave
   changes:
-    - type: Fix
-      message: Size Manipulator issues with sprites and examine text
-  id: 332
-  time: '2025-11-04T22:04:57.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/350
-- author: drraccoony
+    - type: Tweak
+      message: Minor base game hardsuit tweaks
+  id: 189
+  time: '2026-02-25T09:42:01.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/922
+- author: Illumos
+  changes:
+    - type: Add
+      message: High heels! Now you can click clack all over Nash.
+    - type: Add
+      message: Coloured uniforms into the ClothesMate.
+  id: 190
+  time: '2026-02-26T06:39:46.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/924
+- author: DevArchwave
+  changes:
+    - type: Add
+      message: Civilian Access Configurator
+  id: 191
+  time: '2026-02-26T06:41:19.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/926
+- author: lucentlavender
+  changes:
+    - type: Add
+      message: Added constructible wallmount storage lockers with grid storage
+  id: 192
+  time: '2026-02-26T07:44:09.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/929
+- author: DevArchwave
+  changes:
+    - type: Add
+      message: Many new things from frontier's august upstream update
+  id: 193
+  time: '2026-03-05T05:18:37.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/931
+- author: DevArchwave
+  changes:
+    - type: Tweak
+      message: Increased TC drop rates from smuggling by about 17%.
+  id: 194
+  time: '2026-02-27T04:42:27.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/933
+- author: Illumos
+  changes:
+    - type: Add
+      message: Tennis ball. Woof.
+  id: 195
+  time: '2026-02-27T04:45:07.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/934
+- author: Illumos
+  changes:
+    - type: Tweak
+      message: >-
+        Meatcube mobs are now vulnerable to anti-material rifles. Because
+        they're made of material.
+  id: 196
+  time: '2026-02-27T07:10:48.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/936
+- author: Illumos
+  changes:
+    - type: Add
+      message: All lawyer clothing to the Uniform Priner.
+  id: 197
+  time: '2026-02-27T07:10:24.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/938
+- author: YumiGumi
+  changes:
+    - type: Tweak
+      message: Seraphim and Gourd
+  id: 198
+  time: '2026-03-01T08:33:20.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/939
+- author: Sulfari
+  changes:
+    - type: Tweak
+      message: Smartfridges are printable!
+  id: 199
+  time: '2026-03-02T06:03:14.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/940
+- author: DevArchwave
+  changes:
+    - type: Tweak
+      message: Flashlights are now smoother in combat.
+  id: 200
+  time: '2026-03-01T08:31:33.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/944
+- author: DevArchwave
   changes:
     - type: Add
       message: >-
-        Station command can now store and retrieve shuttles via the shuttle
-        records computer
-    - type: Tweak
-      message: Shuttle records now show "In Storage" status for stored ships
-  id: 333
-  time: '2025-11-05T14:53:43.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/346
-- author: ashkitten
+        Sounds in large areas now have an echo. This effect can be disabled in
+        settings. This is all client-side.
+  id: 201
+  time: '2026-03-05T06:49:28.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/946
+- author: Sulfari
   changes:
     - type: Tweak
-      message: Tweaks to genital layering and interactions.
+      message: ContraVend now has the correct name for Jaws of Death
+  id: 202
+  time: '2026-03-01T21:56:23.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/948
+- author: Marlyn
+  changes:
     - type: Fix
-      message: Genital visibility consent toggle works properly now.
+      message: >-
+        Fixed numerous movementspeedmodifier definitions so that vehicles and
+        various mobs now have their correct handling again
+  id: 203
+  time: '2026-03-01T21:57:25.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/949
+- author: DevArchwave
+  changes:
     - type: Add
-      message: Added consent toggle for letting others modify your underwear.
-  id: 334
-  time: '2025-11-07T04:50:33.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/343
-- author: Forzii
+      message: Blackmarket access for Rippers and Escorts
+  id: 204
+  time: '2026-03-02T05:45:40.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/951
+- author: DevArchwave
   changes:
     - type: Remove
-      message: Disabled some hostile ghost roles
-  id: 335
-  time: '2025-11-02T18:30:19.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/336
-- author: drraccoony
-  changes:
-    - type: Fix
-      message: >-
-        size gun now displays correctly for all players including those who
-        join/return from ssd after resizing occurs
-    - type: Fix
-      message: players reconnecting no longer see incorrect entity sizes
-    - type: Add
-      message: examine text for resized players/mobs
-  id: 336
-  time: '2025-11-01T20:26:04.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/335
-- author: Forzii
+      message: Removed artifact portal node from the effects table
+  id: 205
+  time: '2026-03-02T07:03:38.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/954
+- author: DevArchwave
   changes:
     - type: Tweak
-      message: Doubled the times it takes for mail to teleport in
-  id: 337
-  time: '2025-11-01T19:22:54.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/334
-- author: Forzii
-  changes:
-    - type: Tweak
-      message: >-
-        Added a small NFSD department time requirement to a few NFSD roles'
-        alternative time requirement.
-  id: 338
-  time: '2025-10-31T07:48:57.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/331
-- author: Forzii
-  changes:
-    - type: Fix
-      message: Moths and Slimes can correctly eat certain cotton and cloth foods.
-  id: 339
-  time: '2025-10-30T04:06:48.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/325
-- author: Forzii
-  changes:
-    - type: Fix
-      message: Fixed the grammar of the receiving a pet message.
-  id: 340
-  time: '2025-10-30T04:08:05.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/323
-- author: Forzii
-  changes:
-    - type: Fix
-      message: FSC Express now spawns with a usable mailbag
-  id: 341
-  time: '2025-10-30T04:08:54.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/322
-- author: W0LF-101
+      message: Rebalanced and re-added the prototype pulse rifle to loot tables.
+  id: 206
+  time: '2026-03-05T03:20:07.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/960
+- author: FlickFops
   changes:
     - type: Add
-      message: >-
-        Added ability for AI slimes to eat everything that animals, goblins and
-        moths can.
+      message: added new plushie
     - type: Add
-      message: >-
-        Added ability for slimepeople to eat everything that animals, goblins
-        and moths can.
+      message: added edison lathe
+    - type: Add
+      message: added new edison map
+    - type: Remove
+      message: removed old edison map
+  id: 207
+  time: '2026-03-05T05:19:11.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/961
+- author: DevArchwave
+  changes:
     - type: Tweak
-      message: Added back ability for Moths to eat certain clothing and paper.
-  id: 342
-  time: '2025-10-27T00:17:08.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/319
-- author: Forzii
+      message: New atmospheric sprites
+  id: 208
+  time: '2026-03-06T02:45:42.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/964
+- author: DevArchwave
   changes:
     - type: Fix
-      message: People can properly be picked up while next to tables, probably.
-  id: 343
-  time: '2025-10-26T23:23:38.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/317
-- author: Forzii
+      message: Expeditions should now properly determine the present factions
+  id: 209
+  time: '2026-03-06T02:47:48.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/966
+- author: DevArchwave
   changes:
     - type: Tweak
-      message: >-
-        Added a trash bag to janitor loadouts. No tweaking needed, just spawn
-        and check your backpack!
-  id: 344
-  time: '2025-10-26T23:23:28.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/316
-- author: W0LF-101
-  changes:
-    - type: Add
-      message: 5 Trash Bags to the Janidrobe starting inventory
-  id: 345
-  time: '2025-10-26T21:36:48.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/315
-- author: W0LF-101
+      message: Shipyard purchase backend optimizations
+  id: 210
+  time: '2026-03-06T02:57:23.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/970
+- author: DevArchwave
   changes:
     - type: Tweak
-      message: >-
-        Seismic Charges, Pipebombs & Firebombs are now C2 Contraband, not C2
-        NFSD/Command Restricted.
-    - type: Tweak
-      message: >-
-        Role Restricted Contraband examine text tweaked to clarify permits do
-        not apply.
-    - type: Add
-      message: >-
-        Added contraband restriction to pipebombs that are missing cabling,
-        bringing them in line with the rest.
-  id: 346
-  time: '2025-10-26T16:34:02.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/314
-- author: W0LF-101
-  changes:
-    - type: Tweak
-      message: Added appropriate in-code documentation for past PRs
-  id: 347
-  time: '2025-10-25T22:13:17.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/313
-- author: W0LF-101
-  changes:
-    - type: Add
-      message: >-
-        NFSD Variant of the Hristov and it's boxed ammunition to the NFSD
-        Uplink.
-    - type: Tweak
-      message: >-
-        Enforcer, Vulcan, Energy SMG, Disabler SMG and NFSD Encryption Keys are
-        now C2 NFSD/Command Restricted Contraband.
-  id: 348
-  time: '2025-10-25T21:01:17.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/311
-- author: Forzii
+      message: Supermatter backend changes
+  id: 211
+  time: '2026-03-06T04:40:31.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/973
+- author: DevArchwave
   changes:
     - type: Remove
-      message: Removed mail EMPs from the mail delivery pool.
-  id: 349
-  time: '2025-10-25T10:12:30.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/307
-- author: drraccoony
-  changes:
-    - type: Add
       message: >-
-        Added the Horny Hawker vending machine, a new adult-themed vending
-        machine with a wide selection of lewd items
-    - type: Add
-      message: Added Horny Hawker restock boxes for refilling the vending machine
-  id: 350
-  time: '2025-10-23T02:54:14.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/303
-- author: W0LF-101
+        Disabled the part of the supermatter code that makes you permanently
+        hallucinate upon looking at it.
+  id: 212
+  time: '2026-03-08T20:45:05.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/978
+- author: DevArchwave
   changes:
-    - type: Add
-      message: EMP Grenade Magazines to NFSD Uplink
-    - type: Add
-      message: Added Standard 15 FUC Uplink to Deputies, Brigmedics and Detectives
     - type: Tweak
-      message: Made NFSD Combat Hardsuit & Command Combat Hardsuit equal in resistances
-    - type: Tweak
-      message: Given Sergeant, Bailiff & Sheriff 5 more FUCs each as starting currency
-    - type: Tweak
-      message: Tweaked NFSD Uplink contents rank requirements almost across the board
-  id: 351
-  time: '2025-10-20T12:30:03.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/294
-- author: IrkallaEpsilon
+      message: >-
+        Changed the cost of advanced medkits in the NFSD uplink from 2 to 10
+        coins, restricted it to brigmedics.
+  id: 213
+  time: '2026-03-08T20:44:46.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/980
+- author: DevArchwave
   changes:
     - type: Fix
-      message: Resomi ear inconsistency. Now I can finally sleep at night.
-  id: 352
-  time: '2025-10-15T09:30:26.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/265
-- author: QTNeen
+      message: Cybersun pens work as intended again.
+  id: 214
+  time: '2026-03-08T20:44:02.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/983
+- author: DevArchwave
   changes:
     - type: Add
-      message: Hydroponic magboots
+      message: Added several new wallets to loadout.
     - type: Add
-      message: Red satchel
-    - type: Add
-      message: New syndicate helmet sprite
-  id: 353
-  time: '2025-10-15T09:29:19.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/262
-- author: QTNeen
-  changes:
+      message: Added several new wallets to the arcadiawear/punk vendors.
     - type: Add
       message: >-
-        Almost every instrument has been updated to a new soundfont
-        (GeneralUser-GS), unifying all operating systems and massively improving
-        the sound of certain instruments.
-  id: 354
-  time: '2025-10-03T00:36:32.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/231
-- author: PatchyDragon
-  changes:
-    - type: Tweak
-      message: >-
-        Reduced the minimum and maximum sizes for Rodentia, Resomi, and Goblins,
-        in keeping with lore.
-  id: 355
-  time: '2025-09-30T05:34:35.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/224
-- author: Toriate
-  changes:
-    - type: Tweak
-      message: Nash holopads are now properly named
-  id: 356
-  time: '2025-08-14T13:57:25.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/156
-- author: Toriate
-  changes:
-    - type: Tweak
-      message: Nash Station's fax machines are no longer labeled Trade Mall
-  id: 357
-  time: '2025-08-13T14:26:11.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/154
-- author: Toriate
-  changes:
-    - type: Tweak
-      message: Brigmedic jobslots are now open by default
-  id: 358
-  time: '2025-08-13T22:14:47.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/153
-- author: Toriate
-  changes:
-    - type: Tweak
-      message: Xenoarch artifacts should explode less often now
-    - type: Tweak
-      message: Xenoarch artifacts should provide 40% more science points at base
-  id: 359
-  time: '2025-08-13T14:24:07.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/152
-- author: cebutris
-  changes:
-    - type: Tweak
-      message: Slimepeople's hair colour is no longer forced to match their body colour
-  id: 360
-  time: '2025-08-06T01:48:01.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/128
-- author: Superlagg
-  changes:
-    - type: Tweak
-      message: Radio static is louder a bit, also a volume selector on the headset
-    - type: Tweak
-      message: >-
-        Ahelps make the admin chat sound for admins who have the bwoink turned
-        off
-    - type: Tweak
-      message: Prays display your character name
-    - type: Tweak
-      message: RP Incentive values can be adjusted by admemes for some reason
-    - type: Tweak
-      message: The ghost follow thing looks a bit better
-  id: 361
-  time: '2025-07-29T02:31:17.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/102
-- author: Superlagg
+        Added the extremely rare and highly in demand lizard wallet (Wehlet
+        even) as a mail item. Weh!
+    - type: Add
+      message: Added new items to the Arcadiawear Vendor. Drip is Eternal!
+  id: 215
+  time: '2026-03-08T20:43:48.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/984
+- author: lpeapnni
   changes:
     - type: Add
-      message: A service worker!
-  id: 362
-  time: '2025-07-20T21:32:00.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/74
-- author: Superlagg
+      message: Added new Anthromorph species
+  id: 216
+  time: '2026-03-09T05:16:17.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/986
+- author: DevArchwave
   changes:
     - type: Add
-      message: You can talk and emote and such in crit!
-  id: 363
-  time: '2025-07-17T02:41:14.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/60
-- author: Superlagg
+      message: Stackables items now merge when stopping on/after a conveyor belt.
+  id: 217
+  time: '2026-03-09T04:41:34.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/987
+- author: DevArchwave
+  changes:
+    - type: Add
+      message: Conveyor Belt Cleanup system to help with the performance degradation.
+  id: 218
+  time: '2026-03-11T20:41:39.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/994
+- author: DevArchwave
   changes:
     - type: Tweak
-      message: >-
-        Feroxi no longer suffocate when thirsty, instead they just get really
-        really slow. They also get a little bit faster when overhydrated!
-  id: 364
-  time: '2025-07-17T02:27:08.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/59
-- author: Superlagg
+      message: Harpies should gasp a little less.
+  id: 219
+  time: '2026-03-11T20:42:58.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/996
+- author: DevArchwave
   changes:
-    - type: Add
-      message: Slimes can be furries!
+    - type: Fix
+      message: Fixed more broken contraband levels for a few items
+  id: 220
+  time: '2026-03-11T20:43:18.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/997
+- author: DevArchwave
+  changes:
     - type: Tweak
-      message: IPCs just become a nightmare to play when their batteries die!
-  id: 365
-  time: '2025-07-14T01:42:33.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/51
-- author: Superlagg and Fenny
+      message: Reverted the advanced radar's range back to previous values.
+  id: 221
+  time: '2026-03-12T05:19:09.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/999
+- author: DevArchwave
   changes:
     - type: Add
-      message: Boob shirts that have their south facing boob go OVER your clothes!!!
-  id: 366
-  time: '2025-07-12T05:42:21.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/47
-- author: Superlagg
+      message: Throwing knives kit to the escort uplink
+  id: 222
+  time: '2026-03-11T20:44:28.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/1001
+- author: DevArchwave
+  changes:
+    - type: Fix
+      message: Fixed the Donk N Go shuttle, hopefully.
+  id: 223
+  time: '2026-03-11T20:45:03.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/1002
+- author: DevArchwave
+  changes:
+    - type: Add
+      message: More ambient sounds for computers.
+  id: 224
+  time: '2026-03-11T20:46:04.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/1004
+- author: DevArchwave
+  changes:
+    - type: Fix
+      message: Fixed some inaccurate references with ammo generation.
+  id: 225
+  time: '2026-03-11T20:46:32.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/1005
+- author: DevArchwave
+  changes:
+    - type: Add
+      message: Estoc DMR
+  id: 226
+  time: '2026-03-12T04:54:56.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/1006
+- author: lucentlavender
+  changes:
+    - type: Add
+      message: Markings can now be set as toggle-able regardless of layer.
+    - type: Add
+      message: Markings can now have a custom name specified that will show in game.
+    - type: Add
+      message: Markings can now be specified to only allow the user to adjust them.
+    - type: Add
+      message: Markings can now have custom verbiage for putting on and taking off.
+  id: 227
+  time: '2026-03-12T04:56:15.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/1007
+- author: DevArchwave
+  changes:
+    - type: Tweak
+      message: changes the cost of the pirate captain chest to 20db
+  id: 228
+  time: '2026-03-12T04:59:13.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/1010
+- author: DevArchwave
+  changes:
+    - type: Fix
+      message: Fixed the PPR being able to shoot while unwielded, buffed it a little.
+  id: 229
+  time: '2026-03-12T05:00:10.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/1012
+- author: lucentlavender
   changes:
     - type: Fix
       message: >-
-        You should actually lie down when you lie down on things that make you
-        lie down.
-  id: 367
-  time: '2025-07-11T02:27:08.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/44
-- author: Superlagg
+        Genitals will now be hidden by default. Anyone who has played prior to
+        this PR may have to fix them manually.
+  id: 230
+  time: '2026-03-13T04:42:17.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/1014
+- author: DevArchwave
   changes:
     - type: Add
-      message: Everyone can use all the markings, even if it looks awful
-  id: 368
-  time: '2025-07-10T06:28:17.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/42
-- author: Superlagg
+      message: Cobra added to the escort uplink.
+    - type: Tweak
+      message: Changed a few more contraband levels.
+    - type: Tweak
+      message: Lowered the price of the throwing knives kit in the escort uplink.
+  id: 231
+  time: '2026-03-13T04:43:39.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/1015
+- author: DevArchwave
   changes:
     - type: Add
-      message: Roleplay Incentive Income System Thing!!
-  id: 369
-  time: '2025-07-10T04:22:50.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/41
-- author: Superlagg
+      message: Armor plates.
+  id: 232
+  time: '2026-03-18T21:10:53.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/1018
+- author: DevArchwave
+  changes:
+    - type: Add
+      message: Some new interactions for spacepresso nanocaf drinks!
+  id: 233
+  time: '2026-03-15T20:07:06.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/1020
+- author: DevArchwave
+  changes:
+    - type: Remove
+      message: Contra crates no longer spawnable with the smuggler uplink.
+  id: 234
+  time: '2026-03-15T20:09:08.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/1024
+- author: TheLife
+  changes:
+    - type: Add
+      message: The controls tab in options now features a search bar.
+  id: 235
+  time: '2026-03-16T02:27:24.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/1026
+- author: Dragometh
+  changes:
+    - type: Tweak
+      message: >-
+        Changes and tweaks to the random reagent mutation pool; Vestine
+        mutations are VERY MUCH harder to achieve and makes them yield less,
+        while juice and food-related mutations are very much easier to achieve.
+        Adds Hew juice and Fat. Removes Mercury, Slime, Pulped Banana Peel.
+  id: 236
+  time: '2026-03-19T01:47:24.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/1028
+- author: Dragometh
+  changes:
+    - type: Tweak
+      message: Halves swabbing time between plants.
+  id: 237
+  time: '2026-03-19T03:08:11.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/1030
+- author: FlickFops
+  changes:
+    - type: Tweak
+      message: updated edison
+  id: 238
+  time: '2026-03-18T21:11:05.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/1032
+- author: Dragometh
+  changes:
+    - type: Add
+      message: >-
+        Allows chemmaster's pill sources to come either from buffer or from
+        beaker (by OnyxTheBrave)
+  id: 239
+  time: '2026-03-19T03:09:44.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/1034
+- author: DevArchwave
   changes:
     - type: Fix
-      message: rat undies, and busty shirt
-  id: 370
-  time: '2025-07-07T15:43:46.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/38
-- author: Superlagg and Casey
+      message: >-
+        The e-sword and double-bladed e-sword should no longer hum after its
+        toggled off.
+  id: 240
+  time: '2026-03-19T01:47:40.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/1037
+- author: DevArchwave
   changes:
     - type: Add
-      message: >-
-        Adds support for tails (and such) to have more control over their
-        layering, so they'll look good even if you're wearing a skirt.
-    - type: Add
-      message: >-
-        Adds support for markings to have sprites inherit color from other
-        sprites in the marking, so you can change multiple sprite colors with
-        one slider!
-    - type: Add
-      message: >-
-        Ports dozens of tails, snouts, and ears from Skyrat SS13. These use the
-        new layering system, and will layer under skirts properly. (Note,
-        pre-existing tails still use the old system, and will likely layer over
-        skirts)
-    - type: Add
-      message: >-
-        You can now take off / put on individual undies. This'll be great,
-        because...
+      message: Adds the estoc to the smuggler uplink loot boxes.
+  id: 241
+  time: '2026-03-18T21:26:33.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/1041
+- author: DevArchwave
+  changes:
     - type: Tweak
       message: >-
-        You can wear two undershirts and two underpants! You can wear a bra
-        under a shirt, and panties under some other kind of panties!
-    - type: Tweak
-      message: Its actually three
-  id: 371
-  time: '2025-07-05T22:47:53.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/34
-- author: Superlagg
+        Nerfs omnizine, yet again, making its metabolism faster, but giving it a
+        smaller OD threshold and less healing.
+  id: 242
+  time: '2026-03-18T21:27:49.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/1042
+- author: DevArchwave
   changes:
-    - type: Add
-      message: Adds a bunch of underwear, and a SHITLOAD of huge boob undershirts
-  id: 372
-  time: '2025-07-04T03:54:35.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/31
-- author: Superlagg
+    - type: Remove
+      message: Removed .25 ammo from loot tables
+  id: 243
+  time: '2026-03-19T01:46:54.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/1045
+- author: DevArchwave
   changes:
-    - type: Add
-      message: lying down and interactions
-  id: 373
-  time: '2025-07-01T04:52:21.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/21
-- author: Superlagg
-  changes:
-    - type: Add
-      message: subtles
-    - type: Tweak
-      message: emotes dont go through walls and u got a color in ur name, lol
     - type: Fix
-      message: Fixed fun!
-  id: 374
-  time: '2025-07-01T04:16:51.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/20
-- author: Kilmented
+      message: >-
+        Chameleon headsets no longer turn into c4 when changing into blood-red
+        headsets and wizard headsets
+  id: 244
+  time: '2026-03-19T01:48:14.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/1047
+- author: DevArchwave
   changes:
     - type: Add
-      message: roleplaying prototype guidebook entry
+      message: Adds Rubber Pistol, SMG and Rifle Mags to the Less Lethal Vendor.
+  id: 245
+  time: '2026-03-19T04:25:03.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/1050
+- author: DevArchwave
+  changes:
     - type: Add
-      message: lore prototype guidebook entry
-  id: 375
-  time: '2025-06-29T02:25:21.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/10
+      message: Adds the C20P.
+    - type: Add
+      message: Implements a few rare mail prototypes.
+    - type: Tweak
+      message: Gives the AKM a unique sound.
+    - type: Remove
+      message: Disables the threat mail. Who really wanted these?
+  id: 246
+  time: '2026-03-19T06:49:01.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/1053
+- author: DevArchwave
+  changes:
+    - type: Fix
+      message: Prevents the SM from starting by consuming trash that spawns on it.
+  id: 247
+  time: '2026-03-20T05:34:44.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/1056
+- author: Dragometh
+  changes:
+    - type: Add
+      message: Ports in dynamic anomaly scanners (by Quantum-cross)
+  id: 248
+  time: '2026-03-20T05:35:07.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/1058
+- author: DevArchwave
+  changes:
+    - type: Add
+      message: Adds a variant of the HoS Winter coat to the nfsddrobe
+  id: 249
+  time: '2026-03-23T00:57:54.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/1060
+- author: DevArchwave
+  changes:
+    - type: Tweak
+      message: Disables turn-in of lower tier explosives, reduces explosive spawns
+  id: 250
+  time: '2026-03-23T00:57:44.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/1061
+- author: DevArchwave
+  changes:
+    - type: Tweak
+      message: Increased the size of dresser storage
+  id: 251
+  time: '2026-03-23T00:56:40.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/1065
+- author: Sulfari
+  changes:
+    - type: Add
+      message: Chameleon projector and StealthBox added to Escort uplinks!
+  id: 252
+  time: '2026-03-23T00:55:20.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/1069
+- author: DevArchwave
+  changes:
+    - type: Tweak
+      message: >-
+        Reverts the previous omnizine healing nerfs, instead simply increasing
+        how slow it was to heal.
+  id: 253
+  time: '2026-03-23T00:54:45.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/1070
+- author: Luweth
+  changes:
+    - type: Add
+      message: bar flask & MRE flask in loadouts.
+  id: 254
+  time: '2026-03-23T04:42:55.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/1073
+- author: DevArchwave
+  changes:
+    - type: Add
+      message: Added a new plant, ambrosia vitalis.
+    - type: Remove
+      message: Removed omnizine from ambrosia deus.
+  id: 255
+  time: '2026-03-23T04:44:06.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/1074
+- author: DevArchwave
+  changes:
+    - type: Tweak
+      message: Major Pathfinder Overhaul
+  id: 256
+  time: '2026-03-26T00:35:36.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/1080
+- author: Dragometh
+  changes:
+    - type: Add
+      message: Ports in from Wizden Fruitsalad's rework on the Cryo Pod UI!
+  id: 257
+  time: '2026-03-26T00:36:06.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/1081
+- author: Dragometh
+  changes:
+    - type: Add
+      message: >-
+        The Bluespace air tank and the Pocket bluespace air tank are now
+        available to research (made by blacknight954!)
+  id: 258
+  time: '2026-03-26T00:37:53.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/1083
+- author: Dragometh
+  changes:
+    - type: Tweak
+      message: Added explosion resistance to contents on NFSD belts and webbings.
+  id: 259
+  time: '2026-03-26T00:38:35.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/1086
+- author: Dragometh
+  changes:
+    - type: Add
+      message: >-
+        Ability to visualize if some things have aphrodisiacs in them. This
+        feature can be toggled on and off via preferences.
+  id: 260
+  time: '2026-04-08T23:15:31.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/1087
+- author: Luweth
+  changes:
+    - type: Add
+      message: AussieShepTail markings
+    - type: Tweak
+      message: Markings folder name to match all others
+  id: 261
+  time: '2026-03-26T05:36:20.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/1090
+- author: Feathernights
+  changes:
+    - type: Tweak
+      message: Changed Ambrosia Vitalis Plant and Seed sprites.
+  id: 262
+  time: '2026-03-27T03:53:01.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/1092
+- author: DevArchwave
+  changes:
+    - type: Remove
+      message: Disabled air gas pockets from spawning in asteroids.
+    - type: Tweak
+      message: Doubled the size of gas deposits.
+  id: 263
+  time: '2026-03-27T03:54:54.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/1096
+- author: Luweth
+  changes:
+    - type: Add
+      message: 'Gas Miners with redone engineering/atmos/beacons. '
+    - type: Add
+      message: Main room setup and structural refit.
+    - type: Add
+      message: Power/Atmos consoles for station monitoring.
+    - type: Remove
+      message: >-
+        Current hospital as it stands by restoring the last version before
+        changes.
+    - type: Remove
+      message: All flatpacks and booze crate as these are now baseline to the build.
+    - type: Tweak
+      message: 'General layout of things within the bar and main medical room. '
+    - type: Tweak
+      message: 'Moved booze-o-mat restock into janitor room. '
+    - type: Tweak
+      message: Moved Basic materials crate into the main room.
+    - type: Tweak
+      message: Moved CDETS into DoC office.
+  id: 264
+  time: '2026-03-29T21:50:31.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/1097
+- author: DevArchwave
+  changes:
+    - type: Add
+      message: DoC gets their own RPI aura.
+  id: 265
+  time: '2026-03-29T21:50:54.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/1099
+- author: Sulfari
+  changes:
+    - type: Tweak
+      message: IPC blood works as artifact trigger.
+  id: 266
+  time: '2026-03-29T21:51:33.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/1101
 - author: Feathernights
   changes:
     - type: Fix
-      message: Localization and Kimono not having a proper description.
-  id: 376
-  time: '2026-04-13T03:12:08.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/1149
+      message: Localization errors *(Pomegranate seeds and Subtle LOOC)*
+  id: 267
+  time: '2026-03-29T21:50:19.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/1103
+- author: Sulfari
+  changes:
+    - type: Add
+      message: Lollypops
+  id: 268
+  time: '2026-04-02T04:30:18.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/1104
+- author: YumiGumi
+  changes:
+    - type: Remove
+      message: Removed SLI Seraphim
+  id: 269
+  time: '2026-04-02T01:50:46.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/1107
+- author: Dragometh
+  changes:
+    - type: Add
+      message: >-
+        Holographic Hoverbeds! They can be researched and built from a medfab.
+        (by SirWarock on github!)
+    - type: Tweak
+      message: >-
+        Changes to rollerbeds and body bag densities. The one with wheels should
+        be easier to drag than the one without, now. (also by SirWarock!)
+  id: 270
+  time: '2026-04-02T01:51:24.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/1109
+- author: tank8673
+  changes:
+    - type: Add
+      message: Added Duster machineboard to NFSD uplink for senior staff roles
+    - type: Tweak
+      message: >-
+        Gave sergeant and Baliff the ability to also get NFSD techfab boards as
+        well as headset chips for NFSD
+  id: 271
+  time: '2026-04-02T01:53:50.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/1112
+- author: stinky
+  changes:
+    - type: Add
+      message: Hand labeler can apply labels to airlocks!
+    - type: Add
+      message: >-
+        Papers can now be attached to airlocks in the same way that papers are
+        attached to lockers, crates, etc
+  id: 272
+  time: '2026-04-03T05:54:13.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/1117
+- author: Feathernights
+  changes:
+    - type: Fix
+      message: >-
+        Fixed a lot of localization files *(mostly pertaining to markings and
+        bleeding)*.
+  id: 273
+  time: '2026-04-05T20:49:12.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/1118
+- author: stinky, Absotively, walksanatora
+  changes:
+    - type: Tweak
+      message: reverses the display order for labels from hand labelers
+    - type: Tweak
+      message: merges labeler UI improvements from wizden (reset/clear button)
+    - type: Tweak
+      message: >-
+        ports hand labeler label saving from starlight (saved labels persist
+        through client restarts & through new rounds)
+  id: 274
+  time: '2026-04-05T20:51:37.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/1120
 - author: tank8673
   changes:
     - type: Tweak
-      message: Utilizes mini vgroids for testing this week.
-  id: 377
-  time: '2026-04-13T05:08:54.0000000+00:00'
-  url: https://github.com/ARF-SS13/coyote-frontier/pull/1151
+      message: Increased LSE-400c Svalinn (ship gun) damage to 37 heat from 21 heat
+  id: 275
+  time: '2026-04-06T04:52:42.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/1121
+- author: tank8673
+  changes:
+    - type: Remove
+      message: >-
+        Removed caveman clubs giving you the caveman accent due to the permanent
+        and socially debilitating effect this had on players using it
+  id: 276
+  time: '2026-04-05T20:51:51.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/1123
+- author: tank8673
+  changes:
+    - type: Add
+      message: added possibility for UIVs and Vgroids to spawn more than once
+    - type: Tweak
+      message: >-
+        tweaked vgroid size to add more dungeons to them (and thus more places
+        for ships to dock and start clearing them)
+    - type: Tweak
+      message: made dino UIV able to spawn more than once
+  id: 277
+  time: '2026-04-06T02:58:56.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/1124
+- author: tank8673
+  changes:
+    - type: Fix
+      message: Fixed missing damage from .30 rifle, uranium
+  id: 278
+  time: '2026-04-06T02:54:38.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/1126
+- author: tank8673
+  changes:
+    - type: Tweak
+      message: >-
+        made cassette duration 10x longer so you can record a full conversation
+        per tape
+  id: 279
+  time: '2026-04-06T05:20:10.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/1127
+- author: Sulfari
+  changes:
+    - type: Tweak
+      message: Made Collars engraveable
+  id: 280
+  time: '2026-04-06T06:11:38.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/1128
+- author: Dragometh
+  changes:
+    - type: Add
+      message: Ports in Jet Injectors (made by SirWarock!)
+  id: 281
+  time: '2026-04-08T23:12:29.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/1134
+- author: Dragometh
+  changes:
+    - type: Add
+      message: Ports in [signature], [form] and [check] tags from RMC (by yagwog!)
+  id: 282
+  time: '2026-04-08T23:13:34.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/1136
+- author: tank8673
+  changes:
+    - type: Tweak
+      message: >-
+        Changed the loot table for expeds and vgroids to give more useful items
+        and less warcrime cannons.
+  id: 283
+  time: '2026-04-10T04:56:02.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/1138
+- author: tank8673
+  changes:
+    - type: Tweak
+      message: >-
+        reduced max vgroid spawns from 3 to 2 to try and make big lag spikes
+        less noticeable until we find a better optimization strategy for
+        deletion
+    - type: Tweak
+      message: >-
+        reduced the amount of vgroid clutter that spawns to try and reduce lag
+        from vgroids
+  id: 284
+  time: '2026-04-10T05:32:46.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/1142
+- author: lucentlavender
+  changes:
+    - type: Fix
+      message: Vgroids will now cause 10-30% less lag when despawning
+  id: 285
+  time: '2026-04-13T03:11:39.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/1146
 - author: tank8673
   changes:
     - type: Add
       message: >-
         Port grid extension mechanics and rules for Vgroids from Monolith PR
         1981
-  id: 378
+  id: 286
   time: '2026-04-13T05:12:44.0000000+00:00'
   url: https://github.com/ARF-SS13/coyote-frontier/pull/1147
+- author: Feathernights
+  changes:
+    - type: Fix
+      message: Localization and Kimono not having a proper description.
+  id: 287
+  time: '2026-04-13T03:12:08.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/1149
+- author: tank8673
+  changes:
+    - type: Tweak
+      message: Utilizes mini vgroids for testing this week.
+  id: 288
+  time: '2026-04-13T05:08:54.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/1151

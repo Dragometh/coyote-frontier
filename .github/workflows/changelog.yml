@@ -6,7 +6,7 @@ on:
 
 env:
   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-  CHANGELOG_DIR: Resources/Changelog/Coyote.yml
+  CHANGELOG_DIR: Resources/Changelog/Coyote.yml # Coyote: Frontier.yml<Coyote.yml
   PR_NUMBER: ${{ github.event.number }}
 
 jobs:
@@ -18,8 +18,6 @@ jobs:
     steps:
       - name: Checkout Master
         uses: actions/checkout@v3
-        with:
-          ref: master
 
       - name: Setup Git
         run: |

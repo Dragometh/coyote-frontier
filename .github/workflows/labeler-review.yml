@@ -5,8 +5,8 @@ on:
 jobs:
   add_label:
     # Change the repository name after you've made sure the team name is correct for your fork!
-    # Frontier: repo changed (space-wizards/space-station-14 < new-frontiers-14/frontier-station-14)
-    if: ${{ (github.repository == 'new-frontiers-14/frontier-station-14') && (github.event.review.state == 'APPROVED') }}
+    # Coyote: repo changed (new-frontiers-14/frontier-station-14 < ARF-SS13/coyote-frontier)
+    if: ${{ (github.repository == 'ARF-SS13/coyote-frontier') && (github.event.review.state == 'APPROVED') }}
     permissions:
       contents: read
       pull-requests: write
