@@ -104,9 +104,9 @@ For ship submissons, refer to the [Ship Submission Guidelines](https://frontiers
 
 In general:
 
-Frontier uses specific prototypes for points of interest and ship maps (e.g. to store spawn information, station spawn data, or ship price and categories).  For ships, these are stored in the VesselPrototype (Resources/Prototypes/_CS/Shipyard) or PointOfInterestPrototype (Resources/Prototypes/_CS/PointsOfInterest).  If creating a new ship or POI, refer to existing prototypes.
+Frontier uses specific prototypes for points of interest and ship maps (e.g. to store spawn information, station spawn data, or ship price and categories).  For ships, these are stored in the VesselPrototype (Resources/Prototypes/_NF/Shipyard) or PointOfInterestPrototype (Resources/Prototypes/_NF/PointsOfInterest).  If creating a new ship or POI, refer to existing prototypes.
 
-As of right now, Coyote doesn't have custom PointsOfInterest, so please refer to (Resources/Prototypes/_NF/PointsOfInterest) for examples.
+If you create a new ship or points of interest, please put it into the `_CS` namespace.
 
 If you are making changes to a map, check with the map's maintainer (or if none, its author), and avoid having multiple open features with changes to the same map.
 
