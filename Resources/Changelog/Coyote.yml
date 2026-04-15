@@ -2520,3 +2520,10 @@ Entries:
   id: 288
   time: '2026-04-13T05:08:54.0000000+00:00'
   url: https://github.com/ARF-SS13/coyote-frontier/pull/1151
+- author: Khaomi
+  changes:
+    - type: Fix
+      message: consent for vore not working
+  id: 289
+  time: '2026-04-15T07:33:34.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/1157
