@@ -1,6 +1,9 @@
 # Contributing to Coyote Sector
 
-If you're considering contributing to Frontier Station, [Wizard's Den's PR guidelines](https://docs.spacestation14.com/en/general-development/codebase-info/pull-request-guidelines.html) are a good starting point for code quality and version tracking etiquette. Note that we do not have the same master/stable branch distinction.
+If you're considering contributing to Coyote Sector, [Wizard's Den's PR guidelines](https://docs.spacestation14.com/en/general-development/codebase-info/pull-request-guidelines.html) are a good starting point for code quality and version tracking etiquette. Note that we do not have the same master/stable branch distinction.
+
+Importantly, do not make webedits. From the text above:
+> Do not use GitHub's web editor to create PRs. PRs submitted through the web editor may be closed without review.
 
 "Upstream" refers to the [new-frontiers-14/frontier-station-14](https://github.com/new-frontiers-14/frontier-station-14/) repository that this fork was created from.
 
@@ -8,7 +11,7 @@ If you're considering contributing to Frontier Station, [Wizard's Den's PR guide
 
 In general, anything you create from scratch (vs. modifying something that exists from upstream) should go in a Coyote-specific subfolder, `_CS`.
 
-Examples (none of these are real):
+Examples:
 - `Content.Server/_CS/Shipyard/Systems/ShipyardSystem.cs`
 - `Resources/Prototypes/_CS/Loadouts/role_loadouts.yml`
 - `Resources/Audio/_CS/Voice/Goblin/goblin-scream-03.ogg`
@@ -57,7 +60,7 @@ A cyborg module with an added moduleId field (inline blank comment), a commented
     - HydroponicsToolSpade
     - HydroponicsToolClippers
     # - Bucket # Coyote
-  # Frontier: droppable borg items
+  # Coyote: droppable borg items
   - type: DroppableBorgModule
     moduleId: Gardening
     items:
@@ -70,7 +73,7 @@ A cyborg module with an added moduleId field (inline blank comment), a commented
 
 A comment on a new imported namespace:
 ```cs
-using Content.Client._NF.Emp.Overlays; // Coyote
+using Content.Client._CS.Emp.Overlays; // Coyote
 ```
 
 A pair of comments enclosing a block of added code:
@@ -79,7 +82,7 @@ component.Capacity = state.Capacity;
 
 component.UIUpdateNeeded = true;
 
-// Frontier: ensure signature colour is consistent
+// Coyote: ensure signature colour is consistent
 if (TryComp<StampComponent>(uid, out var stamp))
 {
     stamp.StampedColor = state.Color;
@@ -95,12 +98,15 @@ player-panel-job-whitelists = Role Whitelists
 
 # Mapping
 
-We are currently not accepting ship submissions.
-However, if we were, refer to the [Ship Submission Guidelines](https://frontierstation.wiki.gg/wiki/Ship_Submission_Guidelines) on the Frontier wiki (for now).
+<!-- We are keeping Frontier name here because we don't have our own wiki -->
+
+For ship submissons, refer to the [Ship Submission Guidelines](https://frontierstation.wiki.gg/wiki/Ship_Submission_Guidelines) on the Frontier wiki.
 
 In general:
 
-Coyote uses specific prototypes for points of interest and ship maps (e.g. to store spawn information, station spawn data, or ship price and categories).  For ships, these are stored in the VesselPrototype (Resources/Prototypes/_CS/Shipyard) or PointOfInterestPrototype (Resources/Prototypes/_CS/PointsOfInterest).  If creating a new ship or POI, refer to existing prototypes.
+Frontier uses specific prototypes for points of interest and ship maps (e.g. to store spawn information, station spawn data, or ship price and categories).  For ships, these are stored in the VesselPrototype (Resources/Prototypes/_CS/Shipyard) or PointOfInterestPrototype (Resources/Prototypes/_CS/PointsOfInterest).  If creating a new ship or POI, refer to existing prototypes.
+
+As of right now, Coyote doesn't have custom PointsOfInterest, so please refer to (Resources/Prototypes/_NF/PointsOfInterest) for examples.
 
 If you are making changes to a map, check with the map's maintainer (or if none, its author), and avoid having multiple open features with changes to the same map.
 
@@ -110,15 +116,15 @@ Conflicts with maps make PRs mutually exclusive so either your work on the maint
 
 Double-check your diff on GitHub before submitting: look for unintended commits or changes and remove accidental whitespace or line-ending changes.
 
-Additionally, for PRs that've been open for a long time, if you see `RobustToolbox` in the changed files, you have to revert it. Use `git checkout upstream/master RobustToolbox` (replacing `upstream` with the name of your new-frontiers-14/frontier-station-14 remote)
+Additionally, for PRs that've been open for a long time, if you see `RobustToolbox` in the changed files, you have to revert it. Use `git checkout upstream/master RobustToolbox` (replacing `upstream` with the name of your ARF-SS13/coyote-frontier remote)
 
 # Changelogs
 
-We do changelogs in the #dev-announcements channel in the discord.
+Currently, all changelogs go to the Coyote changelog. The ADMIN: prefix does nothing at the moment.
 
 # Additional resources
 
-If you are new to contributing to SS14 in general, have a look at the [SS14 docs](https://docs.spacestation14.io/) or ask for help in `#public-development` on the Discord!
+If you are new to contributing to SS14 in general, have a look at the [SS14 docs](https://docs.spacestation14.io/) or ask for help in `#dev-mentor` on [Discord](https://discord.gg/tpuAT7d3zm/)!
 
 ## AI-Generated Content
 You may use AI tools to assist with code, but any AI-generated code must be thoroughly tested and audited before submission. Submitting untested or unaudited AI-generated code is not allowed.
