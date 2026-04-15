@@ -2527,3 +2527,10 @@ Entries:
   id: 289
   time: '2026-04-15T07:33:34.0000000+00:00'
   url: https://github.com/ARF-SS13/coyote-frontier/pull/1157
+- author: QTNeen
+  changes:
+    - type: Add
+      message: Some backend stuff
+  id: 290
+  time: '2026-04-15T07:39:26.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/1152
