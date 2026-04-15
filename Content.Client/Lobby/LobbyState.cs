@@ -31,6 +31,7 @@ namespace Content.Client.Lobby
 
         private ClientGameTicker _gameTicker = default!;
         private ContentAudioSystem _contentAudioSystem = default!;
+        private bool _initialized;
 
         protected override Type? LinkedScreenType { get; } = typeof(LobbyGui);
         public LobbyGui? Lobby;
@@ -40,12 +41,18 @@ namespace Content.Client.Lobby
 
         protected override void Startup()
         {
-            if (_userInterfaceManager.ActiveScreen == null)
-            {
-                return;
-            }
+            TryInitialize();
+        }
 
-            Lobby = (LobbyGui) _userInterfaceManager.ActiveScreen;
+        private bool TryInitialize()
+        {
+            if (_initialized)
+                return true;
+
+            if (_userInterfaceManager.ActiveScreen is not LobbyGui lobbyGui)
+                return false;
+
+            Lobby = lobbyGui;
 
             var chatController = _userInterfaceManager.GetUIController<ChatUIController>();
             _gameTicker = _entityManager.System<ClientGameTicker>();
@@ -76,10 +83,19 @@ namespace Content.Client.Lobby
             _gameTicker.InfoBlobUpdated += UpdateLobbyUi;
             _gameTicker.LobbyStatusUpdated += LobbyStatusUpdated;
             _gameTicker.LobbyLateJoinStatusUpdated += LobbyLateJoinStatusUpdated;
+
+            _initialized = true;
+            return true;
         }
 
         protected override void Shutdown()
         {
+            if (!_initialized)
+            {
+                Lobby = null;
+                return;
+            }
+
             var chatController = _userInterfaceManager.GetUIController<ChatUIController>();
             chatController.SetMainChat(false);
             _gameTicker.InfoBlobUpdated -= UpdateLobbyUi;
@@ -94,6 +110,7 @@ namespace Content.Client.Lobby
             Lobby!.ReadyButton.OnToggled -= OnReadyToggled;
 
             Lobby = null;
+            _initialized = false;
         }
 
         public void SwitchState(LobbyGui.LobbyGuiState state)
@@ -127,6 +144,9 @@ namespace Content.Client.Lobby
 
         public override void FrameUpdate(FrameEventArgs e)
         {
+            if (!TryInitialize())
+                return;
+
             if (_gameTicker.IsGameStarted)
             {
                 Lobby!.StartTime.Text = string.Empty;
@@ -212,7 +232,7 @@ namespace Content.Client.Lobby
             else
             {
                 Lobby!.StartTime.Text = string.Empty;
-                Lobby!.ReadyButton.Text = Loc.GetString(Lobby!.ReadyButton.Pressed ? "lobby-state-player-status-ready": "lobby-state-player-status-not-ready");
+                Lobby!.ReadyButton.Text = Loc.GetString(Lobby!.ReadyButton.Pressed ? "lobby-state-player-status-ready" : "lobby-state-player-status-not-ready");
                 Lobby!.ReadyButton.ToggleMode = true;
                 Lobby!.ReadyButton.Disabled = false;
                 Lobby!.ReadyButton.Pressed = _gameTicker.AreWeReady;
@@ -258,7 +278,7 @@ namespace Content.Client.Lobby
         {
             if (_gameTicker.LobbyBackground != null)
             {
-                Lobby!.Background.Texture = _resourceCache.GetResource<TextureResource>(_gameTicker.LobbyBackground );
+                Lobby!.Background.Texture = _resourceCache.GetResource<TextureResource>(_gameTicker.LobbyBackground);
             }
             else
             {

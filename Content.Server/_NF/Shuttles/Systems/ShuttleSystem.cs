@@ -271,6 +271,22 @@ public sealed partial class ShuttleSystem
         var query = EntityQueryEnumerator<ShuttleComponent>();
         var whereIsEveryone = GetPlayerShipsWithPeopleOnThem();
 
+        var consolesByGrid = new Dictionary<EntityUid, HashSet<Entity<ShuttleConsoleComponent>>>();
+        var consolesQuery = EntityQueryEnumerator<ShuttleConsoleComponent, TransformComponent>();
+        while (consolesQuery.MoveNext(out var consoleUid, out var consoleComp, out var consoleXform))
+        {
+            if (consoleXform.GridUid is not { } gridUid)
+                continue;
+
+            if (!consolesByGrid.TryGetValue(gridUid, out var consoles))
+            {
+                consoles = new HashSet<Entity<ShuttleConsoleComponent>>();
+                consolesByGrid[gridUid] = consoles;
+            }
+
+            consoles.Add((consoleUid, consoleComp));
+        }
+
         while (query.MoveNext(out var uid, out var shuttle))
         {
             if (shuttle.EBrakeActive)
@@ -316,16 +332,8 @@ public sealed partial class ShuttleSystem
                 continue; // people are on it, no need to emergency brake
             }
 
-            // find all the shuttle consoles on this shuttle
-            var consolesQuery = EntityQueryEnumerator<ShuttleConsoleComponent, TransformComponent>();
-            var cronsoles = new HashSet<Entity<ShuttleConsoleComponent>>();
-            while (consolesQuery.MoveNext(out var consoleUid, out var consoleComp, out var consoleXform))
-            {
-                if (consoleXform.GridUid == mygrid)
-                {
-                    cronsoles.Add((consoleUid, consoleComp));
-                }
-            }
+            consolesByGrid.TryGetValue(mygrid.Value, out var cronsoles);
+            cronsoles ??= new HashSet<Entity<ShuttleConsoleComponent>>();
 
             // No people on board and shuttle is moving - engage emergency brake!
             EngageEmergencyBrake(
@@ -342,13 +350,12 @@ public sealed partial class ShuttleSystem
     /// </summary>
     private HashSet<EntityUid> GetPlayerShipsWithPeopleOnThem()
     {
-        var whereDict = new HashSet<EntityUid>(); // awoo
+        var whereDict = new HashSet<EntityUid>();
         foreach (var sesh in _players.Sessions)
         {
             // Get the player entity
             if (!sesh.AttachedEntity.HasValue)
             {
-                // Log.Debug($"Skipping for E-Brake: Player session {sesh.Name} ({sesh.UserId}) has no attached entity.");
                 continue;
             }
             var attached = sesh.AttachedEntity.Value;
@@ -358,7 +365,6 @@ public sealed partial class ShuttleSystem
                 if (!_mobState.IsAlive(attached)
                     || HasComp<GhostComponent>(attached))
                 {
-                    // Log.Debug($"Skipping for E-Brake: Player session {sesh.Name} ({sesh.UserId}) is in crit or dead.");
                     continue;
                 }
             }
@@ -369,7 +375,6 @@ public sealed partial class ShuttleSystem
                 || !TryComp<ShuttleComponent>(transform.GridUid.Value, out var shuttle)
                 || !shuttle.PlayerShuttle)
             {
-                // Log.Debug($"Skipping for E-Brake: Player session {sesh.Name} ({sesh.UserId}) is not on a player shuttle.");
                 continue;
             }
             whereDict.Add(transform.GridUid.Value);
@@ -397,7 +402,6 @@ public sealed partial class ShuttleSystem
         {
             return;
         }
-        Log.Debug($"Engaging E-Brake for {ToPrettyString(uid)}.");
         SetInertiaDampening(
             uid,
             physicsComponent,

@@ -360,7 +360,7 @@ public sealed partial class NPCSteeringSystem
 
     private void CheckPath(EntityUid uid, NPCSteeringComponent steering, TransformComponent xform, bool needsPath, float targetDistance)
     {
-        if (!_pathfinding)
+        if (!ShouldPathfind(uid))
         {
             steering.CurrentPath.Clear();
             steering.PathfindToken?.Cancel();
@@ -385,6 +385,9 @@ public sealed partial class NPCSteeringSystem
         // Request the new path.
         if (needsPath)
         {
+            if (TryReuseSharedPath(uid, steering, xform))
+                return;
+
             RequestPath(uid, steering, xform, targetDistance);
         }
     }

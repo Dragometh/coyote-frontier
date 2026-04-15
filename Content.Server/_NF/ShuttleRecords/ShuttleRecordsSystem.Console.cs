@@ -332,8 +332,6 @@ public sealed partial class ShuttleRecordsSystem
         if (args.Actor is not { Valid: true } player)
             return;
 
-        _popup.PopupEntity("Retrieve shuttle message received!", player); // DEBUG
-
         // Get the station grid this console is on
         var consoleGrid = Transform(uid).GridUid;
         if (consoleGrid == null)
@@ -343,8 +341,6 @@ public sealed partial class ShuttleRecordsSystem
             return;
         }
 
-        _popup.PopupEntity("Console grid check passed!", player); // DEBUG
-
         // Check access
         if (!_access.IsAllowed(player, uid))
         {
@@ -352,8 +348,6 @@ public sealed partial class ShuttleRecordsSystem
             _audioSystem.PlayPredicted(component.ErrorSound, uid, null, AudioParams.Default.WithMaxDistance(5f));
             return;
         }
-
-        _popup.PopupEntity("Access check passed!", player); // DEBUG
 
         // Get the shuttle record
         if (!TryGetRecord(args.ShuttleNetEntity, out var record))
@@ -363,8 +357,6 @@ public sealed partial class ShuttleRecordsSystem
             return;
         }
 
-        _popup.PopupEntity($"Record found! StoredData null? {string.IsNullOrEmpty(record.StoredGridData)}", player); // DEBUG
-
         // Check if there's stored data
         if (string.IsNullOrEmpty(record.StoredGridData))
         {
@@ -373,8 +365,6 @@ public sealed partial class ShuttleRecordsSystem
             return;
         }
 
-        _popup.PopupEntity("Creating temp storage...", player); // DEBUG
-
         // Create a temporary entity to hold the storage component
         var tempStorage = Spawn(null, MapCoordinates.Nullspace);
         var storageComp = EnsureComp<BluespaceStorageComponent>(tempStorage);
@@ -382,51 +372,46 @@ public sealed partial class ShuttleRecordsSystem
         storageComp.StoredShipFullName = record.StoredShipFullName;
         storageComp.StoredShipName = record.Name;
 
-        _popup.PopupEntity("Calling drydock retrieve...", player); // DEBUG
-
         // Try to retrieve the shuttle using the drydock system (dock to the console's grid)
-        if (_drydock.TryRetrieveShuttleFromRecords(player, tempStorage, uid, storageComp, consoleGrid.Value))
-        {
-            _popup.PopupEntity("Drydock retrieve succeeded!", player); // DEBUG
-
-            // Schedule a delayed check to update the record with the new shuttle entity
-            // Wait 3 seconds to ensure all drydock operations complete (deserialize, dock, etc.)
-            Timer.Spawn(TimeSpan.FromSeconds(3.0), () =>
-            {
-                // Store the old entity UID before we change it
-                var oldEntityUid = record.EntityUid;
-
-                // Get the new shuttle entity from the deed that was created
-                if (TryComp<ShuttleDeedComponent>(tempStorage, out var deed) && deed.ShuttleUid != null)
+        if (_drydock.TryRetrieveShuttleFromRecords(
+                player,
+                tempStorage,
+                uid,
+                storageComp,
+                consoleGrid.Value,
+                retrievedShuttleUid =>
                 {
-                    // Update the record with the new entity UID
-                    record.EntityUid = GetNetEntity(deed.ShuttleUid.Value);
-                }
+                    if (!Exists(tempStorage))
+                        return;
 
-                // Clear the stored data from the record
-                record.StoredGridData = null;
-                record.StoredShipFullName = null;
-
-                // Remove the old record entry and add the new one
-                if (!TryGetShuttleRecordsDataComponent(out var dataComponent))
-                {
-                    if (Exists(tempStorage))
+                    if (retrievedShuttleUid is not { } shuttleUid)
+                    {
                         QueueDel(tempStorage);
-                    return;
-                }
+                        return;
+                    }
 
-                // Remove old entry with old EntityUid
-                dataComponent.ShuttleRecords.Remove(oldEntityUid);
+                    // Store the old entity UID before we change it.
+                    var oldEntityUid = record.EntityUid;
+                    record.EntityUid = GetNetEntity(shuttleUid);
 
-                // Add new entry with new EntityUid
-                dataComponent.ShuttleRecords[record.EntityUid] = record;
+                    // Clear stored data only after explicit retrieval success.
+                    record.StoredGridData = null;
+                    record.StoredShipFullName = null;
 
-                RefreshStateForAll();
+                    if (!TryGetShuttleRecordsDataComponent(out var dataComponent))
+                    {
+                        QueueDel(tempStorage);
+                        return;
+                    }
 
-                if (Exists(tempStorage))
+                    // Move record key to the new active shuttle entity.
+                    dataComponent.ShuttleRecords.Remove(oldEntityUid);
+                    dataComponent.ShuttleRecords[record.EntityUid] = record;
+
+                    RefreshStateForAll();
                     QueueDel(tempStorage);
-            });
-
+                }))
+        {
             _audioSystem.PlayPredicted(component.ConfirmSound, uid, null, AudioParams.Default.WithMaxDistance(5f));
 
             // Add to admin logs
@@ -437,7 +422,6 @@ public sealed partial class ShuttleRecordsSystem
         }
         else
         {
-            _popup.PopupEntity("Drydock retrieve FAILED!", player); // DEBUG
             QueueDel(tempStorage);
             _audioSystem.PlayPredicted(component.ErrorSound, uid, null, AudioParams.Default.WithMaxDistance(5f));
         }
