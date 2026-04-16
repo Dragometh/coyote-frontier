@@ -54,12 +54,12 @@ A change to a value (note: `OLD<NEW`)
 A cyborg module with an added moduleId field (inline blank comment), a commented out bucket (inline blank comment), and a DroppableBorgModule that we've added (begin/end block comment).
 ```yml
   - type: ItemBorgModule
-    moduleId: Gardening # Coyote
+    moduleId: Gardening # CS
     items:
     - HydroponicsToolMiniHoe
     - HydroponicsToolSpade
     - HydroponicsToolClippers
-    # - Bucket # Coyote
+    # - Bucket # CS
   # CS: droppable borg items
   - type: DroppableBorgModule
     moduleId: Gardening
