@@ -11,8 +11,8 @@ public class SharedAphrodisiacChecker
 {
     public readonly string HideTag = "HideInAphroVis";
 
-    private readonly string _aphrodisiacsGroup = "Aphrodisiacs";
-    private readonly string _aphrodisiacDrinksGroup = "AphrodisiacDrinks";
+    private readonly string _aphrodisiacsGroup = "Aphrodisiac";
+    private readonly string _aphrodisiacDrinksGroup = "AphrodisiacDrink";
 
     public SharedAphrodisiacChecker() { }
     public bool CheckForAphrodisiacs(IPrototypeManager prototypeManager, Solution solution)

@@ -1,7 +1,7 @@
 - type: metabolismGroup
-  id: Aphrodisiacs
+  id: Aphrodisiac
   name: metabolism-group-aphrodisiacs
 
 - type: metabolismGroup
-  id: AphrodisiacDrinks
+  id: AphrodisiacDrink
   name: metabolism-group-aphrodisiac-drinks

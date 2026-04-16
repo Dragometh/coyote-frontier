@@ -1,7 +1,7 @@
 - type: reagent
   id: BaseAphrodisiacAlcohols
   parent: BaseAlcohol
-  group: AphrodisiacDrinks
+  group: AphrodisiacDrink
   abstract: true
 
 - type: reagent
