@@ -1,2 +1,2 @@
-metabolism-group-aphrodisiac = Aphrodisiac
-metabolism-group-aphrodisiac-drink = Aphrodisiac Drink
+metabolism-group-aphrodisiacs = Aphrodisiac
+metabolism-group-aphrodisiac-drinks = Aphrodisiac Drink
