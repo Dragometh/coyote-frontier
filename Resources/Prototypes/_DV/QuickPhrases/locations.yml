@@ -448,7 +448,7 @@
   id: LocationArrivalsPhrase
   text: station-beacon-arrivals
 
-#CS - start
+# CS: start
 # - type: quickPhrase
 #   parent: BaseCivilianLocationPhrase
 #   id: LocationOutpostPhrase

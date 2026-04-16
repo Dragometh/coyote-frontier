@@ -17,7 +17,7 @@ public abstract class SharedHypospraySystem : EntitySystem
     [Dependency] protected readonly SharedSolutionContainerSystem _solutionContainers = default!;
     [Dependency] protected readonly ISharedAdminLogManager _adminLogger = default!;
     [Dependency] protected readonly ReactiveSystem _reactiveSystem = default!;
-    // CS start: Port in jet injectors from Den
+    // CS: Port in jet injectors from Den
     [Dependency] protected readonly MobStateSystem MobState = default!;
     [Dependency] protected readonly SharedCombatModeSystem Combat = default!;
     [Dependency] protected readonly ISharedAdminLogManager AdminLogger = default!;

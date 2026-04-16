@@ -210,7 +210,7 @@ namespace Content.Server.Lathe
             //if (!CanProduce(uid, recipe, quantity, component)) // Frontier: 1<quantity
             //    return false;
 
-            // CS Start
+            // CS
             if (!CheckMaterialAvailability(uid, component, recipe, quantity)) // CS: Check material availability (including buffer)
                 return false;
 

@@ -236,7 +236,7 @@
   id: BorgChassisDerelict
   parent: BaseBorgChassisDerelict
   name: derelict cyborg
-  description: A synthetic that assists in station activity. This one is in a state of great disrepair. #CS CHANGE: Changed "man-machine hybrid" to "synthetic"
+  description: A synthetic that assists in station activity. This one is in a state of great disrepair. # CS CHANGE: Changed "man-machine hybrid" to "synthetic"
   components:
   - type: Sprite
     layers:

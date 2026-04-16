@@ -69,7 +69,7 @@ public sealed partial class PaperComponent : Component
         }
     }
 
-    // CS start: Ports in fillable forms from RMC
+    // CS: Ports in fillable forms from RMC
     [Serializable, NetSerializable]
     public sealed class PaperSignatureRequestMessage : BoundUserInterfaceMessage
     {

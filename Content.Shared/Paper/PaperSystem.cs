@@ -494,7 +494,7 @@ public sealed class PaperSystem : EntitySystem
         _uiSystem.SetUiState(entity.Owner, PaperUiKey.Key, new PaperBoundUserInterfaceState(entity.Comp.Content, entity.Comp.StampedBy, entity.Comp.Mode));
     }
 
-    // CS start: Port in fillable forms from RMC
+    // CS: Port in fillable forms from RMC
     private void OnSignatureRequest(Entity<PaperComponent> entity, ref PaperSignatureRequestMessage args)
     {
         var signature = GetPlayerSignature(args.Actor);

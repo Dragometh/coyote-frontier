@@ -15,7 +15,7 @@ public sealed class SimpleCensorTests
         Assert.That(output, Is.EqualTo("hello ******"));
     }
 
-    // Basics - use custom dictionary
+    // BasiCS: use custom dictionary
 
     [Test]
     public void CanCensorMultipleWordInstances()

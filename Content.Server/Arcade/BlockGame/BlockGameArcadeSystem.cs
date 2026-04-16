@@ -29,7 +29,7 @@ public sealed class BlockGameArcadeSystem : EntitySystem
         });
     }
 
-    // CS start
+    // CS
     public void OnGameOver(EntityUid uid, BlockGameArcadeComponent? arcade = null, TransformComponent? xform = null, int points = 0)
     {
         if (!Resolve(uid, ref arcade, ref xform))

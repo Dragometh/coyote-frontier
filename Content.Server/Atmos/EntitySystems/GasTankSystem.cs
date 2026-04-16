@@ -228,7 +228,7 @@ namespace Content.Server.Atmos.EntitySystems
                 component.Integrity++;
         }
 
-        // CS START: Added pressure beep warning system thing
+        // CS: Added pressure beep warning system thing
         /// <summary>
         /// Play some kind of beep if the pressure is low enough.
         /// Runs off a system of thresholds, which are defined in the GasTankComponent.

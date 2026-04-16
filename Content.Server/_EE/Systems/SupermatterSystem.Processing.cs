@@ -709,7 +709,7 @@ public sealed partial class SupermatterSystem
 
         // Add hallucinations to every player on the map
         // TODO: change this from paracusia to actual hallucinations whenever those are real
-        // CS Start: Removes checks, instead starts a hallucination gamerule, which theoretically ensures the comp is deleted once it's over.
+        // CS: Removes checks, instead starts a hallucination gamerule, which theoretically ensures the comp is deleted once it's over.
         _gameTicker.StartGameRule("CSSupermatterHallucination");
         /*
         var mobLookup = new HashSet<Entity<MobStateComponent>>();

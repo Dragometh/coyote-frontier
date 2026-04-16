@@ -1034,7 +1034,7 @@
   color: "#b0abaa"
   metabolisms:
     Medicine:
-      metabolismRate: 0.01 #CS add: narcoleptics only need a 15u injection every 25 minutes to maintain the effect, but they do block a reagent channel to treat their disability this way.
+      metabolismRate: 0.01 # CS add: narcoleptics only need a 15u injection every 25 minutes to maintain the effect, but they do block a reagent channel to treat their disability this way.
       effects:
       - !type:GenericStatusEffect
         key: Drowsiness
@@ -1044,7 +1044,7 @@
         conditions:
         - !type:ReagentThreshold
           min: 5
-      - !type:PopupMessage #CS change start: tell people when the reagent is leaving their body instead of spamming their screen while it's in effect
+      - !type:PopupMessage # CS change start: tell people when the reagent is leaving their body instead of spamming their screen while it's in effect
         type: Local
         visualType: Small
         probability: 1
@@ -1052,7 +1052,7 @@
           - "ethyloxyephedrine-reagent-fade"
         conditions:
           - !type:ReagentThreshold
-            max: 0.01 #CS change end
+            max: 0.01 # CS change end
 
 - type: reagent
   id: Sigynate

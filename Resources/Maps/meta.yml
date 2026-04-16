@@ -156159,7 +156159,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraScience
       nameSet: True
-      id: Robotics - North
+      id: RobotiCS: North
   - uid: 19202
     components:
     - type: Transform
@@ -156169,7 +156169,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraScience
       nameSet: True
-      id: Robotics - South
+      id: RobotiCS: South
   - uid: 19268
     components:
     - type: Transform
@@ -156286,7 +156286,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraScience
       nameSet: True
-      id: Robotics - Surgery
+      id: RobotiCS: Surgery
 - proto: SurveillanceCameraSecurity
   entities:
   - uid: 6549

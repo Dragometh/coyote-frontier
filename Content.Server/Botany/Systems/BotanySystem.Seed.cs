@@ -198,7 +198,7 @@ public sealed partial class BotanySystem : EntitySystem
                     metaData.EntityDescription + " " + Loc.GetString("botany-mysterious-description-addon"), metaData);
             }
 
-            // CS start: Ensure component if laced
+            // CS: Ensure component if laced
             if (seedLaced)
             {
                 var aphroVisibility = EnsureComp<AphroLacedVisibilityComponent>(entity);

@@ -203,7 +203,7 @@ public sealed class HypospraySystem : SharedHypospraySystem
         }
         else
         {
-            // CS start: Keep in line with Frontier's instant chemical medipens and such.
+            // CS: Keep in line with Frontier's instant chemical medipens and such.
             // Self-injections take half as long.
             if (comp.InstantSelfInject)
                 actualDelay = TimeSpan.FromSeconds(0);

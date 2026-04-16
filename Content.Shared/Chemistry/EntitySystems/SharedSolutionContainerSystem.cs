@@ -331,7 +331,7 @@ public abstract partial class SharedSolutionContainerSystem : EntitySystem
             RaiseLocalEvent(uid, ref overflowEv);
         }
 
-        // CS start: Ensure component on container if there is aphrodisiacs on the solution
+        // CS: Ensure component on container if there is aphrodisiacs on the solution
         if (_helper.CheckForAphrodisiacs(PrototypeManager, solution)
         && TryComp<ContainedSolutionComponent>(soln.Owner, out var containedSolution)
         && !HasComp<MindContainerComponent>(containedSolution.Container) // Filter out (most) mobs

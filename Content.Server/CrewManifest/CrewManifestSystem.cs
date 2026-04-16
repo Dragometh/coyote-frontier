@@ -229,7 +229,7 @@ public sealed class CrewManifestSystem : EntitySystem
         var entries = new CrewManifestEntries();
         var entriesSort = new List<(JobPrototype? job, CrewManifestEntry entry)>();
 
-        while (sensors.MoveNext(out var uid, out var sensor)) // CS start
+        while (sensors.MoveNext(out var uid, out var sensor)) // CS
         {
             if (sensor.User == null ||
                 (TryComp<SSDIndicatorComponent>(sensor.User, out var indicator) && indicator.IsSSD))

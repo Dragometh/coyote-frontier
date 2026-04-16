@@ -55,7 +55,7 @@ public sealed partial class PaperBoundUserInterface : BoundUserInterface // Delt
         }
     }
 
-    // CS start: Port in fillable forms from RMC
+    // CS: Port in fillable forms from RMC
     private void OnSignatureRequested(int signatureIndex)
     {
         SendMessage(new PaperSignatureRequestMessage(signatureIndex));

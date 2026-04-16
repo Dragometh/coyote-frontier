@@ -463,7 +463,7 @@ public sealed class SharedArmorPlateSystem : EntitySystem
         else
             RemComp<ArmorPlateProtectedComponent>(wearerUid);
     }
-    // CS Start
+    // CS
     private void OnPlateExamined(EntityUid uid, ArmorPlateItemComponent component, ExaminedEvent args)
     {
         if (!args.IsInDetailsRange)

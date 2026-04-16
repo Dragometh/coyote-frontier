@@ -54,7 +54,7 @@ namespace Content.Client.Paper.UI
             typeof(HeadingTag),
             typeof(ItalicTag),
             typeof(MonoTag),
-            // CS start: Port in fillable forms from RMC
+            // CS: Port in fillable forms from RMC
             typeof(FormTagHandler),
             typeof(SignatureTagHandler),
             typeof(CheckTagHandler)

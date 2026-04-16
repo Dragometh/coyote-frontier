@@ -65,7 +65,7 @@
     steps: 10
     zeroVisible: false
   - type: Item
-    size: Normal #CS increased size to normal
+    size: Normal # CS increased size to normal
     sprite: _NF/Objects/Weapons/Guns/Ammunition/Magazine/Rifle/rifle20_drum.rsi
     inhandVisuals:
       left:

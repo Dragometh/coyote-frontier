@@ -22,7 +22,7 @@ public sealed partial class BlockGameArcadeComponent : Component
     /// </summary>
     public readonly List<EntityUid> Spectators = new();
 
-    // CS START
+    // CS
 
     /// <summary>
     /// The prototypes that can be dispensed as a reward for winning the game.
