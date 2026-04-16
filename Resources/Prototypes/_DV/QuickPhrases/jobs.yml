@@ -197,7 +197,7 @@
 #   parent: BaseSecurityJobPhrase
 #   id: DetectivePhrase
 #   text: job-name-detective
-# CS: end
+# # End CS
 
 # Service
 
@@ -251,7 +251,7 @@
 #   parent: BaseServiceJobPhrase
 #   id: HeadOfPersonnelPhrase
 #   text: job-name-hop
-# CS: end
+# # End CS
 
 # Wildcard
 
@@ -275,4 +275,4 @@
 #   parent: BaseSecurityJobPhrase
 #   id: CorpsmanPhrase
 #   text: job-name-brigmedic
-# CS: end
+# # End CS

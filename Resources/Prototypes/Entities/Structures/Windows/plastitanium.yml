@@ -47,7 +47,7 @@
         - FullTileMask
         layer:
         - WallLayer
-        density: 120 # CS: 4000->120
+        density: 120 # CS: 4000<120
 
 - type: entity
   id: PlastitaniumWindowSquareBase
