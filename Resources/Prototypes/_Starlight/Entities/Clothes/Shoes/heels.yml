@@ -9,9 +9,9 @@
       types:
         Piercing: 6
   - type: Sprite
-    sprite: _CS/Clothes/Shoes/Boots/highheelshoes.rsi
+    sprite: _Starlight/Clothes/Shoes/Boots/highheelshoes.rsi
   - type: Clothing
-    sprite: _CS/Clothes/Shoes/Boots/highheelshoes.rsi
+    sprite: _Starlight/Clothes/Shoes/Boots/highheelshoes.rsi
   - type: FootstepModifier
     footstepSoundCollection:
       collection: FootstepHighHeels
@@ -26,9 +26,9 @@
   description: Old boots with a gray sole, faint bloodstains are visible.
   components:
   - type: Sprite
-    sprite: _CS/Clothes/Shoes/Boots/ari.rsi
+    sprite: _Starlight/Clothes/Shoes/Boots/ari.rsi
   - type: Clothing
-    sprite: _CS/Clothes/Shoes/Boots/ari.rsi
+    sprite: _Starlight/Clothes/Shoes/Boots/ari.rsi
 
 - type: entity
   parent: ClothingShoesBaseButcherable
@@ -37,6 +37,6 @@
   description: Tall black thigh-high boots with fur, golden accents, and straps.
   components:
   - type: Sprite
-    sprite: _CS/Clothes/Shoes/Boots/belpero.rsi
+    sprite: _Starlight/Clothes/Shoes/Boots/belpero.rsi
   - type: Clothing
-    sprite: _CS/Clothes/Shoes/Boots/belpero.rsi
+    sprite: _Starlight/Clothes/Shoes/Boots/belpero.rsi
