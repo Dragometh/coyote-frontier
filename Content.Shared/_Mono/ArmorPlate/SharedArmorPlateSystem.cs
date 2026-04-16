@@ -41,7 +41,7 @@ public sealed class SharedArmorPlateSystem : EntitySystem
         SubscribeLocalEvent<ArmorPlateHolderComponent, InventoryRelayedEvent<RefreshMovementSpeedModifiersEvent>>(OnRefreshMoveSpeed);
         SubscribeLocalEvent<ArmorPlateItemComponent, GetVerbsEvent<ExamineVerb>>(OnPlateVerbExamine);
         SubscribeLocalEvent<ArmorPlateItemComponent, EntityTerminatingEvent>(OnPlateDestroyed);
-        SubscribeLocalEvent<ArmorPlateItemComponent, ExaminedEvent>(OnPlateExamined); //Coyote: Allows plates to be natively examined for durability
+        SubscribeLocalEvent<ArmorPlateItemComponent, ExaminedEvent>(OnPlateExamined); //CS: Allows plates to be natively examined for durability
         SubscribeLocalEvent<ArmorPlateProtectedComponent, BeforeDamageChangedEvent>(OnBeforeDamageChanged);
     }
 

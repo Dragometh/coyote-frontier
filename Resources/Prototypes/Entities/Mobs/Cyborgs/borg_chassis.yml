@@ -39,7 +39,7 @@
   - type: Loadout
     prototypes:
     - BorgGear
-#END COYOTE
+#End CS
 
 - type: entity
   id: BorgChassisGeneric
@@ -267,4 +267,4 @@
   - type: Loadout
     prototypes:
     - BorgGear
-#END COYOTE
+#End CS

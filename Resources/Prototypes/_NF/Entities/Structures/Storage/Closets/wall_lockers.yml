@@ -128,7 +128,7 @@
           False: { visible: false }
 # endregion
 
-#region Construction #Coyote: constructible lockers
+#region Construction #CS: constructible lockers
 - type: entity
   id: LockerWallFrame
   parent: [ LockerWallFrameBase, BaseStructureWallmount ]

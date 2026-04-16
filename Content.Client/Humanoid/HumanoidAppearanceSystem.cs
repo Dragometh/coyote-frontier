@@ -197,7 +197,7 @@ public sealed class HumanoidAppearanceSystem : SharedHumanoidAppearanceSystem
                 }
                 // shader will be appliesed lader
             }
-            // END COYOTE (PLEASE)
+            // End CS (PLEASE)
             sprite.LayerSetSprite(layerIndex, appropriateSprite);
         }
     }

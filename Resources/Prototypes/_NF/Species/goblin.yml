@@ -13,7 +13,7 @@
   defaultHeight: 0.8
   minWidth: 0.55
   defaultWidth: 0.8
-  # End Coyote
+  # End CS
   skinColoration: Hues #Possible values: TintedHues, Hues, HumanToned
   maleFirstNames: NamesGoblinFirstMale
   femaleFirstNames: NamesGoblinFirstFemale

@@ -10,4 +10,4 @@
       - hands
     hands: #Unfortunately, must be called hands or else this doesn't work
       part: HandsAnimal
-#END COYOTE ADD
+#End CS ADD

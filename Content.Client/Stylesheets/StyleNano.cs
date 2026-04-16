@@ -199,7 +199,7 @@ namespace Content.Client.Stylesheets
         public static readonly Color NFSDButtonColorHovered = Color.FromHex("#667A76");
         public static readonly Color PirateButtonColorDefault = Color.FromHex("#61503A");
         public static readonly Color PirateButtonColorHovered = Color.FromHex("#675C64");
-        // end Coyote Frontier
+        // End CS Frontier
 
         //Bwoink
         public const string StyleClassPinButtonPinned = "pinButtonPinned";

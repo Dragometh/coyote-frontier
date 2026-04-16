@@ -163,7 +163,7 @@ public sealed class TipsSystem : EntitySystem
                 _chat.ChatMessageToManyFiltered(Filter.Broadcast(), ChatChannel.OOC, wrappedMessage, wrappedMessage,
                     EntityUid.Invalid, false, false, Color.MediumPurple);
             });
-            // End Coyote
+            // End CS
             RaiseNetworkEvent(ev);
         }
     }

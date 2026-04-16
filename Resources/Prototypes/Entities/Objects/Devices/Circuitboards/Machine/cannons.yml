@@ -35,7 +35,7 @@
     stackRequirements: # Unupgradable. What you see is what you get. It's pretty good though!
       Steel: 5
       CableHV: 5
-# END COYOTE
+# End CS
 
 - type: entity
   id: ShuttleGunPerforatorCircuitboard

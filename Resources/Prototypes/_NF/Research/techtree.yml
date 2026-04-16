@@ -641,7 +641,7 @@
   cost: 5000
   recipeUnlocks:
   - NFClothingShoesBootsMoon
-  # Begin DeltaV Additions -- Coyote: Add Holographic Hoverbeds to the same research as moon boots. Seems fitting...?
+  # Begin DeltaV Additions -- CS: Add Holographic Hoverbeds to the same research as moon boots. Seems fitting...?
   - HoverBedHoloSpawnFolded
   # End DeltaV Additions
   technologyPrerequisites:

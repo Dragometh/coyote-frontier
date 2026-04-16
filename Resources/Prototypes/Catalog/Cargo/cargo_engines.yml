@@ -123,6 +123,6 @@
     sprite: Structures/Power/Generation/Tesla/coil.rsi
     state: grounding_rod
   product: CrateEngineeringTeslaGroundingRod
-  cost: 1200 # Frontier: 400<1000 Coyote: 1000<1200
+  cost: 1200 # Frontier: 400<1000 CS: 1000<1200
   category: cargoproduct-category-name-engineering
   group: edison # CS

@@ -252,7 +252,7 @@
         shader: unshaded
   - type: Item
     sprite: _NF/Clothing/Neck/Cloaks/wizard_cloak_holding.rsi
-    size: Ginormous #Coyote: Fixes expolitable inventory bugs
+    size: Ginormous #CS: Fixes expolitable inventory bugs
   - type: Clothing
     sprite: _NF/Clothing/Neck/Cloaks/wizard_cloak_holding.rsi
     clothingVisuals:

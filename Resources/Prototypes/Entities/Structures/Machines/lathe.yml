@@ -710,7 +710,7 @@
     max: 100
     regenAmount: 5
     regenInterval: 10
-  # End Coyote
+  # End CS
 
 - type: entity
   parent: BaseLathe

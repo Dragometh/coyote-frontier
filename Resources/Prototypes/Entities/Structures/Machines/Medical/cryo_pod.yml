@@ -119,7 +119,7 @@
   # # CS: Lets cryo pods fuckin. print slips. why not
   # - type: HealthAnalyzerPrinter
   #   printTemplate: PaperWrittenMedicalMedtekPatientRecord
-  # # End Coyote
+  # # End CS
 
 - type: entity
   parent: BaseMachine

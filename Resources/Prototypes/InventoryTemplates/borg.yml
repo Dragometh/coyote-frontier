@@ -17,7 +17,7 @@
     uiWindowPos: 2,1
     strippingWindowPos: 2,4
     displayName: ID
-#END COYOTE
+#End CS
 
 - type: inventoryTemplate
   id: borgShort
@@ -38,7 +38,7 @@
     uiWindowPos: 2,1
     strippingWindowPos: 2,4
     displayName: ID
-#END COYOTE
+#End CS
 
 - type: inventoryTemplate
   id: borgTall
@@ -59,7 +59,7 @@
     uiWindowPos: 2,1
     strippingWindowPos: 2,4
     displayName: ID
-#END COYOTE
+#End CS
 
 # taller than tall
 - type: inventoryTemplate
@@ -81,4 +81,4 @@
     uiWindowPos: 2,1
     strippingWindowPos: 2,4
     displayName: ID
-#END COYOTE
+#End CS

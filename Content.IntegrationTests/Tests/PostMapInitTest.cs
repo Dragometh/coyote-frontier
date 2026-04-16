@@ -72,7 +72,7 @@ namespace Content.IntegrationTests.Tests
             "/Maps/_NF/Shuttles/Expedition/decadedove.yml", // Contains PTK-1500e "Matter Dematerializer"
             "/Maps/_CS/Shuttles/BlackMarket/Retrofitted/raven.yml", // Contains LSE-400c "Svalinn machine gun"
             "/Maps/_CS/Shuttles/BlackMarket/Ripper/bonesaw.yml", // Contains LSE-400c "Svalinn machine gun"
-            // End Coyote
+            // End CS
         };
 
         private static readonly string[] GameMaps = FrontierConstants.GameMapPrototypes; // Frontier: not inline constants

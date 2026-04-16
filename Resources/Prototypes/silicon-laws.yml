@@ -33,7 +33,7 @@
   laws:
   - free1
   obeysTo: laws-owner-crew
-#END COYOTE
+#End CS
 
 # Corporate
 - type: siliconLaw

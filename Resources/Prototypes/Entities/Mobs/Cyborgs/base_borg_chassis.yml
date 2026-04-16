@@ -117,7 +117,7 @@
       components:
       #COYOTE TWEAK: We want borgs to be able to fix eachother and themselves
       #- BorgChassis
-      #END COYOTE
+      #End CS
       - RoboticsConsole
   - type: WiresPanel
     openingTool: Prying
@@ -152,7 +152,7 @@
 #COYOTE ADD: This allows borgs to use one singular hand, to be able to interact with the world effectively. Also lets them have incentive pay
     prototype: Borg
   - type: RoleplayIncentive
-#END COYOTE
+#End CS
   - type: StatusEffects
     allowed:
     - Stun

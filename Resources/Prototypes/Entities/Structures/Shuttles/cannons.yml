@@ -295,7 +295,7 @@
 
 - type: entity # CS
   id: ShuttleGunPirateCannonEmpty
-  parent: [ ShuttleGunBase, BaseC3Contraband ] #Coyote: Removed BaseC3ContrabandNoValue && BaseStructureDisableToolUse, Added BaseC3MetaPirate
+  parent: [ ShuttleGunBase, BaseC3Contraband ] #CS: Removed BaseC3ContrabandNoValue && BaseStructureDisableToolUse, Added BaseC3MetaPirate
   name: pirate ship cannon
   suffix: empty
   description: Kaboom!

@@ -1044,7 +1044,7 @@
         conditions:
         - !type:ReagentThreshold
           min: 5
-      - !type:PopupMessage #Coyote change start: tell people when the reagent is leaving their body instead of spamming their screen while it's in effect
+      - !type:PopupMessage #CS change start: tell people when the reagent is leaving their body instead of spamming their screen while it's in effect
         type: Local
         visualType: Small
         probability: 1
@@ -1052,7 +1052,7 @@
           - "ethyloxyephedrine-reagent-fade"
         conditions:
           - !type:ReagentThreshold
-            max: 0.01 #Coyote change end
+            max: 0.01 #CS change end
 
 - type: reagent
   id: Sigynate
