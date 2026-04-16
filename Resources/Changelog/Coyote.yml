@@ -2543,3 +2543,10 @@ Entries:
   id: 291
   time: '2026-04-15T22:34:05.0000000+00:00'
   url: https://github.com/ARF-SS13/coyote-frontier/pull/1158
+- author: QTNeen
+  changes:
+    - type: Add
+      message: Visual smoothing opt-out in accessibility settings.
+  id: 292
+  time: '2026-04-16T07:01:52.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/1160
