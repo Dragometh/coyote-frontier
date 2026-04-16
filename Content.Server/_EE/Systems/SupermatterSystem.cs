@@ -88,7 +88,7 @@ public sealed partial class SupermatterSystem : EntitySystem
         SubscribeLocalEvent<SupermatterComponent, InteractHandEvent>(OnHandInteract);
         SubscribeLocalEvent<SupermatterComponent, InteractUsingEvent>(OnItemInteract);
         SubscribeLocalEvent<SupermatterComponent, ExaminedEvent>(OnExamine);
-        //SubscribeLocalEvent<SupermatterComponent, SupermatterDoAfterEvent>(OnGetSliver); #CS: No sliver
+        //SubscribeLocalEvent<SupermatterComponent, SupermatterDoAfterEvent>(OnGetSliver); # CS: No sliver
         SubscribeLocalEvent<SupermatterComponent, GravPulseEvent>(OnGravPulse);
     }
 

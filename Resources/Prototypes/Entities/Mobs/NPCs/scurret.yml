@@ -113,7 +113,7 @@
     needs:
     - NeedHungerDefault
     - NeedThirstDefault
-  # CS: END
+  # End CS
   - type: BodyEmotes # Grants them clapping and so on.
     soundsId: GeneralBodyEmotes
   - type: Tag

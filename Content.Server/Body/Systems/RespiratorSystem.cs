@@ -20,7 +20,7 @@ using JetBrains.Annotations;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Timing;
 
-using Content.Shared.SSDIndicator; //Coyote, needed to check if something has the component.
+using Content.Shared.SSDIndicator; // CS: needed to check if something has the component.
 
 namespace Content.Server.Body.Systems;
 

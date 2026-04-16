@@ -632,9 +632,9 @@
   name: messenger bag of holding
   description: A messenger bag that opens into a localized pocket of bluespace.
   components:
-  - type: ChameleonClothing # CS: start
+  - type: ChameleonClothing # CS
     slot: [back]
-    default: ClothingBackpackMessengerHolding # CS: end
+    default: ClothingBackpackMessengerHolding # End CS
   - type: Sprite
     sprite: _NF/Clothing/Back/Messenger/holding.rsi
     state: icon

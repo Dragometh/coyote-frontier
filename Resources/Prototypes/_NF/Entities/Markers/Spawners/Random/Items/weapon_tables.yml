@@ -431,11 +431,11 @@
     - !type:GroupSelector
       children:
       - id: WeaponCaseShortAmmoBoxLethal35
-    # CS: Start: .40 ammo
+    # CS: .40 ammo
     - !type:GroupSelector
       children:
       - id: WeaponCaseShortAmmoBoxLethal40
-    # CS: End
+    # End CS
     - !type:GroupSelector
       children:
       - id: WeaponCaseShortAmmoBoxLethalShotgun

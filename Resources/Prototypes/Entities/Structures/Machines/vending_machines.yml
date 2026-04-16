@@ -1061,7 +1061,7 @@
   parent: VendingMachineSnack
   id: VendingMachineSustenance
   name: Sustenance Vendor
-  description: A vending machine which vends food, the bare minimum required to survive. #CS: Reflavours to be less "Evil NT-y"
+  description: A vending machine which vends food, the bare minimum required to survive. # CS: Reflavours to be less "Evil NT-y"
   components:
   - type: VendingMachine
     pack: SustenanceInventory
@@ -1072,7 +1072,7 @@
     normalState: normal-unshaded
     ejectState: eject-unshaded
     denyState: deny-unshaded
-    initialStockQuality: 1.0 #CS: Made their stock always full at roundstart.
+    initialStockQuality: 1.0 # CS: Made their stock always full at roundstart.
   - type: Sprite
     sprite: Structures/Machines/VendingMachines/sustenance.rsi
     layers:

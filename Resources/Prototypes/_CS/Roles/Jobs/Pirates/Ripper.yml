@@ -96,17 +96,17 @@
   groups:
   - PilotHead
   #  - NFPirateNeck
-  - PilotNeck #CS: Pirate Loadout Expansion
+  - PilotNeck # CS: Pirate Loadout Expansion
   - PilotJumpsuit
   #  - NFPirateGloves
-  - MercenaryGloves #CS: Pirate Loadout Expansion
+  - MercenaryGloves # CS: Pirate Loadout Expansion
   - PilotBackpack
   - PilotForcedOuterClothing
-  - MercenaryOuterClothing #CS: Pirate Loadout Expansion
+  - MercenaryOuterClothing # CS: Pirate Loadout Expansion
   - MercenaryShoes
   - PilotFace
-  - MercenaryGlasses #CS: Pirate Loadout Expansion
-  - MercenaryBelt #CS: Pirate Loadout Expansion
+  - MercenaryGlasses # CS: Pirate Loadout Expansion
+  - MercenaryBelt # CS: Pirate Loadout Expansion
   - PilotEars
   - ContractorEncryptionKey
   - ContractorBoxSurvival

@@ -139,7 +139,7 @@
     sprite: Clothing/Ears/Headsets/syndicate.rsi
 
 - type: entity
-  parent: ClothingHeadsetAlt # Frontier: add BaseC3Contraband, added ContrabandClothing as parent #CS: Removes C3 Contraband and ContrabandClothing
+  parent: ClothingHeadsetAlt # Frontier: add BaseC3Contraband, added ContrabandClothing as parent # CS: Removes C3 Contraband and ContrabandClothing
   id: ClothingHeadsetAltFreelancer
   name: freelancer's over-ear headset
   components:

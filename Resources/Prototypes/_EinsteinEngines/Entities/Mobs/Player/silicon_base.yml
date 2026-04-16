@@ -1,7 +1,7 @@
 - type: entity
   save: false
   id: PlayerSiliconHumanoidBase
-  parent: [BaseMob, MobDamageable, MobCombat, MobAtmosExposed, MobFlammable, MobBloodstream] #CS: Added MobBloodstream
+  parent: [BaseMob, MobDamageable, MobCombat, MobAtmosExposed, MobFlammable, MobBloodstream] # CS: Added MobBloodstream
   abstract: true
   components:
     - type: Vore # Floofstation - Vore

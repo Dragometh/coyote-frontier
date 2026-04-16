@@ -536,17 +536,17 @@
 #  groups:
 #  - NFPirateHead
 ##  - NFPirateNeck
-#  - ContractorNeck #CS: Pirate Loadout Expansion
+#  - ContractorNeck # CS: Pirate Loadout Expansion
 #  - NFPirateJumpsuit
 ##  - NFPirateGloves
-#  - MercenaryGloves #CS: Pirate Loadout Expansion
+#  - MercenaryGloves # CS: Pirate Loadout Expansion
 #  - ContractorBackpack
 #  - NFPirateForcedOuterClothing
-#  - MercenaryOuterClothing #CS: Pirate Loadout Expansion
+#  - MercenaryOuterClothing # CS: Pirate Loadout Expansion
 #  - NFPirateShoes
 #  - NFPirateFace
-#  - MercenaryGlasses #CS: Pirate Loadout Expansion
-#  - MercenaryBelt #CS: Pirate Loadout Expansion
+#  - MercenaryGlasses # CS: Pirate Loadout Expansion
+#  - MercenaryBelt # CS: Pirate Loadout Expansion
 #  - NFPirateEars
 #  - PirateEncryptionKey # CS: Pirates get comm keys
 #  - ContractorBoxSurvival
@@ -563,18 +563,18 @@
   groups:
   - NFPirateFirstMateHead
 #  - NFPirateNeck
-  - ContractorNeck #CS: Pirate Loadout Expansion
+  - ContractorNeck # CS: Pirate Loadout Expansion
   - NFPirateJumpsuit
 #  - NFPirateGloves
-  - MercenaryGloves #CS: Pirate Loadout Expansion
+  - MercenaryGloves # CS: Pirate Loadout Expansion
   - ContractorBackpack
   - NFPirateFirstMateOuterClothing
   - NFPirateForcedOuterClothing
-  - MercenaryOuterClothing #CS: Pirate Loadout Expansion
+  - MercenaryOuterClothing # CS: Pirate Loadout Expansion
   - NFPirateShoes
   - NFPirateFace
-  - MercenaryGlasses #CS: Pirate Loadout Expansion
-  - MercenaryBelt #CS: Pirate Loadout Expansion
+  - MercenaryGlasses # CS: Pirate Loadout Expansion
+  - MercenaryBelt # CS: Pirate Loadout Expansion
   - NFPirateEars
   - PirateEncryptionKey # CS: Pirates get comm keys
   - ContractorBoxSurvival
@@ -591,18 +591,18 @@
   groups:
   - NFPirateCaptainHead
 #  - NFPirateNeck
-  - ContractorNeck #CS: Pirate Loadout Expansion
+  - ContractorNeck # CS: Pirate Loadout Expansion
   - NFPirateJumpsuit
 #  - NFPirateGloves
-  - MercenaryGloves #CS: Pirate Loadout Expansion
+  - MercenaryGloves # CS: Pirate Loadout Expansion
   - ContractorBackpack
   - NFPirateCaptainOuterClothing
   - NFPirateForcedOuterClothing
-  - MercenaryOuterClothing #CS: Pirate Loadout Expansion
+  - MercenaryOuterClothing # CS: Pirate Loadout Expansion
   - NFPirateShoes
   - NFPirateFace
-  - MercenaryGlasses #CS: Pirate Loadout Expansion
-  - MercenaryBelt #CS: Pirate Loadout Expansion
+  - MercenaryGlasses # CS: Pirate Loadout Expansion
+  - MercenaryBelt # CS: Pirate Loadout Expansion
   - NFPirateCaptainEars
   - PirateEncryptionKey # CS: Pirates get comm keys
   - ContractorBoxSurvival

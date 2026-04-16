@@ -286,7 +286,7 @@
     duration: 1800
     maxDuration: 2400
 #    maxOccurrences: 1 # CS: remove: let the people eat dinos more than once a shift
-    reoccurrenceDelay: 240 # minutes Coyote Add: let the people eat dinos like once every 4 hours
+    reoccurrenceDelay: 240 # CS: let the people eat dinos like once every 4 hours
   - type: BluespaceErrorRule
     groups:
       grid: !type:GridSpawnGroup

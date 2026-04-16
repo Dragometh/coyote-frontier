@@ -96,7 +96,7 @@
     - Binary
     - Common
     - Science
-#CS ADD: Ring ring! We want our borgs to be able to talk in shortband too!
+# CS: Ring ring! We want our borgs to be able to talk in shortband too!
     - Traffic
 #CS END
   - type: ActiveRadio
@@ -104,7 +104,7 @@
     - Binary
     - Common
     - Science
-#CS ADD: Ring ring! We want our borgs to be able to talk in shortband too!
+# CS: Ring ring! We want our borgs to be able to talk in shortband too!
     - Traffic
 #CS END
   - type: ZombieImmune
@@ -117,7 +117,7 @@
       components:
       #CS TWEAK: We want borgs to be able to fix eachother and themselves
       #- BorgChassis
-      #End CS
+      # End CS
       - RoboticsConsole
   - type: WiresPanel
     openingTool: Prying
@@ -149,10 +149,10 @@
       cell_slot:
         name: power-cell-slot-component-slot-name-default
   - type: Body
-#CS ADD: This allows borgs to use one singular hand, to be able to interact with the world effectively. Also lets them have incentive pay
+# CS: This allows borgs to use one singular hand, to be able to interact with the world effectively. Also lets them have incentive pay
     prototype: Borg
   - type: RoleplayIncentive
-#End CS
+# End CS
   - type: StatusEffects
     allowed:
     - Stun

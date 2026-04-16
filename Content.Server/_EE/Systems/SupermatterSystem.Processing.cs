@@ -780,7 +780,7 @@ public sealed partial class SupermatterSystem
         _light.SetColor(uid, Color.FromHsv(hsvFinal), light);
     }
     /*
-    //CS: Until there's a better system for this, we should disable it.
+    // CS: Until there's a better system for this, we should disable it.
     /// <summary>
     /// Checks for
     /// </summary>
@@ -829,7 +829,7 @@ public sealed partial class SupermatterSystem
             _appearance.SetData(uid, SupermatterVisuals.Psy, sm.PsyCoefficient, appearance);
     }
     */
-    //End CS
+    // End CS
 
     /// <summary>
     /// Sets the supermatter's status and speech sound based on thresholds

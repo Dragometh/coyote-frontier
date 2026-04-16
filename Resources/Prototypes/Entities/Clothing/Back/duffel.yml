@@ -227,9 +227,9 @@
   name: duffelbag of holding
   description: A duffelbag that opens into a localized pocket of bluespace.
   components:
-  - type: ChameleonClothing # CS: start
+  - type: ChameleonClothing # CS
     slot: [back]
-    default: ClothingBackpackDuffelHolding # CS: end
+    default: ClothingBackpackDuffelHolding # End CS
   - type: Sprite
     sprite: _NF/Clothing/Back/Duffels/holding.rsi # Frontier
     state: icon

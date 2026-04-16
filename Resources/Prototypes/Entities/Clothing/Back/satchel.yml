@@ -174,9 +174,9 @@
   name: satchel of holding
   description: A satchel that opens into a localized pocket of bluespace.
   components:
-  - type: ChameleonClothing # CS: start
+  - type: ChameleonClothing # CS
     slot: [back]
-    default: ClothingBackpackSatchelHolding # CS: end
+    default: ClothingBackpackSatchelHolding # End CS
   - type: Sprite
     sprite: _NF/Clothing/Back/Satchels/holding.rsi # Frontier
     state: icon
