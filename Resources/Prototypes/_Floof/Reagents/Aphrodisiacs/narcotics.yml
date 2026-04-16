@@ -1,7 +1,7 @@
 - type: reagent
   id: Libidozenithizine
   name: reagent-name-libidozenithizine
-  group: Aphrodisiac # CS edit: necessary to detect aphrodisiac injected solutions.
+  group: Aphrodisiacs # CS edit: necessary to detect aphrodisiac injected solutions.
   desc: reagent-desc-libidozenithizine
   physicalDesc: reagent-physical-desc-milky
   flavor: spooky
