@@ -2557,3 +2557,10 @@ Entries:
   id: 293
   time: '2026-04-17T02:06:43.0000000+00:00'
   url: https://github.com/ARF-SS13/coyote-frontier/pull/1164
+- author: Khaomi
+  changes:
+    - type: Fix
+      message: aphrodisiacs recipes disappearing
+  id: 294
+  time: '2026-04-17T04:21:23.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/1162
