@@ -29,8 +29,8 @@
         - id: Poison
         - id: Narcotic
         - id: Alcohol
-        - id: Aphrodisiac # CS: edit; Necessary to detect aphrodisiac injected solutions.
-        - id: AphrodisiacDrink # CS: edit; Necessary to detect aphrodisiac injected solutions.
+        - id: Aphrodisiacs # CS: Necessary to detect aphrodisiac injected solutions.
+        - id: AphrodisiacDrinks # CS: Necessary to detect aphrodisiac injected solutions.
           rateModifier: 0.25
     - type: SolutionContainerManager
       solutions:

@@ -11,8 +11,8 @@ public class SharedAphrodisiacChecker
 {
     public readonly string HideTag = "HideInAphroVis";
 
-    private readonly string _aphrodisiacGroup = "Aphrodisiac";
-    private readonly string _aphrodisiacDrinkGroup = "AphrodisiacDrink";
+    private readonly string _aphrodisiacsGroup = "Aphrodisiacs";
+    private readonly string _aphrodisiacDrinksGroup = "AphrodisiacDrinks";
 
     public SharedAphrodisiacChecker() { }
     public bool CheckForAphrodisiacs(IPrototypeManager prototypeManager, Solution solution)
@@ -33,6 +33,6 @@ public class SharedAphrodisiacChecker
     public bool IsReagentAphrodisiac(IPrototypeManager prototypeManager, ReagentId reagent)
     {
         var prototype = prototypeManager.Index<ReagentPrototype>(reagent.Prototype);
-        return prototype.Group == _aphrodisiacGroup || prototype.Group == _aphrodisiacDrinkGroup;
+        return prototype.Group == _aphrodisiacsGroup || prototype.Group == _aphrodisiacDrinksGroup;
     }
 }

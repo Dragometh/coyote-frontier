@@ -21,4 +21,5 @@
     - id: Cryogenic # Frontier
     - id: Poison
     - id: Narcotic
-    - id: Aphrodisiac # CS: edit; Necessary to detect aphrodisiac injected solutions.
+    - id: Aphrodisiacs # CS: Necessary to detect aphrodisiac injected solutions.
+    - id: AphrodisiacDrinks # CS: Necessary to detect aphrodisiac injected solutions.
