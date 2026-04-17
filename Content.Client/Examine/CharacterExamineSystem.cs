@@ -3,7 +3,6 @@ using Content.Shared.Examine;
 using Content.Shared.Humanoid;
 using Content.Shared.Verbs;
 using Robust.Client.GameObjects;
-using Robust.Client.UserInterface;
 using Robust.Shared.Utility;
 
 namespace Content.Client.Examine;
@@ -13,9 +12,6 @@ namespace Content.Client.Examine;
 /// </summary>
 public sealed class CharacterExamineSystem : EntitySystem
 {
-    [Dependency] private readonly ExamineSystem _examine = default!;
-    [Dependency] private readonly IUserInterfaceManager _uiManager = default!;
-
     private readonly Dictionary<NetEntity, CharacterDetailWindow> _openWindows = new();
 
     public override void Initialize()
@@ -32,7 +28,7 @@ public sealed class CharacterExamineSystem : EntitySystem
         args.Verbs.Add(new ExamineVerb
         {
             Text = Loc.GetString("character-examine-verb"),
-            Icon = new SpriteSpecifier.Texture(new ("/Textures/Interface/VerbIcons/sentient.svg.192dpi.png")), // TODO: Create custom character icon
+            Icon = new SpriteSpecifier.Texture(new("/Textures/Interface/VerbIcons/sentient.svg.192dpi.png")),
             Act = () => OpenCharacterWindow(uid),
             Category = VerbCategory.Examine,
             ClientExclusive = true,
@@ -53,6 +49,7 @@ public sealed class CharacterExamineSystem : EntitySystem
 
         // Create and show new window
         var window = new CharacterDetailWindow();
+        window.SetPreviewEntity(uid);
         _openWindows[netEntity] = window;
 
         window.OnClose += () =>
