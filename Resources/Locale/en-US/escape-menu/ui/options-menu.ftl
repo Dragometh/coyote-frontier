@@ -35,7 +35,6 @@ ui-options-ambience-volume = Ambience volume:
 ui-options-exped-music-volume = Expedition music volume:
 ui-options-lobby-volume = Lobby & Round-end volume:
 ui-options-interface-volume = Interface volume:
-ui-options-andy-announcement-volume = Andy announcement volume:
 ui-options-ambience-max-sounds = Ambience simultaneous sounds:
 ui-options-lobby-music = Lobby & Round-end Music
 ui-options-restart-sounds = Round Restart Sounds
@@ -365,7 +364,6 @@ ui-options-accessability-header-content = Content
 ui-options-enable-color-name = Add colors to character names
 ui-options-colorblind-friendly = Colorblind friendly mode
 ui-options-reduced-motion = Reduce motion of visual effects
-ui-options-disable-visual-smoothing-effect = Disable visual smoothing effect
 ui-options-chat-window-opacity = Chat window opacity
 ui-options-screen-shake-intensity = Screen shake intensity
 
