@@ -225,7 +225,7 @@
       damageContainers:
       - Inorganic
       - Silicon
-      - IPC # CS - Add IPC damage container
+      - IPC # CS: Add IPC damage container
     - type: InteractionPopup
       interactSuccessString: petting-success-syndicate-cyborg
       interactFailureString: petting-failure-syndicate-cyborg

@@ -172,7 +172,7 @@
 #     layoutId: IPC
   - type: EmitBuzzWhileDamaged
   - type: CanHostGuardian
-  # - type: WeldingHealable # CS - Remove, they have their own topical system
+  # - type: WeldingHealable # CS: Remove, they have their own topical system
   - type: LayingDown
   - type: HumanoidAppearance
     species: IPC
@@ -185,7 +185,7 @@
     cosmeticOnly: false
   - type: TallWhitelist
     scale: 1.2
-  # CS - Tweaks start
+  # CS: Tweaks start
   - type: Damageable # COYOTE Add
     damageContainer: IPC # COYOTE Add
     damageModifierSet: IPC # COYOTE Add
@@ -193,7 +193,7 @@
     bloodReagent: Oxidant
     maxBleedAmount: 4
     bloodlossThreshold: 0.5
-  # CS - Tweaks endsd
+  # CS: Tweaks endsd
   - type: Fixtures
     fixtures:
       fix1:
@@ -212,7 +212,7 @@
   parent: MobHumanDummy
   id: MobIPCDummy
   description: A dummy IPC meant to be used in character setup.
-  categories: [ HideSpawnMenu ] # CS - Not to be spawned
+  categories: [ HideSpawnMenu ] # CS: Not to be spawned
   components:
   - type: HumanoidAppearance
     species: IPC

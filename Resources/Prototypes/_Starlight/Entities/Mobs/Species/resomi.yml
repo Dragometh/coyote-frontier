@@ -1,7 +1,7 @@
 - type: entity
   name: Urist McRaptor
   id: BaseMobResomi
-  parent: BaseMobHuman # CS - Inherit from BaseMobHuman
+  parent: BaseMobHuman # CS: Inherit from BaseMobHuman
   abstract: true
   components:
   # Starlight-end
@@ -287,7 +287,7 @@
       sprite: "_Starlight/Effects/creampie.rsi"
       state: "creampie_resomi"
       visible: false
-  # CS - Vocal is already defined for some reason??
+  # CS: Vocal is already defined for some reason??
   - type: Speech
     speechVerb: Resomi
     speechSounds: UnisexResomi
@@ -299,7 +299,7 @@
     - CanPilot
     - FootstepSound
     - DoorBumpOpener
-  # CS - No FlashModifier
+  # CS: No FlashModifier
 
 - type: entity
   parent: BaseSpeciesDummy

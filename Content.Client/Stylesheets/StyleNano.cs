@@ -171,7 +171,7 @@ namespace Content.Client.Stylesheets
         public static readonly string SecurityButtonClass = "SecurityButton";
         public static readonly string ServiceButtonClass = "ServiceButton";
 
-        // CS - AAC button variables
+        // CS: AAC button variables
         public static readonly string NFSDButtonClass = "NFSDButton";
         public static readonly string PirateButtonClass = "PirateButton";
 

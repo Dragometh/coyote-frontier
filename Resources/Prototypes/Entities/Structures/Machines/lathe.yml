@@ -151,7 +151,7 @@
     - NFServiceKitchenStatic # Frontier
     - NFEvaSuitCommon # Frontier
     - AACTableStatic # DeltaV - AAC Tablets
-    - CSPlumbingStatic # CS - showers, sinks, drains
+    - CSPlumbingStatic # CS: showers, sinks, drains
     - CSFolderStatic # Coyote - folders and clipboard
   - type: EmagLatheRecipes
     emagStaticPacks:
@@ -500,7 +500,7 @@
       staticPacks:
       - NfsdAmmoStatic # Frontier: SecurityAmmoStatic<NfsdAmmoStatic
       - NFMercenaryMagazineStatic
-      - CSMagazineStatic # CS - Add .40 mags
+      - CSMagazineStatic # CS: Add .40 mags
     - type: MaterialStorage
       whitelist:
         tags:
