@@ -6,7 +6,7 @@
     mode: AlignTileAny
   components:
   - type: StationAnchor
-    extendExpeditionDuration: true
+    extendDuration: true
   - type: PowerCharge
     activePower: 500
     activeChargingPower: 500

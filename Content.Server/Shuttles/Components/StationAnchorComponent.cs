@@ -22,13 +22,8 @@ public sealed partial class StationAnchorComponent : Component
     [DataField("switchedOn")]
     public bool SwitchedOn { get; set; } = true;
 
-    // Frontier: expedition duration extension
-    /// <summary>
-    /// When true and this anchor is active, any salvage expedition on the same map will
-    /// have its end-time continuously pushed forward, effectively pausing the countdown
-    /// for as long as the anchor remains powered and switched on.
-    /// </summary>
-    [DataField]
-    public bool ExtendExpeditionDuration { get; set; } = false;
-    // End Frontier: expedition duration extension
+
+    [DataField("extendDuration")]
+    public bool ExtendDuration { get; set; } = false;
+
 }

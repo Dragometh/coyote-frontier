@@ -230,7 +230,7 @@ public sealed partial class SalvageSystem
             var anchorQuery = EntityQueryEnumerator<StationAnchorComponent, TransformComponent, PowerChargeComponent>();
             while (anchorQuery.MoveNext(out _, out var anchor, out var anchorXform, out var anchorPower))
             {
-                if (!anchor.ExtendExpeditionDuration)
+                if (!anchor.ExtendDuration)
                     continue;
 
                 if (!anchor.SwitchedOn || !anchorPower.Active)
