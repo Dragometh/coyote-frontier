@@ -358,7 +358,7 @@ public sealed partial class SalvageSystem
                                         shuttleGrid.Value);
                                     Spawn("EffectSparks", Transform(mobUid).Coordinates);
                                     Spawn("EffectGravityPulse", Transform(mobUid).Coordinates);
-                                    SoundSpecifier sound = new SoundPathSpecifier("/Audio/_COYOTE/ExpedReturnToBed.ogg");
+                                    SoundSpecifier sound = new SoundPathSpecifier("/Audio/_CS/ExpedReturnToBed.ogg");
                                     _audio.PlayPvs(sound, mobUid);
                                 }
                             }
