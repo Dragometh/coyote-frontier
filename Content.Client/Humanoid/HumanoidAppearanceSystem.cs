@@ -2,7 +2,7 @@ using System.Diagnostics.CodeAnalysis;
 using Content.Client.DisplacementMap;
 using Content.Shared.CCVar;
 using System.Numerics;
-using Content.Shared._Coyote;
+using Content.Shared._CS;
 using Content.Shared.DisplacementMap;
 using Content.Shared.Humanoid;
 using Content.Shared.Humanoid.Markings;
@@ -169,7 +169,7 @@ public sealed class HumanoidAppearanceSystem : SharedHumanoidAppearanceSystem
         if (proto.BaseSprite != null)
         {
             SpriteSpecifier appropriateSprite = proto.BaseSprite;
-            // COYOTE: add support for cute digitigrade legs
+            // CS: add support for cute digitigrade legs
             if (component.LegStyle != HumanoidLegStyle.Plantigrade
                 && proto.AltSprites.Count > 0)
             {
@@ -197,7 +197,7 @@ public sealed class HumanoidAppearanceSystem : SharedHumanoidAppearanceSystem
                 }
                 // shader will be appliesed lader
             }
-            // END COYOTE (PLEASE)
+            // End CS
             sprite.LayerSetSprite(layerIndex, appropriateSprite);
         }
     }

@@ -24,7 +24,6 @@ using Content.Server.Temperature.Components;
 using Content.Server.Temperature.Systems;
 using Content.Server.Power.Components;
 using Content.Shared._CS;
-using Content.Shared._Coyote;
 using Content.Shared.Atmos;
 using Content.Shared.Buckle.Components;
 using Content.Shared.Damage;

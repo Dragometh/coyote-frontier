@@ -306,6 +306,8 @@
       state: vulp
     - sprite: _DV/Mobs/Customization/Vulpkanin/tail_markings.rsi
       state: vulp-fade
+  altSprites:
+    Digitigrade: DigiVulpTail # CS: Add: Tail_Adapters
 
 - type: marking
   id: VulpTailTip
@@ -319,6 +321,9 @@
       state: vulp
     - sprite: _DV/Mobs/Customization/Vulpkanin/tail_markings.rsi
       state: vulp-tip
+  altSprites:
+    Digitigrade: DigiVulpTailTip # CS: Add: Tail_Adapters
+
 
 - type: marking
   id: VulpTailWag
@@ -332,6 +337,8 @@
       state: vulp_wag
     - sprite: _DV/Mobs/Customization/Vulpkanin/tail_markings.rsi
       state: vulp_wag-tip #fade
+  altSprites:
+    Digitigrade: DigiVulpTailWag # CS: Add: Tail_Adapters
 
 - type: marking
   id: VulpTailWagTip
@@ -345,6 +352,8 @@
       state: vulp_wag
     - sprite: _DV/Mobs/Customization/Vulpkanin/tail_markings.rsi
       state: vulp_wag-tip
+  altSprites:
+    Digitigrade: DigiVulpTailWag # CS: Add: Tail_Adapters
 
 - type: marking
   id: VulpTailAlt
@@ -357,6 +366,8 @@
       state: vulp_alt
     - sprite: _DV/Mobs/Customization/Vulpkanin/tail_markings.rsi
       state: vulp_alt-fade
+  altSprites:
+    Digitigrade: DigiVulpTailAlt # CS: Add: Tail_Adapters
 
 - type: marking
   id: VulpTailAltTip
@@ -369,6 +380,8 @@
       state: vulp_alt
     - sprite: _DV/Mobs/Customization/Vulpkanin/tail_markings.rsi
       state: vulp_alt-tip
+  altSprites:
+    Digitigrade: DigiVulpTailAltTip # CS: Add: Tail_Adapters
 
 - type: marking
   id: VulpTailLong
@@ -381,6 +394,8 @@
       state: long
     - sprite: _DV/Mobs/Customization/Vulpkanin/tail_markings.rsi
       state: long-tip
+  altSprites:
+    Digitigrade: DigiVulpTailLong # CS: Add: Tail_Adapters
 
 - type: marking
   id: VulpTailFox
@@ -394,6 +409,8 @@
       state: fox
     - sprite: _DV/Mobs/Customization/Vulpkanin/tail_markings.rsi
       state: fox-fade
+  altSprites:
+    Digitigrade: DigiVulpTailFox # CS: Add: Tail_Adapters
 
 - type: marking
   id: VulpTailFoxTip
@@ -407,6 +424,8 @@
       state: fox
     - sprite: _DV/Mobs/Customization/Vulpkanin/tail_markings.rsi
       state: fox-tip
+  altSprites:
+    Digitigrade: DigiVulpTailFoxTip # CS: Add: Tail_Adapters
 
 - type: marking
   id: VulpTailFoxWag
@@ -420,6 +439,8 @@
       state: fox_wag
     - sprite: _DV/Mobs/Customization/Vulpkanin/tail_markings.rsi
       state: fox_wag-fade
+  altSprites:
+    Digitigrade: DigiVulpTailFoxWag # CS: Add: Tail_Adapters
 
 - type: marking
   id: VulpTailFoxWagTip
@@ -433,6 +454,8 @@
       state: fox_wag
     - sprite: _DV/Mobs/Customization/Vulpkanin/tail_markings.rsi
       state: fox_wag-tip
+  altSprites:
+    Digitigrade: DigiVulpTailFoxWagTip # CS: Add: Tail_Adapters
 
 - type: marking
   id: VulpTailBushy
@@ -531,6 +554,8 @@
       state: fox3
     - sprite: _DV/Mobs/Customization/Vulpkanin/tail_markings.rsi
       state: fox3-tip
+  altSprites:
+    Digitigrade: DigiVulpTailFox3 # CS: Add: Tail_Adapters
 
 - type: marking
   id: VulpTailFennec
@@ -551,6 +576,8 @@
   sprites:
     - sprite: _DV/Mobs/Customization/Vulpkanin/tail_markings.rsi
       state: otie
+  altSprites:
+    Digitigrade: DigiVulpTailOtie  # CS: Add: Tail_Adapters
 
 - type: marking
   id: VulpTailFluffy

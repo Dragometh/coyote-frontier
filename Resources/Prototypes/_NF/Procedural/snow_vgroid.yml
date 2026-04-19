@@ -220,12 +220,12 @@
 - type: dungeonConfig
   id: NFVGRoidExteriorDungeonsSnow
   reserveTiles: true
-  minCount: 4
-  maxCount: 5
+  minCount: 2
+  maxCount: 3
   layers:
   - !type:ExteriorDunGen
     proto: NFSnowyLabs
-  # - !type:EntityTableDunGen # Coyote remove start: Remove MOST of the floor clutter to try and save on lag
+  # - !type:EntityTableDunGen # CS: remove start: Remove MOST of the floor clutter to try and save on lag
     # minCount: 25
     # maxCount: 40
     # able: !type:NestedSelector
@@ -248,7 +248,7 @@
     # maxCount: 25
     # table: !type:NestedSelector
       # tableId: SalvageEquipmentSpawnerCommon
-    # perDungeon: true # Coyote remove end: Remove MOST of the floor clutter to try and save on lag
+    # perDungeon: true # CS: remove end: Remove MOST of the floor clutter to try and save on lag
   - !type:EntityTableDunGen
     minCount: 15
     maxCount: 20
