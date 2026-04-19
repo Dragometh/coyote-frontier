@@ -141,7 +141,9 @@ public sealed partial class SalvageSystem
         }
         // End Frontier: early finish
 
-        Announce(args.MapUid, Loc.GetString("salvage-expedition-announcement-countdown-minutes", ("duration", (component.EndTime - _timing.CurTime).Minutes)));
+        var arrivalRemaining = component.EndTime - _timing.CurTime;
+        var arrivalMinutes = GetDisplayedRemainingMinutes(arrivalRemaining);
+        Announce(args.MapUid, Loc.GetString("salvage-expedition-announcement-countdown-minutes", ("duration", arrivalMinutes)));
 
         // list all the ssd goobers on the expedition
         UpdateSsdGoobers(args.MapUid, component);
@@ -221,6 +223,10 @@ public sealed partial class SalvageSystem
         // Run the basic mission timers (e.g. announcements, auto-FTL, completion, etc)
         while (query.MoveNext(out var uid, out var comp))
         {
+            // If this expedition was just created, stale pause-cache from a recycled entity UID must not apply.
+            if (comp.Stage == ExpeditionStage.Added)
+                _pausedExpeditionRemaining.Remove(uid);
+
             var remaining = comp.EndTime - _timing.CurTime;
             if (remaining < TimeSpan.Zero)
                 remaining = TimeSpan.Zero;
@@ -285,13 +291,15 @@ public sealed partial class SalvageSystem
                 // End Frontier
                 comp.Stage = ExpeditionStage.MusicCountdown;
                 Dirty(uid, comp);
-                Announce(uid, Loc.GetString("salvage-expedition-announcement-countdown-minutes", ("duration", audioLength.Minutes)));
+                var musicMinutes = GetDisplayedRemainingMinutes(remaining);
+                Announce(uid, Loc.GetString("salvage-expedition-announcement-countdown-minutes", ("duration", musicMinutes)));
             }
             else if (comp.Stage < ExpeditionStage.Countdown && remaining < TimeSpan.FromMinutes(5)) // Frontier: 4<5
             {
                 comp.Stage = ExpeditionStage.Countdown;
                 Dirty(uid, comp);
-                Announce(uid, Loc.GetString("salvage-expedition-announcement-countdown-minutes", ("duration", TimeSpan.FromMinutes(5).Minutes)));
+                var countdownMinutes = GetDisplayedRemainingMinutes(remaining);
+                Announce(uid, Loc.GetString("salvage-expedition-announcement-countdown-minutes", ("duration", countdownMinutes)));
             }
             // Auto-FTL out any shuttles
             else if (remaining < TimeSpan.FromSeconds(_shuttle.DefaultStartupTime) + TimeSpan.FromSeconds(0.5))
@@ -824,5 +832,13 @@ public sealed partial class SalvageSystem
             // they are ssd, add them to the list
             component.InitialSsdGoobers.Add(uid);
         }
+    }
+
+    private static int GetDisplayedRemainingMinutes(TimeSpan remaining)
+    {
+        if (remaining <= TimeSpan.Zero)
+            return 0;
+
+        return Math.Max(1, (int)Math.Ceiling(remaining.TotalMinutes));
     }
 }

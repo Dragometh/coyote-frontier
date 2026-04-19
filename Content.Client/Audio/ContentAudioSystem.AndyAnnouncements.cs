@@ -8,6 +8,7 @@ namespace Content.Client.Audio;
 public sealed partial class ContentAudioSystem
 {
     private const string AndyAnnouncementPathPrefix = "/Audio/_NF/Announcements/PocketSizedAndy/";
+    private const float AndyAnnouncementMaxVolume = 0f;
 
     private float _andyAnnouncementVolume;
     private bool _andyAnnouncementsMuted;
@@ -58,6 +59,9 @@ public sealed partial class ContentAudioSystem
         var expected = _andyAnnouncementsMuted
             ? float.NegativeInfinity
             : baseVolume + _andyAnnouncementVolume;
+
+        if (!_andyAnnouncementsMuted)
+            expected = MathF.Min(expected, AndyAnnouncementMaxVolume);
 
         if (MathF.Abs(component.Volume - expected) < 0.001f)
             return;
