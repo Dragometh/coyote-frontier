@@ -8,8 +8,11 @@ namespace Content.Client.Audio;
 public sealed partial class ContentAudioSystem
 {
     private const string AndyAnnouncementPathPrefix = "/Audio/_NF/Announcements/PocketSizedAndy/";
+    private const float AndyAnnouncementMaxVolume = 0f;
 
     private float _andyAnnouncementVolume;
+    private bool _andyAnnouncementsMuted;
+    private readonly Dictionary<EntityUid, float> _andyAnnouncementBaseVolumes = new();
     private bool _andyAnnouncementsInitialized;
 
     private void InitializeAndyAnnouncements()
@@ -23,6 +26,7 @@ public sealed partial class ContentAudioSystem
 
     private void AndyAnnouncementVolumeChanged(float volume)
     {
+        _andyAnnouncementsMuted = volume <= 0.0001f;
         _andyAnnouncementVolume = SharedAudioSystem.GainToVolume(volume);
 
         var query = EntityQueryEnumerator<AudioComponent>();
@@ -46,11 +50,23 @@ public sealed partial class ContentAudioSystem
         if (!IsAndyAnnouncement(component.FileName))
             return;
 
-        var expected = component.Params.Volume + _andyAnnouncementVolume;
+        if (!_andyAnnouncementBaseVolumes.TryGetValue(uid, out var baseVolume))
+        {
+            baseVolume = component.Params.Volume;
+            _andyAnnouncementBaseVolumes[uid] = baseVolume;
+        }
+
+        var expected = _andyAnnouncementsMuted
+            ? float.NegativeInfinity
+            : baseVolume + _andyAnnouncementVolume;
+
+        if (!_andyAnnouncementsMuted)
+            expected = MathF.Min(expected, AndyAnnouncementMaxVolume);
+
         if (MathF.Abs(component.Volume - expected) < 0.001f)
             return;
 
-        component.Volume = expected;
+        _audio.SetVolume(uid, expected, component);
     }
 
     private static bool IsAndyAnnouncement(string fileName)
