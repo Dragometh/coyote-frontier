@@ -2582,3 +2582,12 @@ Entries:
   id: 296
   time: '2026-04-20T03:43:26.0000000+00:00'
   url: https://github.com/ARF-SS13/coyote-frontier/pull/1167
+- author: QTNeen
+  changes:
+    - type: Tweak
+      message: character inspect
+    - type: Fix
+      message: misbehaving behavior
+  id: 297
+  time: '2026-04-20T04:42:45.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/1169
