@@ -2573,3 +2573,12 @@ Entries:
   id: 295
   time: '2026-04-17T04:22:47.0000000+00:00'
   url: https://github.com/ARF-SS13/coyote-frontier/pull/1163
+- author: tank8673
+  changes:
+    - type: Tweak
+      message: >-
+        Turned down Exped loot pools substantially by making rare rooms actually
+        rarer.
+  id: 296
+  time: '2026-04-20T03:43:26.0000000+00:00'
+  url: https://github.com/ARF-SS13/coyote-frontier/pull/1167
