@@ -265,14 +265,16 @@
       fireCost: 240
       name: cyan
       state: cyan
-    - proto: HoloFlareRed
-      fireCost: 240
-      name: red
-      state: red
-    - proto: HoloFlareYellow
-      fireCost: 240
-      name: yellow
-      state: yellow
+    # CS: Light color selector
+    # - proto: HoloFlareRed
+    #   fireCost: 240
+    #   name: red
+    #   state: red
+    # - proto: HoloFlareYellow
+    #   fireCost: 240
+    #   name: yellow
+    #   state: yellow
+    # CS End: Light color selector
   - type: MagazineVisuals
     magState: mag
     steps: 3
@@ -283,7 +285,16 @@
       enum.EnergyGunFireModeVisuals.State:
         Firemode:
           Cyan: { state: mode-cyan }
-          Red: { state: mode-red }
-          Yellow: { state: mode-yellow }
+  # CS: Light color selector
+          # Red: { state: mode-red }
+          # Yellow: { state: mode-yellow }
+  - type: LightControl
+  - type: ActivatableUI
+    key: enum.LightControlUIKey.Key
+  - type: UserInterface
+    interfaces:
+      enum.SprayPainterUiKey.Key:
+        type: LightControlBoundUserInterface
+  # CS End: Light color selector
   - type: StaticPrice
     price: 250
